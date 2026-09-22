@@ -4,8 +4,8 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { prisma } from "@/lib/prisma";
 
 export const metadata = {
-  title: "Berita & Kegiatan - Arkan Islamic School",
-  description: "Kabar terbaru, prestasi, dan kegiatan dari Arkan Islamic School.",
+  title: "Berita & Kegiatan - Pondok Pesantren Darut Taufiq",
+  description: "Kabar terbaru, prestasi, dan kegiatan dari Pondok Pesantren Darut Taufiq.",
 };
 
 export default async function BeritaPage({

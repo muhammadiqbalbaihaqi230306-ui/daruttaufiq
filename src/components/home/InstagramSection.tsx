@@ -18,16 +18,16 @@ export default function InstagramSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-12">
           <div>
-            <h2 className="text-3xl font-bold text-secondary flex items-center gap-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary flex items-center gap-3">
               <FaInstagram className="text-primary" />
-              @arkan_islamicschool
+              @daruttaufiq
             </h2>
             <p className="text-text-muted mt-2">
               Ikuti kegiatan terbaru kami di Instagram
             </p>
           </div>
           <Link
-            href="https://www.instagram.com/arkan_islamicschool"
+            href="https://www.instagram.com/daruttaufiq"
             target="_blank"
             className="mt-6 md:mt-0 inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-6 py-2.5 text-sm uppercase tracking-wider transition-all rounded"
           >
@@ -40,7 +40,7 @@ export default function InstagramSection() {
           {instagramPosts.map((post) => (
             <Link
               key={post.id}
-              href="https://www.instagram.com/arkan_islamicschool"
+              href="https://www.instagram.com/daruttaufiq"
               target="_blank"
               className="group relative aspect-square bg-gray-100 rounded-lg overflow-hidden block"
             >

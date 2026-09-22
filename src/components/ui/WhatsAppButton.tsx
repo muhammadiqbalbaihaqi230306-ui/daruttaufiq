@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
 
   const phoneNumber = "628999444673";
   const message = encodeURIComponent(
-    "Assalamualaikum *Arkan Islamic School*! I need more info about Arkan Islamic School"
+    "Assalamualaikum *Pondok Pesantren Darut Taufiq*! I need more info about Pondok Pesantren Darut Taufiq"
   );
 
   return (
@@ -24,7 +24,7 @@ export default function WhatsAppButton() {
               </div>
               <div>
                 <p className="text-white font-semibold text-sm">
-                  Arkan Islamic School
+                  Pondok Pesantren Darut Taufiq
                 </p>
                 <p className="text-white/70 text-xs">Online</p>
               </div>
@@ -42,7 +42,7 @@ export default function WhatsAppButton() {
           <div className="p-4 bg-[#ECE5DD] min-h-[120px]">
             <div className="bg-white rounded-lg p-3 shadow-sm max-w-[85%]">
               <p className="text-sm text-gray-700">
-                Hi 👋, welcome to <strong>Arkan Islamic School</strong>
+                Hi 👋, welcome to <strong>Pondok Pesantren Darut Taufiq</strong>
               </p>
               <p className="text-sm text-gray-700 mt-1">Can we help you?</p>
               <p className="text-[10px] text-gray-400 text-right mt-1">

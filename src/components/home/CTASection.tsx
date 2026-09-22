@@ -28,14 +28,14 @@ export default function CTASection() {
       className="relative py-24 overflow-hidden bg-secondary flex items-center justify-center min-h-[400px]"
     >
       {/* Background with overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-secondary">
         <Image
-          src="/images/cta-bg.jpg"
-          alt="Students learning"
+          src="/images/Ruang-Kelas-MD-1 (1).jpg"
+          alt="Ruang Kelas Pondok"
           fill
-          className="object-cover opacity-30 mix-blend-overlay"
+          className="object-cover opacity-70 mix-blend-luminosity"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/80" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
@@ -44,12 +44,12 @@ export default function CTASection() {
             isVisible ? "animate-slide-in-up" : "opacity-0"
           }`}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-            Tertarik Sekolah di Arkan Islamic School?
-          </h2>
-          <p className="text-xl md:text-2xl text-white/90 font-light">
-            Penerimaan Siswa Baru Tahun Ajaran 2027-2028 Telah Dibuka!
+          <p className="text-xl md:text-2xl text-white/90 font-light mb-2">
+            Tertarik Sekolah di Pondok Pesantren Darut Taufiq?
           </p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+            Penerimaan Siswa Baru Tahun Ajaran 2027-2028 Telah Dibuka!
+          </h2>
           <div className="pt-4">
             <Link
               href="https://ppdb.arkia.id"

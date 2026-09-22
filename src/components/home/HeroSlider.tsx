@@ -6,21 +6,24 @@ import Link from "next/link";
 
 const slides = [
   {
-    image: "/images/hero/slide-1.jpg",
+    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg",
     title: "Sekolah Islam Favorit & Terbaik di Kota Bekasi",
     subtitle: "Bilingual Integrated Islamic School",
+    description: "Bergabunglah dengan Pondok Pesantren Darut Taufiq dan jadilah bagian dari komunitas pembelajar yang berakhlak mulia, cerdas secara akademik, dan unggul dalam agama.",
     cta: { label: "Daftar Sekarang", href: "https://ppdb.arkia.id" },
   },
   {
-    image: "/images/hero/slide-2.jpg",
+    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg",
     title: "Membentuk Generasi Qurani yang Berprestasi",
     subtitle: "TK • SD • SMP Islam Terpadu",
+    description: "Kami mendidik putra-putri Anda dengan kurikulum terpadu yang menyeimbangkan ilmu pengetahuan umum dan pemahaman agama yang mendalam untuk masa depan gemilang.",
     cta: { label: "Lihat Program", href: "#program" },
   },
   {
-    image: "/images/hero/slide-3.jpg",
+    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg",
     title: "PPDB Tahun Ajaran 2027-2028 Telah Dibuka!",
-    subtitle: "Kuota Terbatas — Segera Daftarkan Putra-Putri Anda",
+    subtitle: "Kuota Terbatas",
+    description: "Segera daftarkan putra-putri Anda dan jadilah bagian dari keluarga besar Pondok Pesantren Darut Taufiq. Mari bersama-sama menciptakan generasi masa depan yang cemerlang!",
     cta: { label: "Info Selengkapnya", href: "https://ppdb.arkia.id" },
   },
 ];
@@ -49,7 +52,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
+    <section className="relative h-[655px] md:h-[805px] lg:h-[calc(100vh+5px)] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -71,23 +74,28 @@ export default function HeroSlider() {
           {/* Content */}
           <div className="relative z-20 h-full flex items-center">
             <div className="max-w-7xl mx-auto px-4 w-full">
-              <div className="max-w-2xl space-y-6">
-                <p
-                  className={`text-primary font-semibold text-sm md:text-base uppercase tracking-widest ${
-                    index === current ? "animate-slide-in-left" : ""
-                  }`}
-                >
-                  {slide.subtitle}
-                </p>
+              <div className="max-w-3xl space-y-6 -translate-y-[5px]">
+                {/* Huge Title */}
                 <h1
-                  className={`text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight ${
+                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2] ${
                     index === current ? "animate-slide-in-right" : ""
                   }`}
                 >
                   {slide.title}
                 </h1>
+
+                {/* Description Paragraph */}
+                <p
+                  className={`text-sm md:text-base lg:text-lg text-white/90 font-light leading-relaxed max-w-xl ${
+                    index === current ? "animate-slide-in-up delay-200" : ""
+                  }`}
+                >
+                  {slide.description}
+                </p>
+
+                {/* CTA Button */}
                 <div
-                  className={`${
+                  className={`pt-4 lg:pt-6 ${
                     index === current ? "animate-slide-in-up delay-300" : ""
                   }`}
                 >
@@ -96,7 +104,7 @@ export default function HeroSlider() {
                     target={
                       slide.cta.href.startsWith("http") ? "_blank" : undefined
                     }
-                    className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 text-sm uppercase tracking-wider transition-all hover:shadow-lg hover:-translate-y-0.5"
+                    className="inline-block bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 text-sm uppercase tracking-wider transition-all hover:shadow-lg hover:-translate-y-0.5"
                   >
                     {slide.cta.label}
                   </Link>

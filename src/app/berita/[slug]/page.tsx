@@ -15,7 +15,7 @@ export async function generateMetadata({
   if (!post) return { title: "Not Found" };
   
   return {
-    title: `${post.title} - Arkan Islamic School`,
+    title: `${post.title} - Pondok Pesantren Darut Taufiq`,
     description: post.excerpt,
   };
 }

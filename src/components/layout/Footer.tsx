@@ -37,17 +37,23 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 - School Info */}
           <div className="space-y-6">
-            <Image
-              src="/images/logo-arkan.png"
-              alt="Arkan Islamic School"
-              width={250}
-              height={72}
-              className="h-14 w-auto"
-            />
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo-pondokk.png"
+                alt="Pondok Modern"
+                width={72}
+                height={72}
+                className="h-14 w-auto"
+              />
+              <div className="flex flex-col justify-center font-serif text-white mt-1">
+                <span className="text-lg lg:text-xl uppercase tracking-wider leading-none">DARUT TAUFIQ</span>
+                <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1">PONDOK PESANTREN</span>
+              </div>
+            </div>
             <ul className="space-y-3 text-sm text-white/80">
               <li>
                 <Link
@@ -61,11 +67,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="mailto:info@arkan.sch.id"
+                  href="mailto:info@daruttaufiq.com"
                   className="flex items-center gap-3 hover:text-primary transition-colors"
                 >
                   <FaEnvelope className="text-lg flex-shrink-0" />
-                  <span>info@arkan.sch.id</span>
+                  <span>info@daruttaufiq.com</span>
                 </Link>
               </li>
               <li>
@@ -133,7 +139,7 @@ export default function Footer() {
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <Link
                   key={i}
-                  href="https://www.instagram.com/arkan_islamicschool"
+                  href="https://www.instagram.com/daruttaufiq"
                   target="_blank"
                   className="aspect-square bg-white/10 rounded overflow-hidden hover:opacity-80 transition-opacity"
                 >
@@ -151,14 +157,14 @@ export default function Footer() {
       <div className="border-t border-white/10" />
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-4 py-5">
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-5">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/60">
-            © {new Date().getFullYear()} Arkan Islamic School
+            © {new Date().getFullYear()} Pondok Pesantren Darut Taufiq
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://www.instagram.com/arkan_islamicschool"
+              href="https://www.instagram.com/daruttaufiq"
               target="_blank"
               aria-label="Instagram"
               className="text-white/60 hover:text-primary transition-colors"
@@ -166,7 +172,7 @@ export default function Footer() {
               <FaInstagram size={18} />
             </Link>
             <Link
-              href="https://www.tiktok.com/@arkan_islamicschool"
+              href="https://www.tiktok.com/@daruttaufiq"
               target="_blank"
               aria-label="TikTok"
               className="text-white/60 hover:text-primary transition-colors"
@@ -174,7 +180,7 @@ export default function Footer() {
               <FaTiktok size={18} />
             </Link>
             <Link
-              href="https://www.youtube.com/@arkanschooltv"
+              href="https://www.youtube.com/@daruttaufiqtv"
               target="_blank"
               aria-label="YouTube"
               className="text-white/60 hover:text-primary transition-colors"
@@ -182,7 +188,7 @@ export default function Footer() {
               <FaYoutube size={18} />
             </Link>
             <Link
-              href="https://www.facebook.com/arkanislamicschool"
+              href="https://www.facebook.com/daruttaufiq"
               target="_blank"
               aria-label="Facebook"
               className="text-white/60 hover:text-primary transition-colors"

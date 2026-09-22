@@ -14,7 +14,7 @@ import {
 export default function TopBar() {
   return (
     <div className="bg-secondary text-white text-sm hidden lg:block">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-10">
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 flex items-center justify-between h-11">
         {/* Left - Contact Info */}
         <ul className="flex items-center gap-6">
           <li>
@@ -29,11 +29,11 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="mailto:info@arkan.sch.id"
+              href="mailto:info@daruttaufiq.com"
               className="flex items-center gap-1.5 hover:text-primary transition-colors"
             >
               <FaEnvelope className="text-base" />
-              <span>info@arkan.sch.id</span>
+              <span>info@daruttaufiq.com</span>
             </Link>
           </li>
           <li className="flex items-center gap-1.5">
@@ -46,7 +46,7 @@ export default function TopBar() {
         <ul className="flex items-center gap-3">
           <li>
             <Link
-              href="https://www.instagram.com/arkan_islamicschool"
+              href="https://www.instagram.com/daruttaufiq"
               target="_blank"
               aria-label="Instagram"
               className="hover:text-primary transition-colors"
@@ -56,7 +56,7 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="https://www.tiktok.com/@arkan_islamicschool"
+              href="https://www.tiktok.com/@daruttaufiq"
               target="_blank"
               aria-label="TikTok"
               className="hover:text-primary transition-colors"
@@ -66,7 +66,7 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="https://www.youtube.com/@arkanschooltv"
+              href="https://www.youtube.com/@daruttaufiqtv"
               target="_blank"
               aria-label="YouTube"
               className="hover:text-primary transition-colors"
@@ -76,7 +76,7 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="https://www.facebook.com/arkanislamicschool"
+              href="https://www.facebook.com/daruttaufiq"
               target="_blank"
               aria-label="Facebook"
               className="hover:text-primary transition-colors"
