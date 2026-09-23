@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes, FaChevronDown, FaSearch } from "react-icons/fa";
 
-const menuItems = [
+export const menuItems = [
   { label: "Beranda", href: "/" },
   {
     label: "Profil",

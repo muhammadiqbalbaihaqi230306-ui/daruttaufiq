@@ -22,7 +22,7 @@ export default function CTASection() {
           <p className="text-xl md:text-2xl text-white/90 font-light mb-2">
             Tertarik Sekolah di Pondok Pesantren Darut Taufiq?
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-white leading-tight">
             Penerimaan Siswa Baru Tahun Ajaran 2027-2028 Telah Dibuka!
           </h2>
           <div className="pt-4">

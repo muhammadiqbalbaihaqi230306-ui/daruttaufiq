@@ -33,14 +33,18 @@ export default async function TestimonialSection() {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-surface overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 lg:py-24 bg-[#FCFAF5] overflow-hidden relative">
+      {/* Decorative Background Shapes */}
+      <div className="absolute top-0 -left-20 w-[40%] md:w-[30%] lg:w-[25%] h-full bg-white/60 skew-x-[25deg] origin-bottom-left pointer-events-none" />
+      <div className="absolute top-0 -right-20 w-[40%] md:w-[30%] lg:w-[25%] h-full bg-white/60 -skew-x-[25deg] origin-bottom-right pointer-events-none" />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 px-4" data-aos="fade-up">
           <p className="text-primary font-semibold text-sm uppercase tracking-[0.2em] mb-3">
             Review Google
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-secondary">
             Apa Kata Mereka ?
           </h2>
         </div>

@@ -18,7 +18,7 @@ export default function InstagramSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-12" data-aos="fade-up">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary flex items-center gap-3">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-secondary flex items-center gap-3">
               <FaInstagram className="text-primary" />
               @ponpesdaruttaufiq
             </h2>

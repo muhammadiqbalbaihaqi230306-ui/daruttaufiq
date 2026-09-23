@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
   title: "Sejarah | Pondok Pesantren Darut Taufiq",
@@ -9,7 +10,7 @@ export default function SejarahPage() {
   return (
     <main className="min-h-screen bg-surface">
       {/* Hero Section Khusus Sejarah */}
-      <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
+      <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -21,7 +22,8 @@ export default function SejarahPage() {
         {/* Content */}
         <div className="relative z-20 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full mt-16 lg:mt-0">
-            <div className="max-w-3xl space-y-6">
+            <div className="max-w-3xl space-y-6 relative -top-[13px]">
+              <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
                 Our History
@@ -36,7 +38,7 @@ export default function SejarahPage() {
       </section>
       
       {/* Konten Sejarah */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-16 lg:pt-24 pb-16 lg:pb-24">
         <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
           
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">

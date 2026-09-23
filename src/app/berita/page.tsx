@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import { prisma } from "@/lib/prisma";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
   title: "Berita & Kegiatan - Pondok Pesantren Darut Taufiq",
@@ -21,10 +22,11 @@ export default async function BeritaPage({
   });
 
   return (
-    <div className="bg-surface min-h-screen pt-10 pb-20">
+    <div className="bg-surface min-h-screen pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-12 flex flex-col items-center">
+          <Breadcrumbs theme="light" />
           <h1 className="text-4xl font-bold text-secondary mb-4">
             Berita & Kegiatan
           </h1>

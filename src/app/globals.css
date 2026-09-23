@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #2A835F;
-  --color-primary-dark: #12544F;
-  --color-secondary: #092328;
-  --color-secondary-light: #12544F;
-  --color-accent: #2A835F;
+  --color-primary: #159893;
+  --color-primary-dark: #0E6663;
+  --color-secondary: #09403E;
+  --color-secondary-light: #0E6663;
+  --color-accent: #159893;
   --color-text-muted: #6d7685;
   --color-surface: #F4F5F7;
   --color-background: #ffffff;
-  --color-foreground: #092328;
+  --color-foreground: #09403E;
 
   --font-sans: var(--font-ibm), "IBM Plex Sans", "IBM Plex Sans Arabic", sans-serif;
-  --font-serif: var(--font-ibm), "IBM Plex Sans", "IBM Plex Sans Arabic", serif;
+  --font-serif: var(--font-serif), "Playfair Display", serif;
+  --font-inter: var(--font-inter), "Inter", sans-serif;
 }
 
 @layer base {

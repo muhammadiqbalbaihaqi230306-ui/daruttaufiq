@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export default function KontakPage() {
   const [formData, setFormData] = useState({
@@ -54,10 +55,11 @@ export default function KontakPage() {
   };
 
   return (
-    <div className="bg-surface min-h-screen pt-10 pb-20">
+    <div className="bg-surface min-h-screen pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center">
+          <Breadcrumbs theme="light" />
           <h1 className="text-4xl font-bold text-secondary mb-4">Hubungi Kami</h1>
           <p className="text-text-muted">
             Punya pertanyaan seputar pendaftaran, program sekolah, atau info

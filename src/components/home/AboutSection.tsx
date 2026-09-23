@@ -44,7 +44,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number, d
 
 export default function AboutSection() {
   return (
-    <section className="py-16 lg:py-24 bg-white overflow-hidden">
+    <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-16 lg:pt-24 pb-16 lg:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column - Logo */}
@@ -65,7 +65,7 @@ export default function AboutSection() {
               <p className="text-primary font-semibold text-xs uppercase tracking-widest mb-2">
                 Tentang Kami
               </p>
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+              <h2 className="text-3xl lg:text-4xl font-semibold text-secondary">
                 Pondok Pesantren Darut Taufiq
               </h2>
               <p className="text-base text-secondary-light mt-1">

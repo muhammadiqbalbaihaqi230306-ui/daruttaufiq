@@ -46,7 +46,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
       {/* Main Footer */}
-      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-16 lg:py-20">
+      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-8 lg:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 - School Info */}
           <div className="space-y-6">
@@ -63,12 +63,12 @@ export default function Footer() {
                 <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1 whitespace-nowrap">PONDOK PESANTREN</span>
               </div>
             </div>
-            <ul className="space-y-3 text-sm text-white/80">
+            <ul className="space-y-3 text-[15px] text-white">
               <li>
                 <Link
                   href="https://wa.me/6282228880972"
                   target="_blank"
-                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
                   <FaWhatsapp className="text-lg flex-shrink-0" />
                   <span>+6282228880972</span>
@@ -77,7 +77,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="mailto:info@daruttaufiq.com"
-                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
                   <FaEnvelope className="text-lg flex-shrink-0" />
                   <span>info@daruttaufiq.com</span>
@@ -86,7 +86,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="tel:02182631191"
-                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
                   <FaPhoneAlt className="text-lg flex-shrink-0" />
                   <span>(021) 82631191</span>
@@ -96,7 +96,7 @@ export default function Footer() {
                 <Link
                   href="https://maps.app.goo.gl/L9u9kyvKpw287WDV8"
                   target="_blank"
-                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                  className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
                   <FaMapMarkerAlt className="text-lg flex-shrink-0" />
                   <span>Jl. Bawang Raya No. 62 Bekasi</span>
@@ -107,13 +107,13 @@ export default function Footer() {
 
           {/* Column 2 - Profil */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Profil</h4>
+            <h4 className="text-[15px] font-semibold border-b border-white/10 pb-3 mb-4">Profil</h4>
             <ul className="space-y-3">
               {profilLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="flex items-center gap-3 text-sm text-white/80 hover:text-primary transition-colors"
+                    className="flex items-center gap-3 text-[15px] text-white hover:text-gray-300 transition-colors"
                   >
                     <link.icon className="flex-shrink-0" />
                     <span>{link.label}</span>
@@ -125,13 +125,13 @@ export default function Footer() {
 
           {/* Column 3 - Informasi */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Informasi</h4>
+            <h4 className="text-[15px] font-semibold border-b border-white/10 pb-3 mb-4">Informasi</h4>
             <ul className="space-y-3">
               {infoLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="flex items-center gap-3 text-sm text-white/80 hover:text-primary transition-colors"
+                    className="flex items-center gap-3 text-[15px] text-white hover:text-gray-300 transition-colors"
                   >
                     <link.icon className="flex-shrink-0" />
                     <span>{link.label}</span>
@@ -143,7 +143,7 @@ export default function Footer() {
 
           {/* Column 4 - Instagram */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Instagram</h4>
+            <h4 className="text-[15px] font-semibold border-b border-white/10 pb-3 mb-4">Instagram</h4>
             <div className="grid grid-cols-3 gap-2">
               {instagramPosts.map((post) => (
                 <Link
