@@ -4,8 +4,6 @@ import ProgramSection from "@/components/home/ProgramSection";
 import NewsSection from "@/components/home/NewsSection";
 import CTASection from "@/components/home/CTASection";
 import TestimonialSection from "@/components/home/TestimonialSection";
-import InstagramSection from "@/components/home/InstagramSection";
-
 export default function Home() {
   return (
     <>
@@ -20,7 +18,6 @@ export default function Home() {
       <NewsSection />
       <CTASection />
       <TestimonialSection />
-      <InstagramSection />
     </>
   );
 }

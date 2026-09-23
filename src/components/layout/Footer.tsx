@@ -33,6 +33,15 @@ const infoLinks = [
   { label: "Frequently Asked Questions", href: "/faq", icon: FaQuestionCircle },
 ];
 
+const instagramPosts = [
+  { id: 1, image: "/images/ig/ig-1.jpg", link: "https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: 2, image: "/images/ig/ig-2.jpg", link: "https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: 3, image: "/images/ig/ig-3.jpg", link: "https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: 4, image: "/images/ig/ig-4.jpg", link: "https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: 5, image: "/images/ig/ig-5.jpg", link: "https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: 6, image: "/images/ig/ig-6.jpg", link: "https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
@@ -50,8 +59,8 @@ export default function Footer() {
                 className="h-14 w-auto"
               />
               <div className="flex flex-col justify-center font-serif text-white mt-1">
-                <span className="text-lg lg:text-xl uppercase tracking-wider leading-none">DARUT TAUFIQ</span>
-                <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1">PONDOK PESANTREN</span>
+                <span className="text-lg lg:text-xl uppercase tracking-wider leading-none whitespace-nowrap">DARUT TAUFIQ</span>
+                <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1 whitespace-nowrap">PONDOK PESANTREN</span>
               </div>
             </div>
             <ul className="space-y-3 text-sm text-white/80">
@@ -136,15 +145,21 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-6">Instagram</h4>
             <div className="grid grid-cols-3 gap-2">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+              {instagramPosts.map((post) => (
                 <Link
-                  key={i}
-                  href="https://www.instagram.com/daruttaufiq"
+                  key={post.id}
+                  href={post.link}
                   target="_blank"
-                  className="aspect-square bg-white/10 rounded overflow-hidden hover:opacity-80 transition-opacity"
+                  className="group relative aspect-square bg-white/10 rounded overflow-hidden block"
                 >
-                  <div className="w-full h-full bg-gradient-to-br from-white/5 to-white/10 flex items-center justify-center">
-                    <FaInstagram className="text-white/30 text-xl" />
+                  <Image
+                    src={post.image}
+                    alt="Instagram post"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <FaInstagram className="text-white text-xl" />
                   </div>
                 </Link>
               ))}
@@ -164,7 +179,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://www.instagram.com/daruttaufiq"
+              href="https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
               target="_blank"
               aria-label="Instagram"
               className="text-white/60 hover:text-primary transition-colors"
@@ -172,7 +187,7 @@ export default function Footer() {
               <FaInstagram size={18} />
             </Link>
             <Link
-              href="https://www.tiktok.com/@daruttaufiq"
+              href="https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn"
               target="_blank"
               aria-label="TikTok"
               className="text-white/60 hover:text-primary transition-colors"
@@ -188,7 +203,7 @@ export default function Footer() {
               <FaYoutube size={18} />
             </Link>
             <Link
-              href="https://www.facebook.com/daruttaufiq"
+              href="https://www.facebook.com/share/1CAZB2ZE1M/"
               target="_blank"
               aria-label="Facebook"
               className="text-white/60 hover:text-primary transition-colors"

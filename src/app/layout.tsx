@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import BackToTop from "@/components/ui/BackToTop";
+import AOSProvider from "@/components/providers/AOSProvider";
 
 export const metadata: Metadata = {
   title: "Sekolah Islam Favorit & Terbaik di Kota Bekasi - Pondok Pesantren Darut Taufiq",
@@ -51,12 +52,14 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${inter.variable} ${playfair.variable} font-sans`}>
       <body className="font-sans antialiased">
-        <TopBar />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
-        <BackToTop />
+        <AOSProvider>
+          <TopBar />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+          <BackToTop />
+        </AOSProvider>
       </body>
     </html>
   );

@@ -36,7 +36,7 @@ export default async function TestimonialSection() {
     <section className="py-16 lg:py-24 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 px-4">
+        <div className="text-center max-w-2xl mx-auto mb-12 px-4" data-aos="fade-up">
           <p className="text-primary font-semibold text-sm uppercase tracking-[0.2em] mb-3">
             Review Google
           </p>
@@ -46,7 +46,9 @@ export default async function TestimonialSection() {
         </div>
 
         {/* Carousel */}
-        <TestimonialCarousel testimonials={testimonials} />
+        <div data-aos="fade-up" data-aos-delay="200">
+          <TestimonialCarousel testimonials={testimonials} />
+        </div>
       </div>
     </section>
   );

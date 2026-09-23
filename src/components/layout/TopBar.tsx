@@ -46,7 +46,7 @@ export default function TopBar() {
         <ul className="flex items-center gap-3">
           <li>
             <Link
-              href="https://www.instagram.com/daruttaufiq"
+              href="https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
               target="_blank"
               aria-label="Instagram"
               className="hover:text-primary transition-colors"
@@ -56,7 +56,7 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="https://www.tiktok.com/@daruttaufiq"
+              href="https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn"
               target="_blank"
               aria-label="TikTok"
               className="hover:text-primary transition-colors"
@@ -76,7 +76,7 @@ export default function TopBar() {
           </li>
           <li>
             <Link
-              href="https://www.facebook.com/daruttaufiq"
+              href="https://www.facebook.com/share/1CAZB2ZE1M/"
               target="_blank"
               aria-label="Facebook"
               className="hover:text-primary transition-colors"

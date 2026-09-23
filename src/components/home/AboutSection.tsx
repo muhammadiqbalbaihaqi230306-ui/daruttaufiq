@@ -43,33 +43,12 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }: { end: number, d
 };
 
 export default function AboutSection() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.2 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section ref={ref} className="py-16 lg:py-24 bg-white overflow-hidden">
+    <section className="py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image */}
-          <div
-            className={`relative ${
-              isVisible ? "animate-slide-in-left" : "opacity-0"
-            }`}
-          >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left Column - Image Grid */}
+          <div className="relative" data-aos="fade-right">
             <div className="relative group cursor-pointer">
               <div className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ease-out group-hover:shadow-3xl group-hover:shadow-primary/20">
                 <Image
@@ -86,12 +65,8 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Content */}
-          <div
-            className={`space-y-6 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
-          >
+          {/* Right Column - Content */}
+          <div className="space-y-8" data-aos="fade-left" data-aos-delay="200">
             <div>
               <p className="text-primary font-semibold text-xs uppercase tracking-widest mb-2">
                 Tentang Kami

@@ -92,8 +92,8 @@ export default function Navbar() {
               priority
             />
             <div className="flex flex-col justify-center font-serif text-white mt-1">
-              <span className="text-lg lg:text-xl uppercase tracking-wider leading-none">DARUT TAUFIQ</span>
-              <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1">PONDOK PESANTREN</span>
+              <span className="text-lg lg:text-xl uppercase tracking-wider leading-none whitespace-nowrap">DARUT TAUFIQ</span>
+              <span className="text-[9px] lg:text-[11px] uppercase tracking-[0.2em] leading-tight mt-1 whitespace-nowrap">PONDOK PESANTREN</span>
             </div>
           </Link>
 
@@ -124,8 +124,8 @@ export default function Navbar() {
                 </Link>
                 {/* Dropdown */}
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 pt-1 min-w-[200px]">
-                    <div className="bg-secondary-light rounded-md shadow-xl border border-white/10 overflow-hidden">
+                  <div className="absolute top-full left-0 pt-2 min-w-[200px]">
+                    <div className="bg-white shadow-xl overflow-hidden p-2 flex flex-col gap-1">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}
@@ -133,7 +133,7 @@ export default function Navbar() {
                           target={
                             child.href.startsWith("http") ? "_blank" : undefined
                           }
-                          className="block px-5 py-3 text-sm text-white/80 hover:bg-white/10 hover:text-white transition-colors"
+                          className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-primary hover:text-white transition-colors"
                         >
                           {child.label}
                         </Link>

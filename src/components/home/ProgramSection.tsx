@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 import { FaMoon, FaUsers, FaLaptopCode } from "react-icons/fa";
 
 const programs = [
@@ -26,26 +25,8 @@ const programs = [
 ];
 
 export default function ProgramSection() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section
-      ref={ref}
       id="program"
       className="py-16 lg:py-24 bg-[#f4f5f7]"
     >
@@ -53,7 +34,7 @@ export default function ProgramSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           
           {/* Left Column - List */}
-          <div className={`space-y-10 lg:py-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div className="space-y-10 lg:py-8" data-aos="fade-up">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-12">
               Program Unggulan Favorit
             </h2>
@@ -78,7 +59,7 @@ export default function ProgramSection() {
           </div>
 
           {/* Right Column - Grid */}
-          <div className={`flex items-center ${isVisible ? "animate-fade-in-up delay-200" : "opacity-0"}`}>
+          <div className="flex items-center" data-aos="fade-up" data-aos-delay="200">
             <div className="grid grid-cols-2 grid-rows-2 shadow-xl w-full rounded-2xl overflow-hidden">
               
               {/* Image 1 */}

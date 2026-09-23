@@ -44,7 +44,7 @@ export default async function NewsSection() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
           <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
             Berita & Informasi Sekolah
           </h2>
@@ -52,7 +52,9 @@ export default async function NewsSection() {
             Dapatkan informasi terbaru seputar kegiatan dan prestasi santri Pondok Pesantren Darut Taufiq
           </p>
         </div>
-        <NewsCarousel posts={posts} />
+        <div data-aos="fade-up" data-aos-delay="200">
+          <NewsCarousel posts={posts} />
+        </div>
       </div>
     </section>
   );
