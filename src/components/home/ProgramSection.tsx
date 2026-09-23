@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { FaMoon, FaUsers, FaLaptopCode } from "react-icons/fa";
+import { FaBookReader, FaUsers, FaLaptopCode } from "react-icons/fa";
 
 const programs = [
   {
-    icon: FaMoon,
+    icon: FaBookReader,
     title: "Tahfidz Qur'an",
     description: "Pondok Pesantren Darut Taufiq berkomitmen untuk mencetak generasi Qurani yang cinta, hafal, dan mengamalkan Al-Quran dalam kehidupan sehari-hari. Oleh karena itu, program Tahfidz Quran menjadi salah satu program unggulan favorit yang dirancang secara sistematis dan terstruktur guna membimbing peserta didik dalam menghafal Al-Quran dengan baik dan benar.",
     color: "bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-primary/30",
@@ -65,10 +65,10 @@ export default function ProgramSection() {
               {/* Image 1 */}
               <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
                 <Image 
-                  src="/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg" 
+                  src="/images/images program/IMG-20250427-WA0012.jpg" 
                   alt="Program 1" 
                   fill 
-                  className="object-cover transition-all duration-700 ease-out group-hover:scale-110" 
+                  className="object-cover object-[50%_25%] transition-all duration-700 ease-out group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700" />
               </div>
@@ -76,10 +76,10 @@ export default function ProgramSection() {
               {/* Image 2 */}
               <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
                 <Image 
-                  src="/images/WhatsApp-Image-2022-05-30-at-16.22.11-1.jpeg" 
+                  src="/images/images program/IMG-20250427-WA0018.jpg" 
                   alt="Program 2" 
                   fill 
-                  className="object-cover transition-all duration-700 ease-out group-hover:scale-110" 
+                  className="object-cover object-[50%_25%] transition-all duration-700 ease-out group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700" />
               </div>
@@ -87,10 +87,10 @@ export default function ProgramSection() {
               {/* Image 3 */}
               <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
                 <Image 
-                  src="/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg" 
+                  src="/images/images program/IMG-20260714-WA0092.jpg" 
                   alt="Program 3" 
                   fill 
-                  className="object-cover transition-all duration-700 ease-out group-hover:scale-110" 
+                  className="object-cover object-top transition-all duration-700 ease-out group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700" />
               </div>
@@ -98,7 +98,7 @@ export default function ProgramSection() {
               {/* Image 4 */}
               <div className="relative w-full aspect-[4/3] overflow-hidden group cursor-pointer">
                 <Image 
-                  src="/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg" 
+                  src="/images/images program/IMG-20260714-WA0110.jpg" 
                   alt="Program 4" 
                   fill 
                   className="object-cover transition-all duration-700 ease-out group-hover:scale-110" 

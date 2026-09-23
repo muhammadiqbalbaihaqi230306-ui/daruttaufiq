@@ -59,7 +59,7 @@ export default function NewsCarousel({ posts }: { posts: any[] }) {
 
               {/* Content */}
               <Link href={`/berita/${post.slug}`}>
-                <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors leading-snug line-clamp-3">
+                <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary-dark transition-colors leading-snug line-clamp-3">
                   {post.title}
                 </h3>
               </Link>
@@ -82,7 +82,7 @@ export default function NewsCarousel({ posts }: { posts: any[] }) {
               <div className="mt-auto">
                 <Link
                   href={`/berita/${post.slug}`}
-                  className="inline-block border border-primary text-primary hover:bg-primary hover:text-white px-6 py-2 text-sm transition-colors rounded-md font-medium"
+                  className="inline-block border border-primary text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white px-6 py-2 text-sm transition-colors rounded-md font-medium"
                 >
                   Read More
                 </Link>

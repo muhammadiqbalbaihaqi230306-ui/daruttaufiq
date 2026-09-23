@@ -6,21 +6,21 @@ import Link from "next/link";
 
 const slides = [
   {
-    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg",
+    image: "/images/images halaman pp/IMG-20260714-WA0128.jpg",
     title: "Sekolah Islam Favorit & Terbaik di Kota Bekasi",
     subtitle: "Bilingual Integrated Islamic School",
     description: "Bergabunglah dengan Pondok Pesantren Darut Taufiq dan jadilah bagian dari komunitas pembelajar yang berakhlak mulia, cerdas secara akademik, dan unggul dalam agama.",
     cta: { label: "Daftar Sekarang", href: "https://ppdb.arkia.id" },
   },
   {
-    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg",
+    image: "/images/images halaman pp/IMG_20260921_074106.jpg",
     title: "Membentuk Generasi Qurani yang Berprestasi",
     subtitle: "TK • SD • SMP Islam Terpadu",
     description: "Kami mendidik putra-putri Anda dengan kurikulum terpadu yang menyeimbangkan ilmu pengetahuan umum dan pemahaman agama yang mendalam untuk masa depan gemilang.",
     cta: { label: "Lihat Program", href: "#program" },
   },
   {
-    image: "/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg",
+    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
     title: "PPDB Tahun Ajaran 2027-2028 Telah Dibuka!",
     subtitle: "Kuota Terbatas",
     description: "Segera daftarkan putra-putri Anda dan jadilah bagian dari keluarga besar Pondok Pesantren Darut Taufiq. Mari bersama-sama menciptakan generasi masa depan yang cemerlang!",

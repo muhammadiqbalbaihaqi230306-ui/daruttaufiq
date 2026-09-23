@@ -47,21 +47,15 @@ export default function AboutSection() {
     <section className="py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Column - Image Grid */}
-          <div className="relative" data-aos="fade-right">
-            <div className="relative group cursor-pointer">
-              <div className="relative aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ease-out group-hover:shadow-3xl group-hover:shadow-primary/20">
-                <Image
-                  src="/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg"
-                  alt="Pondok Pesantren Darut Taufiq"
-                  fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-700 mix-blend-overlay" />
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-2xl -z-10 transition-transform duration-700 ease-out group-hover:translate-x-6 group-hover:translate-y-6" />
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-secondary/20 rounded-2xl -z-10 transition-transform duration-700 ease-out group-hover:-translate-x-6 group-hover:-translate-y-6" />
+          {/* Left Column - Logo */}
+          <div className="relative flex justify-center items-center" data-aos="fade-right">
+            <div className="relative w-full max-w-xs lg:max-w-sm aspect-square group cursor-pointer">
+              <Image
+                src="/images/logo-pondokk.png"
+                alt="Pondok Pesantren Darut Taufiq"
+                fill
+                className="object-contain transition-transform duration-700 ease-out group-hover:scale-110 drop-shadow-2xl"
+              />
             </div>
           </div>
 

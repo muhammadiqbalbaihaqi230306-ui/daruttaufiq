@@ -4,9 +4,12 @@ import ProgramSection from "@/components/home/ProgramSection";
 import NewsSection from "@/components/home/NewsSection";
 import CTASection from "@/components/home/CTASection";
 import TestimonialSection from "@/components/home/TestimonialSection";
+import PopupPromo from "@/components/home/PopupPromo";
+
 export default function Home() {
   return (
     <>
+      <PopupPromo />
       <HeroSlider />
       <AboutSection />
       <ProgramSection />

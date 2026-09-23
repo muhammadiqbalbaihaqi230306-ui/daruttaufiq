@@ -6,17 +6,13 @@ import Image from "next/image";
 export default function CTASection() {
   return (
     <section
-      className="relative py-24 overflow-hidden bg-secondary flex items-center justify-center min-h-[400px]"
+      className="relative py-24 overflow-hidden bg-secondary flex items-center justify-center min-h-[403px]"
     >
-      <div className="absolute inset-0 z-0 bg-secondary">
-        <Image
-          src="/images/Ruang-Kelas-MD-1 (1).jpg"
-          alt="Ruang Kelas Pondok"
-          fill
-          className="object-cover opacity-50 mix-blend-luminosity"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/50 to-secondary/50" />
-      </div>
+      <div 
+        className="absolute inset-0 z-0 bg-fixed bg-center bg-cover opacity-50 mix-blend-luminosity"
+        style={{ backgroundImage: "url('/images/images%20program/IMG-20260625-WA0117.jpg')" }}
+      />
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-secondary/50 to-secondary/50" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <div

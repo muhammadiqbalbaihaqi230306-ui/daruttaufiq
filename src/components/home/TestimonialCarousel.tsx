@@ -23,7 +23,7 @@ export default function TestimonialCarousel({
       : testimonials;
 
   return (
-    <div className="relative px-4 lg:px-16 testimonial-wrapper py-8 overflow-hidden">
+    <div className="relative px-4 lg:px-16 testimonial-wrapper py-12 overflow-hidden">
       {/* Custom Navigation Buttons */}
       <button className="custom-swiper-button-prev hidden md:flex absolute left-0 lg:left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-primary/5 rounded-full items-center justify-center shadow-[0_0_0_6px_rgba(18,84,79,0.1),0_4px_15px_rgba(0,0,0,0.05)] hover:bg-primary/10 hover:shadow-[0_0_0_8px_rgba(18,84,79,0.15),0_6px_20px_rgba(0,0,0,0.1)] transition-all duration-300 group outline-none">
         <FiChevronLeft className="text-primary text-2xl group-hover:scale-110 transition-transform" />
@@ -52,7 +52,7 @@ export default function TestimonialCarousel({
       >
         {displayTestimonials.map((testi, index) => (
           <SwiperSlide key={`${testi.id}-${index}`} className="h-auto">
-            <div className="bg-white p-8 lg:p-10 rounded-xl shadow-[0_10px_40px_rgb(0,0,0,0.06)] flex flex-col h-full transition-all duration-500 testi-card">
+            <div className="bg-white p-8 lg:p-10 rounded-xl shadow-[0_10px_40px_rgb(0,0,0,0.06)] flex flex-col h-full transition-all duration-500 testi-card mb-12 mt-4 mx-4">
               {/* Rating */}
               <div className="flex text-[#FFC107] mb-6 gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -107,9 +107,11 @@ export default function TestimonialCarousel({
         .testimonial-wrapper .swiper-pagination-bullet-active {
           background-color: #12544F;
         }
-
-
         
+        /* Move pagination dots down */
+        .testimonial-wrapper .swiper-pagination {
+          bottom: -5px !important;
+        }        
         /* Hide all slides by default to prevent peeking at edges */
         .testimonial-wrapper .swiper-slide .testi-card {
           transform: scale(0.9);

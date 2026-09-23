@@ -57,7 +57,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const pathname = usePathname();
-  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,14 +68,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full z-40 transition-all duration-300 ${
-        isHome ? "fixed" : "sticky"
-      } ${
+      className={`w-full z-40 transition-all duration-300 fixed ${
         scrolled
           ? "top-0 bg-secondary/95 backdrop-blur-md shadow-lg"
-          : isHome
-            ? "top-0 lg:top-10 bg-transparent"
-            : "top-0 bg-secondary"
+          : "top-0 lg:top-10 bg-transparent"
       }`}
     >
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
