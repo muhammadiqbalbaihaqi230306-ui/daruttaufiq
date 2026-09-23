@@ -159,8 +159,12 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-secondary-light border-t border-white/10">
+      <div className={`lg:hidden absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ${isOpen ? "h-screen" : "h-0 pointer-events-none"}`}>
+        <div 
+          className={`bg-secondary-light border-t border-white/10 transition-transform duration-500 ease-in-out shadow-xl ${
+            isOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
           <nav className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-4 space-y-1">
             {menuItems.map((item) => (
               <div key={item.label}>
@@ -217,7 +221,7 @@ export default function Navbar() {
             ))}
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
