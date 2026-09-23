@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
@@ -32,15 +32,10 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
+const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["latin", "arabic"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-ibm",
   display: "swap",
 });
 
@@ -50,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${playfair.variable} font-sans`}>
+    <html lang="id" className={`${ibmPlexSansArabic.variable} font-sans`}>
       <body className="font-sans antialiased">
         <AOSProvider>
           <TopBar />
