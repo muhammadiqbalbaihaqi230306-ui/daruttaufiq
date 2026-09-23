@@ -21,8 +21,8 @@ export default function SejarahPage() {
 
         {/* Content */}
         <div className="relative z-20 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full mt-16 lg:mt-0">
-            <div className="max-w-3xl space-y-6 relative -top-[13px]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <div className="max-w-3xl space-y-6 relative -top-[23px]">
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
@@ -39,7 +39,7 @@ export default function SejarahPage() {
       
       {/* Konten Sejarah */}
       <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-16 lg:pt-24 pb-16 lg:pb-24">
-        <div className="max-w-screen-2xl mx-auto px-6 lg:px-12">
+        <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-24">
           
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             

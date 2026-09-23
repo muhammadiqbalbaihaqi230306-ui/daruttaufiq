@@ -168,14 +168,30 @@ export default function Navbar() {
           <nav className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-4 space-y-1">
             {menuItems.map((item) => (
               <div key={item.label}>
-                <div className="flex items-center justify-between">
+                <div 
+                  className="flex items-center justify-between cursor-pointer"
+                  onClick={(e) => {
+                    if (item.children) {
+                      e.preventDefault();
+                      setActiveDropdown(
+                        activeDropdown === item.label ? null : item.label
+                      );
+                    }
+                  }}
+                >
                   <Link
                     href={item.href}
                     target={
                       item.href.startsWith("http") ? "_blank" : undefined
                     }
-                    onClick={() => !item.children && setIsOpen(false)}
-                    className={`block py-3 text-sm font-medium transition-colors ${
+                    onClick={(e) => {
+                      if (item.children) {
+                        e.preventDefault();
+                      } else {
+                        setIsOpen(false);
+                      }
+                    }}
+                    className={`block py-3 text-sm font-medium transition-colors w-full ${
                       item.highlight
                         ? "text-primary font-bold"
                         : "text-white/90 hover:text-gray-300"
@@ -184,20 +200,13 @@ export default function Navbar() {
                     {item.label}
                   </Link>
                   {item.children && (
-                    <button
-                      onClick={() =>
-                        setActiveDropdown(
-                          activeDropdown === item.label ? null : item.label
-                        )
-                      }
-                      className="p-2 text-white/60"
-                    >
+                    <div className="p-2 text-white/60">
                       <FaChevronDown
                         className={`text-xs transition-transform ${
                           activeDropdown === item.label ? "rotate-180" : ""
                         }`}
                       />
-                    </button>
+                    </div>
                   )}
                 </div>
                 {item.children && activeDropdown === item.label && (
