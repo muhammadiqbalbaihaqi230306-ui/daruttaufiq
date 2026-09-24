@@ -53,7 +53,7 @@ export default function ManajemenPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/images program/IMG-20250427-WA0012.jpg')" }}
+          style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
         />
         {/* Overlay agar teks terbaca */}
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
@@ -77,10 +77,10 @@ export default function ManajemenPage() {
       </section>
       
       {/* Konten Sambutan */}
-      <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-16 lg:pt-24 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-24">
+      <section className="relative z-30 -mt-24 px-4 lg:px-8">
+        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
           {/* Sambutan Ketua Yayasan */}
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start" data-aos="fade-up">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             {/* Foto Ketua Yayasan */}
             <div className="w-full lg:w-4/12 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg group shrink-0 bg-gray-100">
               <Image 
@@ -120,7 +120,7 @@ export default function ManajemenPage() {
       </section>
 
       {/* Konten Manajemen */}
-      <section className="py-16 lg:py-24 bg-[#FCFAF5]">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-24">
           
           <div className="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">

@@ -56,9 +56,8 @@ export default function HeroSlider() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
         >
           {/* Background Image */}
           <Image
@@ -77,27 +76,24 @@ export default function HeroSlider() {
               <div className="max-w-3xl space-y-6 -translate-y-[5px]">
                 {/* Huge Title */}
                 <h1
-                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2] ${
-                    index === current ? "animate-slide-in-right" : ""
-                  }`}
+                  className={`text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2] ${index === current ? "animate-slide-in-right" : ""
+                    }`}
                 >
                   {slide.title}
                 </h1>
 
                 {/* Description Paragraph */}
                 <p
-                  className={`text-sm md:text-base lg:text-lg text-white/90 font-light leading-relaxed max-w-xl ${
-                    index === current ? "animate-slide-in-up delay-200" : ""
-                  }`}
+                  className={`text-sm md:text-base lg:text-lg text-white/90 font-light leading-relaxed max-w-xl ${index === current ? "animate-slide-in-up delay-200" : ""
+                    }`}
                 >
                   {slide.description}
                 </p>
 
                 {/* CTA Button */}
                 <div
-                  className={`pt-4 lg:pt-6 ${
-                    index === current ? "animate-slide-in-up delay-300" : ""
-                  }`}
+                  className={`pt-4 lg:pt-6 ${index === current ? "animate-slide-in-up delay-300" : ""
+                    }`}
                 >
                   <Link
                     href={slide.cta.href}
@@ -121,11 +117,10 @@ export default function HeroSlider() {
           <button
             key={index}
             onClick={() => goTo(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === current
+            className={`w-3 h-3 rounded-full transition-all ${index === current
                 ? "bg-primary w-8"
                 : "bg-white/50 hover:bg-white/80"
-            }`}
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

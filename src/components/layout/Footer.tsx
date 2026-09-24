@@ -94,12 +94,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://maps.app.goo.gl/L9u9kyvKpw287WDV8"
+                  href="https://share.google/O4ajlS2i96WMgnz6X"
                   target="_blank"
                   className="flex items-center gap-3 hover:text-gray-300 transition-colors"
                 >
                   <FaMapMarkerAlt className="text-lg flex-shrink-0" />
-                  <span>Jl. Bawang Raya No. 62 Bekasi</span>
+                  <span>Jl. Kb. Baru Metros No. 59, Jakarta Utara</span>
                 </Link>
               </li>
             </ul>

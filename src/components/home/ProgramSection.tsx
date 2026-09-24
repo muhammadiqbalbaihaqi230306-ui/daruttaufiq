@@ -38,7 +38,7 @@ export default function ProgramSection() {
   }, []);
 
   return (
-    <section id="program" className="py-16 lg:py-24 bg-[#f4f5f7]">
+    <section id="program" className="py-16 lg:py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
         
         {/* The Dark Box */}

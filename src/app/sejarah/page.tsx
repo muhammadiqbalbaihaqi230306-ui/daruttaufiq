@@ -38,8 +38,8 @@ export default function SejarahPage() {
       </section>
       
       {/* Konten Sejarah */}
-      <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-16 lg:pt-24 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-24">
+      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
           
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             

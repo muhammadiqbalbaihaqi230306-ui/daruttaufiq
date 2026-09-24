@@ -77,9 +77,9 @@ export default function KontakPage() {
               <div>
                 <h3 className="font-bold text-secondary mb-2">Alamat</h3>
                 <p className="text-text-muted text-sm leading-relaxed">
-                  Jl. Bawang Raya No. 62<br />
-                  Cimuning, Mustikajaya<br />
-                  Kota Bekasi, Jawa Barat
+                  Jl. Kb. Baru Metros No. 59<br />
+                  Semper Barat, Cilincing<br />
+                  Jakarta Utara 14130
                 </p>
               </div>
             </div>
@@ -214,14 +214,14 @@ export default function KontakPage() {
         {/* Map */}
         <div className="mt-16 bg-white p-2 rounded-xl shadow-sm border border-gray-100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9189196236316!2d107.03063251433932!3d-6.274384695459174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698fd4fb9a5723%3A0xc6d05f3a0937a85e!2sDarut Taufiq%20Islamic%20School!5e0!3m2!1sen!2sid!4v1684560012345!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.098078387264!2d106.92056227428117!3d-6.117498259988558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a21ac8c2f48a5%3A0x713f98f89dd3ae44!2sPondok%20Pesantren%20Darut%20Taufiq!5e0!3m2!1sid!2sid!4v1790176840926!5m2!1sid!2sid"
             width="100%"
             height="450"
             style={{ border: 0, borderRadius: "0.5rem" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          />
+          ></iframe>
         </div>
       </div>
     </div>
