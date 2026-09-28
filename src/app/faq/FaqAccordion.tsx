@@ -35,10 +35,14 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
           </button>
           
           <div 
-            className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+            className={`grid transition-all duration-300 ease-in-out ${
+              openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+            }`}
           >
-            <div className="px-6 pb-6 pt-0 text-text-muted leading-relaxed">
-              {faq.answer}
+            <div className="overflow-hidden">
+              <div className="px-6 pb-6 pt-0 text-text-muted leading-relaxed">
+                {faq.answer}
+              </div>
             </div>
           </div>
         </div>

@@ -36,13 +36,14 @@ const faqs = [
 export default function FaqPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section */}
+      {/* Hero Section (Mengikuti gaya Sejarah) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
         />
+        {/* Overlay agar teks terbaca */}
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
 
         {/* Content */}
@@ -50,11 +51,13 @@ export default function FaqPage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
             <div className="max-w-3xl space-y-6 relative -top-[23px]">
               <Breadcrumbs />
+              {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Frequently Asked Questions
+                Our Management
               </h1>
+              {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3">
-                Temukan jawaban untuk pertanyaan yang paling sering diajukan seputar pendaftaran, aturan, dan kehidupan di Pondok Pesantren Darut Taufiq.
+                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
               </p>
             </div>
           </div>
@@ -63,7 +66,7 @@ export default function FaqPage() {
       
       {/* Konten Utama */}
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1000px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
           
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">

@@ -79,12 +79,12 @@ const ekstrakurikuler = [
 export default function EskulPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section */}
+      {/* Hero Section (Mengikuti gaya Sejarah) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/images program/IMG-20260625-WA0117.jpg')" }}
+          style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
         />
         {/* Overlay agar teks terbaca */}
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
@@ -96,11 +96,11 @@ export default function EskulPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Ekstrakurikuler
+                Our Management
               </h1>
               {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3">
-                Wadah pengembangan minat, bakat, dan potensi santri di luar kegiatan belajar mengajar akademik untuk mencetak generasi yang multitalenta.
+                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
               </p>
             </div>
           </div>
