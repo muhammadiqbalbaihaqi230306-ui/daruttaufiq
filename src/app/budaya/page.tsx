@@ -3,8 +3,8 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { FaMosque, FaKey, FaUserTie, FaHandHoldingHeart, FaMedal } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Nilai & Budaya | Pondok Pesantren Darut Taufiq",
-  description: "Nilai utama dan budaya sekolah di Pondok Pesantren Darut Taufiq.",
+  title: "Budaya | Pondok Pesantren Darut Taufiq",
+  description: "Budaya sekolah di Pondok Pesantren Darut Taufiq.",
 };
 
 const coreValues = [
@@ -35,7 +35,7 @@ const coreValues = [
   }
 ];
 
-export default function ValuesPage() {
+export default function BudayaPage() {
   return (
     <main className="min-h-screen bg-surface">
       {/* Hero Section (Mengikuti gaya Sejarah) */}
@@ -55,7 +55,7 @@ export default function ValuesPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Values
+                Our Cultures
               </h1>
               {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3">
