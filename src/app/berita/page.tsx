@@ -19,15 +19,22 @@ export default async function BeritaPage({
 }) {
   const { category } = await searchParams;
   
-  let mainPosts = await prisma.post.findMany({
-    orderBy: { publishedAt: "desc" },
-    take: 10,
-  });
+  let mainPosts: any[] = [];
+  let posts: any[] = [];
 
-  let posts = await prisma.post.findMany({
-    where: category ? { category } : undefined,
-    orderBy: { publishedAt: "desc" },
-  });
+  try {
+    mainPosts = await prisma.post.findMany({
+      orderBy: { publishedAt: "desc" },
+      take: 10,
+    });
+
+    posts = await prisma.post.findMany({
+      where: category ? { category } : undefined,
+      orderBy: { publishedAt: "desc" },
+    });
+  } catch (error) {
+    console.error("Database connection error (Vercel SQLite issue). Falling back to dummy data.");
+  }
 
   // Gunakan data dummy jika database masih kosong agar desain tetap terlihat
   if (mainPosts.length === 0) {

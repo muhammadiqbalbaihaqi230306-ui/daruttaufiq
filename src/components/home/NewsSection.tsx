@@ -4,12 +4,17 @@ import { prisma } from "@/lib/prisma";
 import MainNewsInteractive from "@/components/berita/MainNewsInteractive";
 
 export default async function NewsSection() {
-  const dbPosts = await prisma.post.findMany({
-    take: 10,
-    orderBy: {
-      publishedAt: "desc",
-    },
-  });
+  let dbPosts: any[] = [];
+  try {
+    dbPosts = await prisma.post.findMany({
+      take: 10,
+      orderBy: {
+        publishedAt: "desc",
+      },
+    });
+  } catch (error) {
+    console.error("Database connection error on Homepage. Falling back to dummy data.");
+  }
 
   const baseDummyPosts = [
     {
