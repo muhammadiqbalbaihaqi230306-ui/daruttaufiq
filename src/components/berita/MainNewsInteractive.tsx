@@ -49,7 +49,7 @@ export default function MainNewsInteractive({
     currentPage * itemsPerPage + itemsPerPage
   );
 
-  const slideVariants = {
+  const slideVariants: any = {
     initial: (direction: number) => ({
       x: direction > 0 ? 30 : -30,
       opacity: 0,
