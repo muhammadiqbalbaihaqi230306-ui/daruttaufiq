@@ -44,7 +44,7 @@ export const menuItems = [
     label: "Berita",
     href: "/berita",
     children: [
-      { label: "Prestasi", href: "/berita?category=prestasi" },
+      { label: "Prestasi", href: "/prestasi" },
       { label: "Artikel", href: "/berita?category=artikel" },
     ],
   },
@@ -94,50 +94,69 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center gap-1">
-            {menuItems.map((item) => (
-              <div
-                key={item.label}
-                className="relative group"
-                onMouseEnter={() =>
-                  item.children && setActiveDropdown(item.label)
-                }
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Link
-                  href={item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded ${
-                    item.highlight
-                      ? "bg-primary text-white hover:bg-primary-dark"
-                      : "text-white hover:text-gray-300"
-                  }`}
+            {menuItems.map((item) => {
+              const isItemActive =
+                (item.href !== "#" && item.href !== "/" && pathname.startsWith(item.href)) ||
+                (item.href === "/" && pathname === "/") ||
+                item.children?.some(
+                  (child) =>
+                    child.href !== "#" && child.href !== "/" && pathname.startsWith(child.href.split("?")[0])
+                );
+
+              return (
+                <div
+                  key={item.label}
+                  className="relative group"
+                  onMouseEnter={() =>
+                    item.children && setActiveDropdown(item.label)
+                  }
+                  onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  {item.label}
-                  {item.children && (
-                    <FaChevronDown className="text-[10px] mt-0.5" />
-                  )}
-                </Link>
-                {/* Dropdown */}
-                {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 pt-2 min-w-[200px]">
-                    <div className="bg-white shadow-xl overflow-hidden p-2 flex flex-col gap-1">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.label}
-                          href={child.href}
-                          target={
-                            child.href.startsWith("http") ? "_blank" : undefined
-                          }
-                          className="block px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-primary hover:text-white transition-colors"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                  <Link
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded ${
+                      item.highlight
+                        ? "bg-primary text-white hover:bg-primary-dark"
+                        : isItemActive
+                        ? "text-gray-300"
+                        : "text-white hover:text-gray-300"
+                    }`}
+                  >
+                    {item.label}
+                    {item.children && (
+                      <FaChevronDown className="text-[10px] mt-0.5" />
+                    )}
+                  </Link>
+                  {/* Dropdown */}
+                  {item.children && activeDropdown === item.label && (
+                    <div className="absolute top-full left-0 pt-2 min-w-[200px]">
+                      <div className="bg-white shadow-xl overflow-hidden p-2 flex flex-col gap-1">
+                        {item.children.map((child) => {
+                          const isChildActive = child.href !== "#" && child.href !== "/" && pathname.startsWith(child.href.split("?")[0]);
+                          return (
+                            <Link
+                              key={child.label}
+                              href={child.href}
+                              target={
+                                child.href.startsWith("http") ? "_blank" : undefined
+                              }
+                              className={`block px-4 py-2.5 text-sm font-medium transition-colors ${
+                                isChildActive
+                                  ? "bg-primary text-white"
+                                  : "text-gray-700 hover:bg-primary hover:text-white"
+                              }`}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
             {/* Search Icon */}
             <button
               aria-label="Search"
@@ -166,68 +185,87 @@ export default function Navbar() {
           }`}
         >
           <nav className="max-w-screen-2xl mx-auto px-6 lg:px-12 py-4 space-y-1">
-            {menuItems.map((item) => (
-              <div key={item.label}>
-                <div 
-                  className="flex items-center justify-between cursor-pointer"
-                  onClick={(e) => {
-                    if (item.children) {
-                      e.preventDefault();
-                      setActiveDropdown(
-                        activeDropdown === item.label ? null : item.label
-                      );
-                    }
-                  }}
-                >
-                  <Link
-                    href={item.href}
-                    target={
-                      item.href.startsWith("http") ? "_blank" : undefined
-                    }
+            {menuItems.map((item) => {
+              const isItemActive =
+                (item.href !== "#" && item.href !== "/" && pathname.startsWith(item.href)) ||
+                (item.href === "/" && pathname === "/") ||
+                item.children?.some(
+                  (child) =>
+                    child.href !== "#" && child.href !== "/" && pathname.startsWith(child.href.split("?")[0])
+                );
+
+              return (
+                <div key={item.label}>
+                  <div 
+                    className="flex items-center justify-between cursor-pointer"
                     onClick={(e) => {
                       if (item.children) {
                         e.preventDefault();
-                      } else {
-                        setIsOpen(false);
+                        setActiveDropdown(
+                          activeDropdown === item.label ? null : item.label
+                        );
                       }
                     }}
-                    className={`block py-3 text-sm font-medium transition-colors w-full ${
-                      item.highlight
-                        ? "text-primary font-bold"
-                        : "text-white/90 hover:text-gray-300"
-                    }`}
                   >
-                    {item.label}
-                  </Link>
-                  {item.children && (
-                    <div className="p-2 text-white/60">
-                      <FaChevronDown
-                        className={`text-xs transition-transform ${
-                          activeDropdown === item.label ? "rotate-180" : ""
-                        }`}
-                      />
+                    <Link
+                      href={item.href}
+                      target={
+                        item.href.startsWith("http") ? "_blank" : undefined
+                      }
+                      onClick={(e) => {
+                        if (item.children) {
+                          e.preventDefault();
+                        } else {
+                          setIsOpen(false);
+                        }
+                      }}
+                      className={`block py-3 text-sm font-medium transition-colors w-full ${
+                        item.highlight
+                          ? "text-primary font-bold"
+                          : isItemActive
+                          ? "text-gray-300"
+                          : "text-white/90 hover:text-gray-300"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                    {item.children && (
+                      <div className={`p-2 transition-colors ${isItemActive ? "text-gray-300" : "text-white/60"}`}>
+                        <FaChevronDown
+                          className={`text-xs transition-transform ${
+                            activeDropdown === item.label ? "rotate-180" : ""
+                          }`}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  {item.children && activeDropdown === item.label && (
+                    <div className="pl-4 pb-2 space-y-1">
+                      {item.children.map((child) => {
+                        const isChildActive = child.href !== "#" && child.href !== "/" && pathname.startsWith(child.href.split("?")[0]);
+                        return (
+                          <Link
+                            key={child.label}
+                            href={child.href}
+                            target={
+                              child.href.startsWith("http") ? "_blank" : undefined
+                            }
+                            onClick={() => setIsOpen(false)}
+                            className={`block py-2 text-sm transition-colors ${
+                              isChildActive
+                                ? "text-gray-300 font-medium"
+                                : "text-white/60 hover:text-gray-300"
+                            }`}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
-                {item.children && activeDropdown === item.label && (
-                  <div className="pl-4 pb-2 space-y-1">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        href={child.href}
-                        target={
-                          child.href.startsWith("http") ? "_blank" : undefined
-                        }
-                        onClick={() => setIsOpen(false)}
-                        className="block py-2 text-sm text-white/60 hover:text-gray-300 transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </nav>
         </div>
       </div>

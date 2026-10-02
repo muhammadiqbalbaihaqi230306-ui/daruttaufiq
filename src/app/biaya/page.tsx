@@ -170,7 +170,7 @@ export default function BiayaPage() {
               </div>
             </div>
             <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 min-w-[280px]">
-              <p className="text-xs text-text-muted font-semibold uppercase mb-2">Rekening Resmi</p>
+              <p className="text-xs text-text-muted font-semibold font-sans uppercase mb-2">Rekening Resmi</p>
               <div className="flex items-center gap-4">
                  <div className="bg-secondary/10 p-2 rounded-lg text-secondary">
                     <FaBuildingColumns size={24} />

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
@@ -63,7 +64,7 @@ export default function ProgramSection() {
 
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-10">
               {/* Left Column - List */}
-              <div className="space-y-4" data-aos="fade-right">
+              <div className="space-y-4 order-2 lg:order-1" data-aos="fade-right">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6 px-2">
                   Pilihan Program Kami
                 </h3>
@@ -84,7 +85,7 @@ export default function ProgramSection() {
               </div>
 
               {/* Right Column - Image Collage / Decoration */}
-              <div className="relative flex justify-center items-center h-full min-h-[400px] lg:min-h-[450px]" data-aos="fade-left">
+              <div className="relative flex justify-center items-center h-full min-h-[400px] lg:min-h-[450px] order-1 lg:order-2 mb-12 md:mb-16 lg:mb-0" data-aos="fade-left">
                 {/* Decorative angled background similar to screenshot */}
                 <div className="absolute w-[80%] aspect-square bg-gradient-to-tr from-[#8a6844]/40 to-transparent rounded-[3rem] rotate-12 -z-10 blur-sm" />
                 <div className="absolute w-[70%] aspect-square bg-[#159893]/20 rounded-[3rem] -rotate-6 -z-10 blur-sm" />
@@ -152,9 +153,9 @@ export default function ProgramSection() {
               </div>
 
               <div className="flex-shrink-0 lg:ml-8 lg:self-center">
-                <button className="text-primary hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group">
+                <Link href="/program" className="text-primary hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group">
                   Lebih Banyak <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
-                </button>
+                </Link>
               </div>
 
             </div>

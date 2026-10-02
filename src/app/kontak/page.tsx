@@ -55,17 +55,38 @@ export default function KontakPage() {
   };
 
   return (
-    <div className="bg-surface min-h-screen pt-32 pb-20">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center">
-          <Breadcrumbs theme="light" />
-          <h1 className="text-4xl font-bold text-secondary mb-4">Hubungi Kami</h1>
-          <p className="text-text-muted">
-            Punya pertanyaan seputar pendaftaran, program sekolah, atau info
-            lainnya? Jangan ragu untuk menghubungi kami.
-          </p>
+    <main className="min-h-screen bg-surface">
+      {/* Hero Section (Mengikuti gaya Manajemen) */}
+      <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
+        />
+        {/* Overlay agar teks terbaca */}
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
+
+        {/* Content */}
+        <div className="relative z-20 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <div className="max-w-3xl space-y-6 relative -top-[23px]">
+              <Breadcrumbs />
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
+                Our Management
+              </h1>
+              {/* Summary */}
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3">
+                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Konten Utama */}
+      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
 
         <div className="grid lg:grid-cols-3 gap-10">
           {/* Contact Info */}
@@ -223,7 +244,8 @@ export default function KontakPage() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }

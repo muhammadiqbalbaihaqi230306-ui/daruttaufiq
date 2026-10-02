@@ -43,11 +43,10 @@ export default function NewsCarousel({ posts }: { posts: any[] }) {
       >
         {displayPosts.map((post, index) => (
           <SwiperSlide key={`${post.id}-${index}`} className="h-auto">
-            <div className="group flex flex-col h-full bg-white">
+            <div className="group flex flex-col h-full bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               {/* Thumbnail */}
-              <Link
-                href={`/berita/${post.slug}`}
-                className="relative h-[240px] overflow-hidden mb-5 block"
+              <div
+                className="relative h-[240px] overflow-hidden block shrink-0"
               >
                 <Image
                   src={post.thumbnail || "/images/placeholder-news.jpg"}
@@ -55,37 +54,36 @@ export default function NewsCarousel({ posts }: { posts: any[] }) {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-              </Link>
-
-              {/* Content */}
-              <Link href={`/berita/${post.slug}`}>
-                <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary-dark transition-colors leading-snug line-clamp-3">
-                  {post.title}
-                </h3>
-              </Link>
-
-              <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
-                <FaRegCalendarAlt className="text-gray-400" />
-                <time dateTime={post.publishedAt instanceof Date ? post.publishedAt.toISOString() : new Date(post.publishedAt).toISOString()}>
-                  {new Intl.DateTimeFormat("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  }).format(new Date(post.publishedAt))}
-                </time>
               </div>
 
-              <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">
-                {post.excerpt}
-              </p>
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-grow">
+                <div>
+                  <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary-dark transition-colors leading-snug line-clamp-3">
+                    {post.title}
+                  </h3>
+                </div>
 
-              <div className="mt-auto">
-                <Link
-                  href={`/berita/${post.slug}`}
-                  className="inline-block border border-primary text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white px-6 py-2 text-sm transition-colors rounded-md font-medium"
-                >
-                  Read More
-                </Link>
+                <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
+                  <FaRegCalendarAlt className="text-gray-400" />
+                  <time dateTime={post.publishedAt instanceof Date ? post.publishedAt.toISOString() : new Date(post.publishedAt).toISOString()}>
+                    {new Intl.DateTimeFormat("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric",
+                    }).format(new Date(post.publishedAt))}
+                  </time>
+                </div>
+
+                <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">
+                  {post.excerpt}
+                </p>
+
+                <div className="mt-auto">
+                  <div className="inline-block border border-primary text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white px-6 py-2 text-sm transition-colors rounded-md font-medium cursor-pointer">
+                    Read More
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>
