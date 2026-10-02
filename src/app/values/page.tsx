@@ -74,9 +74,11 @@ export default function ValuesPage() {
 
             {/* Teks Kiri */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-10">
-                Nilai Utama
-              </h2>
+              <div className="flex items-center gap-4 mb-10 border-l-4 border-primary pl-4">
+                <h2 className="text-4xl lg:text-5xl font-bold text-secondary">
+                  Nilai Utama
+                </h2>
+              </div>
 
               <div className="space-y-8">
                 {coreValues.map((value, idx) => (

@@ -1,0 +1,16 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://uqu.edu.sa/en/
+    - generic [ref=e49]:
+      - heading "404" [level=1] [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Page not found" [level=2] [ref=e80]
+          - paragraph [ref=e81]: The page you are looking for may have been moved, deleted, or never existed.
+        - link "Back to Home" [ref=e82] [cursor=pointer]:
+          - /url: https://uqu.edu.sa/en/
+  - generic:
+    - status
+  - navigation "أدوات الوصول" [ref=e84]:
+    - button "فتح لوحة إمكانية الوصول" [ref=e85] [cursor=pointer]

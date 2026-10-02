@@ -93,9 +93,11 @@ export default function ManajemenPage() {
 
             {/* Teks Sambutan */}
             <div className="w-full lg:w-8/12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
-                Sambutan Ketua Yayasan
-              </h2>
+              <div className="flex items-center gap-4 mb-6 border-l-4 border-primary pl-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+                  Sambutan Ketua Yayasan
+                </h2>
+              </div>
               <div className="text-text-muted text-justify space-y-5 leading-relaxed text-[15px] lg:text-base">
                 <p>
                   Assalamualaikum warahmatullahi wabarakatuh
@@ -123,11 +125,13 @@ export default function ManajemenPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="w-full max-w-[1600px] mx-auto px-8 lg:px-24">
           
-          <div className="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
-              Susunan Manajemen
-            </h2>
-            <p className="text-gray-600">
+          <div className="mb-16" data-aos="fade-up">
+            <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+                Susunan Manajemen
+              </h2>
+            </div>
+            <p className="text-gray-600 max-w-2xl">
               Tim manajemen profesional kami berkomitmen untuk memberikan pelayanan pendidikan terbaik dan lingkungan yang kondusif bagi seluruh santri.
             </p>
           </div>

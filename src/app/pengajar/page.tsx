@@ -42,9 +42,11 @@ export default function PengajarPage() {
             
             {/* Teks Kiri */}
             <div className="w-full lg:w-7/12">
-              <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-10">
-                Pengajar & Staff
-              </h2>
+              <div className="flex items-center gap-4 mb-10 border-l-4 border-primary pl-4">
+                <h2 className="text-4xl lg:text-5xl font-bold text-secondary">
+                  Pengajar & Staff
+                </h2>
+              </div>
               
               <ul className="space-y-6 mb-12">
                 <li className="flex items-start gap-4">
@@ -94,9 +96,11 @@ export default function PengajarPage() {
                 </li>
               </ul>
 
-              <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                Staff Administrasi & Pendukung
-              </h3>
+              <div className="flex items-center gap-4 mb-6 border-l-4 border-primary pl-4">
+                <h3 className="text-2xl lg:text-3xl font-bold text-secondary">
+                  Staff Administrasi & Pendukung
+                </h3>
+              </div>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
                   <div className="mt-1 text-secondary text-xl">

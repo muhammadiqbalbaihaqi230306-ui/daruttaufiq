@@ -35,8 +35,8 @@ export const menuItems = [
     href: "#",
     children: [
       { label: "TKIT", href: "https://tkit.daruttaufiq.com" },
-      { label: "SDIT", href: "https://sdit.daruttaufiq.com" },
-      { label: "SMPIT", href: "https://smpit.daruttaufiq.com" },
+      { label: "SDIT", href: "/sdit" },
+      { label: "SMPIT", href: "/smpit" },
       { label: "Perpustakaan", href: "https://library.daruttaufiq.com" },
     ],
   },

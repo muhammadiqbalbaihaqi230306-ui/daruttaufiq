@@ -73,9 +73,11 @@ export default function SejarahPage() {
 
             {/* Kolom Kanan - Teks */}
             <div className="w-full lg:w-7/12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-8">
-                Sejarah Berdirinya Darut Taufiq
-              </h2>
+              <div className="flex items-center gap-4 mb-8 border-l-4 border-primary pl-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+                  Sejarah Berdirinya Darut Taufiq
+                </h2>
+              </div>
               
               <div className="text-text-muted text-justify space-y-6 leading-relaxed">
                 <p>
@@ -85,7 +87,9 @@ export default function SejarahPage() {
                   Sejak awal berdirinya, Pondok Pesantren Darut Taufiq berkomitmen secara penuh untuk mengintegrasikan kurikulum nasional dengan nilai-nilai murni Al-Qur'an dan As-Sunnah sesuai dengan pemahaman Salafush Shalih. Dalam perjalanannya, pondok pesantren ini terus mengalami perkembangan pesat melalui penambahan jenjang pendidikan terpadu, peningkatan sarana prasarana belajar mengajar, serta penerapan metode pembelajaran yang inovatif.
                 </p>
                 
-                <h3 className="text-2xl font-bold text-secondary mt-10 mb-4">Ciri Khas & Fokus Pendidikan</h3>
+                <div className="flex items-center gap-4 mt-10 mb-4 border-l-4 border-primary pl-4">
+                  <h3 className="text-2xl font-bold text-secondary">Ciri Khas & Fokus Pendidikan</h3>
+                </div>
                 <p>
                   Untuk mencapai visi dan misi pendidikan tersebut, Pondok Pesantren Darut Taufiq mengusung konsep pendidikan terpadu dengan beberapa ciri khas utama, antara lain:
                 </p>

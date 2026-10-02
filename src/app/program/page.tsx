@@ -81,11 +81,13 @@ export default function ProgramPage() {
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
-              Program Pendidikan
-            </h2>
-            <p className="text-text-muted leading-relaxed text-[15px] lg:text-base">
+          <div className="mb-16">
+            <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
+                Program Pendidikan
+              </h2>
+            </div>
+            <p className="text-text-muted leading-relaxed text-[15px] lg:text-base max-w-3xl">
               Kami merancang sistem pendidikan yang holistik untuk melahirkan generasi yang tidak hanya cerdas secara akademik, namun juga kuat akidahnya dan mulia akhlaknya.
             </p>
           </div>

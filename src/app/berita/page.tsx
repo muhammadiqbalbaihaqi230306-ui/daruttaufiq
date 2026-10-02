@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import CategoryFilter from "@/components/berita/CategoryFilter";
+import MainNewsInteractive from "@/components/berita/MainNewsInteractive";
+
 
 export const metadata = {
   title: "Berita & Kegiatan - Pondok Pesantren Darut Taufiq",
@@ -17,14 +19,19 @@ export default async function BeritaPage({
 }) {
   const { category } = await searchParams;
   
+  let mainPosts = await prisma.post.findMany({
+    orderBy: { publishedAt: "desc" },
+    take: 10,
+  });
+
   let posts = await prisma.post.findMany({
     where: category ? { category } : undefined,
     orderBy: { publishedAt: "desc" },
   });
 
   // Gunakan data dummy jika database masih kosong agar desain tetap terlihat
-  if (posts.length === 0) {
-    const allDummyPosts = [
+  if (mainPosts.length === 0) {
+    const baseDummyPosts = [
       {
         id: "dummy-1",
         slug: "juara-1-yonkomlekad",
@@ -62,6 +69,14 @@ export default async function BeritaPage({
         category: "Artikel",
       },
     ];
+
+    const allDummyPosts = Array.from({ length: 10 }).map((_, i) => ({
+      ...baseDummyPosts[i % baseDummyPosts.length],
+      id: `dummy-${i + 1}`,
+      title: `${baseDummyPosts[i % baseDummyPosts.length].title} ${i > 3 ? `(Bagian ${i + 1})` : ""}`,
+    }));
+
+    mainPosts = allDummyPosts as any;
 
     if (category) {
       posts = allDummyPosts.filter((p) => p.category.toLowerCase() === category.toLowerCase()) as any;
@@ -104,116 +119,80 @@ export default async function BeritaPage({
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
 
-          {/* Filters */}
-          <CategoryFilter currentCategory={category} />
-
-          {/* Featured Post (Urutan Pertama) */}
-          {posts.length > 0 && (
-            <div className="mb-12">
-              <div className="group flex flex-col lg:flex-row bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                {/* Thumbnail */}
-                <div className="relative h-[300px] lg:h-[400px] lg:w-3/5 overflow-hidden block shrink-0">
-                  <Image
-                    src={posts[0].thumbnail || "/images/placeholder-news.jpg"}
-                    alt={posts[0].title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-8 lg:p-12 flex flex-col justify-center lg:w-2/5">
-                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold font-sans mb-4 w-fit">
-                    Sorotan Utama
-                  </div>
-                  <div>
-                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-4 group-hover:text-primary-dark transition-colors leading-snug line-clamp-3">
-                      {posts[0].title}
-                    </h3>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-6">
-                    <FaRegCalendarAlt className="text-gray-400" />
-                    <time dateTime={posts[0].publishedAt.toISOString()}>
-                      {new Intl.DateTimeFormat("en-US", {
-                        month: "long",
-                        day: "numeric",
-                        year: "numeric",
-                      }).format(posts[0].publishedAt)}
-                    </time>
-                  </div>
-
-                  <p className="text-gray-500 leading-relaxed mb-8 line-clamp-3">
-                    {posts[0].excerpt}
-                  </p>
-
-                  <div className="mt-auto">
-                    <div className="inline-block border border-primary text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white px-8 py-3 text-sm transition-colors rounded-md font-medium cursor-pointer">
-                      Read More
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Grid (Sisa Berita) */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.slice(1).map((post) => (
-              <div
-                key={post.id}
-                className="group flex flex-col h-full bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                {/* Thumbnail */}
-                <div
-                  className="relative h-[240px] overflow-hidden block shrink-0"
-                >
-                  <Image
-                    src={post.thumbnail || "/images/placeholder-news.jpg"}
-                    alt={post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <div>
-                    <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary-dark transition-colors leading-snug line-clamp-3">
-                      {post.title}
-                    </h3>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-gray-500 text-sm mb-4">
-                    <FaRegCalendarAlt className="text-gray-400" />
-                    <time dateTime={post.publishedAt.toISOString()}>
-                      {new Intl.DateTimeFormat("en-US", {
-                        month: "long",
-                        day: "numeric",
-                        year: "numeric",
-                      }).format(post.publishedAt)}
-                    </time>
-                  </div>
-
-                  <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">
-                    {post.excerpt}
-                  </p>
-
-                  <div className="mt-auto">
-                    <div className="inline-block border border-primary text-primary hover:bg-primary-dark hover:border-primary-dark hover:text-white px-6 py-2 text-sm transition-colors rounded-md font-medium cursor-pointer">
-                      Read More
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Header */}
+          <div className="flex justify-between items-center mb-8 mt-6">
+            <h2 className="text-3xl font-bold text-secondary">Main News</h2>
           </div>
-          
-          {posts.length === 0 && (
-            <div className="text-center py-24 text-text-muted bg-surface rounded-2xl mt-8">
-              Belum ada berita dalam kategori ini.
+
+          <MainNewsInteractive posts={mainPosts} hidePagination={true} />
+
+          {/* Show All Section (Semua Berita Grid) */}
+          <div className="mt-16 pt-12 border-t border-gray-100">
+            {/* Category Filter ala UQU */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {['Semua', 'Prestasi', 'Artikel', 'Kegiatan'].map(cat => {
+                const isActive = category ? category === cat.toLowerCase() : cat === 'Semua';
+                return (
+                  <Link
+                    key={cat}
+                    href={cat === 'Semua' ? '/berita' : `?category=${cat.toLowerCase()}`}
+                    scroll={false}
+                    className={`px-5 py-2 text-sm font-bold rounded-md transition-colors ${
+                      isActive 
+                        ? 'bg-primary text-white' 
+                        : 'bg-[#EAF6ED] text-primary hover:bg-[#D5EEDB]'
+                    }`}
+                  >
+                    {cat}
+                  </Link>
+                );
+              })}
             </div>
-          )}
+
+              {/* Grid 3 Kolom */}
+              {posts.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {posts.map(post => (
+                    <div key={post.id} className="group flex flex-col border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2">
+                      <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-50">
+                        <Image
+                          src={post.thumbnail || "/images/placeholder-news.jpg"}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="flex flex-col flex-grow px-2 pb-2">
+                        <Link href={`/berita/${post.slug}`}>
+                          <h3 className="text-base font-bold text-secondary leading-snug line-clamp-2 group-hover:underline decoration-1 underline-offset-4 decoration-secondary cursor-pointer mb-6">
+                            {post.title}
+                          </h3>
+                        </Link>
+                        <div className="flex justify-between items-end mt-auto border-t border-gray-50 pt-4">
+                          <div className="flex items-center gap-1.5 text-gray-500 text-[13px]">
+                            <FaRegCalendarAlt className="text-gray-400" />
+                            <time dateTime={post.publishedAt.toISOString()}>
+                              {new Intl.DateTimeFormat("en-CA", {
+                                year: "numeric",
+                                month: "2-digit",
+                                day: "2-digit",
+                              }).format(post.publishedAt).replace(/-/g, '/')}
+                            </time>
+                          </div>
+                          <Link href={`/berita/${post.slug}`} className="w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors shrink-0">
+                            <FaArrowRight className="text-xs" />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12 text-text-muted bg-gray-50 rounded-2xl border border-gray-100">
+                  Belum ada berita dalam kategori ini.
+                </div>
+              )}
+            </div>
         </div>
       </section>
     </main>

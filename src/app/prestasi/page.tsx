@@ -46,7 +46,7 @@ export default function PrestasiPage() {
             
             {/* Kolom Kiri - Teks */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6 border-l-4 border-primary pl-4 leading-tight">
                 Prestasi Siswa
               </h2>
               

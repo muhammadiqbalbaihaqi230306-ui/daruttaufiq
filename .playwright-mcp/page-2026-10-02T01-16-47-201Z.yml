@@ -1,0 +1,400 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - heading "Official government website of the Government of Kingdom of Saudi Arabia" [level=6] [ref=f4e12]
+      - button "How to verify" [ref=f4e13] [cursor=pointer]
+    - generic [ref=f4e16]:
+      - link "University Email" [ref=f4e17] [cursor=pointer]:
+        - /url: https://outlook.office.com/owa/uqu.edu.sa
+      - link "العربية" [ref=f4e22] [cursor=pointer]:
+        - /url: https://uqu.edu.sa
+  - banner [ref=f4e29]:
+    - generic [ref=f4e31]:
+      - link [disabled] [ref=f4e32] [cursor=pointer]:
+        - /url: https://uqu.edu.sa/en/
+      - generic [ref=f4e77]:
+        - navigation [ref=f4e79]:
+          - list [ref=f4e81]:
+            - listitem [ref=f4e82]:
+              - button "About" [ref=f4e83] [cursor=pointer]
+            - listitem [ref=f4e87]:
+              - button "Administration" [ref=f4e88] [cursor=pointer]
+            - listitem [ref=f4e92]:
+              - button "Colleges" [ref=f4e93] [cursor=pointer]
+            - listitem [ref=f4e97]:
+              - link "Admission" [ref=f4e98] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/Admission
+            - listitem [ref=f4e100]:
+              - button "Research" [ref=f4e101] [cursor=pointer]
+            - listitem [ref=f4e105]:
+              - link "E-Services" [ref=f4e106] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/Services
+        - button [ref=f4e110] [cursor=pointer]
+      - generic [ref=f4e113]:
+        - button "Login" [ref=f4e114] [cursor=pointer]
+        - button "Search" [ref=f4e122] [cursor=pointer]
+  - generic [ref=f4e131]:
+    - heading "شرف العلم وشرف المكان" [level=1] [ref=f4e132]
+    - paragraph [ref=f4e133]: .
+  - generic [ref=f4e137]:
+    - generic [ref=f4e138]:
+      - heading "Main News" [level=2] [ref=f4e140]
+      - link "Show All" [ref=f4e141] [cursor=pointer]:
+        - /url: https://uqu.edu.sa/en/App/News
+    - generic [ref=f4e146]:
+      - generic [ref=f4e151]:
+        - link "Umm Al-Qura University and the King Abdulaziz Center for Cultural Dialogue Organize the \"Bridges of Communication\" Forum" [ref=f4e153] [cursor=pointer]:
+          - /url: https://uqu.edu.sa/en/App/News/179598
+        - generic [ref=f4e155]:
+          - link "Featured news" [ref=f4e156] [cursor=pointer]:
+            - /url: https://uqu.edu.sa/en/App/News/all/
+          - link "Events" [ref=f4e158] [cursor=pointer]:
+            - /url: https://uqu.edu.sa/en/App/News/all/
+      - generic [ref=f4e160]:
+        - generic [ref=f4e162]:
+          - generic [ref=f4e163]:
+            - generic [ref=f4e168]:
+              - link "Umm Al-Qura University Signs a Memorandum of Cooperation with the Ministry of Environment, Water, and Agriculture" [ref=f4e170] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179583
+              - generic [ref=f4e172]:
+                - link "Featured news" [ref=f4e173] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Community" [ref=f4e175] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e180]:
+              - 'link "Umm Al-Qura University launches the first of its \"Entrepreneurship Seminars,\" titled: \"From Idea to Growth.\"" [ref=f4e182] [cursor=pointer]':
+                - /url: https://uqu.edu.sa/en/App/News/179582
+              - generic [ref=f4e184]:
+                - link "Featured news" [ref=f4e185] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Community" [ref=f4e187] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e193]:
+              - link "Umm Al-Qura University Concludes the Second Edition of the Academic Leadership Development Program" [ref=f4e195] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179561
+              - generic [ref=f4e197]:
+                - link "Featured news" [ref=f4e198] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Academic" [ref=f4e200] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+          - generic [ref=f4e202]:
+            - generic [ref=f4e207]:
+              - link "Umm Al-Qura University Organizes Saudi National Day Celebrations" [ref=f4e209] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179554
+              - generic [ref=f4e211]:
+                - link "Featured news" [ref=f4e212] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Events" [ref=f4e214] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e219]:
+              - link "Umm Al-Qura University Signs a Partnership Agreement with Modern Safety Energy Company" [ref=f4e221] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179512
+              - generic [ref=f4e223]:
+                - link "Featured news" [ref=f4e224] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Community" [ref=f4e226] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e232]:
+              - link "Umm Al-Qura University Organizes a Workshop to Familiarize its Graduates with National Employment Platforms" [ref=f4e234] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179476
+              - generic [ref=f4e236]:
+                - link "Featured news" [ref=f4e237] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Community" [ref=f4e239] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+          - generic [ref=f4e241]:
+            - generic [ref=f4e246]:
+              - link "Umm Al-Qura University Organizes the White Coat Event" [ref=f4e248] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179475
+              - generic [ref=f4e250]:
+                - link "Featured news" [ref=f4e251] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Events" [ref=f4e253] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e259]:
+              - link "Umm Al-Qura University is a Knowledge and Innovation Partner in the Saudi Industry Forum 2026" [ref=f4e261] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179425
+              - generic [ref=f4e263]:
+                - link "Featured news" [ref=f4e264] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Participations" [ref=f4e266] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+            - generic [ref=f4e272]:
+              - link "President of Umm Al-Qura University Receives the 26th Publication of the King Salman Chair for Mecca History Studies" [ref=f4e274] [cursor=pointer]:
+                - /url: https://uqu.edu.sa/en/App/News/179388
+              - generic [ref=f4e276]:
+                - link "Featured news" [ref=f4e277] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+                - link "Community" [ref=f4e279] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/News/all/
+        - generic [ref=f4e281]:
+          - generic [ref=f4e283]:
+            - button [ref=f4e284] [cursor=pointer]
+            - button [ref=f4e286] [cursor=pointer]
+            - button [ref=f4e288] [cursor=pointer]
+          - generic [ref=f4e291]:
+            - button "previous" [disabled] [ref=f4e292]
+            - button "next" [ref=f4e295] [cursor=pointer]
+  - generic [ref=f4e301]:
+    - generic [ref=f4e302]:
+      - heading "University Calendar" [level=2] [ref=f4e304]
+      - link "Show All" [ref=f4e305] [cursor=pointer]:
+        - /url: https://uqu.edu.sa/en/App/AcademicCalendar
+    - generic [ref=f4e309]:
+      - generic [ref=f4e310]:
+        - generic [ref=f4e311]:
+          - generic [ref=f4e312]: Now
+          - generic [ref=f4e313]:
+            - generic [ref=f4e314]:
+              - generic [ref=f4e315]: Sunday
+              - generic [ref=f4e316]: "30"
+              - generic [ref=f4e317]: August
+            - generic [ref=f4e318]: to
+            - generic [ref=f4e319]:
+              - generic [ref=f4e320]: Saturday
+              - generic [ref=f4e321]: "31"
+              - generic [ref=f4e322]: October
+        - generic [ref=f4e323]:
+          - generic [ref=f4e324]:
+            - heading "الاعتذار عن الدراسة" [level=1] [ref=f4e325]
+            - paragraph [ref=f4e326]: البكالوريوس وما دونها
+          - generic [ref=f4e327]: عام
+      - generic [ref=f4e331]:
+        - generic [ref=f4e332]:
+          - generic [ref=f4e333]: After 9 days
+          - generic [ref=f4e334]:
+            - generic [ref=f4e335]:
+              - generic [ref=f4e336]: Sunday
+              - generic [ref=f4e337]: "11"
+              - generic [ref=f4e338]: October
+            - generic [ref=f4e339]: to
+            - generic [ref=f4e340]:
+              - generic [ref=f4e341]: Thursday
+              - generic [ref=f4e342]: "22"
+              - generic [ref=f4e343]: October
+        - generic [ref=f4e344]:
+          - generic [ref=f4e345]:
+            - heading "الاختبارات النصفية" [level=1] [ref=f4e346]
+            - paragraph [ref=f4e347]: البكالوريوس وما دونها
+          - generic [ref=f4e348]: عام
+      - generic [ref=f4e352]:
+        - generic [ref=f4e353]:
+          - generic [ref=f4e354]: After 30 days
+          - generic [ref=f4e355]:
+            - generic [ref=f4e356]:
+              - generic [ref=f4e357]: Sunday
+              - generic [ref=f4e358]: "01"
+              - generic [ref=f4e359]: November
+            - generic [ref=f4e360]: to
+            - generic [ref=f4e361]:
+              - generic [ref=f4e362]: Saturday
+              - generic [ref=f4e363]: "07"
+              - generic [ref=f4e364]: November
+        - generic [ref=f4e365]:
+          - generic [ref=f4e366]:
+            - heading "الانسحاب من مقرر دراسي" [level=1] [ref=f4e367]
+            - paragraph [ref=f4e368]: البكالوريوس وما دونها
+          - generic [ref=f4e369]: عام
+      - generic [ref=f4e373]:
+        - generic [ref=f4e374]:
+          - generic [ref=f4e375]: After 50 days
+          - generic [ref=f4e376]:
+            - generic [ref=f4e377]:
+              - generic [ref=f4e378]: Saturday
+              - generic [ref=f4e379]: "21"
+              - generic [ref=f4e380]: November
+            - generic [ref=f4e381]: to
+            - generic [ref=f4e382]:
+              - generic [ref=f4e383]: Saturday
+              - generic [ref=f4e384]: "28"
+              - generic [ref=f4e385]: November
+        - generic [ref=f4e386]:
+          - generic [ref=f4e387]:
+            - heading "اجازة الخريف" [level=1] [ref=f4e388]
+            - paragraph [ref=f4e389]: جميع الدرجات
+          - generic [ref=f4e390]: إجازات
+      - generic [ref=f4e394]:
+        - generic [ref=f4e395]:
+          - generic [ref=f4e396]: After 72 days
+          - generic [ref=f4e397]:
+            - generic [ref=f4e398]:
+              - generic [ref=f4e399]: Sunday
+              - generic [ref=f4e400]: "13"
+              - generic [ref=f4e401]: December
+            - generic [ref=f4e402]: to
+            - generic [ref=f4e403]:
+              - generic [ref=f4e404]: Thursday
+              - generic [ref=f4e405]: "24"
+              - generic [ref=f4e406]: December
+        - generic [ref=f4e407]:
+          - generic [ref=f4e408]:
+            - heading "اختبارات المتطلبات العامة والمقررات العملية" [level=1] [ref=f4e409]
+            - paragraph [ref=f4e410]: البكالوريوس وما دونها
+          - generic [ref=f4e411]: عام
+      - generic [ref=f4e415]:
+        - generic [ref=f4e416]:
+          - generic [ref=f4e417]: After 79 days
+          - generic [ref=f4e418]:
+            - generic [ref=f4e419]:
+              - generic [ref=f4e420]: Sunday
+              - generic [ref=f4e421]: "20"
+              - generic [ref=f4e422]: December
+            - generic [ref=f4e423]: to
+            - generic [ref=f4e424]:
+              - generic [ref=f4e425]: Thursday
+              - generic [ref=f4e426]: "21"
+              - generic [ref=f4e427]: January
+        - generic [ref=f4e428]:
+          - generic [ref=f4e429]:
+            - heading "طلب اعادة القيد" [level=1] [ref=f4e430]
+            - paragraph [ref=f4e431]: البكالوريوس وما دونها
+          - generic [ref=f4e432]: عام
+  - generic [ref=f4e437]:
+    - generic [ref=f4e438]:
+      - heading "E-Services" [level=2] [ref=f4e440]
+      - link "Show All" [ref=f4e441] [cursor=pointer]:
+        - /url: https://uqu.edu.sa/en/App/Services
+    - generic [ref=f4e447]:
+      - tablist [ref=f4e454]:
+        - tab "Students" [selected] [ref=f4e455] [cursor=pointer]
+        - tab "Academic Staff" [ref=f4e457] [cursor=pointer]
+        - tab "Employees" [ref=f4e459] [cursor=pointer]
+        - tab "General" [ref=f4e461] [cursor=pointer]
+      - tabpanel "Students" [ref=f4e464]:
+        - generic [ref=f4e466]:
+          - generic [ref=f4e468]:
+            - generic [ref=f4e476]:
+              - generic [ref=f4e477]:
+                - heading "Academic Portal" [level=1] [ref=f4e478]
+                - paragraph [ref=f4e479]: It includes all academic services offered to the students and academic staff members.
+              - generic [ref=f4e480]:
+                - link "About Service" [ref=f4e481] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/Catalog/14
+                - link "Start Service" [ref=f4e483] [cursor=pointer]:
+                  - /url: Sso/App/EDUSERVICES
+            - generic [ref=f4e492]:
+              - generic [ref=f4e493]:
+                - heading "E-Workflows" [level=1] [ref=f4e494]
+                - paragraph [ref=f4e495]: This service is about the automation of all the paper forms (paper transactions) so as to save time and effort, fulfilling the Saudi Vision 2030.
+              - generic [ref=f4e496]:
+                - link "About Service" [ref=f4e497] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/Catalog/235
+                - link "Start Service" [ref=f4e499] [cursor=pointer]:
+                  - /url: App/Workflow
+            - generic [ref=f4e508]:
+              - generic [ref=f4e509]:
+                - heading "E-Learning - Blackboard" [level=1] [ref=f4e510]
+                - paragraph [ref=f4e511]: .
+              - generic [ref=f4e512]:
+                - link "About Service" [ref=f4e513] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/Catalog/382
+                - link "Start Service" [ref=f4e515] [cursor=pointer]:
+                  - /url: Sso/Saml/App/LMS
+            - generic [ref=f4e524]:
+              - generic [ref=f4e525]:
+                - heading "Training Letter Request" [level=1] [ref=f4e526]
+                - paragraph [ref=f4e527]: This service enables students to submit a request to issue a letter, either a general letter or one addressed to a specific organization for the purpose of training them
+              - generic [ref=f4e528]:
+                - link "About Service" [ref=f4e529] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/en/App/Catalog/1333
+                - link "Start Service" [ref=f4e531] [cursor=pointer]:
+                  - /url: https://uqu.edu.sa/alumni/App/Forms/Show/143948
+          - generic [ref=f4e534]:
+            - button [ref=f4e535] [cursor=pointer]
+            - button [ref=f4e537] [cursor=pointer]
+            - button [ref=f4e539] [cursor=pointer]
+            - button [ref=f4e541] [cursor=pointer]
+  - generic [ref=f4e544]:
+    - generic [ref=f4e545]:
+      - generic [ref=f4e553]: +57K
+      - generic [ref=f4e554]: Students
+    - generic [ref=f4e555]:
+      - generic [ref=f4e561]: +2K
+      - generic [ref=f4e562]: International Students
+    - generic [ref=f4e563]:
+      - generic [ref=f4e570]: "+30"
+      - generic [ref=f4e571]: Colleges
+    - generic [ref=f4e572]:
+      - generic [ref=f4e578]: "+150"
+      - generic [ref=f4e579]: Departments
+  - generic [ref=f4e581]:
+    - heading "Achievements" [level=2] [ref=f4e584]
+    - generic [ref=f4e585]:
+      - tablist [ref=f4e592]:
+        - tab [selected] [ref=f4e593] [cursor=pointer]
+        - tab [ref=f4e597] [cursor=pointer]
+        - tab [ref=f4e601] [cursor=pointer]
+      - tabpanel [ref=f4e606]:
+        - link "Umm Al-Qura University secures several awards at the International Competition for Artificial Intelligence in Education 2026" [ref=f4e646] [cursor=pointer]:
+          - /url: https://uqu.edu.sa/en/App/News/179109
+  - generic [ref=f4e648]: Honor of Knowledge and Place
+  - contentinfo [ref=f4e652]:
+    - generic [ref=f4e653]:
+      - generic [ref=f4e670]:
+        - list [ref=f4e671]:
+          - generic [ref=f4e672]: Important Links
+          - listitem [ref=f4e673]:
+            - link "Privacy Policy" [disabled] [ref=f4e674] [cursor=pointer]:
+              - /url: https://uqu.edu.sa/en/main/PrivacyPolicy
+          - listitem [ref=f4e675]:
+            - link "Terms Of Use" [disabled] [ref=f4e676] [cursor=pointer]:
+              - /url: https://uqu.edu.sa/en/main/TermsOfUse
+        - list [ref=f4e677]:
+          - generic [ref=f4e678]: Relevant Authorities
+          - listitem [ref=f4e679]:
+            - link "Ministry of Education" [disabled] [ref=f4e680] [cursor=pointer]:
+              - /url: https://moe.gov.sa/
+          - listitem [ref=f4e681]:
+            - link "University Affairs Council" [disabled] [ref=f4e682] [cursor=pointer]:
+              - /url: https://www.cua.gov.sa/
+          - listitem [ref=f4e683]:
+            - link "National Portal of Unified Admission" [disabled] [ref=f4e684] [cursor=pointer]:
+              - /url: https://www.uap.sa/
+          - listitem [ref=f4e685]:
+            - link "National eLearning Center" [disabled] [ref=f4e686] [cursor=pointer]:
+              - /url: https://nelc.gov.sa/
+          - listitem [ref=f4e687]:
+            - link "Study In Saudi" [disabled] [ref=f4e688] [cursor=pointer]:
+              - /url: https://studyinsaudi.sa/
+        - list [ref=f4e689]:
+          - generic [ref=f4e690]: Contact Us
+          - generic [ref=f4e691]:
+            - listitem [ref=f4e692]:
+              - link "X" [ref=f4e693] [cursor=pointer]:
+                - /url: https://x.com/uqu_edu
+            - listitem [ref=f4e696]:
+              - link "Youtube" [ref=f4e697] [cursor=pointer]:
+                - /url: https://www.youtube.com/@Mediacenteruqu
+            - listitem [ref=f4e701]:
+              - link "WhatsApp" [ref=f4e702] [cursor=pointer]:
+                - /url: https://wa.me/966125542487
+          - listitem [ref=f4e706]:
+            - link "Contact Us" [disabled] [ref=f4e707] [cursor=pointer]:
+              - /url: https://uqu.edu.sa/en/ccpa/138916
+          - listitem [ref=f4e708]:
+            - link "National Address (MDAA3581)" [disabled] [ref=f4e709] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/SQC6qqhfiLmCJFuW7
+        - list [ref=f4e710]:
+          - generic [ref=f4e711]: Mobile Apps
+          - generic [ref=f4e712]:
+            - listitem [ref=f4e713]:
+              - link [ref=f4e714] [cursor=pointer]:
+                - /url: https://uq.sa/64tZbT
+                - img "Google Android" [ref=f4e715]
+            - link [ref=f4e716] [cursor=pointer]:
+              - /url: https://uq.sa/OGNDHy
+              - img "Apple iOS" [ref=f4e717]
+      - generic [ref=f4e718]:
+        - generic [ref=f4e719]:
+          - link "RSS" [disabled] [ref=f4e721] [cursor=pointer]:
+            - /url: https://uqu.edu.sa/en/App/Rss
+          - generic [ref=f4e722]:
+            - generic [ref=f4e723]: © Developed by Deanship of IT 2026 v3.0.665-s199
+            - link "Developed and maintained by the Deanship of Information Technology" [ref=f4e725] [cursor=pointer]:
+              - /url: https://uqu.edu.sa/en/it
+        - link [ref=f4e727] [cursor=pointer]:
+          - /url: https://www.vision2030.gov.sa/ar
+  - generic:
+    - status
+  - navigation "أدوات الوصول" [ref=f4e776]:
+    - button "فتح لوحة إمكانية الوصول" [ref=f4e777] [cursor=pointer]
