@@ -155,7 +155,7 @@ export default function ManajemenPage() {
                 {/* Name & Role (Left aligned as in screenshot) */}
                 <div className="text-left px-2">
                   <p className="text-primary font-medium text-sm mb-1 line-clamp-1">
-                    {member.role}
+                    {member.role}   
                   </p>
                   <h3 className="text-xl font-bold text-secondary line-clamp-2">
                     {member.name}
