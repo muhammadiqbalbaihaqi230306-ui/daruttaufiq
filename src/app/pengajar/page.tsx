@@ -19,14 +19,14 @@ export default function PengajarPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
 
-        <div className="relative z-20 h-full flex items-center">
+        <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh]">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
-            <div className="max-w-3xl space-y-6 relative -top-[23px]">
+            <div className="max-w-3xl space-y-6">
               <Breadcrumbs />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]" data-aos="fade-up">
                 Pengajar & Staff
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3" data-aos="fade-up" data-aos-delay="100">
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl " data-aos="fade-up" data-aos-delay="100">
                 Mendidik dengan Hati, Membimbing dengan Ilmu. Kami percaya bahwa keberhasilan pendidikan tidak hanya ditentukan oleh kurikulum yang baik, tetapi juga oleh guru dan staff yang berdedikasi.
               </p>
             </div>

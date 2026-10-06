@@ -31,14 +31,14 @@ export default function SDITPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
 
         {/* Content */}
-        <div className="relative z-20 h-full flex items-center">
+        <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh]">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
-            <div className="max-w-3xl space-y-6 relative -top-[23px]">
+            <div className="max-w-3xl space-y-6">
               <Breadcrumbs />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
                 SMPIT Darut Taufiq
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl line-clamp-3">
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
                 Membangun generasi Qur'ani yang tangguh, cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman di usia remaja melalui pendidikan Islam terpadu.
               </p>
             </div>

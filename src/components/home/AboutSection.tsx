@@ -53,7 +53,7 @@ export default function AboutSection() {
                     />
                   </div>
                   {/* Text */}
-                  <h3 className="text-xl font-bold text-secondary mb-3">
+                  <h3 className="text-xl font-bold text-secondary mb-3 min-h-[3.5rem]">
                     {feature.title}
                   </h3>
                   <p className="text-text-muted text-[15px] leading-relaxed font-light">
