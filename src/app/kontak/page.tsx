@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -20,7 +20,7 @@ export default function KontakPage() {
   });
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [activeFaq, setActiveFaq] = useState(null);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -37,7 +37,7 @@ export default function KontakPage() {
     }
   ];
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
     try {
@@ -50,7 +50,7 @@ export default function KontakPage() {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -60,7 +60,7 @@ export default function KontakPage() {
   return (
     <main className="min-h-screen bg-surface">
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
         />
@@ -82,7 +82,7 @@ export default function KontakPage() {
 
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto space-y-12">
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
@@ -110,7 +110,7 @@ export default function KontakPage() {
                 <FaClock className="text-primary text-2xl" />
               </div>
               <h3 className="font-bold text-secondary mb-2 text-lg">Jam Operasional</h3>
-              <p className="text-gray-500 text-sm">Senin - Sabtu<br/>08:00 - 15:00 WIB</p>
+              <p className="text-gray-500 text-sm">Senin - Sabtu<br />08:00 - 15:00 WIB</p>
             </div>
           </div>
 
@@ -195,11 +195,11 @@ export default function KontakPage() {
             </div>
             <div className="max-w-4xl mx-auto space-y-4">
               {faqs.map((faq, idx) => (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className={`border rounded-xl overflow-hidden transition-all duration-300 ${activeFaq === idx ? 'border-primary ring-1 ring-primary/20' : 'border-gray-100 hover:border-gray-200'}`}
                 >
-                  <button 
+                  <button
                     onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
                     className="w-full flex items-center justify-between p-6 bg-white text-left focus:outline-none"
                   >
