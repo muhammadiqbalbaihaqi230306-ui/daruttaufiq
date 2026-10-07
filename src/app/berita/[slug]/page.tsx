@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FaCalendarAlt, FaChevronRight } from "react-icons/fa";
+import { FaCalendarAlt, FaChevronRight, FaPrint, FaTwitter, FaFacebook } from "react-icons/fa";
 import { prisma } from "@/lib/prisma";
+import ImageSlider from "@/components/ImageSlider";
 
 export async function generateMetadata({
   params,
@@ -103,8 +104,9 @@ export default async function BeritaDetailPage({
       });
 
   return (
-    <main className="min-h-screen bg-surface">
-      {/* Hero Section */}
+    <main className="min-h-screen bg-surface relative font-sans text-gray-800">
+      
+      {/* Hero Section (Mengikuti gaya Manajemen) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
@@ -115,99 +117,124 @@ export default async function BeritaDetailPage({
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
 
         {/* Content */}
-        <div className="relative z-20 h-full flex items-center pt-24 md:pt-32">
+        <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh] -translate-y-[5px]">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
-            <div className="max-w-4xl space-y-4 md:space-y-6">
+            <div className="max-w-4xl space-y-5">
+              
               {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-sm text-white/70 mb-2">
-                <Link href="/" className="hover:text-white">Beranda</Link>
-                <FaChevronRight className="text-[10px]" />
-                <Link href="/berita" className="hover:text-white">Berita</Link>
-                <FaChevronRight className="text-[10px]" />
-                <span className="cursor-default">Artikel</span>
-                <FaChevronRight className="text-[10px]" />
-                <span className="text-white font-medium line-clamp-1">{post.title}</span>
+              <div className="flex items-center gap-2 text-white/80 text-[13px] font-medium">
+                <Link href="/" className="hover:text-white transition-colors">Beranda</Link>
+                <span><FaChevronRight className="text-[10px]" /></span>
+                <span className="text-white/60">Manajemen Komunikasi Institusi</span>
+                <span><FaChevronRight className="text-[10px]" /></span>
+                <Link href="/berita" className="hover:text-white transition-colors">Berita</Link>
               </div>
+
               {/* Title */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight md:leading-[1.15]">
+              <h1 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-white leading-[1.4] text-left">
                 {post.title}
               </h1>
-              {/* Category Badge */}
-              <span className="inline-block bg-primary text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
-                {post.category}
-              </span>
+
+              {/* Date & Tags */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
+                <div className="flex items-center gap-2 text-white/90 text-sm font-medium">
+                  <FaCalendarAlt className="text-white/80 text-base" />
+                  <time dateTime={post.publishedAt.toISOString()}>
+                    Diterbitkan pada {new Intl.DateTimeFormat("id-ID", {
+                      year: "numeric",
+                      month: "2-digit",
+                      day: "2-digit",
+                    }).format(post.publishedAt).replace(/\//g, '/')}
+                  </time>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="border border-white/20 text-white bg-white/10 backdrop-blur-sm px-3 py-1.5 text-[13px] rounded shadow-sm">
+                    {post.category}
+                  </span>
+                  <span className="border border-white/20 text-white bg-white/10 backdrop-blur-sm px-3 py-1.5 text-[13px] rounded shadow-sm">
+                    Berita Sorotan
+                  </span>
+                  <span className="border border-white/20 text-white bg-white/10 backdrop-blur-sm px-3 py-1.5 text-[13px] rounded shadow-sm">
+                    Acara
+                  </span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Konten Artikel */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-10">
-            {/* Main Content */}
-            <article className="lg:w-2/3 bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.08)] overflow-hidden">
-              <div className="p-8 md:p-12">
-                <div className="flex items-center gap-2 text-text-muted text-sm mb-8 pb-6 border-b border-gray-100">
-                  <FaCalendarAlt className="text-primary" />
-                  <time dateTime={post.publishedAt.toISOString()}>
-                    {new Intl.DateTimeFormat("id-ID", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    }).format(post.publishedAt)}
-                  </time>
-                </div>
-                
-                {/* Content rendered safely since it's from trusted DB seed */}
-                <div 
-                  className="prose prose-lg max-w-none text-text-muted prose-headings:text-secondary prose-a:text-primary"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-              </div>
-            </article>
+      {/* Konten Artikel Overlap */}
+      <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-8 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+          
+          {/* Main Content Area */}
+          <article className="w-full max-w-[750px] mx-auto overflow-hidden">
 
-            {/* Sidebar */}
-          <aside className="lg:w-1/3">
-            <div className="bg-white rounded-xl shadow-sm p-6 sticky top-28">
-              <h3 className="text-xl font-bold text-secondary mb-6 pb-4 border-b border-gray-100 relative">
-                Berita Terbaru
-                <div className="absolute bottom-[-1px] left-0 w-12 h-0.5 bg-primary" />
-              </h3>
-              
-              <div className="space-y-6">
-                {recentPosts.map((recent) => (
-                  <div key={recent.id} className="flex gap-4 group">
-                    <Link href={`/berita/${recent.slug}`} className="flex-shrink-0 relative w-20 h-20 rounded-md overflow-hidden">
-                      <Image
-                        src={recent.thumbnail || "/images/placeholder-news.jpg"}
-                        alt={recent.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform"
-                      />
-                    </Link>
-                    <div>
-                      <Link href={`/berita/${recent.slug}`}>
-                        <h4 className="text-secondary font-semibold text-sm line-clamp-2 group-hover:text-primary transition-colors">
-                          {recent.title}
-                        </h4>
-                      </Link>
-                      <div className="flex items-center gap-1.5 text-text-muted text-xs mt-2">
-                        <FaCalendarAlt className="text-primary/70" />
-                        <time dateTime={recent.publishedAt.toISOString()}>
-                          {new Intl.DateTimeFormat("id-ID", {
-                            day: "numeric",
-                            month: "short",
-                            year: "numeric",
-                          }).format(recent.publishedAt)}
-                        </time>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+          {/* Featured Image 1 */}
+          <div className="mb-8 w-full max-w-[750px] mx-auto flex flex-col items-center">
+            <div 
+              className="w-full h-[30px] opacity-[0.2] mb-6" 
+              style={{ 
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 3L27 15L15 27L3 15ZM0 0h12L0 12ZM30 0H18L30 12ZM0 30h12L0 18ZM30 30H18L30 18Z' fill='%231A202C'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'repeat-x',
+                backgroundPosition: 'center',
+                backgroundSize: '30px 30px'
+              }} 
+            />
+            
+            <div className="relative w-full aspect-[16/9] overflow-hidden bg-gray-50 border border-gray-100">
+              <Image 
+                src={post.thumbnail || "/images/placeholder-news.jpg"}
+                alt={post.title}
+                fill
+                className="object-cover"
+              />
             </div>
-          </aside>
+
+            <div 
+              className="w-full h-[30px] opacity-[0.2] mt-6" 
+              style={{ 
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 3L27 15L15 27L3 15ZM0 0h12L0 12ZM30 0H18L30 12ZM0 30h12L0 18ZM30 30H18L30 18Z' fill='%231A202C'/%3E%3C/svg%3E")`,
+                backgroundRepeat: 'repeat-x',
+                backgroundPosition: 'center',
+                backgroundSize: '30px 30px'
+              }} 
+            />
+          </div>
+          
+          {/* Article Content */}
+          <div 
+            className="prose prose-lg max-w-none text-[#4A5568] prose-headings:text-[#1A202C] prose-p:leading-[2.2] prose-p:text-[17px] prose-a:text-primary text-justify font-normal mb-8"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+
+          {/* Featured Image 2 (Gallery) */}
+          <ImageSlider 
+            images={[
+              post.thumbnail || "/images/placeholder-news.jpg",
+              "/images/images program/IMG-20260714-WA0092.jpg",
+              "/images/images program/IMG-20260714-WA0110.jpg",
+              "/images/images program/IMG-20250427-WA0012.jpg"
+            ]} 
+          />
+          </article>
+        </div>
+
+        {/* Last Updated Footer (Full Width Border) */}
+        <div className="w-full mt-8 border-t border-gray-200">
+          <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex justify-end">
+            <p className="text-[13px] text-gray-500 font-medium flex items-center gap-2">
+              Terakhir diubah: {new Intl.DateTimeFormat("id-ID", {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+              }).format(post.updatedAt).replace(/\//g, '/')} - {new Intl.DateTimeFormat("id-ID", {
+                hour: "2-digit",
+                minute: "2-digit",
+              }).format(post.updatedAt).replace('.', ':')} WIB
+            </p>
           </div>
         </div>
       </section>

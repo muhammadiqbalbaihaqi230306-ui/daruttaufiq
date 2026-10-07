@@ -20,7 +20,7 @@ export default function SejarahPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
 
         {/* Content */}
-        <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh]">
+        <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh] -translate-y-[5px]">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
             <div className="max-w-3xl space-y-6">
               <Breadcrumbs />
