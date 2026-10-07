@@ -11,7 +11,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  let post: any = await prisma.post.findUnique({ where: { slug } });
+  let post: any = null;
+  try {
+    post = await prisma.post.findUnique({ where: { slug } });
+  } catch (error) {
+    console.error("Prisma error in generateMetadata:", error);
+  }
   
   if (!post) {
     const dummyPosts = [
@@ -38,10 +43,14 @@ export default async function BeritaDetailPage({
 }) {
   const { slug } = await params;
   
-  let post: any = await prisma.post.findUnique({
-    where: { slug },
-  });
-
+  let post: any = null;
+  try {
+    post = await prisma.post.findUnique({
+      where: { slug },
+    });
+  } catch (error) {
+    console.error("Prisma error in BeritaDetailPage:", error);
+  }
   if (!post) {
     // Fallback ke dummy data jika database kosong (untuk demo di beranda)
     const dummyPosts = [
