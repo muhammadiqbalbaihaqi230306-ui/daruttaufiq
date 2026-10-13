@@ -21,10 +21,10 @@ const programs = [
 ];
 
 const programImages = [
-  "/images/images program/IMG-20250427-WA0012.jpg",
-  "/images/images program/IMG-20250427-WA0018.jpg",
-  "/images/images program/IMG-20260714-WA0092.jpg",
-  "/images/images program/IMG-20260714-WA0110.jpg"
+  "/images/images program/program1.jpg",
+  "/images/images program/program2.jpg",
+  "/images/images program/program3.jpg",
+  "/images/images program/program4.jpg"
 ];
 
 export default function ProgramSection() {
@@ -41,7 +41,7 @@ export default function ProgramSection() {
   return (
     <section id="program" className="py-16 lg:py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
-        
+
         {/* The Dark Box */}
         <div className="bg-[#121212] rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 relative overflow-hidden shadow-2xl">
           {/* Subtle Background Glow */}
@@ -68,10 +68,10 @@ export default function ProgramSection() {
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-6 px-2">
                   Pilihan Program Kami
                 </h3>
-            
+
                 {programs.map((program, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="group p-5 md:p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 cursor-pointer backdrop-blur-xl shadow-lg"
                   >
                     <h4 className="text-base md:text-lg font-bold text-white mb-1.5">
@@ -89,36 +89,36 @@ export default function ProgramSection() {
                 {/* Decorative angled background similar to screenshot */}
                 <div className="absolute w-[80%] aspect-square bg-gradient-to-tr from-[#8a6844]/40 to-transparent rounded-[3rem] rotate-12 -z-10 blur-sm" />
                 <div className="absolute w-[70%] aspect-square bg-[#159893]/20 rounded-[3rem] -rotate-6 -z-10 blur-sm" />
-                
+
                 {/* Main Image Container */}
                 <div className="relative w-[85%] aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black">
                   {programImages.map((src, idx) => (
-                    <Image 
+                    <Image
                       key={src}
-                      src={src} 
-                      alt={`Program Unggulan ${idx + 1}`} 
-                      fill 
+                      src={src}
+                      alt={`Program Unggulan ${idx + 1}`}
+                      fill
                       className={`object-cover transition-opacity duration-1000 ${idx === activeImageIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"}`}
                     />
                   ))}
                 </div>
-                
+
                 {/* Secondary Floating Images (Thumbnails) */}
                 <div className="absolute -bottom-10 md:-bottom-12 left-1/2 -translate-x-1/2 flex gap-4 md:gap-6 z-20">
                   {programImages.map((src, idx) => {
                     // Only show thumbnails for images that are NOT currently active
                     if (idx === activeImageIndex) return null;
-                    
+
                     return (
-                      <div 
+                      <div
                         key={src}
                         className="relative w-20 h-20 md:w-24 md:h-24 aspect-square rounded-xl overflow-hidden border-2 border-white/20 shadow-2xl cursor-pointer transition-transform hover:scale-105 hover:-translate-y-2 bg-black"
                         onClick={() => setActiveImageIndex(idx)}
                       >
-                        <Image 
-                          src={src} 
-                          alt={`Thumbnail ${idx + 1}`} 
-                          fill 
+                        <Image
+                          src={src}
+                          alt={`Thumbnail ${idx + 1}`}
+                          fill
                           className="object-cover"
                         />
                       </div>
@@ -130,7 +130,7 @@ export default function ProgramSection() {
 
             {/* Bottom Feature Row */}
             <div className="mt-24 md:mt-32 -mb-8 lg:-mb-12 xl:-mb-16 -mx-8 lg:-mx-12 xl:-mx-16 px-8 lg:px-12 xl:px-16 py-8 bg-white/5 backdrop-blur-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 relative shadow-lg" data-aos="fade-up">
-              
+
               <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 <div className="md:pr-6 md:border-r border-white/10">
                   <h4 className="text-[#e2a856] font-semibold text-sm mb-1.5">Fasilitas Modern</h4>
@@ -162,7 +162,7 @@ export default function ProgramSection() {
 
           </div>
         </div>
-        
+
       </div>
     </section>
   );

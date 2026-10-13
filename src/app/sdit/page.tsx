@@ -241,10 +241,19 @@ export default function SDITPage() {
                 <h3>Lokasi</h3>
               </div>
               <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-                Jl. Raya Pondok Pesantren No. 1, Kota Santri, Indonesia 12345
+                Jl. Kb. Baru Metros No. 59, Semper Barat, Cilincing, Jakarta Utara, DKI Jakarta 14130
               </p>
-              <div className="w-full aspect-video bg-gray-100 rounded-xl relative overflow-hidden flex items-center justify-center border border-gray-200">
-                <span className="text-gray-400 text-sm font-medium">Google Maps Embed</span>
+              <div className="w-full aspect-video bg-gray-100 rounded-xl relative overflow-hidden border border-gray-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.098078387264!2d106.92056227428117!3d-6.117498259988558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a21ac8c2f48a5%3A0x713f98f89dd3ae44!2sPondok%20Pesantren%20Darut%20Taufiq!5e0!3m2!1sid!2sid!4v1790176840926!5m2!1sid!2sid"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokasi Pondok Pesantren Darut Taufiq"
+                ></iframe>
               </div>
             </div>
 

@@ -59,7 +59,7 @@ export default function ValuesPage() {
               </h1>
               {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+                Menanamkan nilai-nilai luhur dan prinsip keislaman sebagai fondasi utama dalam pembentukan karakter, akhlak, dan kepribadian santri.
               </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function ValuesPage() {
                 {/* Top Right: Image */}
                 <div className="relative bg-gray-200">
                   <Image
-                    src="/images/images halaman pp/IMG_20260921_074120.jpg"
+                    src="/images/nilai1.jpg"
                     alt="Siswa"
                     fill
                     className="object-cover"

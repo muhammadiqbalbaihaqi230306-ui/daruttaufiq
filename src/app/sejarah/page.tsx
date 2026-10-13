@@ -12,7 +12,7 @@ export default function SejarahPage() {
       {/* Hero Section Khusus Sejarah */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/images%20halaman%20pp/IMG_20260921_074120.jpg')" }}
         />
@@ -36,37 +36,37 @@ export default function SejarahPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Konten Sejarah */}
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-          
+
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-            
+
             {/* Kolom Kiri - Gambar */}
             <div className="w-full lg:w-5/12 grid grid-cols-2 gap-3 lg:sticky lg:top-32">
               <div className="col-span-2 relative aspect-[2/1] rounded-2xl overflow-hidden shadow-md group">
-                <Image 
-                  src="/images/images program/IMG-20250427-WA0012.jpg" 
-                  alt="Sejarah Darut Taufiq 1" 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                <Image
+                  src="/images/sejarah1.jpeg"
+                  alt="Sejarah Darut Taufiq 1"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md group">
-                <Image 
-                  src="/images/images program/IMG-20260714-WA0092.jpg" 
-                  alt="Sejarah Darut Taufiq 2" 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                <Image
+                  src="/images/sejarah2.jpeg"
+                  alt="Sejarah Darut Taufiq 2"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md group">
-                <Image 
-                  src="/images/images program/IMG-20260714-WA0110.jpg" 
-                  alt="Sejarah Darut Taufiq 3" 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                <Image
+                  src="/images/sejarah3.jpeg"
+                  alt="Sejarah Darut Taufiq 3"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function SejarahPage() {
                   Sejarah Berdirinya Darut Taufiq
                 </h2>
               </div>
-              
+
               <div className="text-text-muted text-justify space-y-6 leading-relaxed">
                 <p>
                   <strong>Pondok Pesantren Darut Taufiq</strong> didirikan pada tahun 2016 dengan tujuan mulia untuk menghadirkan institusi pendidikan Islam yang unggul dan berkualitas di Kota Bekasi. Gagasan pendirian pondok pesantren ini berawal dari keinginan kuat untuk membangun lembaga pendidikan yang tidak hanya berfokus pada keunggulan aspek akademik semata, tetapi juga sangat mengedepankan pembentukan karakter Islami yang kokoh bagi para santrinya.
@@ -86,7 +86,7 @@ export default function SejarahPage() {
                 <p>
                   Sejak awal berdirinya, Pondok Pesantren Darut Taufiq berkomitmen secara penuh untuk mengintegrasikan kurikulum nasional dengan nilai-nilai murni Al-Qur'an dan As-Sunnah sesuai dengan pemahaman Salafush Shalih. Dalam perjalanannya, pondok pesantren ini terus mengalami perkembangan pesat melalui penambahan jenjang pendidikan terpadu, peningkatan sarana prasarana belajar mengajar, serta penerapan metode pembelajaran yang inovatif.
                 </p>
-                
+
                 <div className="flex items-center gap-4 mt-10 mb-4 border-l-4 border-primary pl-4">
                   <h3 className="text-2xl font-bold text-secondary">Ciri Khas & Fokus Pendidikan</h3>
                 </div>
@@ -104,13 +104,13 @@ export default function SejarahPage() {
                     <strong>Sistem Kelas Terpisah:</strong> Guna menciptakan lingkungan belajar yang lebih fokus, nyaman, kondusif, dan sesuai dengan batasan syariat Islam, kami menerapkan sistem kelas terpisah antara santriwan (laki-laki) dan santriwati (perempuan).
                   </li>
                 </ul>
-                
+
                 <p className="mt-8 pt-6 border-t border-gray-100">
                   Dengan manajemen dan yayasan yang menaungi secara profesional, kami terus berupaya menjaga komitmen untuk senantiasa menyelenggarakan berbagai program pengembangan kompetensi pendidik dan memaksimalkan kegiatan kesiswaan. Pengelolaan pendidikan di Darut Taufiq selalu diupayakan agar tetap amanah, efektif, dan efisien demi melahirkan generasi pembangun umat.
                 </p>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>

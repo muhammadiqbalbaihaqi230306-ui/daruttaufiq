@@ -186,7 +186,7 @@ export default async function BeritaDetailPage({
             <div 
               className="w-full h-[30px] opacity-[0.2] mb-6" 
               style={{ 
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 3L27 15L15 27L3 15ZM0 0h12L0 12ZM30 0H18L30 12ZM0 30h12L0 18ZM30 30H18L30 18Z' fill='%231A202C'/%3E%3C/svg%3E")`,
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L25 15L15 25L5 15ZM0 0h10L0 10ZM30 0H20L30 10ZM0 30h10L0 20ZM30 30H20L30 20Z' fill='%231A202C'/%3E%3C/svg%3E")`,
                 backgroundRepeat: 'repeat-x',
                 backgroundPosition: 'center',
                 backgroundSize: '30px 30px'
@@ -205,7 +205,7 @@ export default async function BeritaDetailPage({
             <div 
               className="w-full h-[30px] opacity-[0.2] mt-6" 
               style={{ 
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 3L27 15L15 27L3 15ZM0 0h12L0 12ZM30 0H18L30 12ZM0 30h12L0 18ZM30 30H18L30 18Z' fill='%231A202C'/%3E%3C/svg%3E")`,
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L25 15L15 25L5 15ZM0 0h10L0 10ZM30 0H20L30 10ZM0 30h10L0 20ZM30 30H20L30 20Z' fill='%231A202C'/%3E%3C/svg%3E")`,
                 backgroundRepeat: 'repeat-x',
                 backgroundPosition: 'center',
                 backgroundSize: '30px 30px'

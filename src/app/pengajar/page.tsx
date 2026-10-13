@@ -13,7 +13,7 @@ export default function PengajarPage() {
     <main className="min-h-screen bg-surface">
       {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/images program/IMG-20260625-WA0117.jpg')" }}
         />
@@ -33,13 +33,13 @@ export default function PengajarPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Konten Utama */}
       <section className="relative z-30 -mt-24 px-4 lg:px-8">
         <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-          
+
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
-            
+
             {/* Teks Kiri */}
             <div className="w-full lg:w-7/12">
               <div className="flex items-center gap-4 mb-10 border-l-4 border-primary pl-4">
@@ -47,7 +47,7 @@ export default function PengajarPage() {
                   Pengajar & Staff
                 </h2>
               </div>
-              
+
               <ul className="space-y-6 mb-12">
                 <li className="flex items-start gap-4">
                   <div className="mt-1 text-secondary text-xl">
@@ -116,10 +116,10 @@ export default function PengajarPage() {
             {/* Gambar Kanan */}
             <div className="w-full lg:w-5/12 sticky top-32">
               <div className="relative aspect-[4/5] lg:aspect-[3/4] w-full overflow-hidden shadow-xl">
-                <Image 
-                  src="/images/images halaman pp/IMG_20260921_074106.jpg" 
-                  alt="Fasilitas Pondok Pesantren" 
-                  fill 
+                <Image
+                  src="/images/staff1.jpg"
+                  alt="Fasilitas Pondok Pesantren"
+                  fill
                   className="object-cover"
                 />
               </div>

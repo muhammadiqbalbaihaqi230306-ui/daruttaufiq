@@ -1,44 +1,44 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { FaMosque, FaKey, FaUserTie, FaHandHoldingHeart, FaMedal } from "react-icons/fa6";
+import { FaHandsPraying, FaMosque, FaBookQuran, FaClock, FaLanguage } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Budaya | Pondok Pesantren Darut Taufiq",
-  description: "Budaya sekolah di Pondok Pesantren Darut Taufiq.",
+  title: "Budaya Pesantren | Pondok Pesantren Darut Taufiq",
+  description: "Budaya sekolah dan kebiasaan Islami santri di Pondok Pesantren Darut Taufiq.",
 };
 
-const coreValues = [
+const schoolCultures = [
   {
-    title: "Iman & Taqwa",
-    description: "Menanamkan kecintaan kepada Allah dan Rasul-Nya melalui ibadah yang konsisten dan akhlak Islami.",
+    title: "Budaya 5S (Senyum, Salam, Sapa, Sopan, Santun)",
+    description: "Membiasakan adab mulia dalam berinteraksi: menghormati guru dan asatidz, menyayangi sesama santri, serta ramah kepada siapapun.",
+    icon: FaHandsPraying,
+  },
+  {
+    title: "Sholat Berjamaah di Awal Waktu",
+    description: "Menjaga disiplin sholat lima waktu berjamaah di masjid tepat waktu, dilengkapi dengan sholat sunnah rawatib dan qiyamul lail.",
     icon: FaMosque,
   },
   {
-    title: "Kejujuran & Amanah",
-    description: "Mendidik siswa untuk selalu berkata dan bertindak jujur serta bertanggung jawab dalam setiap amanah yang diberikan.",
-    icon: FaKey,
+    title: "Halaqah Qur'an Harian",
+    description: "Rutinitas menghafal (ziyadah) dan mengulang hafalan (muroja'ah) bersama pembimbing setiap ba'da Shubuh dan ba'da Ashar.",
+    icon: FaBookQuran,
   },
   {
-    title: "Kedisiplinan & Kemandirian",
-    description: "Membangun kebiasaan disiplin dalam belajar, beribadah, dan menjalankan tugas sehari-hari",
-    icon: FaUserTie,
+    title: "Kedisiplinan & Hidup Mandiri",
+    description: "Membiasakan hidup tertib dan mandiri, mulai dari menjaga kebersihan kamar, merapikan perlengkapan pribadi, hingga manajemen waktu belajar.",
+    icon: FaClock,
   },
   {
-    title: "Rasa Hormat & Kepedulian",
-    description: "Mengajarkan sikap hormat kepada orang tua, guru, dan sesama, serta peduli terhadap lingkungan dan masyarakat.",
-    icon: FaHandHoldingHeart,
-  },
-  {
-    title: "Semangat Belajar & Berprestasi",
-    description: "Mendorong siswa untuk selalu berusaha menjadi lebih baik dan mengembangkan potensi mereka.",
-    icon: FaMedal,
+    title: "Lingkungan Berbahasa (Arab & Inggris)",
+    description: "Membiasakan percakapan harian dalam Bahasa Arab dan Bahasa Inggris untuk mengasah rasa percaya diri dan wawasan global santri.",
+    icon: FaLanguage,
   }
 ];
 
 export default function BudayaPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section (Mengikuti gaya Sejarah) */}
+      {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div
@@ -55,11 +55,11 @@ export default function BudayaPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Cultures
+                Budaya Pesantren
               </h1>
               {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+                Membentuk karakter santri melalui pembiasaan positif dan adab Islami yang dijalankan secara konsisten dalam kehidupan sehari-hari di lingkungan pesantren.
               </p>
             </div>
           </div>
@@ -76,22 +76,22 @@ export default function BudayaPage() {
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
               <div className="flex items-center gap-4 mb-10 border-l-4 border-primary pl-4">
                 <h2 className="text-4xl lg:text-5xl font-bold text-secondary">
-                  Nilai Utama
+                  Budaya Sekolah & Pesantren
                 </h2>
               </div>
 
               <div className="space-y-8">
-                {coreValues.map((value, idx) => (
+                {schoolCultures.map((culture, idx) => (
                   <div key={idx} className="flex items-start gap-6">
                     <div className="w-14 h-14 shrink-0 rounded-full bg-secondary text-white flex items-center justify-center text-2xl shadow-md">
-                      <value.icon />
+                      <culture.icon />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-secondary mb-2">
-                        {value.title}
+                        {culture.title}
                       </h3>
                       <p className="text-text-muted leading-relaxed text-[15px]">
-                        {value.description}
+                        {culture.description}
                       </p>
                     </div>
                   </div>
@@ -107,10 +107,10 @@ export default function BudayaPage() {
                 {/* Top Left: Blue Box */}
                 <div className="bg-secondary p-8 lg:p-10 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold text-white mb-4">
-                    Nilai Utama
+                    Pembiasaan Positif
                   </h3>
                   <p className="text-white/90 text-[15px] leading-relaxed">
-                    Kami menerapkan <strong>nilai-nilai Islam</strong> yang menjadi pedoman dalam setiap aspek pembelajaran dan kehidupan siswa.
+                    Setiap aktivitas di Darut Taufiq dirancang menjadi sarana <strong>pembentukan adab dan karakter mulia</strong> yang melekat seumur hidup.
                   </p>
                 </div>
 
@@ -118,7 +118,7 @@ export default function BudayaPage() {
                 <div className="relative bg-gray-200">
                   <Image
                     src="/images/images halaman pp/IMG_20260921_074120.jpg"
-                    alt="Siswa"
+                    alt="Budaya Santri"
                     fill
                     className="object-cover"
                   />
@@ -127,8 +127,8 @@ export default function BudayaPage() {
                 {/* Bottom Left: Image */}
                 <div className="relative bg-gray-200">
                   <Image
-                    src="/images/images program/IMG-20250427-WA0012.jpg"
-                    alt="Belajar"
+                    src="/images/budaya2.jpg"
+                    alt="Aktivitas Belajar"
                     fill
                     className="object-cover"
                   />
@@ -137,10 +137,10 @@ export default function BudayaPage() {
                 {/* Bottom Right: Yellow Box */}
                 <div className="bg-[#F8C145] p-8 lg:p-10 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold text-secondary mb-4">
-                    Budaya Sekolah
+                    Kemandirian Santri
                   </h3>
                   <p className="text-secondary/90 text-[15px] leading-relaxed font-medium">
-                    Kami menerapkan budaya sekolah yang Islami dan positif untuk membangun lingkungan yang mendukung perkembangan karakter siswa.
+                    Melatih santri hidup tertib, mandiri, dan berakhlak mulia melalui kebiasaan disiplin sejak dini.
                   </p>
                 </div>
 
