@@ -49,7 +49,7 @@ export const menuItems = [
     ],
   },
   { label: "Kontak", href: "/kontak" },
-  { label: "PPDB", href: "https://ppdb.arkia.id", highlight: true },
+  { label: "PPDB", href: "/ppdb", highlight: true },
 ];
 
 export default function Navbar() {

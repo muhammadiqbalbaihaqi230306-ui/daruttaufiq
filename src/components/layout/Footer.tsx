@@ -27,6 +27,7 @@ const profilLinks = [
 ];
 
 const infoLinks = [
+  { label: "Pendaftaran PPDB", href: "/ppdb", icon: FaSchool },
   { label: "Program Unggulan", href: "/program", icon: FaProjectDiagram },
   { label: "Sarana & Fasilitas", href: "/fasilitas", icon: FaBuilding },
   { label: "Biaya Pendidikan", href: "/biaya", icon: FaMoneyBillWave },
