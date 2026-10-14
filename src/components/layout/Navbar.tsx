@@ -66,11 +66,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isLightPage = pathname === "/ppdb/daftar";
+
   return (
     <header
       className={`w-full z-40 transition-all duration-300 fixed ${
         scrolled
           ? "top-0 bg-secondary/95 backdrop-blur-md shadow-lg"
+          : isLightPage
+          ? "top-0 lg:top-10 bg-secondary shadow-md"
           : "top-0 lg:top-10 bg-transparent"
       }`}
     >

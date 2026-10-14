@@ -37,3 +37,36 @@ model Testimonial {
   comment String
   avatar  String?
 }
+
+model Registration {
+  id             Int      @id @default(autoincrement())
+  regNumber      String   @unique
+  unit           String   // TKIT, SDIT, SMPIT
+  programType    String   // Fullday, Boarding
+  wave           String   // Gelombang 1, Gelombang 2, Gelombang 3
+  
+  // Data Calon Santri
+  fullName       String
+  nickname       String?
+  gender         String   // Laki-laki, Perempuan
+  birthPlace     String
+  birthDate      String
+  nik            String?
+  nisn           String?
+  previousSchool String?
+  quranMemorized String?  // Belum Ada, 1-2 Juz, 3-5 Juz, >5 Juz
+
+  // Data Orang Tua / Wali
+  fatherName     String
+  fatherJob      String?
+  motherName     String
+  motherJob      String?
+  whatsapp       String
+  email          String?
+  address        String
+
+  // Catatan Tambahan
+  medicalNotes   String?
+  status         String   @default("TERDAFTAR") // TERDAFTAR, TERVERIFIKASI, LULUS
+  createdAt      DateTime @default(now())
+}

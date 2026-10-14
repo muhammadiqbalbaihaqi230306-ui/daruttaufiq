@@ -252,8 +252,7 @@ export default function PPDBPage() {
                   <div className="mt-6">
                     {item.isActive ? (
                       <Link
-                        href="https://ppdb.arkia.id"
-                        target="_blank"
+                        href={`/ppdb/daftar?gelombang=${idx + 1}`}
                         className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-xl transition-all shadow-md text-center block text-sm"
                       >
                         Daftar Gelombang Ini
@@ -335,7 +334,7 @@ export default function PPDBPage() {
                       Profil Lengkap Unit <FaArrowRight className="text-[10px]" />
                     </Link>
                     <Link
-                      href="https://ppdb.arkia.id"
+                      href="/ppdb/daftar"
                       target="_blank"
                       className="text-xs font-semibold text-primary hover:underline flex items-center gap-1"
                     >
@@ -387,7 +386,7 @@ export default function PPDBPage() {
 
             <div className="relative z-10 mt-10 text-center pt-8 border-t border-white/10">
               <Link
-                href="https://ppdb.arkia.id"
+                href="/ppdb/daftar"
                 target="_blank"
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl text-sm md:text-base group"
               >
@@ -476,7 +475,7 @@ export default function PPDBPage() {
                 Lihat Rincian Biaya
               </Link>
               <Link
-                href="https://ppdb.arkia.id"
+                href="/ppdb/daftar"
                 target="_blank"
                 className="bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-md text-center text-sm flex items-center justify-center gap-2"
               >
