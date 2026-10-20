@@ -1,0 +1,14 @@
+[   32856ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-1.webp:0
+[   58477ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-1.webp:0
+[   68360ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-1.webp:0
+[   95263ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-1.webp:0
+[   96046ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-2.webp:0
+[  104217ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  104398ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  105607ms] [ERROR] Permissions policy violation: compute-pressure is not allowed in this document. @ https://www.youtube-nocookie.com/s/player/c271e571/player_embed_es6.vflset/en_US/base.js:5421
+[  106770ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  106784ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  106802ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  106815ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[  112861ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-1.webp:0
+[  112861ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://bukhari.or.id/img/kegiatan/keg-2.webp:0

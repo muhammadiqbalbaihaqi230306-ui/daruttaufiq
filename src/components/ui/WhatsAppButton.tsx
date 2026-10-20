@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaWhatsapp, FaTimes } from "react-icons/fa";
+import { FaWhatsapp, FaTimes } from "@/components/ui/FlaticonIcons";
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);

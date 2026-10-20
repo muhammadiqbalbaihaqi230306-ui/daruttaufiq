@@ -1,0 +1,322 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e3]:
+    - list [ref=f7e4]:
+      - listitem [ref=f7e5]:
+        - link " +6282228880972" [ref=f7e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=f7e7]: 
+          - generic [ref=f7e8]: "+6282228880972"
+      - listitem [ref=f7e9]:
+        - link " info@daruttaufiq.com" [ref=f7e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=f7e11]: 
+          - generic [ref=f7e12]: info@daruttaufiq.com
+      - listitem [ref=f7e13]:
+        - generic [ref=f7e14]: 
+        - generic [ref=f7e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f7e16]:
+      - listitem [ref=f7e17]:
+        - link "Instagram" [ref=f7e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f7e19]: 
+      - listitem [ref=f7e20]:
+        - link "TikTok" [ref=f7e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f7e22]: 
+      - listitem [ref=f7e23]:
+        - link "YouTube" [ref=f7e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f7e25]: 
+      - listitem [ref=f7e26]:
+        - link "Facebook" [ref=f7e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f7e28]: 
+  - banner [ref=f7e29]:
+    - generic [ref=f7e31]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f7e32] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f7e33]
+        - generic [ref=f7e34]:
+          - generic [ref=f7e35]: DARUT TAUFIQ
+          - generic [ref=f7e36]: PONDOK PESANTREN
+      - navigation [ref=f7e37]:
+        - link "Beranda" [ref=f7e39] [cursor=pointer]:
+          - /url: /
+        - link "Profil " [ref=f7e41] [cursor=pointer]:
+          - /url: "#"
+          - text: Profil
+          - generic [ref=f7e42]: 
+        - link "Akademik " [ref=f7e44] [cursor=pointer]:
+          - /url: "#"
+          - text: Akademik
+          - generic [ref=f7e45]: 
+        - link "Unit " [ref=f7e47] [cursor=pointer]:
+          - /url: "#"
+          - text: Unit
+          - generic [ref=f7e48]: 
+        - link "Berita" [ref=f7e50] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f7e52] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f7e54] [cursor=pointer]:
+          - /url: /ppdb
+        - generic [ref=f7e55]:
+          - generic:
+            - generic: 
+            - textbox "Cari di Darut Taufiq..."
+          - button "Toggle Search" [ref=f7e56]:
+            - generic [ref=f7e57]: 
+      - text:  
+    - text:   
+  - main [ref=f7e58]:
+    - main [ref=f7e59]:
+      - generic [ref=f7e65]:
+        - generic [ref=f7e66]:
+          - link "Home" [ref=f7e67] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f7e68]: 
+          - generic [ref=f7e69]: Berita
+        - heading "Berita & Kegiatan" [level=1] [ref=f7e70]
+        - paragraph [ref=f7e71]: Kabar terbaru, agenda kegiatan, dan dokumentasi aktivitas santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq.
+      - generic [ref=f7e73]:
+        - heading "Main News" [level=2] [ref=f7e75]
+        - generic [ref=f7e76]:
+          - generic [ref=f7e78]:
+            - 'img "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [ref=f7e81]'
+            - generic [ref=f7e82]:
+              - link [ref=f7e83] [cursor=pointer]:
+                - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+                - 'heading "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [level=3] [ref=f7e84]'
+              - generic [ref=f7e85]:
+                - generic [ref=f7e86]:
+                  - generic [ref=f7e87]: Featured news
+                  - generic [ref=f7e88]: Kegiatan
+                - link "" [ref=f7e89] [cursor=pointer]:
+                  - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+          - generic [ref=f7e93]:
+            - generic [ref=f7e94]:
+              - 'img "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [ref=f7e96]'
+              - generic [ref=f7e97]:
+                - link [ref=f7e98] [cursor=pointer]:
+                  - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+                  - 'heading "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [level=3] [ref=f7e99]'
+                - generic [ref=f7e100]:
+                  - generic [ref=f7e101]:
+                    - generic [ref=f7e102]: Featured news
+                    - generic [ref=f7e103]: Kegiatan
+                  - link "" [ref=f7e104] [cursor=pointer]:
+                    - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+            - generic [ref=f7e106]:
+              - 'img "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [ref=f7e108]'
+              - generic [ref=f7e109]:
+                - link [ref=f7e110] [cursor=pointer]:
+                  - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+                  - 'heading "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [level=3] [ref=f7e111]'
+                - generic [ref=f7e112]:
+                  - generic [ref=f7e113]:
+                    - generic [ref=f7e114]: Featured news
+                    - generic [ref=f7e115]: Kegiatan
+                  - link "" [ref=f7e116] [cursor=pointer]:
+                    - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+            - generic [ref=f7e118]:
+              - img "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [ref=f7e120]
+              - generic [ref=f7e121]:
+                - link [ref=f7e122] [cursor=pointer]:
+                  - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+                  - heading "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [level=3] [ref=f7e123]
+                - generic [ref=f7e124]:
+                  - generic [ref=f7e125]:
+                    - generic [ref=f7e126]: Featured news
+                    - generic [ref=f7e127]: Kegiatan
+                  - link "" [ref=f7e128] [cursor=pointer]:
+                    - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+        - generic [ref=f7e130]:
+          - generic [ref=f7e131]:
+            - link "Semua" [ref=f7e132] [cursor=pointer]:
+              - /url: /berita
+            - link "Kegiatan" [ref=f7e133] [cursor=pointer]:
+              - /url: "?category=kegiatan"
+            - link "Artikel" [ref=f7e134] [cursor=pointer]:
+              - /url: "?category=artikel"
+          - generic [ref=f7e135]:
+            - generic [ref=f7e136]:
+              - 'img "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [ref=f7e138]'
+              - generic [ref=f7e139]:
+                - link [ref=f7e140] [cursor=pointer]:
+                  - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+                  - 'heading "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [level=3] [ref=f7e141]'
+                - generic [ref=f7e142]:
+                  - generic [ref=f7e143]:
+                    - generic [ref=f7e144]: 
+                    - time [ref=f7e145]: 2026/10/22
+                  - link "" [ref=f7e146] [cursor=pointer]:
+                    - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+            - generic [ref=f7e148]:
+              - 'img "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [ref=f7e150]'
+              - generic [ref=f7e151]:
+                - link [ref=f7e152] [cursor=pointer]:
+                  - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+                  - 'heading "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [level=3] [ref=f7e153]'
+                - generic [ref=f7e154]:
+                  - generic [ref=f7e155]:
+                    - generic [ref=f7e156]: 
+                    - time [ref=f7e157]: 2026/10/20
+                  - link "" [ref=f7e158] [cursor=pointer]:
+                    - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+            - generic [ref=f7e160]:
+              - 'img "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [ref=f7e162]'
+              - generic [ref=f7e163]:
+                - link [ref=f7e164] [cursor=pointer]:
+                  - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+                  - 'heading "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [level=3] [ref=f7e165]'
+                - generic [ref=f7e166]:
+                  - generic [ref=f7e167]:
+                    - generic [ref=f7e168]: 
+                    - time [ref=f7e169]: 2026/07/18
+                  - link "" [ref=f7e170] [cursor=pointer]:
+                    - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+            - generic [ref=f7e172]:
+              - img "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [ref=f7e174]
+              - generic [ref=f7e175]:
+                - link [ref=f7e176] [cursor=pointer]:
+                  - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+                  - heading "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [level=3] [ref=f7e177]
+                - generic [ref=f7e178]:
+                  - generic [ref=f7e179]:
+                    - generic [ref=f7e180]: 
+                    - time [ref=f7e181]: 2026/07/15
+                  - link "" [ref=f7e182] [cursor=pointer]:
+                    - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+            - generic [ref=f7e184]:
+              - img "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq" [ref=f7e186]
+              - generic [ref=f7e187]:
+                - link [ref=f7e188] [cursor=pointer]:
+                  - /url: /berita/upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas
+                  - heading "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq" [level=3] [ref=f7e189]
+                - generic [ref=f7e190]:
+                  - generic [ref=f7e191]:
+                    - generic [ref=f7e192]: 
+                    - time [ref=f7e193]: 2026/07/13
+                  - link "" [ref=f7e194] [cursor=pointer]:
+                    - /url: /berita/upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas
+            - generic [ref=f7e196]:
+              - img "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq" [ref=f7e198]
+              - generic [ref=f7e199]:
+                - link [ref=f7e200] [cursor=pointer]:
+                  - /url: /berita/pertemuan-wali-santri-dan-apresiasi-prestasi-siswa
+                  - heading "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq" [level=3] [ref=f7e201]
+                - generic [ref=f7e202]:
+                  - generic [ref=f7e203]:
+                    - generic [ref=f7e204]: 
+                    - time [ref=f7e205]: 2026/06/26
+                  - link "" [ref=f7e206] [cursor=pointer]:
+                    - /url: /berita/pertemuan-wali-santri-dan-apresiasi-prestasi-siswa
+  - contentinfo [ref=f7e208]:
+    - generic [ref=f7e210]:
+      - generic [ref=f7e211]:
+        - generic [ref=f7e212]:
+          - img "Pondok Modern" [ref=f7e213]
+          - generic [ref=f7e214]:
+            - generic [ref=f7e215]: DARUT TAUFIQ
+            - generic [ref=f7e216]: PONDOK PESANTREN
+        - list [ref=f7e217]:
+          - listitem [ref=f7e218]:
+            - link " +6282228880972" [ref=f7e219] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=f7e220]: 
+              - generic [ref=f7e221]: "+6282228880972"
+          - listitem [ref=f7e222]:
+            - link " info@daruttaufiq.com" [ref=f7e223] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=f7e224]: 
+              - generic [ref=f7e225]: info@daruttaufiq.com
+          - listitem [ref=f7e226]:
+            - link " (021) 82631191" [ref=f7e227] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=f7e228]: 
+              - generic [ref=f7e229]: (021) 82631191
+          - listitem [ref=f7e230]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f7e231] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=f7e232]: 
+              - generic [ref=f7e233]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=f7e234]:
+        - heading "Profil" [level=4] [ref=f7e235]
+        - list [ref=f7e236]:
+          - listitem [ref=f7e237]:
+            - link "Sejarah Sekolah" [ref=f7e238] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f7e239]:
+            - link "Manajemen" [ref=f7e240] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f7e241]:
+            - link "Staff & Pengajar" [ref=f7e242] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f7e243]:
+            - link "Nilai & Budaya" [ref=f7e244] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f7e245]:
+        - heading "Informasi" [level=4] [ref=f7e246]
+        - list [ref=f7e247]:
+          - listitem [ref=f7e248]:
+            - link "Pendaftaran PPDB" [ref=f7e249] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f7e250]:
+            - link "Program Unggulan" [ref=f7e251] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f7e252]:
+            - link "Sarana & Fasilitas" [ref=f7e253] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f7e254]:
+            - link "Biaya Pendidikan" [ref=f7e255] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f7e256]:
+            - link "Frequently Asked Questions" [ref=f7e257] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f7e258]:
+        - heading "Instagram" [level=4] [ref=f7e259]
+        - generic [ref=f7e260]:
+          - link "Instagram post " [ref=f7e261] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e262]
+            - generic [ref=f7e263]: 
+          - link "Instagram post " [ref=f7e265] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e266]
+            - generic [ref=f7e267]: 
+          - link "Instagram post " [ref=f7e269] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e270]
+            - generic [ref=f7e271]: 
+          - link "Instagram post " [ref=f7e273] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e274]
+            - generic [ref=f7e275]: 
+          - link "Instagram post " [ref=f7e277] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e278]
+            - generic [ref=f7e279]: 
+          - link "Instagram post " [ref=f7e281] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e282]
+            - generic [ref=f7e283]: 
+    - generic [ref=f7e287]:
+      - paragraph [ref=f7e288]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f7e289]:
+        - link "Instagram" [ref=f7e290] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f7e291]: 
+        - link "TikTok" [ref=f7e292] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f7e293]: 
+        - link "YouTube" [ref=f7e294] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f7e295]: 
+        - link "Facebook" [ref=f7e296] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f7e297]: 
+  - button "Open WhatsApp Chat" [ref=f7e299]:
+    - generic [ref=f7e300]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=f7e306] [cursor=pointer]

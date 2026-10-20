@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "@/components/ui/FlaticonIcons";
 import { prisma } from "@/lib/prisma";
 import MainNewsInteractive from "@/components/berita/MainNewsInteractive";
 

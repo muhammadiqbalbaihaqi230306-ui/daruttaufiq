@@ -47,7 +47,7 @@ const managementTeam = [
 
 export default function ManajemenPage() {
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white">
       {/* Hero Section (Mengikuti gaya Sejarah) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
@@ -77,8 +77,8 @@ export default function ManajemenPage() {
       </section>
       
       {/* Konten Sambutan */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8">
-        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16">
           {/* Sambutan Ketua Yayasan */}
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             {/* Foto Ketua Yayasan */}

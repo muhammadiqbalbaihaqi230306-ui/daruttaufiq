@@ -1,27 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { 
-  FaWhatsapp, 
-  FaFileAlt, 
-  FaUserGraduate, 
-  FaCheckCircle, 
-  FaCalendarAlt, 
-  FaClipboardList, 
-  FaPhoneAlt, 
-  FaMoneyBillWave,
-  FaArrowRight,
-  FaExternalLinkAlt,
-  FaAward
-} from "react-icons/fa";
-import { 
-  FaBookQuran, 
-  FaBuildingColumns, 
-  FaIdCard, 
-  FaNotesMedical, 
-  FaUserCheck, 
-  FaClock 
-} from "react-icons/fa6";
+import { FaWhatsapp, FaFileAlt, FaUserGraduate, FaCheckCircle, FaCalendarAlt, FaClipboardList, FaPhoneAlt, FaMoneyBillWave, FaArrowRight, FaExternalLinkAlt, FaAward, FaBookQuran, FaBuildingColumns, FaUserCheck, FaClock } from "@/components/ui/FlaticonIcons";
 
 export const metadata = {
   title: "PPDB 2027/2028 | Pondok Pesantren Darut Taufiq",
@@ -61,45 +41,50 @@ const gelombang = [
 const alurPendaftaran = [
   {
     step: "01",
+    label: "Langkah 01",
     title: "Pendaftaran Online",
     desc: "Akses website resmi PPDB di ppdb.arkia.id, buat akun baru, dan isi formulir biodata calon santri secara lengkap.",
     icon: FaFileAlt,
   },
   {
     step: "02",
+    label: "Langkah 02",
     title: "Biaya Formulir",
     desc: "Lakukan pembayaran biaya formulir dan administrasi pendaftaran melalui transfer bank virtual account resmi.",
     icon: FaMoneyBillWave,
   },
   {
     step: "03",
+    label: "Langkah 03",
     title: "Unggah Dokumen",
     desc: "Upload berkas persyaratan seperti Kartu Keluarga, Akta Kelahiran, Pas Foto, dan surat keterangan sehat.",
     icon: FaClipboardList,
   },
   {
     step: "04",
+    label: "Langkah 04",
     title: "Tes Seleksi & Wawancara",
     desc: "Mengikuti tes pemetaan tahsin/tahfidz Al-Qur'an, tes akademik dasar, serta wawancara komitmen santri dan wali.",
     icon: FaBookQuran,
   },
   {
     step: "05",
+    label: "Langkah 05",
     title: "Pengumuman Hasil",
     desc: "Hasil kelulusan diumumkan melalui portal akun PPDB masing-masing dan pesan konfirmasi WhatsApp resmi.",
     icon: FaUserCheck,
   },
   {
     step: "06",
+    label: "Langkah 06",
     title: "Daftar Ulang & Orientasi",
-    desc: "Penyelesaian administrasi daftar ulang, pengukuran seragam, dan persiapan masuk pesantren (Khutbatul Arsy).",
+    desc: "Penyelesaian administrasi daftar ulang, seragam, dan persiapan masuk pesantren (Khutbatul Arsy).",
     icon: FaBuildingColumns,
   },
 ];
 
 const syaratDokumen = [
   {
-    icon: FaIdCard,
     title: "Identitas Diri & Formulir",
     items: [
       "Mengisi formulir pendaftaran Lengkap",
@@ -109,7 +94,6 @@ const syaratDokumen = [
     ],
   },
   {
-    icon: FaFileAlt,
     title: "Dokumen Akademik",
     items: [
       "Foto copy ijazah terleglisir ( 2 lembar)",
@@ -118,7 +102,6 @@ const syaratDokumen = [
     ],
   },
   {
-    icon: FaNotesMedical,
     title: "Bantuan & Berkas Tambahan",
     items: [
       "Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)",
@@ -149,7 +132,7 @@ const unitPilihan = [
 
 export default function PPDBPage() {
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white font-inter">
       {/* Hero Section (Mengikuti template hero standar) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
@@ -179,8 +162,8 @@ export default function PPDBPage() {
       </section>
 
       {/* Konten Utama */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)] space-y-16 lg:space-y-20">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
 
           {/* Section: Status Gelombang */}
           <div>
@@ -340,55 +323,114 @@ export default function PPDBPage() {
             </div>
           </div>
 
-          {/* Section: Alur Pendaftaran */}
+          {/* Section: Alur Pendaftaran (Timeline Style) */}
           <div id="alur" className="pt-16 lg:pt-20 border-t border-gray-100">
-            <div className="bg-secondary text-white rounded-2xl lg:rounded-3xl p-8 lg:p-12 xl:p-14 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
-            
-            <div className="relative z-10 text-center max-w-2xl mx-auto mb-12">
-              <span className="text-primary-light font-bold text-xs uppercase tracking-wider block mb-2">Panduan Lengkap</span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                Alur & Tahapan Pendaftaran
-              </h2>
-              <p className="text-white/70 text-sm mt-2">
-                Ikuti 6 langkah mudah berikut untuk mendaftarkan putra-putri Anda sebagai santri baru di Darut Taufiq.
-              </p>
-            </div>
+            <div className="bg-[#FAF8F5] border border-[#EFECE5] rounded-3xl p-8 lg:p-12 xl:p-16 shadow-sm relative overflow-hidden">
+              {/* Subtle ambient warm background accents */}
+              <div className="absolute top-0 right-0 w-80 h-80 bg-[#FFF3E0]/70 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#E8F5E9]/50 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="relative z-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {alurPendaftaran.map((item, idx) => (
-                <div 
-                  key={idx}
-                  className="bg-white/5 border border-white/10 hover:bg-white/10 rounded-2xl p-6 backdrop-blur-md transition-all duration-300 relative group"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-xl group-hover:scale-110 transition-transform">
-                      <item.icon />
-                    </div>
-                    <span className="text-2xl font-black text-white/20 group-hover:text-primary/40 transition-colors">
-                      {item.step}
-                    </span>
+              {/* Header: Tag Pill & Title */}
+              <div className="relative z-10 text-center max-w-2xl mx-auto mb-12 lg:mb-16">
+                <span className="inline-block bg-[#EAF5F0] text-[#1E5646] font-semibold text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-3">
+                  Timeline
+                </span>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
+                  Alur & Tahapan Pendaftaran Santri
+                </h2>
+                <p className="text-text-muted text-sm mt-2">
+                  Ikuti 6 langkah terstruktur berikut dari pengisian formulir hingga resmi bergabung menjadi santri baru Darut Taufiq.
+                </p>
+              </div>
+
+              {/* Desktop Horizontal Timeline (>= lg screens) */}
+              <div className="relative z-10 hidden lg:block">
+                <div className="pt-2 pb-4">
+                  {/* Row 1: Step Labels */}
+                  <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center mb-3">
+                    {alurPendaftaran.map((item) => (
+                      <span key={item.step} className="text-xs font-bold text-secondary tracking-wide">
+                        {item.label}
+                      </span>
+                    ))}
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-white/70 text-xs leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
 
-            <div className="relative z-10 mt-10 text-center pt-8 border-t border-white/10">
-              <Link
-                href="/ppdb/daftar"
-                target="_blank"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl text-sm md:text-base group"
-              >
-                Mulai Pendaftaran Online Sekarang
-                <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
+                  {/* Row 2: Connecting Line & Nodes */}
+                  <div className="relative flex items-center mb-2">
+                    <div className="absolute left-[8.33%] right-[8.33%] h-[2px] bg-amber-300 z-0" />
+                    <div className="w-full grid grid-cols-6 gap-3 xl:gap-5 relative z-10">
+                      {alurPendaftaran.map((item) => (
+                        <div key={item.step} className="flex justify-center">
+                          <div className="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-md ring-2 ring-amber-400/40 shrink-0 hover:scale-125 transition-transform" />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Row 3: Vertical Drop Ticks */}
+                  <div className="grid grid-cols-6 gap-3 xl:gap-5 mb-2.5">
+                    {alurPendaftaran.map((item) => (
+                      <div key={item.step} className="flex justify-center">
+                        <div className="w-[1.5px] h-6 bg-amber-400" />
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Row 4: Titles & Descriptions */}
+                  <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center">
+                    {alurPendaftaran.map((item) => (
+                      <div key={item.step} className="px-1">
+                        <h3 className="text-xs xl:text-sm font-bold text-secondary mb-1.5 leading-snug">
+                          {item.title}
+                        </h3>
+                        <p className="text-[11px] text-text-muted leading-relaxed">
+                          {item.desc}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile / Tablet Vertical Timeline (< lg screens) */}
+              <div className="relative z-10 lg:hidden max-w-md mx-auto my-2">
+                <div className="relative space-y-7">
+                  {/* Continuous vertical connecting line */}
+                  <div className="absolute top-2 bottom-2 left-[9px] w-[2px] bg-amber-300 z-0" />
+
+                  {alurPendaftaran.map((item, idx) => (
+                    <div key={idx} className="relative flex items-start gap-4 z-10">
+                      {/* Node circle on the vertical line */}
+                      <div className="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-md ring-2 ring-amber-400/40 shrink-0 mt-0.5" />
+
+                      {/* Step Details */}
+                      <div>
+                        <span className="text-[10px] font-bold text-amber-900 bg-amber-100/90 px-2.5 py-0.5 rounded-full inline-block mb-1">
+                          {item.label}
+                        </span>
+                        <h3 className="text-sm font-bold text-secondary mb-1 leading-snug">
+                          {item.title}
+                        </h3>
+                        <p className="text-xs text-text-muted leading-relaxed">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="relative z-10 mt-12 text-center pt-8 border-t border-amber-200/50">
+                <Link
+                  href="/ppdb/daftar"
+                  target="_blank"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg text-sm md:text-base group"
+                >
+                  Mulai Pendaftaran Online Sekarang
+                  <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -410,10 +452,7 @@ export default function PPDBPage() {
                   key={idx}
                   className="bg-white rounded-2xl p-6 lg:p-7 border border-gray-200"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center text-xl mb-4 shadow-sm">
-                    <syarat.icon />
-                  </div>
-                  <h3 className="text-lg font-bold text-secondary mb-4 pb-2 border-b border-gray-200">
+                  <h3 className="text-base lg:text-lg font-bold text-secondary mb-4 pb-3 border-b border-gray-200">
                     {syarat.title}
                   </h3>
                   <ul className="space-y-3">
@@ -452,34 +491,55 @@ export default function PPDBPage() {
 
           {/* Section: Biaya Pendidikan & Link */}
           <div className="pt-16 lg:pt-20 border-t border-gray-100">
-            <div className="bg-gradient-to-r from-secondary to-[#154641] text-white rounded-2xl lg:rounded-3xl p-8 lg:p-12 xl:p-14 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="space-y-3 max-w-2xl text-center lg:text-left">
-              <span className="text-primary-light font-bold text-xs uppercase tracking-wider block">Transparan & Terjangkau</span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                Rincian Biaya Pendidikan
-              </h2>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Informasi detail mengenai biaya formulir pendaftaran, uang gedung, seragam, buku, serta SPP bulanan dapat Anda lihat pada laman rincian biaya resmi kami.
-              </p>
-            </div>
+            <div className="bg-gradient-to-r from-secondary via-[#144741] to-secondary text-white rounded-3xl p-8 lg:p-10 xl:p-12 shadow-xl border border-white/10 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8">
+              {/* Left Side: 3D Element + Text */}
+              <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-8 text-center sm:text-left max-w-3xl">
+                {/* 3D Education Badge Element */}
+                <div className="relative shrink-0 w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center">
+                  <div className="relative w-full h-full hover:scale-105 transition-transform duration-300 drop-shadow-2xl">
+                    <Image
+                      src="/images/rincian-biaya-badge.webp"
+                      alt="Rincian Biaya Pendidikan"
+                      fill
+                      sizes="(max-width: 640px) 112px, 144px"
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto justify-center">
-              <Link
-                href="/biaya"
-                className="bg-white hover:bg-gray-100 text-secondary font-bold px-7 py-3.5 rounded-xl transition-all shadow-md text-center text-sm flex items-center justify-center gap-2"
-              >
-                <FaMoneyBillWave className="text-primary text-base" />
-                Lihat Rincian Biaya
-              </Link>
-              <Link
-                href="/ppdb/daftar"
-                target="_blank"
-                className="bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-md text-center text-sm flex items-center justify-center gap-2"
-              >
-                Daftar Online
-                <FaExternalLinkAlt className="text-xs" />
-              </Link>
-            </div>
+                {/* Text Content */}
+                <div className="space-y-2">
+                  <span className="text-primary-light font-bold text-xs uppercase tracking-wider block">
+                    Transparan & Terjangkau
+                  </span>
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                    Rincian Biaya Pendidikan
+                  </h2>
+                  <p className="text-white/80 text-sm leading-relaxed max-w-xl">
+                    Informasi detail mengenai biaya formulir pendaftaran, uang gedung, seragam, buku, serta SPP bulanan dapat Anda lihat pada laman rincian biaya resmi kami.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side: CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto justify-center">
+                <Link
+                  href="/biaya"
+                  className="bg-white hover:bg-gray-100 text-secondary font-bold px-7 py-3.5 rounded-xl transition-all shadow-md text-center text-sm flex items-center justify-center gap-2"
+                >
+                  <FaMoneyBillWave className="text-primary text-base" />
+                  Lihat Rincian Biaya
+                </Link>
+                <Link
+                  href="/ppdb/daftar"
+                  target="_blank"
+                  className="bg-primary hover:bg-primary-dark text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-md text-center text-sm flex items-center justify-center gap-2"
+                >
+                  Daftar Online
+                  <FaExternalLinkAlt className="text-xs" />
+                </Link>
+              </div>
             </div>
           </div>
 

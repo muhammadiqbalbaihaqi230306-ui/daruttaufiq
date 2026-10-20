@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { FaBars, FaTimes, FaChevronDown, FaSearch } from "react-icons/fa";
+import { usePathname, useRouter } from "next/navigation";
+import { FaBars, FaTimes, FaChevronDown, FaSearch, FaArrowRight, FaFileAlt, FaNewspaper } from "@/components/ui/FlaticonIcons";
 
 export const menuItems = [
   { label: "Beranda", href: "/" },
@@ -50,7 +50,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const mobileSearchInputRef = useRef<HTMLInputElement>(null);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +65,48 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close search when route changes
+  useEffect(() => {
+    setIsSearchOpen(false);
+    setSearchQuery("");
+  }, [pathname]);
+
+  // Handle click outside & escape to close search
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        searchContainerRef.current &&
+        !searchContainerRef.current.contains(e.target as Node)
+      ) {
+        setIsSearchOpen(false);
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsSearchOpen(false);
+      }
+    };
+
+    if (isSearchOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isSearchOpen]);
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return;
+    const q = searchQuery.trim();
+    setIsSearchOpen(false);
+    setSearchQuery("");
+    router.push(`/berita?q=${encodeURIComponent(q)}`);
+  };
 
   const isLightPage = pathname === "/ppdb/daftar";
 
@@ -155,24 +203,118 @@ export default function Navbar() {
                 </div>
               );
             })}
-            {/* Search Icon */}
-            <button
-              aria-label="Search"
-              className="ml-2 p-2 text-white hover:text-gray-300 transition-colors"
-            >
-              <FaSearch />
-            </button>
+            {/* Desktop Expandable Search Bar */}
+            <div ref={searchContainerRef} className="relative flex items-center ml-2">
+              <form
+                onSubmit={handleSearchSubmit}
+                className={`flex items-center overflow-hidden transition-all duration-300 ease-out ${
+                  isSearchOpen
+                    ? "w-64 xl:w-80 h-10 opacity-100 bg-white/20 hover:bg-white/25 focus-within:bg-white/25 backdrop-blur-md rounded-full px-3.5 shadow-[0_4px_20px_0_rgba(0,0,0,0.15)] border border-white/30"
+                    : "w-0 h-10 opacity-0 pointer-events-none"
+                }`}
+              >
+                <FaSearch className="text-white/80 text-sm shrink-0 mr-2.5" />
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Cari di Darut Taufiq..."
+                  className="w-full bg-transparent text-white text-sm font-medium focus:outline-none placeholder:text-white/70"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery("");
+                      searchInputRef.current?.focus();
+                    }}
+                    className="text-white/70 hover:text-white p-1 shrink-0"
+                    aria-label="Clear input"
+                  >
+                    <FaTimes className="text-xs" />
+                  </button>
+                )}
+              </form>
+
+              {/* Search Toggle Icon */}
+              <button
+                type="button"
+                onClick={() => {
+                  const nextState = !isSearchOpen;
+                  setIsSearchOpen(nextState);
+                  if (nextState) {
+                    setTimeout(() => searchInputRef.current?.focus(), 150);
+                  } else {
+                    setSearchQuery("");
+                  }
+                }}
+                aria-label="Toggle Search"
+                className={`w-10 h-10 shrink-0 aspect-square flex items-center justify-center transition-all rounded-full ${
+                  isSearchOpen
+                    ? "ml-2 text-white bg-white/20 hover:bg-white/30 backdrop-blur-md border border-white/30 shadow-sm"
+                    : "text-white hover:text-gray-300"
+                }`}
+              >
+                {isSearchOpen ? <FaTimes className="text-sm" /> : <FaSearch className="text-sm" />}
+              </button>
+            </div>
           </nav>
 
-          {/* Mobile Hamburger */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-white hover:text-gray-300 transition-colors"
-            aria-label="Toggle Menu"
-          >
-            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
+          {/* Mobile Right Controls */}
+          <div className="flex items-center gap-1 lg:hidden">
+            <button
+              onClick={() => {
+                const nextState = !isSearchOpen;
+                setIsSearchOpen(nextState);
+                if (nextState) {
+                  setTimeout(() => mobileSearchInputRef.current?.focus(), 150);
+                } else {
+                  setSearchQuery("");
+                }
+              }}
+              className="p-2 text-white hover:text-gray-300 transition-colors"
+              aria-label="Toggle Search"
+            >
+              <FaSearch size={18} />
+            </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-white hover:text-gray-300 transition-colors"
+              aria-label="Toggle Menu"
+            >
+              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Expandable Search Bar */}
+        {isSearchOpen && (
+          <div className="lg:hidden pb-4 pt-1 animate-fade-in relative">
+            <form onSubmit={handleSearchSubmit} className="relative">
+              <input
+                ref={mobileSearchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Cari berita, informasi sekolah..."
+                className="w-full bg-white/20 hover:bg-white/25 focus:bg-white/25 backdrop-blur-md text-white text-sm rounded-xl pl-10 pr-10 py-2.5 shadow-[0_4px_20px_0_rgba(0,0,0,0.15)] border border-white/30 focus:outline-none placeholder:text-white/70"
+              />
+              <FaSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/80 text-sm" />
+              <button
+                type="button"
+                onClick={() => {
+                  setIsSearchOpen(false);
+                  setSearchQuery("");
+                }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-white/70 hover:text-white p-1"
+                aria-label="Close search"
+              >
+                <FaTimes className="text-sm" />
+              </button>
+            </form>
+          </div>
+        )}
       </div>
 
       {/* Mobile Menu */}

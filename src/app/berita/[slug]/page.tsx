@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FaCalendarAlt, FaPrint, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaCalendarAlt, FaPrint, FaTwitter, FaFacebook } from "@/components/ui/FlaticonIcons";
 import { prisma } from "@/lib/prisma";
 import ImageSlider from "@/components/ImageSlider";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
@@ -139,7 +139,7 @@ export default async function BeritaDetailPage({
       });
 
   return (
-    <main className="min-h-screen bg-surface relative font-sans text-gray-800">
+    <main className="min-h-screen bg-white relative font-sans text-gray-800">
       
       {/* Hero Section (Mengikuti gaya Manajemen) */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">

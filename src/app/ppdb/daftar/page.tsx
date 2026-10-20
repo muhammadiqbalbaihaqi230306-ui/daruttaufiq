@@ -5,22 +5,7 @@ import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { 
-  FaUserGraduate, 
-  FaCheckCircle, 
-  FaArrowRight, 
-  FaArrowLeft, 
-  FaWhatsapp, 
-  FaPrint, 
-  FaShieldAlt, 
-  FaSchool, 
-  FaUser, 
-  FaUsers, 
-  FaHome,
-  FaFileInvoice,
-  FaCheck
-} from "react-icons/fa";
-import { FaBookQuran } from "react-icons/fa6";
+import { FaUserGraduate, FaCheckCircle, FaArrowRight, FaArrowLeft, FaWhatsapp, FaPrint, FaShieldAlt, FaSchool, FaUser, FaUsers, FaHome, FaFileInvoice, FaCheck, FaBookQuran } from "@/components/ui/FlaticonIcons";
 
 interface FormData {
   unit: string;
@@ -1051,7 +1036,7 @@ function RegistrationFormContent() {
 
 export default function PPDBDaftarPage() {
   return (
-    <main className="min-h-screen bg-[#FCFAF5] relative overflow-hidden pt-28 lg:pt-36 pb-24 px-4 sm:px-6 lg:px-12">
+    <main className="min-h-screen bg-[#FCFAF5] relative overflow-hidden pt-28 lg:pt-36 pb-24 px-4 sm:px-6 lg:px-12 font-inter">
       {/* Decorative Background Shapes like in Review Google section */}
       <div className="absolute top-0 -left-20 w-[40%] md:w-[30%] lg:w-[25%] h-full bg-white/60 skew-x-[25deg] origin-bottom-left pointer-events-none" />
       <div className="absolute top-0 -right-20 w-[40%] md:w-[30%] lg:w-[25%] h-full bg-white/60 -skew-x-[25deg] origin-bottom-right pointer-events-none" />

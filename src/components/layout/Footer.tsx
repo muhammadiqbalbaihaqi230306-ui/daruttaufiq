@@ -1,37 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  FaWhatsapp,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-  FaInstagram,
-  FaTiktok,
-  FaYoutube,
-  FaFacebookF,
-  FaSchool,
-  FaUserFriends,
-  FaUsers,
-  FaKey,
-  FaProjectDiagram,
-  FaBuilding,
-  FaMoneyBillWave,
-  FaQuestionCircle,
-} from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaTiktok, FaYoutube, FaFacebookF } from "@/components/ui/FlaticonIcons";
 
 const profilLinks = [
-  { label: "Sejarah Sekolah", href: "/sejarah", icon: FaSchool },
-  { label: "Manajemen", href: "/manajemen", icon: FaUserFriends },
-  { label: "Staff & Pengajar", href: "/pengajar", icon: FaUsers },
-  { label: "Nilai & Budaya", href: "/values", icon: FaKey },
+  { label: "Sejarah Sekolah", href: "/sejarah" },
+  { label: "Manajemen", href: "/manajemen" },
+  { label: "Staff & Pengajar", href: "/pengajar" },
+  { label: "Nilai & Budaya", href: "/values" },
 ];
 
 const infoLinks = [
-  { label: "Pendaftaran PPDB", href: "/ppdb", icon: FaSchool },
-  { label: "Program Unggulan", href: "/program", icon: FaProjectDiagram },
-  { label: "Sarana & Fasilitas", href: "/fasilitas", icon: FaBuilding },
-  { label: "Biaya Pendidikan", href: "/biaya", icon: FaMoneyBillWave },
-  { label: "Frequently Asked Questions", href: "/faq", icon: FaQuestionCircle },
+  { label: "Pendaftaran PPDB", href: "/ppdb" },
+  { label: "Program Unggulan", href: "/program" },
+  { label: "Sarana & Fasilitas", href: "/fasilitas" },
+  { label: "Biaya Pendidikan", href: "/biaya" },
+  { label: "Frequently Asked Questions", href: "/faq" },
 ];
 
 const instagramPosts = [
@@ -114,10 +97,9 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="flex items-center gap-3 text-[15px] text-white hover:text-gray-300 transition-colors"
+                    className="text-[15px] text-white hover:text-gray-300 transition-colors inline-block"
                   >
-                    <link.icon className="flex-shrink-0" />
-                    <span>{link.label}</span>
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -132,10 +114,9 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="flex items-center gap-3 text-[15px] text-white hover:text-gray-300 transition-colors"
+                    className="text-[15px] text-white hover:text-gray-300 transition-colors inline-block"
                   >
-                    <link.icon className="flex-shrink-0" />
-                    <span>{link.label}</span>
+                    {link.label}
                   </Link>
                 </li>
               ))}

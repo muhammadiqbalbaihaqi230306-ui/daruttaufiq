@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaRegCalendarAlt } from "@/components/ui/FlaticonIcons";
 
 export default function NewsCarousel({ posts }: { posts: any[] }) {
   // Jika postingan kurang dari 6, kita duplicate agar looping mulus

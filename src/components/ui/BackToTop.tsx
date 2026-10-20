@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronUp } from "@/components/ui/FlaticonIcons";
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);

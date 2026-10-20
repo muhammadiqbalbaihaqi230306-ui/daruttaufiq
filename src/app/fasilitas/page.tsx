@@ -81,7 +81,7 @@ const facilities = [
 
 export default function FasilitasPage() {
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
@@ -111,8 +111,8 @@ export default function FasilitasPage() {
       </section>
       
       {/* Konten Utama */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16">
           
           <div className="mb-16">
             <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">

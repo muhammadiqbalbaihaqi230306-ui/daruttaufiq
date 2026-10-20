@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic, Inter, Playfair_Display } from "next/font/google";
+import "@flaticon/flaticon-uicons/css/all/all.rounded.css";
+import "@flaticon/flaticon-uicons/css/brands/all.css";
 import "./globals.css";
 import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
@@ -57,6 +59,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${ibmPlexSansArabic.variable} ${inter.variable} ${playfair.variable} font-sans`}>
+      <head>
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" />
+      </head>
       <body className="font-sans antialiased">
         <AOSProvider>
           <TopBar />

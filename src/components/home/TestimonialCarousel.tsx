@@ -7,8 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Image from "next/image";
-import { FaStar, FaUserCircle } from "react-icons/fa";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FaStar, FaUserCircle, FiChevronLeft, FiChevronRight } from "@/components/ui/FlaticonIcons";
 
 export default function TestimonialCarousel({
   testimonials,

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { FaTimes, FaCalendarAlt, FaMapMarkerAlt, FaGlobe } from "react-icons/fa";
+import { FaTimes, FaCalendarAlt, FaMapMarkerAlt, FaGlobe } from "@/components/ui/FlaticonIcons";
 
 export default function PopupPromo() {
   const [isOpen, setIsOpen] = useState(false);

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "@/components/ui/FlaticonIcons";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function MainNewsInteractive({

@@ -1,17 +1,6 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { 
-  FaLocationDot, 
-  FaClock, 
-  FaBook, 
-  FaAward, 
-  FaPhone, 
-  FaEnvelope, 
-  FaMapLocationDot, 
-  FaFileLines, 
-  FaListCheck,
-  FaBuildingUser
-} from "react-icons/fa6";
+import { FaLocationDot, FaClock, FaBook, FaAward, FaPhone, FaEnvelope, FaMapLocationDot, FaFileLines, FaListCheck, FaBuildingUser } from "@/components/ui/FlaticonIcons";
 
 export const metadata = {
   title: "SMPIT | Pondok Pesantren Darut Taufiq",
@@ -20,7 +9,7 @@ export const metadata = {
 
 export default function SMPITPage() {
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
@@ -47,8 +36,8 @@ export default function SMPITPage() {
       </section>
       
       {/* Main Content & Sidebar Layout */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16 flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
           
           {/* LEFT COLUMN - MAIN CONTENT */}
           <div className="w-full lg:w-8/12 flex flex-col gap-8">

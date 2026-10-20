@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa6";
+import { FaChevronDown } from "@/components/ui/FlaticonIcons";
 
 interface FaqItem {
   question: string;

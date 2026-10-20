@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "@/components/ui/FlaticonIcons";
 
 const instagramPosts = [
   { id: 1, image: "/images/ig/ig-1.jpg", link: "https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },

@@ -1,0 +1,51 @@
+[   13114ms] [ERROR] [GSI_LOGGER]: The value of 'callback' is not a function. Configuration ignored. @ https://accounts.google.com/gsi/client:87
+[   16687ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://seoab.io/:0
+[   21439ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:86
+[   21478ms] [ERROR] Not signed in with the identity provider. @ https://www.flaticon.com/:0
+[   24188ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:87
+[   25287ms] [WARNING] Error with Permissions-Policy header: Invalid allowlist item(https://pay.google.com) for feature payment. Allowlist item must be *, self or quoted url. @ :0
+[   26325ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://seoab.io/:0
+[   30955ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:86
+[   30974ms] [ERROR] Not signed in with the identity provider. @ https://www.flaticon.com/uicons/interface-icons:0
+[   31722ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:87
+[   36274ms] [WARNING] Error with Permissions-Policy header: Invalid allowlist item(https://pay.google.com) for feature payment. Allowlist item must be *, self or quoted url. @ :0
+[   36903ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://seoab.io/:0
+[   38141ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:86
+[   38160ms] [ERROR] Not signed in with the identity provider. @ https://www.flaticon.com/icon-fonts-most-downloaded:0
+[   44901ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:87
+[   47642ms] [ERROR] Access to fetch at 'https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1' from origin 'https://www.flaticon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.flaticon.com/free-icon-font/home_3917033?related_id=3917033:0
+[   47642ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1:0
+[   47645ms] [ERROR] Access to fetch at 'https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1' from origin 'https://www.flaticon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.flaticon.com/free-icon-font/home_3917033?related_id=3917033:0
+[   47645ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1:0
+[   47938ms] [WARNING] [GPT] Anchor /78011819,9837927/flaticon.com/sticky not requested: Format already created on the page.
+https://goo.gle/gpt-message#134 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[   47940ms] [ERROR] [GPT] Invalid arguments: googletag.display('undefined').
+https://goo.gle/gpt-message#96 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[   55418ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   58879ms] [WARNING] [GPT] Anchor /78011819,9837927/flaticon.com/sticky not requested: Format already created on the page.
+https://goo.gle/gpt-message#134 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[   58880ms] [ERROR] [GPT] Invalid arguments: googletag.display('undefined').
+https://goo.gle/gpt-message#96 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[   59055ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ chrome-error://chromewebdata/:0
+[   59065ms] [ERROR] Refused to display 'https://csync-apac.smilewanted.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'. @ chrome-error://chromewebdata/:0
+[   60785ms] [ERROR] Failed to load resource: net::ERR_CERT_COMMON_NAME_INVALID @ https://www.temu.com/api/adx/cm/pixel-opera?adx_uid=f5ddc818fcd303b1&gdpr=0&gdpr_consent=&us_privacy=&redir=https%3A%2F%2Ft.oa.opera.com%2Fsync%3Fvendor%3D60369%26pubid%3Dpub13186530141056%26gdpr%3D0%26consent%3D%26us_privacy%3D%26custom_data%3DCIwSLF9VcWhVbWRQT29EVXZyZTVBbzVnU1lKTDFOeXhkbEZ1UDRyZTdpWkY5SHhNJTNE:0
+[   60785ms] [ERROR] Failed to load resource: net::ERR_CERT_COMMON_NAME_INVALID @ https://dpm.demdex.net/ibs:dpid=19566&dpuuid=839AEDE5-2C58-4127-8535-40D66E7F74A9:0
+[   60785ms] [ERROR] Failed to load resource: net::ERR_CERT_COMMON_NAME_INVALID @ https://dpm.demdex.net/ibs:dpid=903&dpuuid=ed4a1e3d-32ee-4548-91d8-9aa1bdf6ef7b&gdpr=0&gdpr_consent=&redir=https%3A%2F%2Fmatch.adsrvr.org%2Ftrack%2Fcmf%2Fgeneric%3Fttd_pid%3Daam:0
+[  116510ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://csync.loopme.me/?pubid=11466&redirect=https%3A%2F%2Fdsum-sec.casalemedia.com%2Frum%3Fcm_dsp_id%3D24%26external_user_id%3D%7Bviewer_token%7D&us_privacy=&gdpr=&gdpr_consent=&gpp=&gpp_sid=:0
+[  123274ms] [ERROR] Access to fetch at 'https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1' from origin 'https://www.flaticon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.flaticon.com/free-icon-font/clock_3917267?related_id=3917267:0
+[  123274ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1:0
+[  123330ms] [WARNING] [GPT] Anchor /78011819,9837927/flaticon.com/sticky not requested: Format already created on the page.
+https://goo.gle/gpt-message#134 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  123331ms] [ERROR] [GPT] Invalid arguments: googletag.display('undefined').
+https://goo.gle/gpt-message#96 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  125944ms] [ERROR] Access to fetch at 'https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1' from origin 'https://www.flaticon.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://www.flaticon.com/free-icon-font/credit-card_3916663:0
+[  125944ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://hbopenbid.pubmatic.com/translator?source=prebid-client&gzip=1:0
+[  126023ms] [WARNING] [GPT] Anchor /78011819,9837927/flaticon.com/sticky not requested: Format already created on the page.
+https://goo.gle/gpt-message#134 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  126024ms] [ERROR] [GPT] Invalid arguments: googletag.display('undefined').
+https://goo.gle/gpt-message#96 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  128710ms] [WARNING] [GPT] Anchor /78011819,9837927/flaticon.com/sticky not requested: Format already created on the page.
+https://goo.gle/gpt-message#134 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  128711ms] [ERROR] [GPT] Invalid arguments: googletag.display('undefined').
+https://goo.gle/gpt-message#96 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610140101/pubads_impl.js:22
+[  549702ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cs.admanmedia.com/73c1e1bfc3bde354d60b80e601ae3914.gif?puid=[UID]&redir=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D164%26gdpr%3D1%26gdpr_consent%3D%26uid%3D%5BUID%5D&gdpr=1&gdpr_consent=&ccpa=&coppa=:0

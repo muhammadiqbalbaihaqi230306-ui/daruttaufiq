@@ -1,14 +1,7 @@
 "use client";
 
 import { useState, FormEvent, ChangeEvent } from "react";
-import {
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaWhatsapp,
-  FaClock,
-  FaChevronDown,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaWhatsapp, FaClock } from "@/components/ui/FlaticonIcons";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export default function KontakPage() {
@@ -20,22 +13,6 @@ export default function KontakPage() {
   });
   const [status, setStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
-  const [activeFaq, setActiveFaq] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "Kapan waktu pendaftaran santri baru dibuka?",
-      answer: "Pendaftaran santri baru biasanya dibuka pada bulan November hingga Februari setiap tahun ajaran baru. Silakan pantau website atau hubungi WhatsApp kami untuk tanggal pastinya."
-    },
-    {
-      question: "Apakah bisa melakukan kunjungan/survey lokasi terlebih dahulu?",
-      answer: "Tentu. Kami sangat menyarankan orang tua calon santri untuk melakukan kunjungan. Waktu kunjungan adalah Senin - Jumat (08.00 - 15.00) dan Sabtu (08.00 - 12.00) dengan konfirmasi sebelumnya."
-    },
-    {
-      question: "Apakah asrama putra dan putri dipisah?",
-      answer: "Ya, kawasan dan asrama untuk putra dan putri terpisah sepenuhnya dengan pengawasan ketat selama 24 jam."
-    }
-  ];
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -58,7 +35,7 @@ export default function KontakPage() {
   };
 
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white">
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -80,8 +57,8 @@ export default function KontakPage() {
         </div>
       </section>
 
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto space-y-12">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16 space-y-12">
 
           {/* Single Unified Contact Info Container */}
           <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-sm border border-gray-100 flex items-center">
@@ -225,31 +202,6 @@ export default function KontakPage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-gray-100 mt-12">
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <h2 className="text-3xl font-bold text-secondary mb-4">Pertanyaan Umum</h2>
-              <p className="text-gray-900">Beberapa pertanyaan yang sering diajukan oleh calon orang tua santri.</p>
-            </div>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, idx) => (
-                <div
-                  key={idx}
-                  className={`border rounded-xl overflow-hidden transition-all duration-300 ${activeFaq === idx ? 'border-primary ring-1 ring-primary/20' : 'border-gray-100 hover:border-gray-200'}`}
-                >
-                  <button
-                    onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                    className="w-full flex items-center justify-between p-6 bg-white text-left focus:outline-none"
-                  >
-                    <span className="font-semibold text-secondary">{faq.question}</span>
-                    <FaChevronDown className={`text-gray-400 transition-transform duration-300 ${activeFaq === idx ? 'rotate-180 text-primary' : ''}`} />
-                  </button>
-                  <div className={`px-6 overflow-hidden transition-all duration-300 ${activeFaq === idx ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>

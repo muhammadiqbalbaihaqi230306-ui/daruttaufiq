@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "@/components/ui/FlaticonIcons";
 import { useState, useEffect } from "react";
 
 const programs = [

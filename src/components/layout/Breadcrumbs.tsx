@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight } from "@/components/ui/FlaticonIcons";
 import { menuItems } from "./Navbar";
 
 export interface BreadcrumbItem {

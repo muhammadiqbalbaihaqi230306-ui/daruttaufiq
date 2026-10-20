@@ -1,23 +1,40 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaRegCalendarAlt, FaArrowRight, FaSearch, FaFileAlt, FaWhatsapp } from "@/components/ui/FlaticonIcons";
 import { prisma } from "@/lib/prisma";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import MainNewsInteractive from "@/components/berita/MainNewsInteractive";
-
 
 export const metadata = {
   title: "Berita & Kegiatan - Pondok Pesantren Darut Taufiq",
   description: "Kabar terbaru, prestasi, dan kegiatan dari Pondok Pesantren Darut Taufiq.",
 };
 
+const SITE_PAGES = [
+  { title: "Beranda", url: "/", category: "Halaman Utama", description: "Profil umum dan ringkasan Pondok Pesantren Darut Taufiq" },
+  { title: "Profil & Sejarah", url: "/sejarah", category: "Profil", description: "Sejarah berdirinya Pondok Pesantren Darut Taufiq" },
+  { title: "Manajemen & Pimpinan", url: "/manajemen", category: "Profil", description: "Struktur manajemen dan dewan pimpinan yayasan" },
+  { title: "Tenaga Pengajar (Asatidz)", url: "/pengajar", category: "Profil", description: "Dewan asatidz dan pendidik berdedikasi" },
+  { title: "Nilai & Visi Misi", url: "/values", category: "Profil", description: "Nilai dasar Islam dan visi misi pesantren" },
+  { title: "Budaya Pesantren", url: "/budaya", category: "Profil", description: "Karakter dan kebiasaan luhur santri sehari-hari" },
+  { title: "Program Pendidikan", url: "/program", category: "Akademik", description: "Kurikulum terpadu, tahfidz, dan program unggulan" },
+  { title: "Fasilitas Belajar & Asrama", url: "/fasilitas", category: "Akademik", description: "Sarana belajar, asrama, dan sarana olahraga" },
+  { title: "Ekstrakurikuler (Ekskul)", url: "/ekskul", category: "Akademik", description: "Pencak silat, panahan, renang, robotika, hadrah" },
+  { title: "Biaya Pendidikan & SPP", url: "/biaya", category: "Akademik", description: "Informasi rincian biaya masuk dan infaq bulanan" },
+  { title: "Tanya Jawab (FAQ)", url: "/faq", category: "Akademik", description: "Pertanyaan umum seputar pendaftaran santri" },
+  { title: "SDIT Darut Taufiq", url: "/sdit", category: "Unit Pendidikan", description: "Sekolah Dasar Islam Terpadu Full Day" },
+  { title: "SMPIT Darut Taufiq", url: "/smpit", category: "Unit Pendidikan", description: "SMP Islam Terpadu Boarding & Full Day" },
+  { title: "Kontak & Alamat", url: "/kontak", category: "Informasi", description: "Nomor telepon, WhatsApp, dan peta lokasi sekolah" },
+  { title: "Penerimaan Santri Baru (PPDB)", url: "/ppdb", category: "PPDB", description: "Informasi alur pendaftaran PPDB dan jadwal gelombang" },
+  { title: "Formulir Pendaftaran Online", url: "/ppdb/daftar", category: "PPDB", description: "Formulir registrasi calon santri baru online" },
+];
+
 export default async function BeritaPage({
   searchParams,
 }: {
-  searchParams: Promise<{ category?: string }>;
+  searchParams: Promise<{ category?: string; q?: string }>;
 }) {
-  const { category } = await searchParams;
+  const { category, q } = await searchParams;
   
   let mainPosts: any[] = [];
   let posts: any[] = [];
@@ -28,18 +45,26 @@ export default async function BeritaPage({
       take: 10,
     });
 
+    const whereCondition: any = {};
+    if (category) {
+      whereCondition.category = {
+        in: [
+          category,
+          category.toLowerCase(),
+          category.charAt(0).toUpperCase() + category.slice(1).toLowerCase(),
+        ],
+      };
+    }
+    if (q) {
+      whereCondition.OR = [
+        { title: { contains: q } },
+        { excerpt: { contains: q } },
+        { category: { contains: q } },
+      ];
+    }
+
     posts = await prisma.post.findMany({
-      where: category
-        ? {
-            category: {
-              in: [
-                category,
-                category.toLowerCase(),
-                category.charAt(0).toUpperCase() + category.slice(1).toLowerCase(),
-              ],
-            },
-          }
-        : undefined,
+      where: Object.keys(whereCondition).length > 0 ? whereCondition : undefined,
       orderBy: { publishedAt: "desc" },
     });
   } catch (error) {
@@ -107,15 +132,38 @@ export default async function BeritaPage({
 
     mainPosts = baseDummyPosts as any;
 
+    let filtered = baseDummyPosts;
     if (category) {
-      posts = baseDummyPosts.filter((p) => p.category.toLowerCase() === category.toLowerCase()) as any;
-    } else {
-      posts = baseDummyPosts as any;
+      filtered = filtered.filter((p) => p.category.toLowerCase() === category.toLowerCase());
     }
+    if (q) {
+      const qLower = q.toLowerCase();
+      filtered = filtered.filter(
+        (p) =>
+          p.title.toLowerCase().includes(qLower) ||
+          p.excerpt.toLowerCase().includes(qLower) ||
+          p.category.toLowerCase().includes(qLower)
+      );
+    }
+    posts = filtered as any;
   }
 
+  // Filter Halaman & Menu jika ada query pencarian
+  const qTrim = q?.trim() || "";
+  const matchedPages = qTrim
+    ? SITE_PAGES.filter(
+        (p) =>
+          p.title.toLowerCase().includes(qTrim.toLowerCase()) ||
+          p.description.toLowerCase().includes(qTrim.toLowerCase()) ||
+          p.category.toLowerCase().includes(qTrim.toLowerCase())
+      )
+    : [];
+
+  const totalResults = matchedPages.length + posts.length;
+  const isSearchMode = Boolean(qTrim);
+
   return (
-    <main className="min-h-screen bg-surface">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
@@ -133,11 +181,13 @@ export default async function BeritaPage({
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Berita & Kegiatan
+                {isSearchMode ? "Pencarian Web" : "Berita & Kegiatan"}
               </h1>
               {/* Summary */}
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Kabar terbaru, agenda kegiatan, dan dokumentasi aktivitas santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq.
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl">
+                {isSearchMode
+                  ? `Hasil penelusuran kata kunci pencarian di seluruh halaman dan informasi Pondok Pesantren Darut Taufiq.`
+                  : `Kabar terbaru, agenda kegiatan, dan dokumentasi aktivitas santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq.`}
               </p>
             </div>
           </div>
@@ -145,83 +195,245 @@ export default async function BeritaPage({
       </section>
 
       {/* Konten Utama */}
-      <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16">
 
-          {/* Header */}
-          <div className="flex justify-between items-center mb-8 mt-6">
-            <h2 className="text-3xl font-bold text-secondary">Main News</h2>
-          </div>
+          {/* JIKA DALAM MODE PENCARIAN (q aktif) */}
+          {isSearchMode ? (
+            <div>
+              {/* Header Banner Pencarian */}
+              <div className="mb-10 p-6 sm:p-8 rounded-2xl bg-surface border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <span className="text-xs uppercase tracking-wider text-text-muted font-bold block mb-1">
+                    Hasil Penelusuran Website
+                  </span>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-secondary">
+                    Kata Kunci: <span className="text-primary font-black">"{qTrim}"</span>
+                  </h2>
+                  <p className="text-xs sm:text-sm text-text-muted mt-1.5">
+                    {totalResults > 0
+                      ? `Ditemukan ${totalResults} hasil (${matchedPages.length} halaman/menu, ${posts.length} berita)`
+                      : "Tidak ada hasil yang sesuai"}
+                  </p>
+                </div>
+                <Link
+                  href="/berita"
+                  className="px-4 py-2 text-xs font-semibold rounded-xl bg-white text-secondary border border-gray-200 hover:bg-gray-50 transition-colors shrink-0 shadow-sm"
+                >
+                  Reset Pencarian
+                </Link>
+              </div>
 
-          <MainNewsInteractive posts={mainPosts} hidePagination={true} />
+              {/* JIKA HASIL KOSONG (TIDAK DITEMUKAN) */}
+              {totalResults === 0 ? (
+                <div className="py-16 px-6 text-center max-w-2xl mx-auto my-4 animate-fade-in">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-primary/10 text-primary flex items-center justify-center text-3xl sm:text-4xl mb-6 shadow-sm border border-primary/20">
+                    <FaSearch />
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-3">
+                    Pencarian Tidak Ditemukan
+                  </h3>
+                  <p className="text-sm sm:text-base text-text-muted leading-relaxed mb-8 max-w-lg mx-auto">
+                    Maaf, kami tidak menemukan informasi, halaman, atau berita yang cocok dengan kata kunci <span className="font-bold text-secondary">"{qTrim}"</span>.
+                  </p>
 
-          {/* Show All Section (Semua Berita Grid) */}
-          <div className="mt-16 pt-12 border-t border-gray-100">
-            {/* Category Filter ala UQU */}
-            <div className="flex flex-wrap gap-2 mb-8">
-              {['Semua', 'Kegiatan', 'Artikel'].map(cat => {
-                const isActive = category ? category === cat.toLowerCase() : cat === 'Semua';
-                return (
-                  <Link
-                    key={cat}
-                    href={cat === 'Semua' ? '/berita' : `?category=${cat.toLowerCase()}`}
-                    scroll={false}
-                    className={`px-5 py-2 text-sm font-bold rounded-md transition-colors ${
-                      isActive 
-                        ? 'bg-primary text-white' 
-                        : 'bg-[#EAF6ED] text-primary hover:bg-[#D5EEDB]'
-                    }`}
-                  >
-                    {cat}
-                  </Link>
-                );
-              })}
-            </div>
+                  {/* Tips Pencarian */}
+                  <div className="bg-surface rounded-2xl p-6 text-left border border-gray-100 mb-8 max-w-lg mx-auto shadow-sm">
+                    <p className="text-xs font-bold text-secondary mb-2.5 flex items-center gap-1.5">
+                      💡 Saran Pencarian:
+                    </p>
+                    <ul className="text-xs text-text-muted space-y-2 list-disc list-inside leading-relaxed">
+                      <li>Pastikan ejaan kata kunci yang Anda masukkan sudah benar.</li>
+                      <li>Gunakan kata yang lebih umum (misal: <em>PPDB, Biaya, SDIT, SMPIT, Fasilitas, Kontak</em>).</li>
+                      <li>Atau jelajahi menu halaman utama melalui tombol di bawah.</li>
+                    </ul>
+                  </div>
 
-              {/* Grid 3 Kolom */}
-              {posts.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {posts.map(post => (
-                    <div key={post.id} className="group flex flex-col border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2">
-                      <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-50">
-                        <Image
-                          src={post.thumbnail || "/images/placeholder-news.jpg"}
-                          alt={post.title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                      <div className="flex flex-col flex-grow px-2 pb-2">
-                        <Link href={`/berita/${post.slug}`}>
-                          <h3 className="text-base font-bold text-secondary leading-snug line-clamp-2 group-hover:underline decoration-1 underline-offset-4 decoration-secondary cursor-pointer mb-6">
-                            {post.title}
-                          </h3>
-                        </Link>
-                        <div className="flex justify-between items-end mt-auto border-t border-gray-50 pt-4">
-                          <div className="flex items-center gap-1.5 text-gray-500 text-[13px]">
-                            <FaRegCalendarAlt className="text-gray-400" />
-                            <time dateTime={post.publishedAt.toISOString()}>
-                              {new Intl.DateTimeFormat("en-CA", {
-                                year: "numeric",
-                                month: "2-digit",
-                                day: "2-digit",
-                              }).format(post.publishedAt).replace(/-/g, '/')}
-                            </time>
-                          </div>
-                          <Link href={`/berita/${post.slug}`} className="w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors shrink-0">
-                            <FaArrowRight className="text-xs" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                  {/* Tombol Tindakan */}
+                  <div className="flex flex-wrap items-center justify-center gap-3">
+                    <Link
+                      href="/berita"
+                      className="px-5 py-3 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs sm:text-sm font-bold transition-all shadow-md hover:shadow-lg"
+                    >
+                      Lihat Semua Berita
+                    </Link>
+                    <Link
+                      href="/"
+                      className="px-5 py-3 rounded-xl bg-white hover:bg-gray-50 text-secondary border border-gray-200 text-xs sm:text-sm font-semibold transition-colors"
+                    >
+                      Kembali ke Beranda
+                    </Link>
+                    <Link
+                      href="https://wa.me/6282228880972?text=Halo%20Admin%2C%20saya%20ingin%20bertanya%20informasi%20tentang%20Pondok%20Pesantren%20Darut%20Taufiq"
+                      target="_blank"
+                      className="px-5 py-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5"
+                    >
+                      <FaWhatsapp /> Tanya via WhatsApp
+                    </Link>
+                  </div>
                 </div>
               ) : (
-                <div className="text-center py-12 text-text-muted bg-gray-50 rounded-2xl border border-gray-100">
-                  Belum ada berita dalam kategori ini.
+                <div className="space-y-12">
+                  {/* Bagian 1: Halaman & Menu Terkait */}
+                  {matchedPages.length > 0 && (
+                    <div>
+                      <h3 className="text-lg font-bold text-secondary mb-4 flex items-center gap-2">
+                        <FaFileAlt className="text-primary text-base" /> Halaman & Menu Terkait ({matchedPages.length})
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {matchedPages.map((page, idx) => (
+                          <Link
+                            key={idx}
+                            href={page.url}
+                            className="p-5 rounded-2xl border border-gray-200 hover:border-primary/50 hover:shadow-md transition-all group flex flex-col justify-between bg-white"
+                          >
+                            <div>
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-2.5 py-1 rounded-full inline-block mb-3">
+                                {page.category}
+                              </span>
+                              <h4 className="font-bold text-secondary text-base group-hover:text-primary transition-colors mb-1.5">
+                                {page.title}
+                              </h4>
+                              <p className="text-xs text-text-muted leading-relaxed line-clamp-2">
+                                {page.description}
+                              </p>
+                            </div>
+                            <div className="mt-5 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-primary">
+                              <span>Buka Halaman</span>
+                              <FaArrowRight className="text-[10px] group-hover:translate-x-1 transition-transform" />
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Bagian 2: Berita & Kegiatan Terkait */}
+                  {posts.length > 0 && (
+                    <div>
+                      <h3 className="text-lg font-bold text-secondary mb-4 flex items-center gap-2">
+                        <FaRegCalendarAlt className="text-primary text-base" /> Berita Terkait ({posts.length})
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {posts.map((post) => (
+                          <div key={post.id} className="group flex flex-col border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2">
+                            <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-50">
+                              <Image
+                                src={post.thumbnail || "/images/placeholder-news.jpg"}
+                                alt={post.title}
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+                            <div className="flex flex-col flex-grow px-2 pb-2">
+                              <Link href={`/berita/${post.slug}`}>
+                                <h4 className="text-base font-bold text-secondary leading-snug line-clamp-2 group-hover:underline decoration-1 underline-offset-4 decoration-secondary cursor-pointer mb-6">
+                                  {post.title}
+                                </h4>
+                              </Link>
+                              <div className="flex justify-between items-end mt-auto border-t border-gray-50 pt-4">
+                                <div className="flex items-center gap-1.5 text-gray-500 text-[13px]">
+                                  <FaRegCalendarAlt className="text-gray-400" />
+                                  <time dateTime={post.publishedAt.toISOString()}>
+                                    {new Intl.DateTimeFormat("en-CA", {
+                                      year: "numeric",
+                                      month: "2-digit",
+                                      day: "2-digit",
+                                    }).format(post.publishedAt).replace(/-/g, '/')}
+                                  </time>
+                                </div>
+                                <Link href={`/berita/${post.slug}`} className="w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors shrink-0">
+                                  <FaArrowRight className="text-xs" />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
+          ) : (
+            /* TAMPILAN NORMAL (NON-SEARCH) */
+            <>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-8 mt-6">
+                <h2 className="text-3xl font-bold text-secondary">Main News</h2>
+              </div>
+
+              <MainNewsInteractive posts={mainPosts} hidePagination={true} />
+
+              {/* Show All Section (Semua Berita Grid) */}
+              <div className="mt-16 pt-12 border-t border-gray-100">
+                {/* Category Filter ala UQU */}
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {['Semua', 'Kegiatan', 'Artikel'].map((cat) => {
+                    const isActive = category ? category === cat.toLowerCase() : cat === 'Semua';
+                    return (
+                      <Link
+                        key={cat}
+                        href={cat === 'Semua' ? '/berita' : `?category=${cat.toLowerCase()}`}
+                        scroll={false}
+                        className={`px-5 py-2 text-sm font-bold rounded-md transition-colors ${
+                          isActive 
+                            ? 'bg-primary text-white' 
+                            : 'bg-[#EAF6ED] text-primary hover:bg-[#D5EEDB]'
+                        }`}
+                      >
+                        {cat}
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                {/* Grid 3 Kolom */}
+                {posts.length > 0 ? (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {posts.map((post) => (
+                      <div key={post.id} className="group flex flex-col border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2">
+                        <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4 bg-gray-50">
+                          <Image
+                            src={post.thumbnail || "/images/placeholder-news.jpg"}
+                            alt={post.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <div className="flex flex-col flex-grow px-2 pb-2">
+                          <Link href={`/berita/${post.slug}`}>
+                            <h3 className="text-base font-bold text-secondary leading-snug line-clamp-2 group-hover:underline decoration-1 underline-offset-4 decoration-secondary cursor-pointer mb-6">
+                              {post.title}
+                            </h3>
+                          </Link>
+                          <div className="flex justify-between items-end mt-auto border-t border-gray-50 pt-4">
+                            <div className="flex items-center gap-1.5 text-gray-500 text-[13px]">
+                              <FaRegCalendarAlt className="text-gray-400" />
+                              <time dateTime={post.publishedAt.toISOString()}>
+                                {new Intl.DateTimeFormat("en-CA", {
+                                  year: "numeric",
+                                  month: "2-digit",
+                                  day: "2-digit",
+                                }).format(post.publishedAt).replace(/-/g, '/')}
+                              </time>
+                            </div>
+                            <Link href={`/berita/${post.slug}`} className="w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors shrink-0">
+                              <FaArrowRight className="text-xs" />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-12 text-text-muted bg-gray-50 rounded-2xl border border-gray-100">
+                    Belum ada berita dalam kategori ini.
+                  </div>
+                )}
+              </div>
+            </>
+          )}
         </div>
       </section>
     </main>

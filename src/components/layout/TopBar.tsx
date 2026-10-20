@@ -1,15 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  FaWhatsapp,
-  FaEnvelope,
-  FaClock,
-  FaInstagram,
-  FaTiktok,
-  FaYoutube,
-  FaFacebookF,
-} from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaClock, FaInstagram, FaTiktok, FaYoutube, FaFacebookF } from "@/components/ui/FlaticonIcons";
 
 export default function TopBar() {
   return (
