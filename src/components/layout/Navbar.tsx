@@ -55,6 +55,8 @@ export default function Navbar() {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const mobileSearchInputRef = useRef<HTMLInputElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+  const mobileSearchContainerRef = useRef<HTMLDivElement>(null);
+  const mobileSearchToggleRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -74,13 +76,16 @@ export default function Navbar() {
 
   // Handle click outside & escape to close search
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node;
       if (
-        searchContainerRef.current &&
-        !searchContainerRef.current.contains(e.target as Node)
+        (searchContainerRef.current && searchContainerRef.current.contains(target)) ||
+        (mobileSearchContainerRef.current && mobileSearchContainerRef.current.contains(target)) ||
+        (mobileSearchToggleRef.current && mobileSearchToggleRef.current.contains(target))
       ) {
-        setIsSearchOpen(false);
+        return;
       }
+      setIsSearchOpen(false);
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -91,10 +96,12 @@ export default function Navbar() {
 
     if (isSearchOpen) {
       document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
       document.addEventListener("keydown", handleKeyDown);
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
     };
   }, [isSearchOpen]);
@@ -264,6 +271,7 @@ export default function Navbar() {
           {/* Mobile Right Controls */}
           <div className="flex items-center gap-1 lg:hidden">
             <button
+              ref={mobileSearchToggleRef}
               onClick={() => {
                 const nextState = !isSearchOpen;
                 setIsSearchOpen(nextState);
@@ -290,7 +298,7 @@ export default function Navbar() {
 
         {/* Mobile Expandable Search Bar */}
         {isSearchOpen && (
-          <div className="lg:hidden pb-4 pt-1 animate-fade-in relative">
+          <div ref={mobileSearchContainerRef} className="lg:hidden pb-4 pt-1 animate-fade-in relative">
             <form onSubmit={handleSearchSubmit} className="relative">
               <input
                 ref={mobileSearchInputRef}
@@ -298,6 +306,7 @@ export default function Navbar() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Cari berita, informasi sekolah..."
+                autoFocus
                 className="w-full bg-white/20 hover:bg-white/25 focus:bg-white/25 backdrop-blur-md text-white text-sm rounded-xl pl-10 pr-10 py-2.5 shadow-[0_4px_20px_0_rgba(0,0,0,0.15)] border border-white/30 focus:outline-none placeholder:text-white/70"
               />
               <FaSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/80 text-sm" />

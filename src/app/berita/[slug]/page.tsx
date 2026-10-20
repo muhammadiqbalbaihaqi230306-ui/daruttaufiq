@@ -201,7 +201,7 @@ export default async function BeritaDetailPage({
 
       {/* Konten Artikel Overlap */}
       <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-8 overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="max-w-[1406px] mx-auto px-6 lg:px-12">
           
           {/* Main Content Area */}
           <article className="w-full max-w-[750px] mx-auto overflow-hidden">
@@ -258,7 +258,7 @@ export default async function BeritaDetailPage({
 
         {/* Last Updated Footer (Full Width Border) */}
         <div className="w-full mt-8 border-t border-gray-200">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex justify-end">
+          <div className="max-w-[1406px] mx-auto px-6 lg:px-12 py-6 flex justify-end">
             <p className="text-[13px] text-gray-500 font-medium flex items-center gap-2">
               Terakhir diubah: {new Intl.DateTimeFormat("id-ID", {
                 year: "numeric",

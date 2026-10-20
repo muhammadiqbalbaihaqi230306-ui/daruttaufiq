@@ -162,8 +162,8 @@ export default function PPDBPage() {
       </section>
 
       {/* Konten Utama */}
-      <section className="relative z-30 -mt-20 lg:-mt-24 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-12 lg:pt-16 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
+      <section className="relative z-30 -mt-16 sm:-mt-20 lg:-mt-24 px-[13px] sm:px-[21px] lg:px-[29px]">
+        <div className="w-full max-w-[1406px] mx-auto bg-white rounded-t-2xl sm:rounded-t-3xl lg:rounded-t-[2.5rem] pt-10 sm:pt-12 lg:pt-16 px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
 
           {/* Section: Status Gelombang */}
           <div>
@@ -322,120 +322,160 @@ export default function PPDBPage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Section: Alur Pendaftaran (Timeline Style) */}
-          <div id="alur" className="pt-16 lg:pt-20 border-t border-gray-100">
-            <div className="bg-[#FAF8F5] border border-[#EFECE5] rounded-3xl p-8 lg:p-12 xl:p-16 shadow-sm relative overflow-hidden">
-              {/* Subtle ambient warm background accents */}
-              <div className="absolute top-0 right-0 w-80 h-80 bg-[#FFF3E0]/70 rounded-full blur-3xl pointer-events-none" />
-              <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#E8F5E9]/50 rounded-full blur-3xl pointer-events-none" />
+      {/* Section: Alur Pendaftaran (Full-Width White Background with Subtle Web-Themed Line Art) */}
+      <section id="alur" className="w-full bg-white pt-20 lg:pt-28 pb-0 relative overflow-hidden border-t border-gray-100">
+        {/* Background Decorative Lines & Geometric Wave Art (Subtle Web Colors) */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
+          {/* Subtle geometric line grid accent in primary teal */}
+          <div 
+            className="absolute inset-0 opacity-[0.02]"
+            style={{
+              backgroundImage: 'radial-gradient(#159893 1px, transparent 1px), linear-gradient(to right, rgba(21, 152, 147, 0.04) 1px, transparent 1px)',
+              backgroundSize: '40px 40px, 80px 80px'
+            }}
+          />
 
-              {/* Header: Tag Pill & Title */}
-              <div className="relative z-10 text-center max-w-2xl mx-auto mb-12 lg:mb-16">
-                <span className="inline-block bg-[#EAF5F0] text-[#1E5646] font-semibold text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-3">
-                  Timeline
-                </span>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
-                  Alur & Tahapan Pendaftaran Santri
-                </h2>
-                <p className="text-text-muted text-sm mt-2">
-                  Ikuti 6 langkah terstruktur berikut dari pengisian formulir hingga resmi bergabung menjadi santri baru Darut Taufiq.
-                </p>
+          {/* Flowing abstract wave lines top-left (low opacity primary teal) */}
+          <svg className="absolute -top-12 -left-16 w-[550px] h-[550px] text-primary/[0.09]" viewBox="0 0 550 550" fill="none">
+            <path d="M-40,180 C120,40 220,320 400,130 C490,40 570,220 620,90" stroke="currentColor" strokeWidth="2" strokeDasharray="8 8" />
+            <path d="M-20,230 C140,90 240,370 420,180 C510,90 590,270 640,140" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M0,280 C160,140 260,420 440,230 C530,140 610,320 660,190" stroke="currentColor" strokeWidth="2" strokeDasharray="4 6" />
+            <circle cx="220" cy="200" r="150" stroke="currentColor" strokeWidth="1" strokeDasharray="6 6" />
+            <circle cx="220" cy="200" r="210" stroke="currentColor" strokeWidth="1" />
+          </svg>
+
+          {/* Flowing abstract wave lines bottom-right (low opacity primary teal) */}
+          <svg className="absolute -bottom-20 -right-20 w-[650px] h-[650px] text-primary/[0.09]" viewBox="0 0 650 650" fill="none">
+            <path d="M0,420 C180,280 270,560 460,370 C550,280 640,460 740,320" stroke="currentColor" strokeWidth="2" />
+            <path d="M40,470 C220,330 310,610 500,420 C590,330 680,510 780,370" stroke="currentColor" strokeWidth="1.5" strokeDasharray="10 8" />
+            <path d="M80,520 C260,380 350,660 540,470 C630,380 720,560 820,420" stroke="currentColor" strokeWidth="1" />
+            <circle cx="420" cy="450" r="190" stroke="currentColor" strokeWidth="1" strokeDasharray="8 8" />
+            <circle cx="420" cy="450" r="260" stroke="currentColor" strokeWidth="1.5" />
+          </svg>
+
+          {/* Ambient soft glow accents */}
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/[0.025] rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-primary/[0.02] rounded-full blur-3xl" />
+        </div>
+
+        {/* Content Container (No Box wrapping) */}
+        <div className="w-full max-w-[1406px] mx-auto px-6 lg:px-12 xl:px-16 relative z-10">
+          {/* Header: Tag Pill & Title */}
+          <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-18">
+            <span className="inline-block bg-[#EAF5F0] text-primary font-semibold text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-3">
+              Timeline
+            </span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
+              Alur & Tahapan Pendaftaran Santri
+            </h2>
+            <p className="text-text-muted text-sm mt-2">
+              Ikuti 6 langkah terstruktur berikut dari pengisian formulir hingga resmi bergabung menjadi santri baru Darut Taufiq.
+            </p>
+          </div>
+
+          {/* Desktop Horizontal Timeline (>= lg screens) */}
+          <div className="hidden lg:block">
+            <div className="pt-2 pb-4">
+              {/* Row 1: Step Labels */}
+              <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center mb-3">
+                {alurPendaftaran.map((item) => (
+                  <span key={item.step} className="text-xs font-bold text-primary tracking-wide">
+                    {item.label}
+                  </span>
+                ))}
               </div>
 
-              {/* Desktop Horizontal Timeline (>= lg screens) */}
-              <div className="relative z-10 hidden lg:block">
-                <div className="pt-2 pb-4">
-                  {/* Row 1: Step Labels */}
-                  <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center mb-3">
-                    {alurPendaftaran.map((item) => (
-                      <span key={item.step} className="text-xs font-bold text-secondary tracking-wide">
-                        {item.label}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Row 2: Connecting Line & Nodes */}
-                  <div className="relative flex items-center mb-2">
-                    <div className="absolute left-[8.33%] right-[8.33%] h-[2px] bg-amber-300 z-0" />
-                    <div className="w-full grid grid-cols-6 gap-3 xl:gap-5 relative z-10">
-                      {alurPendaftaran.map((item) => (
-                        <div key={item.step} className="flex justify-center">
-                          <div className="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-md ring-2 ring-amber-400/40 shrink-0 hover:scale-125 transition-transform" />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Row 3: Vertical Drop Ticks */}
-                  <div className="grid grid-cols-6 gap-3 xl:gap-5 mb-2.5">
-                    {alurPendaftaran.map((item) => (
-                      <div key={item.step} className="flex justify-center">
-                        <div className="w-[1.5px] h-6 bg-amber-400" />
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Row 4: Titles & Descriptions */}
-                  <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center">
-                    {alurPendaftaran.map((item) => (
-                      <div key={item.step} className="px-1">
-                        <h3 className="text-xs xl:text-sm font-bold text-secondary mb-1.5 leading-snug">
-                          {item.title}
-                        </h3>
-                        <p className="text-[11px] text-text-muted leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Mobile / Tablet Vertical Timeline (< lg screens) */}
-              <div className="relative z-10 lg:hidden max-w-md mx-auto my-2">
-                <div className="relative space-y-7">
-                  {/* Continuous vertical connecting line */}
-                  <div className="absolute top-2 bottom-2 left-[9px] w-[2px] bg-amber-300 z-0" />
-
-                  {alurPendaftaran.map((item, idx) => (
-                    <div key={idx} className="relative flex items-start gap-4 z-10">
-                      {/* Node circle on the vertical line */}
-                      <div className="w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-md ring-2 ring-amber-400/40 shrink-0 mt-0.5" />
-
-                      {/* Step Details */}
-                      <div>
-                        <span className="text-[10px] font-bold text-amber-900 bg-amber-100/90 px-2.5 py-0.5 rounded-full inline-block mb-1">
-                          {item.label}
-                        </span>
-                        <h3 className="text-sm font-bold text-secondary mb-1 leading-snug">
-                          {item.title}
-                        </h3>
-                        <p className="text-xs text-text-muted leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
+              {/* Row 2: Connecting Line & Nodes */}
+              <div className="relative flex items-center mb-2">
+                <div className="absolute left-[8.33%] right-[8.33%] h-[2px] bg-primary/25 z-0" />
+                <div className="w-full grid grid-cols-6 gap-3 xl:gap-5 relative z-10">
+                  {alurPendaftaran.map((item) => (
+                    <div key={item.step} className="flex justify-center">
+                      <div className="w-5 h-5 rounded-full bg-primary border-4 border-white shadow-md ring-2 ring-primary/25 shrink-0 hover:scale-125 transition-transform" />
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* CTA Button */}
-              <div className="relative z-10 mt-12 text-center pt-8 border-t border-amber-200/50">
-                <Link
-                  href="/ppdb/daftar"
-                  target="_blank"
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg text-sm md:text-base group"
-                >
-                  Mulai Pendaftaran Online Sekarang
-                  <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
-                </Link>
+              {/* Row 3: Vertical Drop Ticks */}
+              <div className="grid grid-cols-6 gap-3 xl:gap-5 mb-2.5">
+                {alurPendaftaran.map((item) => (
+                  <div key={item.step} className="flex justify-center">
+                    <div className="w-[1.5px] h-6 bg-primary/40" />
+                  </div>
+                ))}
+              </div>
+
+              {/* Row 4: Titles & Descriptions */}
+              <div className="grid grid-cols-6 gap-3 xl:gap-5 text-center">
+                {alurPendaftaran.map((item) => (
+                  <div key={item.step} className="px-1">
+                    <h3 className="text-xs xl:text-sm font-bold text-secondary mb-1.5 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-[11px] text-text-muted leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
+          {/* Mobile / Tablet Vertical Timeline (< lg screens) */}
+          <div className="lg:hidden max-w-md mx-auto my-2">
+            <div className="relative space-y-7">
+              {/* Continuous vertical connecting line */}
+              <div className="absolute top-2 bottom-2 left-[9px] w-[2px] bg-primary/25 z-0" />
+
+              {alurPendaftaran.map((item, idx) => (
+                <div key={idx} className="relative flex items-start gap-4 z-10">
+                  {/* Node circle on the vertical line */}
+                  <div className="w-5 h-5 rounded-full bg-primary border-4 border-white shadow-md ring-2 ring-primary/25 shrink-0 mt-0.5" />
+
+                  {/* Step Details */}
+                  <div>
+                    <span className="text-[10px] font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full inline-block mb-1">
+                      {item.label}
+                    </span>
+                    <h3 className="text-sm font-bold text-secondary mb-1 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-text-muted leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="mt-12 lg:mt-16 text-center">
+            <Link
+              href="/ppdb/daftar"
+              target="_blank"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg text-sm md:text-base group"
+            >
+              Mulai Pendaftaran Online Sekarang
+              <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          {/* Garis Abu-abu Panjang di Bawah Tombol Hijau */}
+          <div className="mt-12 lg:mt-16 border-t border-gray-200" />
+        </div>
+      </section>
+
+      {/* Konten Utama (Bagian 2: Persyaratan, Biaya, Konsultasi) */}
+      <section className="w-full bg-white pt-12 lg:pt-16 pb-16 lg:pb-24">
+        <div className="w-full max-w-[1406px] mx-auto px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
+
           {/* Section: Syarat & Dokumen Pendaftaran */}
-          <div className="pt-16 lg:pt-20 border-t border-gray-100">
+          <div>
             <div className="text-center max-w-2xl mx-auto mb-10">
               <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Persyaratan</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
