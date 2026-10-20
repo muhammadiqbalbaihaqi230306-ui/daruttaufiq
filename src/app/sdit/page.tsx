@@ -61,7 +61,7 @@ export default function SDITPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="text-primary text-xl shrink-0 flex items-center justify-center w-6">
                     <FaLocationDot />
                   </div>
                   <div>
@@ -70,7 +70,7 @@ export default function SDITPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="text-primary text-xl shrink-0 flex items-center justify-center w-6">
                     <FaClock />
                   </div>
                   <div>
@@ -79,7 +79,7 @@ export default function SDITPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="text-primary text-xl shrink-0 flex items-center justify-center w-6">
                     <FaBook />
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function SDITPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="text-primary text-xl shrink-0 flex items-center justify-center w-6">
                     <FaBuildingUser />
                   </div>
                   <div>
@@ -214,9 +214,9 @@ export default function SDITPage() {
               <h3 className="font-bold text-lg text-secondary mb-6">Hubungi Kami</h3>
               
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-0.5">
-                    <FaPhone className="text-sm" />
+                <div className="flex items-start gap-3.5">
+                  <div className="text-primary text-base shrink-0 mt-1">
+                    <FaPhone />
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 mb-1">Telepon / WhatsApp</p>
@@ -224,9 +224,9 @@ export default function SDITPage() {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-0.5">
-                    <FaEnvelope className="text-sm" />
+                <div className="flex items-start gap-3.5">
+                  <div className="text-primary text-base shrink-0 mt-1">
+                    <FaEnvelope />
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 mb-1">Email</p>

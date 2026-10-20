@@ -84,20 +84,20 @@ export default function KontakPage() {
         <div className="w-full max-w-[1400px] mx-auto space-y-12">
 
           {/* Single Unified Contact Info Container */}
-          <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-10 shadow-sm border border-gray-100 min-h-[170px] lg:min-h-[190px] flex items-center">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-sm border border-gray-100 flex items-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full items-center lg:divide-x divide-gray-100">
               
               {/* Telepon */}
               <a
                 href="tel:02182631191"
-                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4 first:lg:pl-0"
+                className="flex items-center gap-3.5 text-gray-700 lg:px-4 first:lg:pl-0"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="text-primary flex items-center justify-center text-2xl shrink-0">
                   <FaPhoneAlt />
                 </div>
                 <div className="text-xs md:text-sm">
                   <span className="text-gray-500 font-medium">Telepon : </span>
-                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                  <span className="font-bold text-secondary block sm:inline">
                     (021) 82631191
                   </span>
                 </div>
@@ -108,14 +108,14 @@ export default function KontakPage() {
                 href="https://wa.me/6282228880972"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4"
+                className="flex items-center gap-3.5 text-gray-700 lg:px-4"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="text-primary flex items-center justify-center text-2xl shrink-0">
                   <FaWhatsapp />
                 </div>
                 <div className="text-xs md:text-sm">
                   <span className="text-gray-500 font-medium">WhatsApp : </span>
-                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                  <span className="font-bold text-secondary block sm:inline">
                     +62 822 2888 0972
                   </span>
                 </div>
@@ -124,14 +124,14 @@ export default function KontakPage() {
               {/* Email */}
               <a
                 href="mailto:info@daruttaufiq.com"
-                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4"
+                className="flex items-center gap-3.5 text-gray-700 lg:px-4"
               >
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="text-primary flex items-center justify-center text-2xl shrink-0">
                   <FaEnvelope />
                 </div>
                 <div className="text-xs xl:text-sm min-w-0">
                   <span className="text-gray-500 font-medium">Email : </span>
-                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                  <span className="font-bold text-secondary block sm:inline">
                     info@daruttaufiq.com
                   </span>
                 </div>
@@ -139,7 +139,7 @@ export default function KontakPage() {
 
               {/* Jam Operasional */}
               <div className="flex items-center gap-3.5 text-gray-700 lg:px-4">
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0">
+                <div className="text-primary flex items-center justify-center text-2xl shrink-0">
                   <FaClock />
                 </div>
                 <div className="text-xs md:text-sm">
@@ -214,8 +214,8 @@ export default function KontakPage() {
                 ></iframe>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                  <FaMapMarkerAlt className="text-primary text-xl" />
+                <div className="text-primary text-2xl shrink-0 mt-0.5">
+                  <FaMapMarkerAlt />
                 </div>
                 <div>
                   <h3 className="font-bold text-secondary mb-1">Alamat Lengkap</h3>
