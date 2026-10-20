@@ -29,7 +29,17 @@ export default async function BeritaPage({
     });
 
     posts = await prisma.post.findMany({
-      where: category ? { category } : undefined,
+      where: category
+        ? {
+            category: {
+              in: [
+                category,
+                category.toLowerCase(),
+                category.charAt(0).toUpperCase() + category.slice(1).toLowerCase(),
+              ],
+            },
+          }
+        : undefined,
       orderBy: { publishedAt: "desc" },
     });
   } catch (error) {
@@ -40,66 +50,78 @@ export default async function BeritaPage({
   if (mainPosts.length === 0) {
     const baseDummyPosts = [
       {
-        id: "dummy-1",
-        slug: "juara-1-yonkomlekad",
-        title: "Peserta Didik SDIT Arkan Cendekia Raih Juara 1 pada YONKOMLEKAD Archery Championship 2026",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg",
-        publishedAt: new Date("2026-07-28"),
-        excerpt: "Bekasi, 28 Juli 2026 — Prestasi membanggakan kembali diraih oleh peserta didik SDIT Arkan Cendekia...",
-        category: "Prestasi",
+        id: "dummy-5",
+        slug: "semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq",
+        title: "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre",
+        thumbnail: "/images/berita6.jpg",
+        publishedAt: new Date("2026-10-22T08:00:00.000Z"),
+        excerpt: "Memperingati Hari Santri Nasional, santri dan dewan asatidz Pondok Pesantren Darut Taufiq bergabung bersama ribuan santri se-Jakarta Utara mengikuti Apel Akbar khidmat di pelataran Jakarta Islamic Centre.",
+        category: "Kegiatan",
       },
       {
-        id: "dummy-2",
-        slug: "26-medali-msc",
-        title: "26 Medali Berhasil Diraih SDIT Arkan Cendekia di Mentari Science Competition (MSC) 2026",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg",
-        publishedAt: new Date("2026-07-21"),
-        excerpt: "Bekasi, 21 Juli 2026 — Prestasi membanggakan kembali ditorehkan oleh peserta didik SDIT Arkan...",
-        category: "Prestasi",
-      },
-      {
-        id: "dummy-3",
-        slug: "training-guru",
-        title: "Yayasan Pendidikan Arkan Cendekia Selenggarakan Professional Development Training 2026 untuk Tingkatkan Kompetensi Guru",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg",
-        publishedAt: new Date("2026-07-14"),
-        excerpt: "Bekasi, 13 Juli 2026 — Yayasan Pendidikan Arkan Cendekia kembali menunjukkan komitmennya dalam...",
+        id: "dummy-6",
+        slug: "latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq",
+        title: "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak",
+        thumbnail: "/images/berita5.jpg",
+        publishedAt: new Date("2026-10-20T08:00:00.000Z"),
+        excerpt: "Membina kebugaran fisik sekaligus menanamkan adab, kemandirian, dan sportivitas Islami, para santri Pondok Pesantren Darut Taufiq antusias mengikuti latihan rutin bela diri Pencak Silat.",
         category: "Kegiatan",
       },
       {
         id: "dummy-4",
-        slug: "artikel-pentingnya-pendidikan",
-        title: "Pentingnya Pendidikan Karakter di Era Digital",
-        thumbnail: "/images/placeholder-news.jpg",
-        publishedAt: new Date("2026-07-10"),
-        excerpt: "Pendidikan karakter menjadi fondasi yang sangat krusial bagi generasi muda di tengah pesatnya perkembangan teknologi dan informasi.",
-        category: "Artikel",
+        slug: "keseruan-kegiatan-renang-santri-darut-taufiq",
+        title: "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah",
+        thumbnail: "/images/berita4.jpeg",
+        publishedAt: new Date("2026-07-18T08:30:00.000Z"),
+        excerpt: "Dalam rangka menjaga kebugaran jasmani sekaligus mengamalkan anjuran Rasulullah SAW, santri Pondok Pesantren Darut Taufiq antusias mengikuti agenda renang ceria bersama.",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-1",
+        slug: "keseruan-mpls-dan-senam-pagi-santri-baru",
+        title: "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru",
+        thumbnail: "/images/berita3.jpg",
+        publishedAt: new Date("2026-07-15T08:15:00.000Z"),
+        excerpt: "Penuh semangat dan keceriaan, para santri baru Pondok Pesantren Darut Taufiq mengikuti kegiatan senam pagi bersama dan outbound edukatif dalam rangka Masa Pengenalan Lingkungan Sekolah (MPLS).",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-2",
+        slug: "upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas",
+        title: "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq",
+        thumbnail: "/images/berita2.jpg",
+        publishedAt: new Date("2026-07-13T08:01:00.000Z"),
+        excerpt: "Pondok Pesantren Darut Taufiq mengawali Tahun Ajaran 2026/2027 dengan menggelar upacara bendera khidmat yang dirangkai dengan simbolis pemotongan pita peresmian sarana ruang belajar baru.",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-3",
+        slug: "pertemuan-wali-santri-dan-apresiasi-prestasi-siswa",
+        title: "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq",
+        thumbnail: "/images/berita1.jpg",
+        publishedAt: new Date("2026-06-26T10:44:00.000Z"),
+        excerpt: "Mempererat sinergi antara sekolah dan orang tua, Pondok Pesantren Darut Taufiq mengadakan agenda temu silaturahmi wali santri sekaligus penyerahan kado apresiasi bagi santri berprestasi.",
+        category: "Prestasi",
       },
     ];
 
-    const allDummyPosts = Array.from({ length: 10 }).map((_, i) => ({
-      ...baseDummyPosts[i % baseDummyPosts.length],
-      id: `dummy-${i + 1}`,
-      title: `${baseDummyPosts[i % baseDummyPosts.length].title} ${i > 3 ? `(Bagian ${i + 1})` : ""}`,
-    }));
-
-    mainPosts = allDummyPosts as any;
+    mainPosts = baseDummyPosts as any;
 
     if (category) {
-      posts = allDummyPosts.filter((p) => p.category.toLowerCase() === category.toLowerCase()) as any;
+      posts = baseDummyPosts.filter((p) => p.category.toLowerCase() === category.toLowerCase()) as any;
     } else {
-      posts = allDummyPosts as any;
+      posts = baseDummyPosts as any;
     }
   }
 
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section (Mengikuti gaya Sejarah) */}
+      {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0092.jpg')" }}
+          style={{ backgroundImage: "url('/images/berita2.jpg')" }}
         />
         {/* Overlay agar teks terbaca */}
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
@@ -111,11 +133,11 @@ export default async function BeritaPage({
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Management
+                Berita & Kegiatan
               </h1>
               {/* Summary */}
               <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+                Kabar terbaru, agenda kegiatan, dan dokumentasi aktivitas santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq.
               </p>
             </div>
           </div>
@@ -137,7 +159,7 @@ export default async function BeritaPage({
           <div className="mt-16 pt-12 border-t border-gray-100">
             {/* Category Filter ala UQU */}
             <div className="flex flex-wrap gap-2 mb-8">
-              {['Semua', 'Prestasi', 'Artikel', 'Kegiatan'].map(cat => {
+              {['Semua', 'Kegiatan', 'Artikel'].map(cat => {
                 const isActive = category ? category === cat.toLowerCase() : cat === 'Semua';
                 return (
                   <Link

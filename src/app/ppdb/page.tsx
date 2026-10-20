@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { 
@@ -99,50 +100,42 @@ const alurPendaftaran = [
 const syaratDokumen = [
   {
     icon: FaIdCard,
-    title: "Identitas Diri & Keluarga",
+    title: "Identitas Diri & Formulir",
     items: [
-      "Fotokopi Kartu Keluarga (KK) - 3 lembar",
-      "Fotokopi Akta Kelahiran Calon Santri - 3 lembar",
-      "Fotokopi KTP kedua orang tua/wali - 3 lembar",
-      "Pas foto santri terbaru ukuran 3x4 (latar biru/merah) - 4 lembar",
+      "Mengisi formulir pendaftaran Lengkap",
+      "Foto diri dengan ukuran 3×4, 4 lembar",
+      "Foto copy KTP wali santri ( 2 lembar)",
+      "Foto copy Akte Kelahiran ( 2 lembar)",
     ],
   },
   {
     icon: FaFileAlt,
     title: "Dokumen Akademik",
     items: [
-      "Nomor Induk Siswa Nasional (NISN) aktif",
-      "Fotokopi rapor 2 semester terakhir yang dilegalisir",
-      "Surat Keterangan Lulus / Ijazah asli & fotokopi legalisir (bisa menyusul)",
-      "Sertifikat prestasi akademik atau tahfidz (jika ada, untuk jalur beasiswa)",
+      "Foto copy ijazah terleglisir ( 2 lembar)",
+      "Foto copy SKL ( 2 lembar)",
+      "Surat pindah sekolah dan daftar nilai/Raport siswa (bagi siswa pindahan)",
     ],
   },
   {
     icon: FaNotesMedical,
-    title: "Kesehatan & Perlengkapan",
+    title: "Bantuan & Berkas Tambahan",
     items: [
-      "Surat keterangan sehat jasmani & rohani dari dokter/Puskesmas",
-      "Surat bebas penyakit menular kronis/bawaan",
-      "Surat pernyataan kesiapan mematuhi tata tertib pesantren",
-      "Menandatangani komitmen pembinaan santri oleh orang tua/wali",
+      "Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)",
+      "Surat keterangan sehat dari dokter/Puskesmas",
+      "Surat komitmen dan tata tertib pesantren",
     ],
   },
 ];
 
 const unitPilihan = [
   {
-    nama: "TKIT Darut Taufiq",
-    jenjang: "Pendidikan Anak Usia Dini (4-6 Tahun)",
-    fokus: ["Tahfidz Juz 30 Ceria", "Pendidikan Karakter & Adab", "Kreativitas & Motorik", "Bilingual Fun Learning"],
-    href: "/tkit",
-    tag: "Fullday School",
-  },
-  {
     nama: "SDIT Darut Taufiq",
     jenjang: "Sekolah Dasar Islam Terpadu (Kelas 1 - 6)",
     fokus: ["Target Tahfidz 3-5 Juz", "Kurikulum Terpadu & Cambridge", "Dasar Coding & Robotika", "Kelas Terpisah Putra/Putri"],
     href: "/sdit",
     tag: "Fullday School",
+    logo: "/images/sdit.png",
   },
   {
     nama: "SMPIT & Pesantren",
@@ -150,6 +143,7 @@ const unitPilihan = [
     fokus: ["Target Tahfidz 10-30 Juz", "Bahasa Arab & Inggris Aktif", "Asrama Putra & Putri Mandiri", "Kajian Kitab & Kurikulum Nasional"],
     href: "/smpit",
     tag: "Boarding & Fullday",
+    logo: "/images/smpit.png",
   },
 ];
 
@@ -186,12 +180,10 @@ export default function PPDBPage() {
 
       {/* Konten Utama */}
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
-        <div className="w-full max-w-[1400px] mx-auto space-y-12 lg:space-y-16">
-
-
+        <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)] space-y-16 lg:space-y-20">
 
           {/* Section: Status Gelombang */}
-          <div className="bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+          <div>
             <div className="text-center max-w-2xl mx-auto mb-10">
               <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Jadwal & Kuota</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
@@ -206,7 +198,7 @@ export default function PPDBPage() {
               {gelombang.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`rounded-2xl p-6 lg:p-8 flex flex-col justify-between border-2 transition-all relative ${
+                  className={`rounded-2xl p-6 lg:p-8 flex flex-col justify-between border transition-all relative ${
                     item.isActive
                       ? "border-primary bg-primary/5 shadow-xl scale-[1.02]"
                       : "border-gray-100 bg-white shadow-sm hover:border-gray-200"
@@ -272,7 +264,7 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Pilihan Jenjang Pendidikan */}
-          <div className="bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+          <div className="pt-16 lg:pt-20 border-t border-gray-100">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
               <div>
                 <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Jenjang Pendidikan</span>
@@ -280,7 +272,7 @@ export default function PPDBPage() {
                   Pilihan Unit Sekolah & Pesantren
                 </h2>
                 <p className="text-text-muted text-sm mt-1 max-w-xl">
-                  Tersedia jenjang pendidikan mulai dari usia dini hingga menengah pertama dengan kurikulum terpadu.
+                  Tersedia jenjang pendidikan Sekolah Dasar (SDIT) dan Menengah Pertama (SMPIT & Pesantren) dengan kurikulum terpadu.
                 </p>
               </div>
               <Link
@@ -292,7 +284,7 @@ export default function PPDBPage() {
               </Link>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {unitPilihan.map((unit, idx) => (
                 <div 
                   key={idx}
@@ -303,7 +295,9 @@ export default function PPDBPage() {
                       <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary">
                         {unit.tag}
                       </span>
-                      <FaUserGraduate className="text-secondary/30 group-hover:text-primary text-xl transition-colors" />
+                      <div className="w-10 h-10 relative bg-white rounded-xl p-1 shadow-sm border border-gray-100 flex items-center justify-center shrink-0">
+                        <Image src={unit.logo} alt={unit.nama} fill className="object-contain p-1" />
+                      </div>
                     </div>
 
                     <h3 className="text-xl font-bold text-secondary mb-1">
@@ -347,7 +341,8 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Alur Pendaftaran */}
-          <div id="alur" className="bg-secondary text-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-2xl relative overflow-hidden">
+          <div id="alur" className="pt-16 lg:pt-20 border-t border-gray-100">
+            <div className="bg-secondary text-white rounded-2xl lg:rounded-3xl p-8 lg:p-12 xl:p-14 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
             
             <div className="relative z-10 text-center max-w-2xl mx-auto mb-12">
@@ -394,10 +389,11 @@ export default function PPDBPage() {
                 <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+            </div>
           </div>
 
           {/* Section: Syarat & Dokumen Pendaftaran */}
-          <div className="bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+          <div className="pt-16 lg:pt-20 border-t border-gray-100">
             <div className="text-center max-w-2xl mx-auto mb-10">
               <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Persyaratan</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
@@ -412,7 +408,7 @@ export default function PPDBPage() {
               {syaratDokumen.map((syarat, idx) => (
                 <div 
                   key={idx}
-                  className="bg-surface rounded-2xl p-6 lg:p-7 border border-gray-100 shadow-sm"
+                  className="bg-white rounded-2xl p-6 lg:p-7 border border-gray-200"
                 >
                   <div className="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center text-xl mb-4 shadow-sm">
                     <syarat.icon />
@@ -455,7 +451,8 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Biaya Pendidikan & Link */}
-          <div className="bg-gradient-to-r from-secondary to-[#154641] text-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="pt-16 lg:pt-20 border-t border-gray-100">
+            <div className="bg-gradient-to-r from-secondary to-[#154641] text-white rounded-2xl lg:rounded-3xl p-8 lg:p-12 xl:p-14 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="space-y-3 max-w-2xl text-center lg:text-left">
               <span className="text-primary-light font-bold text-xs uppercase tracking-wider block">Transparan & Terjangkau</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
@@ -483,10 +480,11 @@ export default function PPDBPage() {
                 <FaExternalLinkAlt className="text-xs" />
               </Link>
             </div>
+            </div>
           </div>
 
           {/* Section: Sekretariat & Layanan Bantuan PPDB */}
-          <div className="bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-14 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+          <div className="pt-16 lg:pt-20 border-t border-gray-100">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
                 <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Layanan Konsultasi</span>

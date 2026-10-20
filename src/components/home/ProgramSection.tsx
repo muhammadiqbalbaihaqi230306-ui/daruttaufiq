@@ -7,16 +7,16 @@ import { useState, useEffect } from "react";
 
 const programs = [
   {
-    title: "Tahfidz Qur'an",
-    description: "Program Tahfidz Quran terstruktur untuk membimbing peserta didik dalam menghafal Al-Quran dengan baik dan benar, mencetak generasi Qurani yang berakhlak mulia.",
+    title: "Tahfidz Al-Qur'an",
+    description: "Bimbingan hafalan Al-Qur'an intensif mutqin, tahsin bersanad, dan muraja'ah berkala bersama asatidz penghafal Al-Qur'an.",
   },
   {
-    title: "Bilingual English & Arabic",
-    description: "Program Multi Bahasa membekali siswa dengan kemampuan bahasa internasional yang kuat untuk menciptakan generasi yang mampu beradaptasi secara global.",
+    title: "Bahasa Jepang",
+    description: "Mengenal bahasa dan budaya Jepang melalui pembelajaran huruf dasar Hiragana, Katakana, dan percakapan praktis sehari-hari (Kaiwa).",
   },
   {
-    title: "Coding & Robotics",
-    description: "Membekali santri dengan keterampilan teknologi masa depan melalui pembelajaran coding dan robotika, melatih logika berpikir dalam menyelesaikan masalah.",
+    title: "Bahasa Arab",
+    description: "Pembiasaan percakapan harian (muhadatsah) dan penguasaan tata bahasa Arab intensif sebagai bahasa Al-Qur'an dan ilmu.",
   },
 ];
 

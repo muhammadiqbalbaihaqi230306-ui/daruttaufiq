@@ -34,19 +34,13 @@ export const menuItems = [
     label: "Unit",
     href: "#",
     children: [
-      { label: "TKIT", href: "/tkit" },
       { label: "SDIT", href: "/sdit" },
       { label: "SMPIT", href: "/smpit" },
-      { label: "Perpustakaan", href: "https://library.daruttaufiq.com" },
     ],
   },
   {
     label: "Berita",
     href: "/berita",
-    children: [
-      { label: "Prestasi", href: "/prestasi" },
-      { label: "Artikel", href: "/berita?category=artikel" },
-    ],
   },
   { label: "Kontak", href: "/kontak" },
   { label: "PPDB", href: "/ppdb", highlight: true },

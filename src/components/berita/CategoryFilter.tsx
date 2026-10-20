@@ -8,9 +8,8 @@ export default function CategoryFilter({ currentCategory }: { currentCategory?: 
   const router = useRouter();
   const tabs = [
     { id: "", label: "Semua", href: "/berita" },
-    { id: "prestasi", label: "Prestasi", href: "/berita?category=prestasi" },
-    { id: "artikel", label: "Artikel", href: "/berita?category=artikel" },
     { id: "kegiatan", label: "Kegiatan", href: "/berita?category=kegiatan" },
+    { id: "artikel", label: "Artikel", href: "/berita?category=artikel" },
   ];
 
   const activeId = currentCategory?.toLowerCase() || "";

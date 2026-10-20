@@ -118,12 +118,12 @@ export default function MainNewsInteractive({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="flex flex-col gap-4 h-full"
+              className="grid grid-rows-3 gap-4 h-full"
             >
               {currentList.map((post) => (
                 <div
                   key={post.id}
-                  className="group flex flex-col sm:flex-row border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2 gap-4 flex-1"
+                  className="group flex flex-col sm:flex-row border border-gray-200 rounded-[1.25rem] overflow-hidden bg-white p-2 gap-4 h-full min-h-0"
                 >
                   <div className="relative w-full sm:w-48 h-32 sm:h-full min-h-[120px] shrink-0 rounded-xl overflow-hidden bg-gray-50">
                     <Image
@@ -133,7 +133,7 @@ export default function MainNewsInteractive({
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="flex flex-col flex-grow justify-between py-2 pr-2">
+                  <div className="flex flex-col flex-grow justify-between py-2 pr-2 min-h-0">
                     <Link href={`/berita/${post.slug}`}>
                       <h3 className="text-[15px] font-bold text-secondary leading-snug line-clamp-3 sm:line-clamp-2 group-hover:underline decoration-1 underline-offset-4 decoration-secondary cursor-pointer mb-2">
                         {post.title}
@@ -163,7 +163,7 @@ export default function MainNewsInteractive({
         </div>
 
         {/* Pagination Controls */}
-        {!hidePagination && (
+        {!hidePagination && totalPages > 1 && (
           <div className="flex items-center justify-between px-2 pt-4 pb-1">
             <div className="flex gap-2">
               {Array.from({ length: totalPages }).map((_, i) => (

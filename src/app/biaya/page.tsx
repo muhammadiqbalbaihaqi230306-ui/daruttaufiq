@@ -40,7 +40,7 @@ export default function BiayaPage() {
       {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/images program/IMG-20260714-WA0110.jpg')" }}
         />
@@ -64,11 +64,11 @@ export default function BiayaPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Konten Utama */}
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto bg-white rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 xl:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-          
+
           <div className="mb-16">
             <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
@@ -122,7 +122,7 @@ export default function BiayaPage() {
             <div className="bg-secondary text-white rounded-3xl p-8 lg:p-10 relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
               <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
-              
+
               <div className="flex items-center gap-4 mb-8 relative z-10">
                 <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white text-2xl">
                   <FaWallet />
@@ -149,11 +149,11 @@ export default function BiayaPage() {
                 <span className="font-bold text-white/90">Total Per Bulan</span>
                 <span className="text-2xl font-bold text-white">{formatRupiah(totalBiayaBulanan)}</span>
               </div>
-              
+
               <div className="mt-8 text-center relative z-10">
-                 <p className="text-xs text-white/60">
-                   *Biaya bulanan dibayarkan selambat-lambatnya tanggal 10 setiap bulan.
-                 </p>
+                <p className="text-xs text-white/60">
+                  *Biaya bulanan dibayarkan selambat-lambatnya tanggal 10 setiap bulan.
+                </p>
               </div>
             </div>
           </div>
@@ -174,14 +174,14 @@ export default function BiayaPage() {
             <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 min-w-[280px]">
               <p className="text-xs text-text-muted font-semibold font-sans uppercase mb-2">Rekening Resmi</p>
               <div className="flex items-center gap-4">
-                 <div className="bg-secondary/10 p-2 rounded-lg text-secondary">
-                    <FaBuildingColumns size={24} />
-                 </div>
-                 <div>
-                    <p className="text-xs text-gray-500 font-medium">Bank Syariah Indonesia (BSI)</p>
-                    <p className="font-bold text-secondary text-lg">7182 999 888</p>
-                    <p className="text-xs text-gray-500">a.n Yayasan Darut Taufiq</p>
-                 </div>
+                <div className="bg-secondary/10 p-2 rounded-lg text-secondary">
+                  <FaBuildingColumns size={24} />
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500 font-medium">Bank Syariah Indonesia (BSI)</p>
+                  <p className="font-bold text-secondary text-lg">7182 999 888</p>
+                  <p className="text-xs text-gray-500">a.n Yayasan Darut Taufiq</p>
+                </div>
               </div>
             </div>
           </div>

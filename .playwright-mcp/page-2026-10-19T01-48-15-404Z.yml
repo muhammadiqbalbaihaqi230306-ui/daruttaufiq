@@ -1,0 +1,253 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e3]:
+    - list [ref=f3e4]:
+      - listitem [ref=f3e5]:
+        - link "+6282228880972" [ref=f3e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f3e10]:
+        - link "info@daruttaufiq.com" [ref=f3e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f3e15]:
+        - generic [ref=f3e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f3e19]:
+      - listitem [ref=f3e20]:
+        - link "Instagram" [ref=f3e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f3e24]:
+        - link "TikTok" [ref=f3e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f3e28]:
+        - link "YouTube" [ref=f3e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f3e32]:
+        - link "Facebook" [ref=f3e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f3e36]:
+    - generic [ref=f3e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f3e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f3e40]
+        - generic [ref=f3e41]:
+          - generic [ref=f3e42]: DARUT TAUFIQ
+          - generic [ref=f3e43]: PONDOK PESANTREN
+      - navigation [ref=f3e44]:
+        - link "Beranda" [ref=f3e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f3e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f3e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f3e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f3e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f3e62] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f3e64] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f3e65]
+  - main [ref=f3e68]:
+    - main [ref=f3e69]:
+      - generic [ref=f3e71]:
+        - generic [ref=f3e72]:
+          - heading "Student Profile Setup" [level=1] [ref=f3e73]
+          - paragraph [ref=f3e74]: Step 1 of 4
+        - generic [ref=f3e75]:
+          - generic [ref=f3e76]:
+            - generic [ref=f3e79]:
+              - generic [ref=f3e80]:
+                - generic [ref=f3e81]: "1"
+                - generic [ref=f3e82]: Personal Data
+              - generic [ref=f3e85]:
+                - generic [ref=f3e86]: "2"
+                - generic [ref=f3e87]: Basic Data
+              - generic [ref=f3e89]:
+                - generic [ref=f3e90]: "3"
+                - generic [ref=f3e91]: Additional Data
+              - generic [ref=f3e93]:
+                - generic [ref=f3e94]: "4"
+                - generic [ref=f3e95]: Qualifications & Attachments
+            - generic [ref=f3e97]:
+              - generic [ref=f3e98]:
+                - generic [ref=f3e99]:
+                  - heading "Personal Data" [level=3] [ref=f3e102]
+                  - paragraph [ref=f3e103]: Tentukan jenjang pendidikan dan periode gelombang pendaftaran calon santri.
+                - generic [ref=f3e104]:
+                  - generic [ref=f3e105]: Gelombang Pendaftaran *
+                  - generic [ref=f3e106]:
+                    - generic [ref=f3e107] [cursor=pointer]:
+                      - generic [ref=f3e108]:
+                        - generic [ref=f3e109]: Gelombang 1 (Early Bird)
+                        - generic [ref=f3e110]: Diskon 20%
+                      - generic [ref=f3e111]: Potongan Uang Gedung 20% • Kuota Terbatas
+                      - radio "Gelombang 1 (Early Bird) Diskon 20% Potongan Uang Gedung 20% • Kuota Terbatas" [checked] [ref=f3e112]
+                    - generic [ref=f3e113] [cursor=pointer]:
+                      - generic [ref=f3e114]:
+                        - generic [ref=f3e115]: Gelombang 2 (Reguler)
+                        - generic [ref=f3e116]: Reguler
+                      - generic [ref=f3e117]: Potongan Uang Gedung 10%
+                      - radio "Gelombang 2 (Reguler) Reguler Potongan Uang Gedung 10%" [ref=f3e118]
+                - generic [ref=f3e119]:
+                  - generic [ref=f3e120]: Pilihan Unit Pendidikan *
+                  - generic [ref=f3e121]:
+                    - generic [ref=f3e122] [cursor=pointer]:
+                      - generic [ref=f3e123]:
+                        - img "SDIT Darut Taufiq" [ref=f3e125]
+                        - heading "SDIT Darut Taufiq" [level=4] [ref=f3e126]
+                        - generic [ref=f3e127]: Usia 6 - 12 Tahun
+                        - paragraph [ref=f3e128]: Fullday • Tahfidz & Cambridge
+                      - radio "SDIT Darut Taufiq SDIT Darut Taufiq Usia 6 - 12 Tahun Fullday • Tahfidz & Cambridge" [checked] [ref=f3e129]
+                    - generic [ref=f3e130] [cursor=pointer]:
+                      - generic [ref=f3e131]:
+                        - img "SMPIT & Pesantren" [ref=f3e133]
+                        - heading "SMPIT & Pesantren" [level=4] [ref=f3e134]
+                        - generic [ref=f3e135]: Usia 12 - 15 Tahun
+                        - paragraph [ref=f3e136]: Boarding / Fullday • Tahfidz 30 Juz
+                      - radio "SMPIT & Pesantren SMPIT & Pesantren Usia 12 - 15 Tahun Boarding / Fullday • Tahfidz 30 Juz" [ref=f3e137]
+                - generic [ref=f3e138]:
+                  - generic [ref=f3e139]: Tipe Program *
+                  - generic [ref=f3e144]:
+                    - text: Untuk jenjang
+                    - strong [ref=f3e145]: SDIT
+                    - text: ", program yang berjalan adalah"
+                    - strong [ref=f3e146]: Fullday School
+                    - text: (pembelajaran harian).
+              - generic [ref=f3e147]:
+                - link "← Batal & Kembali" [ref=f3e148] [cursor=pointer]:
+                  - /url: /ppdb
+                - button "Lanjutkan" [ref=f3e149]
+          - generic [ref=f3e152]:
+            - generic [ref=f3e153]:
+              - generic [ref=f3e159]: 25% Selesai
+              - heading "Calon Santri Baru" [level=4] [ref=f3e160]
+              - paragraph [ref=f3e161]: Data Calon Santri
+              - generic [ref=f3e163]:
+                - generic [ref=f3e164]:
+                  - generic [ref=f3e165]: Jenis Kelamin
+                  - generic [ref=f3e166]: Laki-laki
+                - generic [ref=f3e167]:
+                  - generic [ref=f3e168]: Tempat Lahir
+                  - generic [ref=f3e169]: "-"
+                - generic [ref=f3e170]:
+                  - generic [ref=f3e171]: Tanggal Lahir
+                  - generic [ref=f3e172]: "-"
+                - generic [ref=f3e173]:
+                  - generic [ref=f3e174]: Usia Santri
+                  - generic [ref=f3e175]: "-"
+                - generic [ref=f3e176]:
+                  - generic [ref=f3e177]: NIK Santri
+                  - generic [ref=f3e178]: "-"
+                - generic [ref=f3e179]:
+                  - generic [ref=f3e180]: NISN
+                  - generic [ref=f3e181]: "-"
+                - generic [ref=f3e182]:
+                  - generic [ref=f3e183]: Asal Sekolah
+                  - generic [ref=f3e184]: "-"
+                - generic [ref=f3e185]:
+                  - generic [ref=f3e186]: Hafalan Qur'an
+                  - generic [ref=f3e187]: Belum Ada
+                - generic [ref=f3e188]:
+                  - generic [ref=f3e189]: Unit Pendidikan
+                  - generic [ref=f3e190]: SDIT (Fullday)
+                - generic [ref=f3e191]:
+                  - generic [ref=f3e192]: Gelombang
+                  - generic [ref=f3e193]: Gel. 1 (Early Bird)
+            - generic [ref=f3e197]:
+              - paragraph [ref=f3e198]: Data Aman & Terenkripsi
+              - paragraph [ref=f3e199]: Data calon santri terlindungi dan diproses langsung oleh Panitia PPDB Pondok Pesantren Darut Taufiq.
+  - contentinfo [ref=f3e200]:
+    - generic [ref=f3e202]:
+      - generic [ref=f3e203]:
+        - generic [ref=f3e204]:
+          - img "Pondok Modern" [ref=f3e205]
+          - generic [ref=f3e206]:
+            - generic [ref=f3e207]: DARUT TAUFIQ
+            - generic [ref=f3e208]: PONDOK PESANTREN
+        - list [ref=f3e209]:
+          - listitem [ref=f3e210]:
+            - link "+6282228880972" [ref=f3e211] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f3e215]:
+            - link "info@daruttaufiq.com" [ref=f3e216] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f3e220]:
+            - link "(021) 82631191" [ref=f3e221] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f3e225]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f3e226] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f3e230]:
+        - heading "Profil" [level=4] [ref=f3e231]
+        - list [ref=f3e232]:
+          - listitem [ref=f3e233]:
+            - link "Sejarah Sekolah" [ref=f3e234] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f3e238]:
+            - link "Manajemen" [ref=f3e239] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f3e243]:
+            - link "Staff & Pengajar" [ref=f3e244] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f3e248]:
+            - link "Nilai & Budaya" [ref=f3e249] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f3e253]:
+        - heading "Informasi" [level=4] [ref=f3e254]
+        - list [ref=f3e255]:
+          - listitem [ref=f3e256]:
+            - link "Pendaftaran PPDB" [ref=f3e257] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f3e261]:
+            - link "Program Unggulan" [ref=f3e262] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f3e266]:
+            - link "Sarana & Fasilitas" [ref=f3e267] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f3e271]:
+            - link "Biaya Pendidikan" [ref=f3e272] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f3e276]:
+            - link "Frequently Asked Questions" [ref=f3e277] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f3e281]:
+        - heading "Instagram" [level=4] [ref=f3e282]
+        - generic [ref=f3e283]:
+          - link [ref=f3e284] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e285]
+          - link [ref=f3e289] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e290]
+          - link [ref=f3e294] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e295]
+          - link [ref=f3e299] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e300]
+          - link [ref=f3e304] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e305]
+          - link [ref=f3e309] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f3e310]
+    - generic [ref=f3e316]:
+      - paragraph [ref=f3e317]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f3e318]:
+        - link "Instagram" [ref=f3e319] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f3e322] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f3e325] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f3e328] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f3e332]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f3e340] [cursor=pointer]:
+    - generic [ref=f3e343]:
+      - text: Compiling
+      - generic [ref=f3e344]:
+        - generic [ref=f3e345]: .
+        - generic [ref=f3e346]: .
+        - generic [ref=f3e347]: .
+  - alert [ref=f3e348]

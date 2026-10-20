@@ -1,55 +1,48 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { FaBookQuran, FaGraduationCap, FaSchool, FaBuildingUser, FaMedal, FaLaptopCode } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Program | Pondok Pesantren Darut Taufiq",
-  description: "Program unggulan dan unit pendidikan di Pondok Pesantren Darut Taufiq.",
+  title: "Program Unggulan | Pondok Pesantren Darut Taufiq",
+  description: "Program unggulan di Pondok Pesantren Darut Taufiq: Kelas Tahfidz Al-Qur'an, Baca Kitab Kuning, Bahasa Arab, Bahasa Inggris, Pidato 3 Bahasa, dan Ilmu Teknologi.",
 };
 
 const programs = [
   {
-    title: "Tahfidz Al-Qur'an",
-    description: "Program hafalan Al-Qur'an dengan metode mutqin (kuat), didampingi oleh musyrif/musyrifah berpengalaman yang berfokus pada tahsin dan tajwid.",
-    icon: FaBookQuran,
+    title: "Kelas Tahfidz Al-Qur'an",
+    description: "Program hafalan Al-Qur'an intensif dengan metode mutqin, didampingi asatidz dan musyrif/musyrifah berpengalaman dengan fokus pada tahsin, tajwid, dan muraja'ah berkala.",
     image: "/images/images program/IMG-20250427-WA0012.jpg",
   },
   {
-    title: "SDIT (Sekolah Dasar Islam Terpadu)",
-    description: "Pendidikan dasar yang memadukan kurikulum nasional dan nilai-nilai keislaman untuk membangun pondasi karakter anak sejak usia dini.",
-    icon: FaSchool,
+    title: "Baca Kitab Kuning",
+    description: "Pembelajaran dan pengkajian kitab kuning / turats Islam klasik mencakup ilmu nahwu, sharaf, fiqih, aqidah, dan akhlak untuk menanamkan pemahaman agama yang mendalam dan bersanad.",
     image: "/images/images program/IMG-20260714-WA0110.jpg",
   },
   {
-    title: "SMPIT (Sekolah Menengah Pertama Islam Terpadu)",
-    description: "Lanjutan pendidikan menengah yang menyeimbangkan kecerdasan akademik, spiritual, dan emosional (ESQ) untuk menyambut usia remaja.",
-    icon: FaGraduationCap,
+    title: "Bahasa Arab",
+    description: "Pembiasaan percakapan (muhadatsah) dan penguasaan tata bahasa Arab intensif sebagai bahasa ilmu dan Al-Qur'an dalam komunikasi keseharian santri di lingkungan pesantren.",
     image: "/images/images program/IMG-20260714-WA0092.jpg",
   },
   {
-    title: "Boarding School (Asrama)",
-    description: "Program pendidikan berasrama dengan pembiasaan ibadah harian, adab Islami, kemandirian, dan bahasa Arab/Inggris dalam keseharian.",
-    icon: FaBuildingUser,
+    title: "Bahasa Inggris",
+    description: "Pengembangan keterampilan aktif berbahasa Inggris santri melalui program English Area, conversation practice, grammar, dan vocabulary untuk memperluas wawasan global.",
     image: "/images/images halaman pp/IMG_20260921_074106.jpg",
   },
   {
-    title: "Keterampilan Teknologi & Bahasa",
-    description: "Membekali santri dengan kemampuan bahasa asing (Arab & Inggris) dan literasi digital agar siap menghadapi tantangan zaman.",
-    icon: FaLaptopCode,
-    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
+    title: "Pidato 3 Bahasa",
+    description: "Pelatihan public speaking dan muhadhoroh rutin dalam 3 bahasa (Arab, Inggris, dan Indonesia) untuk mengasah kepercayaan diri, retorika, vokal, dan jiwa kepemimpinan santri.",
+    image: "/images/images program/IMG-20260714-WA0095.jpg",
   },
   {
-    title: "Pengembangan Bakat & Prestasi",
-    description: "Mewadahi potensi santri melalui kegiatan ekstrakurikuler seperti memanah, bela diri, pramuka, dan karya tulis.",
-    icon: FaMedal,
-    image: "/images/images program/IMG-20260625-WA0117.jpg",
+    title: "Ilmu Teknologi",
+    description: "Membekali santri dengan literasi digital, pengoperasian komputer, dasar pemrograman (coding), dan teknologi informasi terapan agar santri adaptif terhadap kemajuan zaman.",
+    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
   }
 ];
 
 export default function ProgramPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section (Sesuai dengan template manajemen) */}
+      {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
@@ -66,11 +59,11 @@ export default function ProgramPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Programs
+                Program Unggulan
               </h1>
               {/* Summary */}
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Menghadirkan program pendidikan komprehensif yang mengintegrasikan nilai-nilai keislaman, tahfidz Al-Qur'an, dan keunggulan pengetahuan akademik.
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl">
+                Menghadirkan program pendidikan unggulan yang mengintegrasikan nilai-nilai keislaman, tahfidz Al-Qur'an, tradisi kitab kuning, kecakapan bahasa internasional, dan literasi teknologi modern.
               </p>
             </div>
           </div>
@@ -84,11 +77,11 @@ export default function ProgramPage() {
           <div className="mb-16">
             <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
-                Program Pendidikan
+                Daftar Program Unggulan
               </h2>
             </div>
             <p className="text-text-muted leading-relaxed text-[15px] lg:text-base max-w-3xl">
-              Kami merancang sistem pendidikan yang holistik untuk melahirkan generasi yang tidak hanya cerdas secara akademik, namun juga kuat akidahnya dan mulia akhlaknya.
+              Kami merancang kurikulum unggulan untuk melahirkan santri yang mutafaqqih fiddin, berwawasan global, fasih berbahasa internasional, dan terampil menguasai ilmu teknologi.
             </p>
           </div>
 
@@ -106,12 +99,7 @@ export default function ProgramPage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  
-                  {/* Icon floating over image */}
-                  <div className="absolute bottom-4 left-6 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary text-xl shadow-lg shadow-black/20 transform group-hover:-translate-y-2 transition-transform duration-300">
-                    <program.icon />
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
 
                 {/* Text Content */}

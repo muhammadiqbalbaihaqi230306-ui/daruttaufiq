@@ -15,7 +15,7 @@ const slides = [
   {
     image: "/images/images halaman pp/IMG_20260921_074106.jpg",
     title: "Membentuk Generasi Qurani yang Berprestasi",
-    subtitle: "TK • SD • SMP Islam Terpadu",
+    subtitle: "SD • SMP Islam Terpadu & Pesantren",
     description: "Kami mendidik putra-putri Anda dengan kurikulum terpadu yang menyeimbangkan ilmu pengetahuan umum dan pemahaman agama yang mendalam untuk masa depan gemilang.",
     cta: { label: "Lihat Program", href: "#program" },
   },

@@ -1,0 +1,237 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e3]:
+    - list [ref=f9e4]:
+      - listitem [ref=f9e5]:
+        - link "+6282228880972" [ref=f9e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f9e10]:
+        - link "info@daruttaufiq.com" [ref=f9e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f9e15]:
+        - generic [ref=f9e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f9e19]:
+      - listitem [ref=f9e20]:
+        - link "Instagram" [ref=f9e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f9e24]:
+        - link "TikTok" [ref=f9e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f9e28]:
+        - link "YouTube" [ref=f9e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f9e32]:
+        - link "Facebook" [ref=f9e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f9e36]:
+    - generic [ref=f9e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f9e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f9e40]
+        - generic [ref=f9e41]:
+          - generic [ref=f9e42]: DARUT TAUFIQ
+          - generic [ref=f9e43]: PONDOK PESANTREN
+      - navigation [ref=f9e44]:
+        - link "Beranda" [ref=f9e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f9e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f9e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f9e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f9e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f9e64] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f9e66] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f9e67]
+  - main [ref=f9e70]:
+    - main [ref=f9e71]:
+      - generic [ref=f9e77]:
+        - generic [ref=f9e78]:
+          - link "Home" [ref=f9e79] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f9e82]: Unit
+          - generic [ref=f9e85]: SDIT
+        - heading "SDIT Darut Taufiq" [level=1] [ref=f9e86]
+        - paragraph [ref=f9e87]: Membangun pondasi karakter Qur'ani yang kokoh, keunggulan akademik terpadu, tahfidz Al-Qur'an, dan pembiasaan akhlakul karimah sejak usia sekolah dasar.
+      - generic [ref=f9e89]:
+        - generic [ref=f9e90]:
+          - generic [ref=f9e91]:
+            - heading "Informasi SDIT" [level=2] [ref=f9e93]
+            - generic [ref=f9e94]:
+              - generic [ref=f9e99]:
+                - paragraph [ref=f9e100]: Lokasi
+                - paragraph [ref=f9e101]: Kampus Utama Darut Taufiq
+              - generic [ref=f9e106]:
+                - paragraph [ref=f9e107]: Waktu Belajar
+                - paragraph [ref=f9e108]: Full Day (07.00 - 15.00 WIB)
+              - generic [ref=f9e113]:
+                - paragraph [ref=f9e114]: Kurikulum
+                - paragraph [ref=f9e115]: Diknas & Kepesantrenan
+              - generic [ref=f9e120]:
+                - paragraph [ref=f9e121]: Tipe Siswa
+                - paragraph [ref=f9e122]: Putra & Putri (Terpisah)
+          - generic [ref=f9e123]:
+            - heading "Syarat Pendaftaran" [level=2] [ref=f9e125]
+            - generic [ref=f9e126]:
+              - generic [ref=f9e127]:
+                - generic [ref=f9e128]: "1"
+                - generic [ref=f9e129]:
+                  - heading "Usia dan Kesiapan" [level=3] [ref=f9e130]
+                  - paragraph [ref=f9e131]: Calon siswa/siswi berusia minimal 6 tahun pada bulan Juli tahun ajaran berjalan. Telah lulus dari TK/RA atau memiliki kesiapan fisik dan mental untuk mengikuti kegiatan belajar mengajar di tingkat Sekolah Dasar.
+              - generic [ref=f9e132]:
+                - generic [ref=f9e133]: "2"
+                - generic [ref=f9e134]:
+                  - heading "Tes Seleksi dan Wawancara" [level=3] [ref=f9e135]
+                  - paragraph [ref=f9e136]: Calon siswa wajib mengikuti tes observasi psikologi (kematangan belajar) dan baca tulis dasar. Selain itu, orang tua/wali calon siswa diwajibkan mengikuti sesi wawancara dengan tim seleksi penerimaan murid baru SDIT Darut Taufiq.
+              - generic [ref=f9e137]:
+                - generic [ref=f9e138]: "3"
+                - generic [ref=f9e139]:
+                  - heading "Komitmen Pendidikan" [level=3] [ref=f9e140]
+                  - paragraph [ref=f9e141]: Orang tua/wali bersedia menandatangani surat komitmen untuk mendukung penuh seluruh program sekolah, mematuhi tata tertib, serta ikut berperan aktif dalam pendidikan karakter anak di rumah.
+          - generic [ref=f9e142]:
+            - heading "Persyaratan Pendaftaran" [level=2] [ref=f9e144]
+            - list [ref=f9e146]:
+              - listitem [ref=f9e147]:
+                - generic [ref=f9e151]: Mengisi formulir pendaftaran Lengkap
+              - listitem [ref=f9e152]:
+                - generic [ref=f9e156]: Foto diri dengan ukuran 3×4, 4 lembar
+              - listitem [ref=f9e157]:
+                - generic [ref=f9e161]: Foto copy KTP wali santri ( 2 lembar)
+              - listitem [ref=f9e162]:
+                - generic [ref=f9e166]: Foto copy Akte Kelahiran ( 2 lembar)
+              - listitem [ref=f9e167]:
+                - generic [ref=f9e171]: Foto copy ijazah terleglisir ( 2 lembar)
+              - listitem [ref=f9e172]:
+                - generic [ref=f9e176]: Foto copy SKL ( 2 lembar)
+              - listitem [ref=f9e177]:
+                - generic [ref=f9e181]: Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)
+              - listitem [ref=f9e182]:
+                - generic [ref=f9e186]: Surat pindah sekolah dan daftar nilai/Raport siswa (bagi siswa pindahan)
+        - generic [ref=f9e187]:
+          - generic [ref=f9e188]:
+            - generic [ref=f9e189]:
+              - img "Logo SDIT" [ref=f9e191]
+              - heading "SDIT Darut Taufiq" [level=3] [ref=f9e192]
+              - paragraph [ref=f9e193]: Sekolah Dasar Islam Terpadu
+            - generic [ref=f9e194]:
+              - generic [ref=f9e195]:
+                - heading "Akreditasi" [level=4] [ref=f9e199]
+                - paragraph [ref=f9e200]: A (Amat Baik) Terakreditasi oleh BAN-S/M
+              - generic [ref=f9e201]:
+                - heading "Program Unggulan" [level=4] [ref=f9e205]
+                - paragraph [ref=f9e206]: Tahfidz Al-Qur'an, Bina Pribadi Islami (BPI), dan Kurikulum Berbasis Karakter.
+          - generic [ref=f9e207]:
+            - heading "Hubungi Kami" [level=3] [ref=f9e208]
+            - generic [ref=f9e209]:
+              - generic [ref=f9e214]:
+                - paragraph [ref=f9e215]: Telepon / WhatsApp
+                - paragraph [ref=f9e216]: +62 812 3456 7890
+              - generic [ref=f9e221]:
+                - paragraph [ref=f9e222]: Email
+                - paragraph [ref=f9e223]: info.sdit@daruttaufiq.com
+          - generic [ref=f9e224]:
+            - heading "Lokasi" [level=3] [ref=f9e228]
+            - paragraph [ref=f9e229]: Jl. Kb. Baru Metros No. 59, Semper Barat, Cilincing, Jakarta Utara, DKI Jakarta 14130
+            - iframe [ref=f9e231]:
+              - link "Maps (terbuka di tab baru)" [ref=f10e4] [cursor=pointer]:
+                - /url: about:invalid#zClosurez
+                - text: Maps
+  - contentinfo [ref=f9e232]:
+    - generic [ref=f9e234]:
+      - generic [ref=f9e235]:
+        - generic [ref=f9e236]:
+          - img "Pondok Modern" [ref=f9e237]
+          - generic [ref=f9e238]:
+            - generic [ref=f9e239]: DARUT TAUFIQ
+            - generic [ref=f9e240]: PONDOK PESANTREN
+        - list [ref=f9e241]:
+          - listitem [ref=f9e242]:
+            - link "+6282228880972" [ref=f9e243] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f9e247]:
+            - link "info@daruttaufiq.com" [ref=f9e248] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f9e252]:
+            - link "(021) 82631191" [ref=f9e253] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f9e257]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f9e258] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f9e262]:
+        - heading "Profil" [level=4] [ref=f9e263]
+        - list [ref=f9e264]:
+          - listitem [ref=f9e265]:
+            - link "Sejarah Sekolah" [ref=f9e266] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f9e270]:
+            - link "Manajemen" [ref=f9e271] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f9e275]:
+            - link "Staff & Pengajar" [ref=f9e276] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f9e280]:
+            - link "Nilai & Budaya" [ref=f9e281] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f9e285]:
+        - heading "Informasi" [level=4] [ref=f9e286]
+        - list [ref=f9e287]:
+          - listitem [ref=f9e288]:
+            - link "Pendaftaran PPDB" [ref=f9e289] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f9e293]:
+            - link "Program Unggulan" [ref=f9e294] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f9e298]:
+            - link "Sarana & Fasilitas" [ref=f9e299] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f9e303]:
+            - link "Biaya Pendidikan" [ref=f9e304] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f9e308]:
+            - link "Frequently Asked Questions" [ref=f9e309] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f9e313]:
+        - heading "Instagram" [level=4] [ref=f9e314]
+        - generic [ref=f9e315]:
+          - link [ref=f9e316] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e317]
+          - link [ref=f9e321] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e322]
+          - link [ref=f9e326] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e327]
+          - link [ref=f9e331] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e332]
+          - link [ref=f9e336] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e337]
+          - link [ref=f9e341] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f9e342]
+    - generic [ref=f9e348]:
+      - paragraph [ref=f9e349]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f9e350]:
+        - link "Instagram" [ref=f9e351] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f9e354] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f9e357] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f9e360] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f9e364]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f9e372] [cursor=pointer]:
+    - generic [ref=f9e375]:
+      - text: Compiling
+      - generic [ref=f9e376]:
+        - generic [ref=f9e377]: .
+        - generic [ref=f9e378]: .
+        - generic [ref=f9e379]: .
+  - alert [ref=f9e380]

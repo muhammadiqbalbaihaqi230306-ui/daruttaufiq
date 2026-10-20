@@ -1,77 +1,70 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { FaCampground, FaMicrophone, FaDrum, FaShieldHalved, FaFutbol, FaPenNib } from "react-icons/fa6";
 
 export const metadata = {
   title: "Ekstrakurikuler | Pondok Pesantren Darut Taufiq",
-  description: "Kegiatan Ekstrakurikuler santri di Pondok Pesantren Darut Taufiq untuk mengembangkan minat dan bakat.",
+  description: "Kegiatan Ekstrakurikuler santri di Pondok Pesantren Darut Taufiq: Bahasa Jepang, Berenang, Bulu Tangkis, Pencak Silat, Futsal, dan Basket.",
 };
 
 const ekstrakurikuler = [
   {
-    title: "Pramuka",
-    description: "Membentuk karakter santri yang mandiri, disiplin, berjiwa pemimpin, dan memiliki kepedulian sosial yang tinggi.",
-    icon: FaCampground,
+    title: "Bahasa Jepang",
+    description: "Mengenal bahasa dan budaya Jepang melalui pembelajaran huruf Hiragana, Katakana, percakapan praktis (Kaiwa), dan pemahaman etika kedisiplinan.",
     image: "/images/images program/IMG-20260714-WA0092.jpg",
     details: [
-      "Latihan baris-berbaris dan tali-temali",
-      "Perkemahan dan outbound tahunan",
-      "Pendidikan survival dan kepemimpinan"
+      "Pengenalan huruf dasar Hiragana dan Katakana",
+      "Latihan percakapan bahasa Jepang praktis sehari-hari (Kaiwa)",
+      "Wawasan budaya, etika kesantunan, dan kedisiplinan khas Jepang"
     ]
   },
   {
-    title: "Muhadhoroh (Public Speaking)",
-    description: "Melatih kepercayaan diri dan kemampuan santri dalam berpidato menggunakan tiga bahasa: Arab, Inggris, dan Indonesia.",
-    icon: FaMicrophone,
-    image: "/images/images program/IMG-20250427-WA0012.jpg",
-    details: [
-      "Praktik pidato mingguan",
-      "Teknik vokal dan penguasaan panggung",
-      "Lomba pidato antar santri (Language Festival)"
-    ]
-  },
-  {
-    title: "Seni Hadroh",
-    description: "Mengembangkan bakat seni islami santri dalam menabuh alat musik rebana serta melantunkan shalawat.",
-    icon: FaDrum,
-    image: "/images/images program/IMG-20260714-WA0110.jpg",
-    details: [
-      "Pelatihan dasar alat musik rebana",
-      "Latihan vokal dan aransemen shalawat",
-      "Penampilan pada acara peringatan hari besar Islam"
-    ]
-  },
-  {
-    title: "Seni Beladiri",
-    description: "Membekali santri dengan kemampuan bela diri untuk menjaga kesehatan fisik, mental, dan kedisiplinan.",
-    icon: FaShieldHalved,
-    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
-    details: [
-      "Latihan fisik dan ketahanan tubuh",
-      "Jurus dasar dan seni pertarungan",
-      "Ujian kenaikan sabuk berkala"
-    ]
-  },
-  {
-    title: "Klub Olahraga",
-    description: "Wadah bagi santri untuk menyalurkan minat dan bakat di bidang olahraga seperti futsal, basket, voli, dan bulu tangkis.",
-    icon: FaFutbol,
+    title: "Berenang",
+    description: "Olahraga sunnah yang melatih kebugaran jasmani, kekuatan stamina, ketahanan pernapasan, dan kelenturan tubuh di bawah bimbingan pelatih profesional.",
     image: "/images/images program/IMG-20260625-WA0117.jpg",
     details: [
-      "Jadwal latihan rutin per cabang olahraga",
-      "Turnamen antar angkatan dan asrama (Class Meeting)",
-      "Peningkatan skill dan kerjasama tim"
+      "Penguasaan teknik gaya dada, gaya bebas, dan gaya punggung",
+      "Latihan pernapasan, ketahanan stamina, dan keselamatan di air",
+      "Jadwal rutin ke kolam renang dengan pendampingan intensif"
     ]
   },
   {
-    title: "Kaligrafi (Khot)",
-    description: "Mempelajari keindahan seni tulis huruf Arab dengan berbagai jenis khat seperti Naskhi, Tsuluts, dan Diwani.",
-    icon: FaPenNib,
+    title: "Bulu Tangkis",
+    description: "Melatih kelincahan, refleks cepat, koordinasi motorik, serta sportivitas santri melalui olahraga bulu tangkis yang seru dan dinamis.",
+    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
+    details: [
+      "Latihan servis presisi, smash, dropshot, dan netting",
+      "Latihan footwork dan kelincahan gerak di lapangan",
+      "Turnamen bulu tangkis antar-santri dan asrama secara berkala"
+    ]
+  },
+  {
+    title: "Pencak Silat",
+    description: "Seni bela diri warisan luhur nusantara untuk membentuk ketangguhan fisik, pengendalian diri, adab akhlakul karimah, dan pertahanan diri santri.",
     image: "/images/images halaman pp/IMG_20260921_074106.jpg",
     details: [
-      "Pengenalan dasar-dasar kaidah huruf",
-      "Praktik penulisan pada berbagai media",
-      "Pameran karya seni kaligrafi santri"
+      "Latihan ketahanan fisik, kuda-kuda, dan jurus dasar pesilat",
+      "Penguatan mental spiritual, kedisiplinan, dan adab akhlak pesilat",
+      "Ujian kenaikan tingkat sabuk dan peragaan seni silat berkala"
+    ]
+  },
+  {
+    title: "Futsal",
+    description: "Wadah menyalurkan hobi sepak bola santri, mengasah kelincahan dribbling, ketepatan tendangan, strategi taktik, dan kekompakan kerjasama tim.",
+    image: "/images/images program/IMG-20250427-WA0012.jpg",
+    details: [
+      "Latihan teknik dasar passing, dribbling, controlling, dan shooting",
+      "Pemahaman taktik formasi pertandingan dan rotasi permainan tim",
+      "Laga persahabatan (sparring) dan kompetisi turnamen pelajar"
+    ]
+  },
+  {
+    title: "Basket",
+    description: "Mengembangkan ketangkasan gerak, postur fisik yang tegap, strategi kerjasama tim, serta pengambilan keputusan yang cepat dan tepat di lapangan.",
+    image: "/images/images program/IMG-20260714-WA0110.jpg",
+    details: [
+      "Latihan fundamental dribble, passing, lay-up shoot, dan free throw",
+      "Latihan ketahanan fisik, kecepatan gerak, dan vertical jump",
+      "Pertandingan internal mingguan untuk mengasah mental bertanding"
     ]
   }
 ];
@@ -79,7 +72,7 @@ const ekstrakurikuler = [
 export default function EskulPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section (Mengikuti gaya Sejarah) */}
+      {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
@@ -96,11 +89,11 @@ export default function EskulPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Management
+                Ekstrakurikuler
               </h1>
               {/* Summary */}
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl">
+                Mewadahi minat, bakat, kebugaran fisik, dan karakter kepemimpinan santri melalui beragam kegiatan ekstrakurikuler yang aktif, positif, dan menyenangkan.
               </p>
             </div>
           </div>
@@ -146,12 +139,7 @@ export default function EskulPage() {
 
                 {/* Text Content */}
                 <div className="p-6 flex-1 flex flex-col bg-white relative">
-                  {/* Floating Icon */}
-                  <div className="absolute -top-6 right-6 w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-black/20 transform group-hover:rotate-12 transition-transform duration-300">
-                    <eskul.icon />
-                  </div>
-
-                  <p className="text-text-muted leading-relaxed text-[15px] mt-4 mb-5 min-h-[5rem]">
+                  <p className="text-text-muted leading-relaxed text-[15px] mb-5 min-h-[4rem]">
                     {eskul.description}
                   </p>
 

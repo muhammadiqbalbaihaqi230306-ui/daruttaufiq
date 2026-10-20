@@ -1,12 +1,58 @@
 "use client";
-
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaChevronRight } from "react-icons/fa";
 import { menuItems } from "./Navbar";
 
-export default function Breadcrumbs({ theme = "dark" }: { theme?: "dark" | "light" }) {
+export interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+export default function Breadcrumbs({ 
+  theme = "dark",
+  items,
+}: { 
+  theme?: "dark" | "light";
+  items?: BreadcrumbItem[];
+}) {
   const pathname = usePathname();
+
+  const isDark = theme === "dark";
+  const textClass = isDark ? "text-white/80" : "text-text-muted";
+  const hoverClass = isDark ? "hover:text-white" : "hover:text-primary";
+  const activeClass = isDark ? "text-white" : "text-secondary";
+
+  if (items && items.length > 0) {
+    return (
+      <div className={`flex items-center gap-2 text-sm mb-6 font-light ${textClass}`}>
+        {items.map((item, index) => {
+          const isLast = index === items.length - 1;
+          return (
+            <React.Fragment key={index}>
+              {index > 0 && <FaChevronRight className="text-[10px] opacity-70" />}
+              {isLast ? (
+                item.href ? (
+                  <Link href={item.href} className={`${activeClass} font-medium ${hoverClass} transition-colors`}>
+                    {item.label}
+                  </Link>
+                ) : (
+                  <span className={`${activeClass} font-medium`}>{item.label}</span>
+                )
+              ) : item.href ? (
+                <Link href={item.href} className={`${hoverClass} transition-colors`}>
+                  {item.label}
+                </Link>
+              ) : (
+                <span className="cursor-default">{item.label}</span>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </div>
+    );
+  }
 
   // Don't show on home page
   if (pathname === "/") return null;
@@ -38,11 +84,6 @@ export default function Breadcrumbs({ theme = "dark" }: { theme?: "dark" | "ligh
       currentTitle = lastPart.charAt(0).toUpperCase() + lastPart.slice(1).replace(/-/g, " ");
     }
   }
-
-  const isDark = theme === "dark";
-  const textClass = isDark ? "text-white/80" : "text-text-muted";
-  const hoverClass = isDark ? "hover:text-white" : "hover:text-primary";
-  const activeClass = isDark ? "text-white" : "text-secondary";
 
   return (
     <div className={`flex items-center gap-2 text-sm mb-6 font-light ${textClass}`}>

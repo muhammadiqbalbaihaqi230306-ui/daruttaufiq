@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     "sekolah islam terpadu",
     "SDIT",
     "SMPIT",
-    "TKIT",
   ],
   openGraph: {
     title: "Sekolah Islam Favorit & Terbaik di Kota Bekasi - Pondok Pesantren Darut Taufiq",

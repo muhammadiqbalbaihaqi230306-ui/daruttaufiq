@@ -1,0 +1,230 @@
+- generic [active] [ref=f16e1]:
+  - generic [ref=f16e3]:
+    - list [ref=f16e4]:
+      - listitem [ref=f16e5]:
+        - link "+6282228880972" [ref=f16e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f16e10]:
+        - link "info@daruttaufiq.com" [ref=f16e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f16e15]:
+        - generic [ref=f16e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f16e19]:
+      - listitem [ref=f16e20]:
+        - link "Instagram" [ref=f16e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f16e24]:
+        - link "TikTok" [ref=f16e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f16e28]:
+        - link "YouTube" [ref=f16e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f16e32]:
+        - link "Facebook" [ref=f16e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f16e36]:
+    - generic [ref=f16e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f16e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f16e40]
+        - generic [ref=f16e41]:
+          - generic [ref=f16e42]: DARUT TAUFIQ
+          - generic [ref=f16e43]: PONDOK PESANTREN
+      - navigation [ref=f16e44]:
+        - link "Beranda" [ref=f16e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f16e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f16e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f16e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f16e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f16e64] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f16e66] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f16e67]
+  - main [ref=f16e70]:
+    - main [ref=f16e71]:
+      - generic [ref=f16e77]:
+        - generic [ref=f16e78]:
+          - link "Home" [ref=f16e79] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f16e82]: Kontak
+        - heading "Hubungi Kami" [level=1] [ref=f16e83]
+        - paragraph [ref=f16e84]: Kami siap membantu menjawab pertanyaan Anda seputar program pendidikan, pendaftaran, maupun informasi lainnya tentang Pondok Pesantren Darut Taufiq.
+      - generic [ref=f16e86]:
+        - generic [ref=f16e88]:
+          - 'link "Telepon : (021) 82631191" [ref=f16e89] [cursor=pointer]':
+            - /url: tel:02182631191
+            - generic [ref=f16e92]: "Telepon :"
+            - generic [ref=f16e93]: (021) 82631191
+          - 'link "WhatsApp : +62 822 2888 0972" [ref=f16e94] [cursor=pointer]':
+            - /url: https://wa.me/6282228880972
+            - generic [ref=f16e97]: "WhatsApp :"
+            - generic [ref=f16e98]: +62 822 2888 0972
+          - 'link "Email : info@daruttaufiq.com" [ref=f16e99] [cursor=pointer]':
+            - /url: mailto:info@daruttaufiq.com
+            - generic [ref=f16e102]: "Email :"
+            - generic [ref=f16e103]: info@daruttaufiq.com
+          - generic [ref=f16e104]:
+            - generic [ref=f16e107]: "Jam Operasional :"
+            - generic [ref=f16e108]: Senin - Sabtu 08:00 - 15:00 WIB
+        - generic [ref=f16e109]:
+          - generic [ref=f16e110]:
+            - heading "Kirim Pesan" [level=2] [ref=f16e112]
+            - generic [ref=f16e113]:
+              - generic [ref=f16e114]:
+                - generic [ref=f16e115]:
+                  - text: Nama Lengkap
+                  - textbox "Nama Lengkap" [ref=f16e116]:
+                    - /placeholder: John Doe
+                - generic [ref=f16e117]:
+                  - text: Alamat Email
+                  - textbox "Alamat Email" [ref=f16e118]:
+                    - /placeholder: john@example.com
+              - generic [ref=f16e119]:
+                - text: Subjek
+                - textbox "Subjek" [ref=f16e120]:
+                  - /placeholder: Informasi Pendaftaran
+              - generic [ref=f16e121]:
+                - text: Pesan
+                - textbox "Pesan" [ref=f16e122]:
+                  - /placeholder: Tulis pesan Anda...
+              - button "Kirim Pesan" [ref=f16e123]
+          - generic [ref=f16e124]:
+            - iframe [ref=f16e126]:
+              - generic [ref=f17e1]:
+                - generic [ref=f17e5]:
+                  - link "Buka di Maps (terbuka di tab baru)" [ref=f17e6] [cursor=pointer]:
+                    - /url: https://maps.google.com/?cid=8160409243385835076&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF
+                    - text: Buka di Maps
+                  - link "Lihat rute (terbuka di tab baru)" [ref=f17e11] [cursor=pointer]:
+                    - /url: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x2e6a21ac8c2f48a5:0x713f98f89dd3ae44!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF
+                - generic [ref=f17e18]:
+                  - generic:
+                    - button "Pintasan keyboard"
+                  - region "Peta" [ref=f17e19]
+                  - generic [ref=f17e20]:
+                    - iframe [aria-hidden] [ref=f17e51]
+                    - button "Kontrol kamera peta" [ref=f17e53] [cursor=pointer]
+                    - button "Tunjukkan citra satelit" [ref=f17e56] [cursor=pointer]
+                    - img "Google" [ref=f17e61]
+                    - generic [ref=f17e62]:
+                      - button "Pintasan keyboard" [ref=f17e68] [cursor=pointer]
+                      - generic [ref=f17e69]: Data peta ©2026
+                      - link "Persyaratan (terbuka di tab baru)" [ref=f17e78] [cursor=pointer]:
+                        - /url: https://www.google.com/intl/id_ID/help/terms_maps.html
+                        - text: Persyaratan
+                      - link "Laporkan kesalahan peta (terbuka di tab baru)" [ref=f17e83] [cursor=pointer]:
+                        - /url: https://www.google.com/maps/@-6.1175036,106.9231372,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+                        - text: Laporkan kesalahan peta
+            - generic [ref=f16e131]:
+              - heading "Alamat Lengkap" [level=3] [ref=f16e132]
+              - paragraph [ref=f16e133]: Jl. Kb. Baru Metros No. 59, Semper Barat, CilincingJakarta Utara, DKI Jakarta 14130
+        - generic [ref=f16e134]:
+          - generic [ref=f16e135]:
+            - heading "Pertanyaan Umum" [level=2] [ref=f16e136]
+            - paragraph [ref=f16e137]: Beberapa pertanyaan yang sering diajukan oleh calon orang tua santri.
+          - generic [ref=f16e138]:
+            - generic [ref=f16e139]:
+              - button "Kapan waktu pendaftaran santri baru dibuka?" [ref=f16e140]
+              - paragraph [ref=f16e144]: Pendaftaran santri baru biasanya dibuka pada bulan November hingga Februari setiap tahun ajaran baru. Silakan pantau website atau hubungi WhatsApp kami untuk tanggal pastinya.
+            - generic [ref=f16e145]:
+              - button "Apakah bisa melakukan kunjungan/survey lokasi terlebih dahulu?" [ref=f16e146]
+              - paragraph [ref=f16e150]: Tentu. Kami sangat menyarankan orang tua calon santri untuk melakukan kunjungan. Waktu kunjungan adalah Senin - Jumat (08.00 - 15.00) dan Sabtu (08.00 - 12.00) dengan konfirmasi sebelumnya.
+            - generic [ref=f16e151]:
+              - button "Apakah asrama putra dan putri dipisah?" [ref=f16e152]
+              - paragraph [ref=f16e156]: Ya, kawasan dan asrama untuk putra dan putri terpisah sepenuhnya dengan pengawasan ketat selama 24 jam.
+  - contentinfo [ref=f16e157]:
+    - generic [ref=f16e159]:
+      - generic [ref=f16e160]:
+        - generic [ref=f16e161]:
+          - img "Pondok Modern" [ref=f16e162]
+          - generic [ref=f16e163]:
+            - generic [ref=f16e164]: DARUT TAUFIQ
+            - generic [ref=f16e165]: PONDOK PESANTREN
+        - list [ref=f16e166]:
+          - listitem [ref=f16e167]:
+            - link "+6282228880972" [ref=f16e168] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f16e172]:
+            - link "info@daruttaufiq.com" [ref=f16e173] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f16e177]:
+            - link "(021) 82631191" [ref=f16e178] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f16e182]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f16e183] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f16e187]:
+        - heading "Profil" [level=4] [ref=f16e188]
+        - list [ref=f16e189]:
+          - listitem [ref=f16e190]:
+            - link "Sejarah Sekolah" [ref=f16e191] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f16e195]:
+            - link "Manajemen" [ref=f16e196] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f16e200]:
+            - link "Staff & Pengajar" [ref=f16e201] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f16e205]:
+            - link "Nilai & Budaya" [ref=f16e206] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f16e210]:
+        - heading "Informasi" [level=4] [ref=f16e211]
+        - list [ref=f16e212]:
+          - listitem [ref=f16e213]:
+            - link "Pendaftaran PPDB" [ref=f16e214] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f16e218]:
+            - link "Program Unggulan" [ref=f16e219] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f16e223]:
+            - link "Sarana & Fasilitas" [ref=f16e224] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f16e228]:
+            - link "Biaya Pendidikan" [ref=f16e229] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f16e233]:
+            - link "Frequently Asked Questions" [ref=f16e234] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f16e238]:
+        - heading "Instagram" [level=4] [ref=f16e239]
+        - generic [ref=f16e240]:
+          - link [ref=f16e241] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e242]
+          - link [ref=f16e246] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e247]
+          - link [ref=f16e251] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e252]
+          - link [ref=f16e256] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e257]
+          - link [ref=f16e261] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e262]
+          - link [ref=f16e266] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f16e267]
+    - generic [ref=f16e273]:
+      - paragraph [ref=f16e274]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f16e275]:
+        - link "Instagram" [ref=f16e276] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f16e279] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f16e282] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f16e285] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f16e289]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f16e297] [cursor=pointer]
+  - alert [ref=f16e301]

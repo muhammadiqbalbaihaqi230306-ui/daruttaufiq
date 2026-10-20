@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import path from "path";
+// @ts-ignore
 import { DatabaseSync } from "node:sqlite";
 
 const dbPath = path.join(process.cwd(), "prisma", "dev.db");

@@ -1,77 +1,80 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import { FaMosque, FaBuildingUser, FaBookOpen, FaFutbol, FaComputer, FaChalkboardUser } from "react-icons/fa6";
 
 export const metadata = {
   title: "Fasilitas | Pondok Pesantren Darut Taufiq",
-  description: "Fasilitas dan sarana prasarana penunjang kegiatan santri di Pondok Pesantren Darut Taufiq.",
+  description: "Fasilitas Asrama dan Pesantren di Pondok Pesantren Darut Taufiq: Perlengkapan Kamar, Gedung Aula, Ruang Kelas, Kantin, Masjid, Lapangan, dan Kamar Mandi.",
 };
 
 const facilities = [
   {
-    title: "Masjid Utama",
-    description: "Pusat kegiatan ibadah, tahfidz, dan kajian keislaman yang luas, nyaman, dan menjadi jantung kehidupan spiritual santri.",
-    icon: FaMosque,
-    image: "/images/images program/IMG-20250427-WA0012.jpg",
-    details: [
-      "Tempat Wudhu Ikhwan & Akhwat yang terpisah dengan kondisi bersih dan nyaman",
-      "Toilet Ikhwan & Akhwat yang terpisah dengan kondisi bersih dan nyaman",
-      "Halaman yang luas dan bersih untuk kegiatan kajian dan ibadah sholat"
-    ]
-  },
-  {
-    title: "Asrama Santri (Dormitory)",
-    description: "Asrama putra dan putri yang terpisah dengan pengawasan ketat 24 jam, dilengkapi fasilitas kamar yang nyaman dan bersih.",
-    icon: FaBuildingUser,
+    title: "Perlengkapan Kamar (Kasur & Lemari)",
+    description: "Kamar asrama santri yang tertata rapi, bersih, dan nyaman, dilengkapi kasur empuk, ranjang kokoh, serta lemari pakaian pribadi santri.",
     image: "/images/images halaman pp/IMG_20260921_074106.jpg",
     details: [
-      "Kamar tidur luas dengan sirkulasi udara yang baik",
-      "Loker pribadi untuk menyimpan perlengkapan santri",
-      "Ruang jemur pakaian dan fasilitas kebersihan terpadu"
+      "Kasur dan bantal tidur berkualitas untuk istirahat optimal santri",
+      "Lemari pakaian dan loker pribadi dengan kunci masing-masing",
+      "Sirkulasi udara sejuk, pencahayaan alami, dan kebersihan yang terkontrol"
     ]
   },
   {
-    title: "Ruang Kelas Modern",
-    description: "Ruang belajar yang representatif, ber-AC, dan dilengkapi proyektor untuk mendukung suasana KBM yang kondusif.",
-    icon: FaChalkboardUser,
+    title: "Gedung Aula",
+    description: "Aula serbaguna luas untuk kegiatan akbar kepesantrenan, tabligh akbar, seminar motivasi, dan pertemuan orang tua/wali santri.",
     image: "/images/images program/IMG-20260714-WA0092.jpg",
     details: [
-      "Meja dan kursi belajar yang ergonomis",
-      "Proyektor LCD dan ruang yang nyaman",
-      "Pencahayaan dan sirkulasi udara yang sangat baik"
+      "Daya tampung luas untuk ratusan santri dan tamu undangan",
+      "Dilengkapi sound system modern, panggung, dan proyektor layar lebar",
+      "Ruangan berpendingin udara (AC) untuk kenyamanan seluruh kegiatan"
     ]
   },
   {
-    title: "Perpustakaan",
-    description: "Koleksi buku literatur Islam, sains, dan umum untuk menumbuhkan minat baca dan wawasan pengetahuan santri.",
-    icon: FaBookOpen,
+    title: "Ruang Kelas",
+    description: "Ruang belajar representatif, bersih, dan berpendingin udara (AC) yang didesain ergonomis guna menciptakan suasana belajar mengajar yang kondusif.",
     image: "/images/images program/IMG-20260714-WA0110.jpg",
     details: [
-      "Rak buku terklasifikasi dengan koleksi ribuan judul",
-      "Ruang baca lesehan dan meja baca yang tenang",
-      "Sistem sirkulasi peminjaman buku yang tertata rapi"
+      "Meja dan kursi belajar ergonomis yang nyaman",
+      "Fasilitas proyektor LCD dan papan tulis interaktif",
+      "Pencahayaan terang dan sirkulasi udara yang sangat baik"
     ]
   },
   {
-    title: "Laboratorium Komputer",
-    description: "Fasilitas komputer untuk mendukung literasi digital, pelatihan desain, dan pembelajaran teknologi informasi.",
-    icon: FaComputer,
-    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
+    title: "Kantin Pesantren",
+    description: "Kantin higienis yang menyediakan aneka makanan bergizi seimbang, minuman sehat, dan perlengkapan harian santri dengan pengawasan mutu berkala.",
+    image: "/images/images program/IMG-20260714-WA0095.jpg",
     details: [
-      "PC spesifikasi memadai dengan koneksi internet",
-      "Ruangan full AC untuk kenyamanan belajar",
-      "Software untuk desain, coding, dan literasi digital"
+      "Penyediaan menu makanan halal, sehat, dan bergizi seimbang",
+      "Area makan santri yang bersih, tertib, dan nyaman",
+      "Pengawasan kebersihan berkala oleh pengelola pondok"
+    ]
+  },
+  {
+    title: "Masjid Pesantren",
+    description: "Pusat spiritual dan jantung kehidupan pesantren sebagai sarana shalat berjamaah 5 waktu, kajian tafsir, halaqah tahfidz Al-Qur'an, dan dzikir bersama.",
+    image: "/images/images program/IMG-20250427-WA0012.jpg",
+    details: [
+      "Ruang shalat utama ikhwan dan akhwat yang luas dan nyaman",
+      "Tempat wudhu yang luas, bersih, dan kran air memadai",
+      "Dilengkapi karpet tebal, pendingin ruangan, dan tata suara jernih"
     ]
   },
   {
     title: "Lapangan Olahraga",
-    description: "Area olahraga terbuka untuk menjaga kebugaran fisik santri, mencakup lapangan futsal, basket, dan area memanah.",
-    icon: FaFutbol,
+    description: "Sarana ruang terbuka multifungsi untuk menunjang kebugaran fisik santri, apel upacara mingguan, futsal, basket, bulu tangkis, dan kegiatan outdoor.",
     image: "/images/images program/IMG-20260625-WA0117.jpg",
     details: [
-      "Lapangan multifungsi untuk futsal dan basket",
-      "Area khusus memanah dengan peralatan memadai",
-      "Tribun penonton dan perlengkapan olahraga"
+      "Lapangan multifungsi untuk futsal, basket, dan bulu tangkis",
+      "Area terbuka luas untuk apel upacara dan senam kebugaran santri",
+      "Peralatan olahraga lengkap dengan standar keamanan yang baik"
+    ]
+  },
+  {
+    title: "Kamar Mandi & Sanitasi",
+    description: "Fasilitas sanitasi dan kamar mandi yang bersih, higienis, dan terpisah secara ketat antara kawasan asrama putra dan asrama putri.",
+    image: "/images/images halaman pp/IMG_20260921_074120.jpg",
+    details: [
+      "Ketersediaan air bersih mengalir jernih 24 jam nonstop",
+      "Jumlah bilik mandi dan toilet yang proporsional untuk seluruh santri",
+      "Jadwal pembersihan dan sterilisasi rutin setiap hari"
     ]
   }
 ];
@@ -79,7 +82,7 @@ const facilities = [
 export default function FasilitasPage() {
   return (
     <main className="min-h-screen bg-surface">
-      {/* Hero Section (Mengikuti gaya Sejarah/Manajemen) */}
+      {/* Hero Section */}
       <section className="relative h-[65vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         {/* Background Image */}
         <div 
@@ -96,11 +99,11 @@ export default function FasilitasPage() {
               <Breadcrumbs />
               {/* Title */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
-                Our Facilities
+                Fasilitas Pesantren
               </h1>
               {/* Summary */}
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Kami menyediakan sarana dan prasarana yang lengkap, modern, dan nyaman untuk mendukung kegiatan ibadah, belajar, serta aktivitas harian seluruh santri.
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl">
+                Kami menyediakan sarana dan prasarana asrama yang lengkap, modern, dan nyaman untuk mendukung kegiatan ibadah, belajar, serta aktivitas harian seluruh santri.
               </p>
             </div>
           </div>
@@ -114,7 +117,7 @@ export default function FasilitasPage() {
           <div className="mb-16">
             <div className="flex items-center gap-4 mb-4 border-l-4 border-primary pl-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary">
-                Fasilitas Pesantren
+                Fasilitas Asrama & Lingkungan Pesantren
               </h2>
             </div>
             <p className="text-text-muted leading-relaxed text-[15px] lg:text-base max-w-3xl">
@@ -146,18 +149,13 @@ export default function FasilitasPage() {
 
                 {/* Text Content */}
                 <div className="p-6 flex-1 flex flex-col bg-white relative">
-                  {/* Floating Icon */}
-                  <div className="absolute -top-6 right-6 w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-black/20 transform group-hover:rotate-12 transition-transform duration-300">
-                    <facility.icon />
-                  </div>
-
-                  <p className="text-text-muted leading-relaxed text-[15px] mt-4 mb-5 min-h-[5rem]">
+                  <p className="text-text-muted leading-relaxed text-[15px] mb-5 min-h-[4rem]">
                     {facility.description}
                   </p>
 
                   {/* List Detail Fasilitas */}
                   <div className="border-t border-gray-100 pt-5 flex-1">
-                    <p className="font-semibold text-secondary mb-3">Fasilitas :</p>
+                    <p className="font-semibold text-secondary mb-3">Fasilitas meliputi :</p>
                     <ol className="list-decimal pl-4 space-y-2 text-text-muted text-[14px]">
                       {facility.details.map((detail, dIdx) => (
                         <li key={dIdx} className="leading-relaxed pl-1">

@@ -1,0 +1,236 @@
+- generic [active] [ref=f21e1]:
+  - generic [ref=f21e3]:
+    - list [ref=f21e4]:
+      - listitem [ref=f21e5]:
+        - link "+6282228880972" [ref=f21e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f21e10]:
+        - link "info@daruttaufiq.com" [ref=f21e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f21e15]:
+        - generic [ref=f21e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f21e19]:
+      - listitem [ref=f21e20]:
+        - link "Instagram" [ref=f21e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f21e24]:
+        - link "TikTok" [ref=f21e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f21e28]:
+        - link "YouTube" [ref=f21e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f21e32]:
+        - link "Facebook" [ref=f21e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f21e36]:
+    - generic [ref=f21e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f21e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f21e40]
+        - generic [ref=f21e41]:
+          - generic [ref=f21e42]: DARUT TAUFIQ
+          - generic [ref=f21e43]: PONDOK PESANTREN
+      - navigation [ref=f21e44]:
+        - link "Beranda" [ref=f21e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f21e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f21e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f21e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f21e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f21e64] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f21e66] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f21e67]
+  - main [ref=f21e70]:
+    - main [ref=f21e71]:
+      - generic [ref=f21e77]:
+        - generic [ref=f21e78]:
+          - link "Home" [ref=f21e79] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f21e82]: Akademik
+          - generic [ref=f21e85]: Fasilitas
+        - heading "Fasilitas Pesantren" [level=1] [ref=f21e86]
+        - paragraph [ref=f21e87]: Kami menyediakan sarana dan prasarana asrama yang lengkap, modern, dan nyaman untuk mendukung kegiatan ibadah, belajar, serta aktivitas harian seluruh santri.
+      - generic [ref=f21e89]:
+        - generic [ref=f21e90]:
+          - heading "Fasilitas Asrama & Lingkungan Pesantren" [level=2] [ref=f21e92]
+          - paragraph [ref=f21e93]: Berkomitmen memberikan kenyamanan dan lingkungan yang asri sebagai rumah kedua bagi para santri dalam menuntut ilmu dan menghafal Al-Qur'an.
+        - generic [ref=f21e94]:
+          - generic [ref=f21e95]:
+            - generic [ref=f21e96]:
+              - img "Perlengkapan Kamar (Kasur & Lemari)" [ref=f21e97]
+              - heading "Perlengkapan Kamar (Kasur & Lemari)" [level=3] [ref=f21e99]
+            - generic [ref=f21e100]:
+              - paragraph [ref=f21e101]: Kamar asrama santri yang tertata rapi, bersih, dan nyaman, dilengkapi kasur empuk, ranjang kokoh, serta lemari pakaian pribadi santri.
+              - generic [ref=f21e102]:
+                - paragraph [ref=f21e103]: "Fasilitas meliputi :"
+                - list [ref=f21e104]:
+                  - listitem [ref=f21e105]: Kasur dan bantal tidur berkualitas untuk istirahat optimal santri
+                  - listitem [ref=f21e106]: Lemari pakaian dan loker pribadi dengan kunci masing-masing
+                  - listitem [ref=f21e107]: Sirkulasi udara sejuk, pencahayaan alami, dan kebersihan yang terkontrol
+          - generic [ref=f21e108]:
+            - generic [ref=f21e109]:
+              - img "Gedung Aula" [ref=f21e110]
+              - heading "Gedung Aula" [level=3] [ref=f21e112]
+            - generic [ref=f21e113]:
+              - paragraph [ref=f21e114]: Aula serbaguna luas untuk kegiatan akbar kepesantrenan, tabligh akbar, seminar motivasi, dan pertemuan orang tua/wali santri.
+              - generic [ref=f21e115]:
+                - paragraph [ref=f21e116]: "Fasilitas meliputi :"
+                - list [ref=f21e117]:
+                  - listitem [ref=f21e118]: Daya tampung luas untuk ratusan santri dan tamu undangan
+                  - listitem [ref=f21e119]: Dilengkapi sound system modern, panggung, dan proyektor layar lebar
+                  - listitem [ref=f21e120]: Ruangan berpendingin udara (AC) untuk kenyamanan seluruh kegiatan
+          - generic [ref=f21e121]:
+            - generic [ref=f21e122]:
+              - img "Ruang Kelas" [ref=f21e123]
+              - heading "Ruang Kelas" [level=3] [ref=f21e125]
+            - generic [ref=f21e126]:
+              - paragraph [ref=f21e127]: Ruang belajar representatif, bersih, dan berpendingin udara (AC) yang didesain ergonomis guna menciptakan suasana belajar mengajar yang kondusif.
+              - generic [ref=f21e128]:
+                - paragraph [ref=f21e129]: "Fasilitas meliputi :"
+                - list [ref=f21e130]:
+                  - listitem [ref=f21e131]: Meja dan kursi belajar ergonomis yang nyaman
+                  - listitem [ref=f21e132]: Fasilitas proyektor LCD dan papan tulis interaktif
+                  - listitem [ref=f21e133]: Pencahayaan terang dan sirkulasi udara yang sangat baik
+          - generic [ref=f21e134]:
+            - generic [ref=f21e135]:
+              - img "Kantin Pesantren" [ref=f21e136]
+              - heading "Kantin Pesantren" [level=3] [ref=f21e138]
+            - generic [ref=f21e139]:
+              - paragraph [ref=f21e140]: Kantin higienis yang menyediakan aneka makanan bergizi seimbang, minuman sehat, dan perlengkapan harian santri dengan pengawasan mutu berkala.
+              - generic [ref=f21e141]:
+                - paragraph [ref=f21e142]: "Fasilitas meliputi :"
+                - list [ref=f21e143]:
+                  - listitem [ref=f21e144]: Penyediaan menu makanan halal, sehat, dan bergizi seimbang
+                  - listitem [ref=f21e145]: Area makan santri yang bersih, tertib, dan nyaman
+                  - listitem [ref=f21e146]: Pengawasan kebersihan berkala oleh pengelola pondok
+          - generic [ref=f21e147]:
+            - generic [ref=f21e148]:
+              - img "Masjid Pesantren" [ref=f21e149]
+              - heading "Masjid Pesantren" [level=3] [ref=f21e151]
+            - generic [ref=f21e152]:
+              - paragraph [ref=f21e153]: Pusat spiritual dan jantung kehidupan pesantren sebagai sarana shalat berjamaah 5 waktu, kajian tafsir, halaqah tahfidz Al-Qur'an, dan dzikir bersama.
+              - generic [ref=f21e154]:
+                - paragraph [ref=f21e155]: "Fasilitas meliputi :"
+                - list [ref=f21e156]:
+                  - listitem [ref=f21e157]: Ruang shalat utama ikhwan dan akhwat yang luas dan nyaman
+                  - listitem [ref=f21e158]: Tempat wudhu yang luas, bersih, dan kran air memadai
+                  - listitem [ref=f21e159]: Dilengkapi karpet tebal, pendingin ruangan, dan tata suara jernih
+          - generic [ref=f21e160]:
+            - generic [ref=f21e161]:
+              - img "Lapangan Olahraga" [ref=f21e162]
+              - heading "Lapangan Olahraga" [level=3] [ref=f21e164]
+            - generic [ref=f21e165]:
+              - paragraph [ref=f21e166]: Sarana ruang terbuka multifungsi untuk menunjang kebugaran fisik santri, apel upacara mingguan, futsal, basket, bulu tangkis, dan kegiatan outdoor.
+              - generic [ref=f21e167]:
+                - paragraph [ref=f21e168]: "Fasilitas meliputi :"
+                - list [ref=f21e169]:
+                  - listitem [ref=f21e170]: Lapangan multifungsi untuk futsal, basket, dan bulu tangkis
+                  - listitem [ref=f21e171]: Area terbuka luas untuk apel upacara dan senam kebugaran santri
+                  - listitem [ref=f21e172]: Peralatan olahraga lengkap dengan standar keamanan yang baik
+          - generic [ref=f21e173]:
+            - generic [ref=f21e174]:
+              - img "Kamar Mandi & Sanitasi" [ref=f21e175]
+              - heading "Kamar Mandi & Sanitasi" [level=3] [ref=f21e177]
+            - generic [ref=f21e178]:
+              - paragraph [ref=f21e179]: Fasilitas sanitasi dan kamar mandi yang bersih, higienis, dan terpisah secara ketat antara kawasan asrama putra dan asrama putri.
+              - generic [ref=f21e180]:
+                - paragraph [ref=f21e181]: "Fasilitas meliputi :"
+                - list [ref=f21e182]:
+                  - listitem [ref=f21e183]: Ketersediaan air bersih mengalir jernih 24 jam nonstop
+                  - listitem [ref=f21e184]: Jumlah bilik mandi dan toilet yang proporsional untuk seluruh santri
+                  - listitem [ref=f21e185]: Jadwal pembersihan dan sterilisasi rutin setiap hari
+  - contentinfo [ref=f21e186]:
+    - generic [ref=f21e188]:
+      - generic [ref=f21e189]:
+        - generic [ref=f21e190]:
+          - img "Pondok Modern" [ref=f21e191]
+          - generic [ref=f21e192]:
+            - generic [ref=f21e193]: DARUT TAUFIQ
+            - generic [ref=f21e194]: PONDOK PESANTREN
+        - list [ref=f21e195]:
+          - listitem [ref=f21e196]:
+            - link "+6282228880972" [ref=f21e197] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f21e201]:
+            - link "info@daruttaufiq.com" [ref=f21e202] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f21e206]:
+            - link "(021) 82631191" [ref=f21e207] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f21e211]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f21e212] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f21e216]:
+        - heading "Profil" [level=4] [ref=f21e217]
+        - list [ref=f21e218]:
+          - listitem [ref=f21e219]:
+            - link "Sejarah Sekolah" [ref=f21e220] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f21e224]:
+            - link "Manajemen" [ref=f21e225] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f21e229]:
+            - link "Staff & Pengajar" [ref=f21e230] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f21e234]:
+            - link "Nilai & Budaya" [ref=f21e235] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f21e239]:
+        - heading "Informasi" [level=4] [ref=f21e240]
+        - list [ref=f21e241]:
+          - listitem [ref=f21e242]:
+            - link "Pendaftaran PPDB" [ref=f21e243] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f21e247]:
+            - link "Program Unggulan" [ref=f21e248] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f21e252]:
+            - link "Sarana & Fasilitas" [ref=f21e253] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f21e257]:
+            - link "Biaya Pendidikan" [ref=f21e258] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f21e262]:
+            - link "Frequently Asked Questions" [ref=f21e263] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f21e267]:
+        - heading "Instagram" [level=4] [ref=f21e268]
+        - generic [ref=f21e269]:
+          - link [ref=f21e270] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e271]
+          - link [ref=f21e275] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e276]
+          - link [ref=f21e280] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e281]
+          - link [ref=f21e285] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e286]
+          - link [ref=f21e290] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e291]
+          - link [ref=f21e295] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f21e296]
+    - generic [ref=f21e302]:
+      - paragraph [ref=f21e303]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f21e304]:
+        - link "Instagram" [ref=f21e305] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f21e308] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f21e311] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f21e314] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f21e318]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f21e326] [cursor=pointer]

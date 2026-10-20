@@ -38,8 +38,8 @@ export default function SMPITPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.2]">
                 SMPIT Darut Taufiq
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl ">
-                Membangun generasi Qur'ani yang tangguh, cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman di usia remaja melalui pendidikan Islam terpadu.
+              <p className="text-base md:text-lg lg:text-xl text-white/90 font-light leading-relaxed max-w-2xl">
+                Membangun generasi Qur'ani yang tangguh, cerdas, berakhlak mulia, dan siap menghadapi tantangan zaman di usia remaja melalui pendidikan Islam terpadu berasrama.
               </p>
             </div>
           </div>
@@ -146,20 +146,20 @@ export default function SMPITPage() {
             {/* Required Attachments Box */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 lg:p-10">
               <div className="flex items-center gap-4 mb-8 border-l-4 border-primary pl-4">
-                <h2 className="text-2xl font-bold text-secondary">Dokumen Persyaratan</h2>
+                <h2 className="text-2xl font-bold text-secondary">Persyaratan Pendaftaran</h2>
               </div>
               
               <div className="bg-gray-50/80 rounded-xl p-6 lg:p-8">
                 <ul className="space-y-4">
                   {[
-                    "Fotokopi Ijazah SD/MI yang dilegalisir (2 Lembar)",
-                    "Fotokopi SKHUN yang dilegalisir (2 Lembar)",
-                    "Fotokopi Akta Kelahiran (2 Lembar)",
-                    "Fotokopi Kartu Keluarga (KK) (2 Lembar)",
-                    "Fotokopi KTP Orang Tua (Ayah & Ibu) (Masing-masing 2 Lembar)",
-                    "Pas foto berwarna 3x4 dan 4x6 (Masing-masing 4 Lembar)",
-                    "Surat Keterangan Kelakuan Baik dari sekolah asal",
-                    "Surat Keterangan Sehat dari Dokter/Puskesmas"
+                    "Mengisi formulir pendaftaran Lengkap",
+                    "Foto diri dengan ukuran 3×4, 4 lembar",
+                    "Foto copy KTP wali santri ( 2 lembar)",
+                    "Foto copy Akte Kelahiran ( 2 lembar)",
+                    "Foto copy ijazah terleglisir ( 2 lembar)",
+                    "Foto copy SKL ( 2 lembar)",
+                    "Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)",
+                    "Surat pindah sekolah dan daftar nilai/Raport siswa (bagi siswa pindahan)"
                   ].map((doc, i) => (
                     <li key={i} className="flex items-start gap-4">
                       <div className="mt-1 text-primary shrink-0"><FaFileLines /></div>
@@ -179,7 +179,7 @@ export default function SMPITPage() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 lg:p-8">
               <div className="flex flex-col items-center text-center pb-6 border-b border-gray-100 mb-6">
                 <div className="w-24 h-24 rounded-full bg-surface mb-4 p-4 border border-gray-100 relative overflow-hidden flex items-center justify-center">
-                  <Image src="/icon.png" alt="Logo SMPIT" fill className="object-contain p-2" />
+                  <Image src="/images/smpit.png" alt="Logo SMPIT" fill className="object-contain p-2" />
                 </div>
                 <h3 className="font-bold text-xl text-secondary">SMPIT Darut Taufiq</h3>
                 <p className="text-sm text-gray-500 mt-1">Sekolah Menengah Pertama Islam Terpadu</p>

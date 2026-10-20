@@ -1,0 +1,231 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e3]:
+    - list [ref=f7e4]:
+      - listitem [ref=f7e5]:
+        - link "+6282228880972" [ref=f7e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f7e10]:
+        - link "info@daruttaufiq.com" [ref=f7e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f7e15]:
+        - generic [ref=f7e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f7e19]:
+      - listitem [ref=f7e20]:
+        - link "Instagram" [ref=f7e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f7e24]:
+        - link "TikTok" [ref=f7e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f7e28]:
+        - link "YouTube" [ref=f7e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f7e32]:
+        - link "Facebook" [ref=f7e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f7e36]:
+    - generic [ref=f7e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f7e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f7e40]
+        - generic [ref=f7e41]:
+          - generic [ref=f7e42]: DARUT TAUFIQ
+          - generic [ref=f7e43]: PONDOK PESANTREN
+      - navigation [ref=f7e44]:
+        - link "Beranda" [ref=f7e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f7e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f7e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f7e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f7e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f7e64] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f7e66] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f7e67]
+  - main [ref=f7e70]:
+    - main [ref=f7e71]:
+      - generic [ref=f7e77]:
+        - generic [ref=f7e78]:
+          - link "Home" [ref=f7e79] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f7e82]: Unit
+          - generic [ref=f7e85]: TKIT
+        - heading "TKIT Darut Taufiq" [level=1] [ref=f7e86]
+        - paragraph [ref=f7e87]: Membina tumbuh kembang anak usia dini berlandaskan fitrah keislaman, pembiasaan adab mulia, hafalan Al-Qur'an surat pendek, dan pengembangan kreativitas motorik melalui metode bermain yang menyenangkan.
+      - generic [ref=f7e89]:
+        - generic [ref=f7e90]:
+          - generic [ref=f7e91]:
+            - heading "Informasi TKIT" [level=2] [ref=f7e93]
+            - generic [ref=f7e94]:
+              - generic [ref=f7e99]:
+                - paragraph [ref=f7e100]: Lokasi
+                - paragraph [ref=f7e101]: Kampus Utama Darut Taufiq
+              - generic [ref=f7e106]:
+                - paragraph [ref=f7e107]: Waktu Belajar
+                - paragraph [ref=f7e108]: Pagi (07.30 - 11.30 WIB)
+              - generic [ref=f7e113]:
+                - paragraph [ref=f7e114]: Kurikulum
+                - paragraph [ref=f7e115]: Bermain & Belajar Islami
+              - generic [ref=f7e120]:
+                - paragraph [ref=f7e121]: Tipe Siswa
+                - paragraph [ref=f7e122]: Putra & Putri
+          - generic [ref=f7e123]:
+            - heading "Syarat Pendaftaran" [level=2] [ref=f7e125]
+            - generic [ref=f7e126]:
+              - generic [ref=f7e127]:
+                - generic [ref=f7e128]: "1"
+                - generic [ref=f7e129]:
+                  - heading "Usia dan Kesiapan" [level=3] [ref=f7e130]
+                  - paragraph [ref=f7e131]: Calon siswa/siswi berusia minimal 4-5 tahun (untuk TK A) dan 5-6 tahun (untuk TK B) pada bulan Juli tahun ajaran berjalan. Memiliki kesiapan untuk mulai bersosialisasi dan belajar di lingkungan sekolah.
+              - generic [ref=f7e132]:
+                - generic [ref=f7e133]: "2"
+                - generic [ref=f7e134]:
+                  - heading "Observasi Kesiapan" [level=3] [ref=f7e135]
+                  - paragraph [ref=f7e136]: Calon siswa akan mengikuti kegiatan observasi ringan sambil bermain untuk melihat kesiapan motorik, kognitif, dan sosial. Orang tua/wali juga akan mengikuti sesi wawancara perkenalan.
+              - generic [ref=f7e137]:
+                - generic [ref=f7e138]: "3"
+                - generic [ref=f7e139]:
+                  - heading "Komitmen Pendidikan" [level=3] [ref=f7e140]
+                  - paragraph [ref=f7e141]: Orang tua bersedia bekerja sama dengan pihak sekolah dalam mendidik anak, serta mendukung program pembentukan karakter Islami sejak usia dini di rumah.
+          - generic [ref=f7e142]:
+            - heading "Persyaratan Pendaftaran" [level=2] [ref=f7e144]
+            - list [ref=f7e146]:
+              - listitem [ref=f7e147]:
+                - generic [ref=f7e151]: Mengisi formulir pendaftaran Lengkap
+              - listitem [ref=f7e152]:
+                - generic [ref=f7e156]: Foto diri dengan ukuran 3×4, 4 lembar
+              - listitem [ref=f7e157]:
+                - generic [ref=f7e161]: Foto copy KTP wali santri ( 2 lembar)
+              - listitem [ref=f7e162]:
+                - generic [ref=f7e166]: Foto copy Akte Kelahiran ( 2 lembar)
+              - listitem [ref=f7e167]:
+                - generic [ref=f7e171]: Foto copy ijazah terleglisir ( 2 lembar)
+              - listitem [ref=f7e172]:
+                - generic [ref=f7e176]: Foto copy SKL ( 2 lembar)
+              - listitem [ref=f7e177]:
+                - generic [ref=f7e181]: Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)
+              - listitem [ref=f7e182]:
+                - generic [ref=f7e186]: Surat pindah sekolah dan daftar nilai/Raport siswa (bagi siswa pindahan)
+        - generic [ref=f7e187]:
+          - generic [ref=f7e188]:
+            - generic [ref=f7e189]:
+              - img "Logo TKIT" [ref=f7e191]
+              - heading "TKIT Darut Taufiq" [level=3] [ref=f7e192]
+              - paragraph [ref=f7e193]: Taman Kanak-Kanak Islam Terpadu
+            - generic [ref=f7e194]:
+              - generic [ref=f7e195]:
+                - heading "Akreditasi" [level=4] [ref=f7e199]
+                - paragraph [ref=f7e200]: A (Amat Baik) Terakreditasi oleh BAN-PAUD
+              - generic [ref=f7e201]:
+                - heading "Program Unggulan" [level=4] [ref=f7e205]
+                - paragraph [ref=f7e206]: Pengenalan huruf Hijaiyah, Hafalan Doa Harian & Surat Pendek, Praktek Ibadah Ringan, dan Motorik Anak.
+          - generic [ref=f7e207]:
+            - heading "Hubungi Kami" [level=3] [ref=f7e208]
+            - generic [ref=f7e209]:
+              - generic [ref=f7e214]:
+                - paragraph [ref=f7e215]: Telepon / WhatsApp
+                - paragraph [ref=f7e216]: +62 812 3456 7890
+              - generic [ref=f7e221]:
+                - paragraph [ref=f7e222]: Email
+                - paragraph [ref=f7e223]: info.tkit@daruttaufiq.com
+          - generic [ref=f7e224]:
+            - heading "Lokasi" [level=3] [ref=f7e228]
+            - paragraph [ref=f7e229]: Jl. Kb. Baru Metros No. 59, Semper Barat, Cilincing, Jakarta Utara, DKI Jakarta 14130
+            - iframe [ref=f7e231]:
+              - link "Maps (terbuka di tab baru)" [ref=f8e4] [cursor=pointer]:
+                - /url: about:invalid#zClosurez
+                - text: Maps
+  - contentinfo [ref=f7e232]:
+    - generic [ref=f7e234]:
+      - generic [ref=f7e235]:
+        - generic [ref=f7e236]:
+          - img "Pondok Modern" [ref=f7e237]
+          - generic [ref=f7e238]:
+            - generic [ref=f7e239]: DARUT TAUFIQ
+            - generic [ref=f7e240]: PONDOK PESANTREN
+        - list [ref=f7e241]:
+          - listitem [ref=f7e242]:
+            - link "+6282228880972" [ref=f7e243] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f7e247]:
+            - link "info@daruttaufiq.com" [ref=f7e248] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f7e252]:
+            - link "(021) 82631191" [ref=f7e253] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f7e257]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f7e258] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f7e262]:
+        - heading "Profil" [level=4] [ref=f7e263]
+        - list [ref=f7e264]:
+          - listitem [ref=f7e265]:
+            - link "Sejarah Sekolah" [ref=f7e266] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f7e270]:
+            - link "Manajemen" [ref=f7e271] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f7e275]:
+            - link "Staff & Pengajar" [ref=f7e276] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f7e280]:
+            - link "Nilai & Budaya" [ref=f7e281] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f7e285]:
+        - heading "Informasi" [level=4] [ref=f7e286]
+        - list [ref=f7e287]:
+          - listitem [ref=f7e288]:
+            - link "Pendaftaran PPDB" [ref=f7e289] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f7e293]:
+            - link "Program Unggulan" [ref=f7e294] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f7e298]:
+            - link "Sarana & Fasilitas" [ref=f7e299] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f7e303]:
+            - link "Biaya Pendidikan" [ref=f7e304] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f7e308]:
+            - link "Frequently Asked Questions" [ref=f7e309] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f7e313]:
+        - heading "Instagram" [level=4] [ref=f7e314]
+        - generic [ref=f7e315]:
+          - link [ref=f7e316] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e317]
+          - link [ref=f7e321] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e322]
+          - link [ref=f7e326] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e327]
+          - link [ref=f7e331] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e332]
+          - link [ref=f7e336] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e337]
+          - link [ref=f7e341] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f7e342]
+    - generic [ref=f7e348]:
+      - paragraph [ref=f7e349]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f7e350]:
+        - link "Instagram" [ref=f7e351] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f7e354] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f7e357] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f7e360] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f7e364]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f7e372] [cursor=pointer]
+  - alert [ref=f7e376]

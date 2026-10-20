@@ -1,0 +1,41 @@
+- generic [ref=f11e1]:
+  - generic [active]:
+    - generic [ref=f11e4]:
+      - generic [ref=f11e5]:
+        - navigation [ref=f11e7]:
+          - button [disabled] [ref=f11e8]:
+            - img "previous" [ref=f11e9]
+          - generic [ref=f11e11]:
+            - generic [ref=f11e12]: 1/
+            - generic [ref=f11e13]: "1"
+          - button [disabled] [ref=f11e14]:
+            - img "next" [ref=f11e15]
+        - link "Next.js 16.3.5 (stale) Turbopack" [ref=f11e18] [cursor=pointer]:
+          - /url: https://nextjs.org/docs/messages/version-staleness
+          - generic "There is a newer version (16.4.2) available, upgrade recommended!" [ref=f11e21]: Next.js 16.3.5 (stale)
+          - generic [ref=f11e22]: Turbopack
+      - dialog "Runtime ReferenceError" [ref=f11e24]:
+        - generic [ref=f11e29]:
+          - generic [ref=f11e30]:
+            - generic [ref=f11e31]:
+              - generic [ref=f11e32]: Runtime ReferenceError
+              - generic [ref=f11e33]: Server
+            - generic [ref=f11e34]:
+              - button "Copy Error Info" [ref=f11e35] [cursor=pointer]
+              - button "No related documentation found" [disabled] [ref=f11e38]
+              - button "Attach Node.js inspector" [ref=f11e41] [cursor=pointer]
+          - generic [ref=f11e50]: Image is not defined
+    - generic [ref=f11e57] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f11e58]
+      - generic [ref=f11e62]:
+        - button "Open issues overlay" [ref=f11e63]:
+          - generic [ref=f11e64]:
+            - generic [aria-hidden] [ref=f11e65]: "0"
+            - generic [ref=f11e66]: "1"
+          - generic [ref=f11e67]: Issue
+        - button "Collapse issues badge" [ref=f11e68]
+  - generic [ref=f11e72]:
+    - heading "This page couldn’t load" [level=1] [ref=f11e75]
+    - paragraph [ref=f11e76]: A server error occurred. Reload to try again.
+    - button "Reload" [ref=f11e79] [cursor=pointer]
+  - paragraph [ref=f11e80]: ERROR 3230051631

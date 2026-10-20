@@ -1,0 +1,181 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - list [ref=f8e4]:
+      - listitem [ref=f8e5]:
+        - link "+6282228880972" [ref=f8e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+      - listitem [ref=f8e10]:
+        - link "info@daruttaufiq.com" [ref=f8e11] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+      - listitem [ref=f8e15]:
+        - generic [ref=f8e18]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f8e19]:
+      - listitem [ref=f8e20]:
+        - link "Instagram" [ref=f8e21] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+      - listitem [ref=f8e24]:
+        - link "TikTok" [ref=f8e25] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+      - listitem [ref=f8e28]:
+        - link "YouTube" [ref=f8e29] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+      - listitem [ref=f8e32]:
+        - link "Facebook" [ref=f8e33] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - banner [ref=f8e36]:
+    - generic [ref=f8e38]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f8e39] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f8e40]
+        - generic [ref=f8e41]:
+          - generic [ref=f8e42]: DARUT TAUFIQ
+          - generic [ref=f8e43]: PONDOK PESANTREN
+      - navigation [ref=f8e44]:
+        - link "Beranda" [ref=f8e46] [cursor=pointer]:
+          - /url: /
+        - link "Profil" [ref=f8e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Akademik" [ref=f8e52] [cursor=pointer]:
+          - /url: "#"
+        - link "Unit" [ref=f8e56] [cursor=pointer]:
+          - /url: "#"
+        - link "Berita" [ref=f8e60] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f8e64] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f8e66] [cursor=pointer]:
+          - /url: /ppdb
+        - button "Search" [ref=f8e67]
+  - main [ref=f8e70]:
+    - main [ref=f8e71]:
+      - generic [ref=f8e77]:
+        - generic [ref=f8e78]:
+          - link "Beranda" [ref=f8e79] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f8e83]: Manajemen Komunikasi Institusi
+          - link "Berita" [ref=f8e87] [cursor=pointer]:
+            - /url: /berita
+        - heading "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [level=1] [ref=f8e88]
+        - generic [ref=f8e89]:
+          - time [ref=f8e93]: Diterbitkan pada 15/07/2026
+          - generic [ref=f8e94]:
+            - generic [ref=f8e95]: Kegiatan
+            - generic [ref=f8e96]: Berita Sorotan
+            - generic [ref=f8e97]: Acara
+      - generic [ref=f8e98]:
+        - article [ref=f8e100]:
+          - img "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [ref=f8e104]
+          - generic [ref=f8e106]:
+            - paragraph [ref=f8e107]:
+              - strong [ref=f8e108]: Jakarta Utara, 15 Juli 2026
+              - text: — Suasana pagi di lapangan Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq tampak begitu semarak dan penuh kegembiraan. Ratusan santri baru dari berbagai jenjang berkumpul bersama untuk mengikuti agenda senam kebugaran jasmani dan
+              - emphasis [ref=f8e109]: fun games
+              - text: dalam rangkaian kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS) Tahun Ajaran 2026/2027.
+            - paragraph [ref=f8e110]: Dengan mengenakan seragam olahraga dan kartu identitas peserta (nametag) berkalung di leher, para santri tampak antusias mengikuti setiap instruksi gerakan senam yang dipandu oleh para ustadz dan ustadzah. Senyum ceria terpancar di wajah mereka saat saling berkenalan dan berbaur dengan teman-teman baru.
+            - paragraph [ref=f8e111]: Kegiatan ini dirancang khusus untuk membangun kebersamaan, melatih kekompakan, serta menumbuhkan rasa percaya diri pada santri baru sebelum memasuki rutinitas kegiatan belajar mengajar dan kepesantrenan. Selain senam pagi, agenda MPLS hari ini juga diisi dengan permainan ketangkasan berkelompok (outbound ceria) dan pengenalan nilai-nilai kedisiplinan serta adab santri.
+            - paragraph [ref=f8e112]: Semoga keceriaan dan semangat di hari-hari awal ini terus menyertai para santri dalam menuntut ilmu, menghafal Al-Qur'an, dan meraih prestasi gemilang di Pondok Pesantren Darut Taufiq.
+          - generic [ref=f8e113]:
+            - generic [ref=f8e116]:
+              - img "Slide 1" [ref=f8e118]
+              - img "Slide 2" [ref=f8e120]
+              - img "Slide 3" [ref=f8e122]
+              - img "Slide 4" [ref=f8e124]
+            - generic [ref=f8e125]:
+              - generic [ref=f8e126]:
+                - button [ref=f8e127]
+                - button [ref=f8e128]
+                - button [ref=f8e129]
+                - button [ref=f8e130]
+              - generic [ref=f8e131]:
+                - button [disabled] [ref=f8e132]
+                - button [ref=f8e135]
+        - paragraph [ref=f8e141]: "Terakhir diubah: 19/10/2026 - 07:53 WIB"
+  - contentinfo [ref=f8e142]:
+    - generic [ref=f8e144]:
+      - generic [ref=f8e145]:
+        - generic [ref=f8e146]:
+          - img "Pondok Modern" [ref=f8e147]
+          - generic [ref=f8e148]:
+            - generic [ref=f8e149]: DARUT TAUFIQ
+            - generic [ref=f8e150]: PONDOK PESANTREN
+        - list [ref=f8e151]:
+          - listitem [ref=f8e152]:
+            - link "+6282228880972" [ref=f8e153] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+          - listitem [ref=f8e157]:
+            - link "info@daruttaufiq.com" [ref=f8e158] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+          - listitem [ref=f8e162]:
+            - link "(021) 82631191" [ref=f8e163] [cursor=pointer]:
+              - /url: tel:02182631191
+          - listitem [ref=f8e167]:
+            - link "Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f8e168] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+      - generic [ref=f8e172]:
+        - heading "Profil" [level=4] [ref=f8e173]
+        - list [ref=f8e174]:
+          - listitem [ref=f8e175]:
+            - link "Sejarah Sekolah" [ref=f8e176] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f8e180]:
+            - link "Manajemen" [ref=f8e181] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f8e185]:
+            - link "Staff & Pengajar" [ref=f8e186] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f8e190]:
+            - link "Nilai & Budaya" [ref=f8e191] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f8e195]:
+        - heading "Informasi" [level=4] [ref=f8e196]
+        - list [ref=f8e197]:
+          - listitem [ref=f8e198]:
+            - link "Pendaftaran PPDB" [ref=f8e199] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f8e203]:
+            - link "Program Unggulan" [ref=f8e204] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f8e208]:
+            - link "Sarana & Fasilitas" [ref=f8e209] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f8e213]:
+            - link "Biaya Pendidikan" [ref=f8e214] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f8e218]:
+            - link "Frequently Asked Questions" [ref=f8e219] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f8e223]:
+        - heading "Instagram" [level=4] [ref=f8e224]
+        - generic [ref=f8e225]:
+          - link [ref=f8e226] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e227]
+          - link [ref=f8e231] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e232]
+          - link [ref=f8e236] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e237]
+          - link [ref=f8e241] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e242]
+          - link [ref=f8e246] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e247]
+          - link [ref=f8e251] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f8e252]
+    - generic [ref=f8e258]:
+      - paragraph [ref=f8e259]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f8e260]:
+        - link "Instagram" [ref=f8e261] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+        - link "TikTok" [ref=f8e264] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+        - link "YouTube" [ref=f8e267] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+        - link "Facebook" [ref=f8e270] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+  - button "Open WhatsApp Chat" [ref=f8e274]
+  - button "Back to Top"
+  - button "Open Next.js Dev Tools" [ref=f8e282] [cursor=pointer]

@@ -83,34 +83,73 @@ export default function KontakPage() {
       <section className="relative z-30 -mt-24 px-4 lg:px-8 pb-16 lg:pb-24">
         <div className="w-full max-w-[1400px] mx-auto space-y-12">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <FaPhoneAlt className="text-primary text-2xl" />
+          {/* Single Unified Contact Info Container */}
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-10 shadow-sm border border-gray-100 min-h-[170px] lg:min-h-[190px] flex items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full items-center lg:divide-x divide-gray-100">
+              
+              {/* Telepon */}
+              <a
+                href="tel:02182631191"
+                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4 first:lg:pl-0"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <FaPhoneAlt />
+                </div>
+                <div className="text-xs md:text-sm">
+                  <span className="text-gray-500 font-medium">Telepon : </span>
+                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                    (021) 82631191
+                  </span>
+                </div>
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/6282228880972"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <FaWhatsapp />
+                </div>
+                <div className="text-xs md:text-sm">
+                  <span className="text-gray-500 font-medium">WhatsApp : </span>
+                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                    +62 822 2888 0972
+                  </span>
+                </div>
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:info@daruttaufiq.com"
+                className="flex items-center gap-3.5 text-gray-700 hover:text-primary transition-colors group lg:px-4"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <FaEnvelope />
+                </div>
+                <div className="text-xs xl:text-sm min-w-0">
+                  <span className="text-gray-500 font-medium">Email : </span>
+                  <span className="font-bold text-secondary group-hover:text-primary transition-colors block sm:inline">
+                    info@daruttaufiq.com
+                  </span>
+                </div>
+              </a>
+
+              {/* Jam Operasional */}
+              <div className="flex items-center gap-3.5 text-gray-700 lg:px-4">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center text-xl shrink-0">
+                  <FaClock />
+                </div>
+                <div className="text-xs md:text-sm">
+                  <span className="text-gray-500 font-medium">Jam Operasional : </span>
+                  <span className="font-bold text-secondary block sm:inline">
+                    Senin - Sabtu 08:00 - 15:00 WIB
+                  </span>
+                </div>
               </div>
-              <h3 className="font-bold text-secondary mb-2 text-lg">Telepon</h3>
-              <p className="text-gray-500 text-sm">(021) 82631191</p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <FaWhatsapp className="text-primary text-2xl" />
-              </div>
-              <h3 className="font-bold text-secondary mb-2 text-lg">WhatsApp</h3>
-              <p className="text-gray-500 text-sm">+62 822 2888 0972</p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <FaEnvelope className="text-primary text-2xl" />
-              </div>
-              <h3 className="font-bold text-secondary mb-2 text-lg">Email</h3>
-              <p className="text-gray-500 text-sm">info@daruttaufiq.com</p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <FaClock className="text-primary text-2xl" />
-              </div>
-              <h3 className="font-bold text-secondary mb-2 text-lg">Jam Operasional</h3>
-              <p className="text-gray-500 text-sm">Senin - Sabtu<br />08:00 - 15:00 WIB</p>
+
             </div>
           </div>
 

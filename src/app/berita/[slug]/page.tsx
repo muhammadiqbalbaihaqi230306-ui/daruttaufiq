@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FaCalendarAlt, FaChevronRight, FaPrint, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaCalendarAlt, FaPrint, FaTwitter, FaFacebook } from "react-icons/fa";
 import { prisma } from "@/lib/prisma";
 import ImageSlider from "@/components/ImageSlider";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export async function generateMetadata({
   params,
@@ -20,10 +21,12 @@ export async function generateMetadata({
   
   if (!post) {
     const dummyPosts = [
-      { slug: "juara-1-yonkomlekad", title: "Peserta Didik SDIT Arkan Cendekia Raih Juara 1 pada YONKOMLEKAD Archery Championship 2026", excerpt: "Bekasi, 28 Juli 2026 — Prestasi membanggakan kembali diraih..." },
-      { slug: "26-medali-msc", title: "26 Medali Berhasil Diraih SDIT Arkan Cendekia di Mentari Science Competition (MSC) 2026", excerpt: "Bekasi, 21 Juli 2026 — Prestasi membanggakan kembali ditorehkan..." },
-      { slug: "training-guru", title: "Yayasan Pendidikan Arkan Cendekia Selenggarakan Professional Development Training 2026 untuk Tingkatkan Kompetensi Guru", excerpt: "Bekasi, 13 Juli 2026 — Yayasan Pendidikan Arkan Cendekia kembali..." },
-      { slug: "artikel-pentingnya-pendidikan", title: "Pentingnya Pendidikan Karakter di Era Digital", excerpt: "Pendidikan karakter menjadi fondasi yang sangat krusial bagi generasi muda..." }
+      { slug: "semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq", title: "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre", excerpt: "Memperingati Hari Santri Nasional, santri dan dewan asatidz Pondok Pesantren Darut Taufiq bergabung bersama ribuan santri se-Jakarta Utara mengikuti Apel Akbar khidmat di pelataran Jakarta Islamic Centre." },
+      { slug: "latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq", title: "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak", excerpt: "Membina kebugaran fisik sekaligus menanamkan adab, kemandirian, dan sportivitas Islami, para santri Pondok Pesantren Darut Taufiq antusias mengikuti latihan rutin bela diri Pencak Silat." },
+      { slug: "keseruan-kegiatan-renang-santri-darut-taufiq", title: "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah", excerpt: "Dalam rangka menjaga kebugaran jasmani sekaligus mengamalkan anjuran Rasulullah SAW, santri Pondok Pesantren Darut Taufiq antusias mengikuti agenda renang ceria bersama." },
+      { slug: "keseruan-mpls-dan-senam-pagi-santri-baru", title: "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru", excerpt: "Penuh semangat dan keceriaan, para santri baru Pondok Pesantren Darut Taufiq mengikuti kegiatan senam pagi bersama..." },
+      { slug: "upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas", title: "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq", excerpt: "Pondok Pesantren Darut Taufiq mengawali Tahun Ajaran 2026/2027 dengan menggelar upacara bendera khidmat..." },
+      { slug: "pertemuan-wali-santri-dan-apresiasi-prestasi-siswa", title: "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq", excerpt: "Mempererat sinergi antara sekolah dan orang tua, Pondok Pesantren Darut Taufiq mengadakan agenda temu silaturahmi..." }
     ];
     post = dummyPosts.find((p) => p.slug === slug);
   }
@@ -55,44 +58,67 @@ export default async function BeritaDetailPage({
     // Fallback ke dummy data jika database kosong (untuk demo di beranda)
     const dummyPosts = [
       {
-        id: "dummy-1",
-        slug: "juara-1-yonkomlekad",
-        title: "Peserta Didik SDIT Arkan Cendekia Raih Juara 1 pada YONKOMLEKAD Archery Championship 2026",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg",
-        publishedAt: new Date("2026-07-28"),
-        excerpt: "Bekasi, 28 Juli 2026 — Prestasi membanggakan kembali diraih oleh peserta didik SDIT Arkan Cendekia...",
-        content: "<p>Bekasi, 28 Juli 2026 — Prestasi membanggakan kembali diraih oleh peserta didik SDIT Arkan Cendekia dalam ajang perlombaan panahan YONKOMLEKAD Archery Championship 2026. Pertandingan yang berlangsung sengit ini berhasil dimenangkan berkat kedisiplinan dan latihan keras para santri.</p><br/><p>Keberhasilan ini tidak lepas dari doa dan dukungan penuh para orang tua serta dedikasi pelatih ekstrakurikuler panahan di sekolah.</p><p>Selamat kepada para juara, semoga prestasi ini menjadi motivasi untuk terus berprestasi di masa depan dan menjadi kebanggaan bagi Pondok Pesantren Darut Taufiq!</p>",
-        category: "Prestasi",
+        id: "dummy-5",
+        slug: "semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq",
+        title: "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre",
+        thumbnail: "/images/berita6.jpg",
+        publishedAt: new Date("2026-10-22T08:00:00.000Z"),
+        updatedAt: new Date("2026-10-22T08:00:00.000Z"),
+        excerpt: "Memperingati Hari Santri Nasional, santri dan dewan asatidz Pondok Pesantren Darut Taufiq bergabung bersama ribuan santri se-Jakarta Utara mengikuti Apel Akbar khidmat di pelataran Jakarta Islamic Centre.",
+        content: "<p><strong>Jakarta Utara, 22 Oktober 2026</strong> — Peringatan Hari Santri Nasional (HSN) tahun ini berlangsung dengan penuh khidmat dan gegap gempita. Ratusan santri dan dewan asatidz Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq bergabung bersama ribuan santri dari berbagai pondok pesantren se-Jakarta Utara untuk mengikuti agenda Apel Akbar Peringatan Hari Santri Nasional yang dipusatkan di pelataran Jakarta Islamic Centre (JIC), Koja.</p><br/><p>Dengan mengenakan pakaian serba putih, peci hitam, dan balutan sarung khas santri Nusantara, para santri Darut Taufiq tampak antusias dan berbaris rapi di bawah naungan menara megah Jakarta Islamic Centre. Berbagai spanduk ucapan selamat dan panji kebanggaan pesantren turut dikibarkan sebagai simbol soliditas dan kecintaan santri terhadap tanah air.</p><br/><p>Peringatan Hari Santri Nasional mengenang peristiwa bersejarah Resolusi Jihad 22 Oktober 1945 yang dicetuskan oleh para ulama untuk mempertahankan kedaulatan bangsa. Dalam amanat apel akbar, ditekankan pentingnya peran santri masa kini untuk terus meneladani semangat patriotisme, menjaga marwah keislaman yang rahmatan lil 'alamin, serta aktif memberikan kontribusi nyata bagi kemajuan bangsa melalui ilmu pengetahuan dan teknologi.</p><br/><p>Keikutsertaan para santri Pondok Pesantren Darut Taufiq dalam apel akbar ini diharapkan semakin memupuk jiwa nasionalisme, kemandirian, dan ukhuwah islamiyah dalam sanubari setiap santri.</p>",
+        category: "Kegiatan",
       },
       {
-        id: "dummy-2",
-        slug: "26-medali-msc",
-        title: "26 Medali Berhasil Diraih SDIT Arkan Cendekia di Mentari Science Competition (MSC) 2026",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg",
-        publishedAt: new Date("2026-07-21"),
-        excerpt: "Bekasi, 21 Juli 2026 — Prestasi membanggakan kembali ditorehkan oleh peserta didik SDIT Arkan...",
-        content: "<p>Bekasi, 21 Juli 2026 — Prestasi membanggakan kembali ditorehkan oleh peserta didik SDIT Arkan Cendekia di ajang Mentari Science Competition (MSC) 2026. Sebanyak 26 medali berhasil dibawa pulang oleh para santri yang berbakat di bidang sains dan matematika.</p><br/><p>Alhamdulillah, prestasi ini membuktikan bahwa pendidikan Islam terpadu yang diterapkan di Darut Taufiq mampu menghasilkan generasi yang tidak hanya kuat hafalan Qur'annya, tapi juga sangat unggul dalam ilmu pengetahuan dan sains.</p>",
-        category: "Prestasi",
-      },
-      {
-        id: "dummy-3",
-        slug: "training-guru",
-        title: "Yayasan Pendidikan Arkan Cendekia Selenggarakan Professional Development Training 2026 untuk Tingkatkan Kompetensi Guru",
-        thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg",
-        publishedAt: new Date("2026-07-14"),
-        excerpt: "Bekasi, 13 Juli 2026 — Yayasan Pendidikan Arkan Cendekia kembali menunjukkan komitmennya dalam...",
-        content: "<p>Bekasi, 13 Juli 2026 — Yayasan Pendidikan Arkan Cendekia kembali menunjukkan komitmennya dalam meningkatkan kualitas pendidikan dengan menyelenggarakan Professional Development Training 2026.</p><br/><p>Pelatihan ini diikuti oleh seluruh dewan asatidz dan guru, dengan menghadirkan para ahli di bidang pendidikan. Tujuannya adalah untuk meningkatkan kompetensi pedagogik dan profesionalisme dalam mengajar, serta mengadopsi metode pembelajaran modern yang interaktif.</p><p>Dengan kualitas guru yang terus ditingkatkan, kami yakin dapat memberikan pelayanan pendidikan terbaik dan mencetak santri yang cerdas, kreatif, serta berakhlak mulia.</p>",
+        id: "dummy-6",
+        slug: "latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq",
+        title: "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak",
+        thumbnail: "/images/berita5.jpg",
+        publishedAt: new Date("2026-10-20T08:00:00.000Z"),
+        updatedAt: new Date("2026-10-20T08:00:00.000Z"),
+        excerpt: "Membina kebugaran fisik sekaligus menanamkan adab, kemandirian, dan sportivitas Islami, para santri Pondok Pesantren Darut Taufiq antusias mengikuti latihan rutin bela diri Pencak Silat.",
+        content: "<p><strong>Jakarta Utara, 20 Oktober 2026</strong> — Di bawah hangatnya sinar matahari pagi di lapangan serbaguna kampus pesantren, para santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq tampak bersemangat memperagakan gerakan jurus dalam latihan rutin ekstrakurikuler seni bela diri Pencak Silat.</p><br/><p>Mengenakan seragam khas bela diri berwarna hitam lengkap dengan sabuk putih, para santri dibimbing langsung oleh instruktur berpengalaman. Latihan diawali dengan pemanasan fisik intensif, peregangan otot, lalu dilanjutkan dengan penguasaan kuda-kuda (stance), teknik tangkisan, pukulan presisi, hingga pola langkah pertahanan diri.</p><br/><p>Bagi santri Darut Taufiq, pencak silat bukan sekadar olahraga fisik atau ajang pertarungan, melainkan sarana olah batin untuk menempa kedisiplinan, mengendalikan emosi, dan memupuk rasa saling menghargai. Nilai-nilai luhur silat Nusantara yang bersinergi dengan adab kepesantrenan mengajarkan santri untuk senantiasa rendah hati, pantang menyerah, dan hanya menggunakan kekuatan fisik untuk membela kebenaran serta menolong sesama.</p><br/><p>Melalui kegiatan ekstrakurikuler ini, Pondok Pesantren Darut Taufiq terus berkomitmen melahirkan generasi santri yang tidak hanya unggul dalam hafalan Al-Qur'an dan ilmu syar'i, namun juga memiliki jasmani yang bugar, tangguh, dan berdaya saing tinggi.</p>",
         category: "Kegiatan",
       },
       {
         id: "dummy-4",
-        slug: "artikel-pentingnya-pendidikan",
-        title: "Pentingnya Pendidikan Karakter di Era Digital",
-        thumbnail: "/images/placeholder-news.jpg",
-        publishedAt: new Date("2026-07-10"),
-        excerpt: "Pendidikan karakter menjadi fondasi yang sangat krusial bagi generasi muda di tengah pesatnya perkembangan teknologi dan informasi.",
-        content: "<p>Pendidikan karakter menjadi fondasi yang sangat krusial bagi generasi muda di tengah pesatnya perkembangan teknologi dan informasi.</p><br/><p>Di era digital ini, informasi dapat diakses dengan sangat mudah. Namun, kemudahan ini harus diimbangi dengan filter karakter dan akhlak yang kuat agar generasi muda tidak terpengaruh oleh dampak negatif dunia maya.</p><p>Oleh karena itu, peran pendidikan Islam terpadu menjadi semakin penting untuk mencetak generasi yang cerdas secara intelektual, sekaligus memiliki fondasi keimanan dan akhlakul karimah yang tangguh.</p>",
-        category: "Artikel",
+        slug: "keseruan-kegiatan-renang-santri-darut-taufiq",
+        title: "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah",
+        thumbnail: "/images/berita4.jpeg",
+        publishedAt: new Date("2026-07-18T08:30:00.000Z"),
+        updatedAt: new Date("2026-07-18T08:30:00.000Z"),
+        excerpt: "Dalam rangka menjaga kebugaran jasmani sekaligus mengamalkan anjuran Rasulullah SAW, santri Pondok Pesantren Darut Taufiq antusias mengikuti agenda renang ceria bersama.",
+        content: "<p><strong>Jakarta Utara, 18 Juli 2026</strong> — Suasana ceria dan penuh semangat tampak terpancar dari wajah para santri Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq. Bertempat di kolam renang dengan pendampingan penuh dari dewan asatidz dan pembimbing, para santri antusias mengikuti agenda kegiatan renang ceria dan pembinaan fisik santri.</p><br/><p>Olahraga renang merupakan salah satu olahraga sunnah yang sangat dianjurkan oleh Rasulullah SAW dalam mendidik generasi muda, di samping berkuda dan memanah. Melalui kegiatan ini, santri diajarkan teknik-teknik dasar berenang seperti mengapung, pernapasan, serta gerakan dasar gaya dada dan gaya bebas yang dipandu secara bertahap dan teratur.</p><br/><p>Selain membangun kebugaran jasmani, stamina, dan daya tahan tubuh santri, kegiatan ini juga menjadi momen rekreasi edukatif untuk menyegarkan pikiran santri setelah menjalani aktivitas belajar dan menghafal Al-Qur'an secara intensif di pesantren. Tawa dan kebersamaan antar-santri semakin mempererat ukhuwah islamiyah di antara mereka.</p><br/><p>Pondok Pesantren Darut Taufiq terus berkomitmen menghadirkan keseimbangan antara pendidikan ruhiyah, intelektual, dan pembinaan jasmani santri agar terwujud generasi Qur'ani yang sehat, tangguh, dan berakhlak mulia.</p>",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-1",
+        slug: "keseruan-mpls-dan-senam-pagi-santri-baru",
+        title: "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru",
+        thumbnail: "/images/berita3.jpg",
+        publishedAt: new Date("2026-07-15T08:15:00.000Z"),
+        excerpt: "Penuh semangat dan keceriaan, para santri baru Pondok Pesantren Darut Taufiq mengikuti kegiatan senam pagi bersama dan outbound edukatif dalam rangka Masa Pengenalan Lingkungan Sekolah (MPLS).",
+        content: "<p><strong>Jakarta Utara, 15 Juli 2026</strong> — Suasana pagi di lapangan Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq tampak begitu semarak dan penuh kegembiraan. Ratusan santri baru dari berbagai jenjang berkumpul bersama untuk mengikuti agenda senam kebugaran jasmani dan <em>fun games</em> dalam rangkaian kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS) Tahun Ajaran 2026/2027.</p><br/><p>Dengan mengenakan seragam olahraga dan kartu identitas peserta (nametag) berkalung di leher, para santri tampak antusias mengikuti setiap instruksi gerakan senam yang dipandu oleh para ustadz dan ustadzah. Senyum ceria terpancar di wajah mereka saat saling berkenalan dan berbaur dengan teman-teman baru.</p><br/><p>Kegiatan ini dirancang khusus untuk membangun kebersamaan, melatih kekompakan, serta menumbuhkan rasa percaya diri pada santri baru sebelum memasuki rutinitas kegiatan belajar mengajar dan kepesantrenan. Selain senam pagi, agenda MPLS hari ini juga diisi dengan permainan ketangkasan berkelompok (outbound ceria) dan pengenalan nilai-nilai kedisiplinan serta adab santri.</p><br/><p>Semoga keceriaan dan semangat di hari-hari awal ini terus menyertai para santri dalam menuntut ilmu, menghafal Al-Qur'an, dan meraih prestasi gemilang di Pondok Pesantren Darut Taufiq.</p>",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-2",
+        slug: "upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas",
+        title: "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq",
+        thumbnail: "/images/berita2.jpg",
+        publishedAt: new Date("2026-07-13T08:01:00.000Z"),
+        excerpt: "Pondok Pesantren Darut Taufiq mengawali Tahun Ajaran 2026/2027 dengan menggelar upacara bendera khidmat yang dirangkai dengan simbolis pemotongan pita peresmian sarana ruang belajar baru.",
+        content: "<p><strong>Jakarta Utara, 13 Juli 2026</strong> — Mengawali langkah di Tahun Pelajaran 2026/2027, Pondok Pesantren Darut Taufiq menyelenggarakan Upacara Bendera Pembukaan Tahun Ajaran Baru di halaman kampus pesantren. Upacara ini dihadiri oleh jajaran pimpinan yayasan, dewan asatidz, tenaga kependidikan, serta seluruh santri dari unit SDIT dan SMPIT.</p><br/><p>Bertindak sebagai pembina upacara di mimbar kehormatan, pimpinan pesantren menyampaikan pesan motivasi dan amanat berharga mengenai pentingnya menata niat dalam menuntut ilmu, menjaga integritas akhlakul karimah, serta menegakkan kedisiplinan selama menempuh pendidikan di pesantren.</p><br/><p>Momen istimewa pada upacara kali ini ditandai dengan prosesi simbolis pemotongan pita hijau peresmian sarana dan fasilitas ruang belajar baru. Peresmian fasilitas ini merupakan wujud komitmen berkelanjutan Pondok Pesantren Darut Taufiq dalam menghadirkan lingkungan belajar yang representatif, nyaman, dan kondusif bagi tumbuh kembang santri.</p><br/><p>Upacara ditutup dengan doa bersama untuk memohon keberkahan, kemudahan, dan kelancaran bagi seluruh civitas akademika dalam menjalani seluruh proses pendidikan di tahun ajaran baru ini.</p>",
+        category: "Kegiatan",
+      },
+      {
+        id: "dummy-3",
+        slug: "pertemuan-wali-santri-dan-apresiasi-prestasi-siswa",
+        title: "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq",
+        thumbnail: "/images/berita1.jpg",
+        publishedAt: new Date("2026-06-26T10:44:00.000Z"),
+        excerpt: "Mempererat sinergi antara sekolah dan orang tua, Pondok Pesantren Darut Taufiq mengadakan agenda temu silaturahmi wali santri sekaligus penyerahan kado apresiasi bagi santri berprestasi.",
+        content: "<p><strong>Jakarta Utara, 26 Juni 2026</strong> — Hubungan sinergis antara madrasah/pesantren dan orang tua merupakan kunci utama keberhasilan pendidikan anak. Menyadari hal tersebut, Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq menggelar agenda Pertemuan Silaturahmi Wali Santri yang bertempat di ruang kelas pesantren.</p><br/><p>Ruang kelas dipenuhi kehangatan saat para wali santri duduk mendampingi putra-putri tercinta untuk menyimak pemaparan dari dewan asatidz terkait evaluasi capaian kurikulum, laporan perkembangan hafalan tahfidz Al-Qur'an, serta program pembinaan karakter santri yang telah berjalan.</p><br/><p>Sebagai bentuk penghargaan atas dedikasi dan kerja keras para santri selama semester berjalan, pihak pesantren juga menyerahkan kado bingkisan apresiasi prestasi. Hadiah tersebut diserahkan langsung di hadapan para orang tua sebagai wujud rasa bangga atas ketekunan para santri dalam belajar dan berakhlak mulia.</p><br/><p>Melalui pertemuan berkala ini, diharapkan komunikasi dan kerja sama yang harmonis antara pihak sekolah dan keluarga semakin erat demi mengantarkan santri menjadi generasi Qur'ani yang cerdas dan berkarakter unggul.</p>",
+        category: "Prestasi",
       },
     ];
     post = dummyPosts.find((p) => p.slug === slug);
@@ -131,13 +157,12 @@ export default async function BeritaDetailPage({
             <div className="max-w-4xl space-y-5">
               
               {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-white/80 text-[13px] font-medium">
-                <Link href="/" className="hover:text-white transition-colors">Beranda</Link>
-                <span><FaChevronRight className="text-[10px]" /></span>
-                <span className="text-white/60">Manajemen Komunikasi Institusi</span>
-                <span><FaChevronRight className="text-[10px]" /></span>
-                <Link href="/berita" className="hover:text-white transition-colors">Berita</Link>
-              </div>
+              <Breadcrumbs
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Berita", href: "/berita" },
+                ]}
+              />
 
               {/* Title */}
               <h1 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-white leading-[1.4] text-left">
@@ -239,10 +264,10 @@ export default async function BeritaDetailPage({
                 year: "numeric",
                 month: "2-digit",
                 day: "2-digit",
-              }).format(post.updatedAt).replace(/\//g, '/')} - {new Intl.DateTimeFormat("id-ID", {
+              }).format(post.updatedAt || post.publishedAt || new Date()).replace(/\//g, '/')} - {new Intl.DateTimeFormat("id-ID", {
                 hour: "2-digit",
                 minute: "2-digit",
-              }).format(post.updatedAt).replace('.', ':')} WIB
+              }).format(post.updatedAt || post.publishedAt || new Date()).replace('.', ':')} WIB
             </p>
           </div>
         </div>

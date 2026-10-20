@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -85,7 +86,7 @@ function RegistrationFormContent() {
   const paramUnit = searchParams.get("unit");
 
   const initialWave = paramWave === "2" ? "Gelombang 2 (Reguler)" : "Gelombang 1 (Early Bird)";
-  const initialUnit = paramUnit === "sdit" ? "SDIT" : paramUnit === "smpit" ? "SMPIT" : "TKIT";
+  const initialUnit = paramUnit === "smpit" ? "SMPIT" : "SDIT";
 
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -240,7 +241,7 @@ function RegistrationFormContent() {
         </div>
 
         {/* Bukti Registrasi Card */}
-        <div className="bg-surface rounded-2xl p-6 md:p-8 border-2 border-dashed border-gray-200 relative mb-8">
+        <div className="bg-surface rounded-2xl p-6 md:p-8 border border-dashed border-gray-200 relative mb-8">
           <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-gray-200 gap-4">
             <div>
               <span className="text-xs text-text-muted uppercase tracking-wider block">Nomor Registrasi PPDB</span>
@@ -361,7 +362,7 @@ function RegistrationFormContent() {
                         isDone
                           ? "bg-primary text-white shadow-sm ring-4 ring-primary/10"
                           : isActive
-                          ? "border-2 border-primary text-primary bg-white shadow-md ring-4 ring-primary/15"
+                          ? "border border-primary text-primary bg-white shadow-md ring-4 ring-primary/15"
                           : "border border-gray-300 text-gray-400 bg-white"
                       }`}
                     >
@@ -422,7 +423,7 @@ function RegistrationFormContent() {
                     ].map((w) => (
                       <label
                         key={w.val}
-                        className={`relative flex flex-col p-4 rounded-2xl border-2 cursor-pointer transition-all ${
+                        className={`relative flex flex-col p-4 rounded-2xl border cursor-pointer transition-all ${
                           formData.wave === w.val
                             ? "border-primary bg-primary/5 shadow-md"
                             : "border-gray-200 hover:border-gray-300"
@@ -453,23 +454,22 @@ function RegistrationFormContent() {
                   <label className="text-xs font-bold text-gray-700 uppercase tracking-wider block">
                     Pilihan Unit Pendidikan <span className="text-red-500">*</span>
                   </label>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
-                      { id: "TKIT", title: "TKIT Darut Taufiq", age: "Usia 4 - 6 Tahun", desc: "Tahfidz Ceria & Karakter" },
-                      { id: "SDIT", title: "SDIT Darut Taufiq", age: "Usia 6 - 12 Tahun", desc: "Fullday • Tahfidz & Cambridge" },
-                      { id: "SMPIT", title: "SMPIT & Pesantren", age: "Usia 12 - 15 Tahun", desc: "Boarding / Fullday • Tahfidz 30 Juz" },
+                      { id: "SDIT", title: "SDIT Darut Taufiq", age: "Usia 6 - 12 Tahun", desc: "Fullday • Tahfidz & Cambridge", logo: "/images/sdit.png" },
+                      { id: "SMPIT", title: "SMPIT & Pesantren", age: "Usia 12 - 15 Tahun", desc: "Boarding / Fullday • Tahfidz 30 Juz", logo: "/images/smpit.png" },
                     ].map((u) => (
                       <label
                         key={u.id}
-                        className={`flex flex-col justify-between p-5 rounded-2xl border-2 cursor-pointer transition-all ${
+                        className={`flex flex-col justify-between p-5 rounded-2xl border cursor-pointer transition-all ${
                           formData.unit === u.id
                             ? "border-primary bg-primary/5 shadow-md"
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
                         <div>
-                          <div className="w-10 h-10 rounded-xl bg-secondary text-white flex items-center justify-center mb-3">
-                            <FaUserGraduate />
+                          <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 p-1 flex items-center justify-center mb-3 relative overflow-hidden shadow-sm">
+                            <Image src={u.logo} alt={u.title} fill className="object-contain p-1" />
                           </div>
                           <h4 className="font-bold text-sm text-secondary mb-1">{u.title}</h4>
                           <span className="text-[11px] font-semibold text-primary block mb-1">{u.age}</span>
@@ -497,7 +497,7 @@ function RegistrationFormContent() {
                     {formData.unit === "SMPIT" ? (
                       <>
                         <label
-                          className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex items-center gap-3 ${
+                          className={`p-4 rounded-2xl border cursor-pointer transition-all flex items-center gap-3 ${
                             formData.programType === "Boarding"
                               ? "border-primary bg-primary/5 shadow-md"
                               : "border-gray-200 hover:border-gray-300"
@@ -517,7 +517,7 @@ function RegistrationFormContent() {
                         </label>
 
                         <label
-                          className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex items-center gap-3 ${
+                          className={`p-4 rounded-2xl border cursor-pointer transition-all flex items-center gap-3 ${
                             formData.programType === "Fullday"
                               ? "border-primary bg-primary/5 shadow-md"
                               : "border-gray-200 hover:border-gray-300"
@@ -936,7 +936,7 @@ function RegistrationFormContent() {
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-7 shadow-2xl border border-gray-100 flex flex-col items-center">
             {/* Profile Avatar with Teal Ring */}
             <div className="relative mb-2">
-              <div className="w-20 h-20 rounded-full p-1 border-2 border-primary flex items-center justify-center bg-emerald-50/50 shadow-inner overflow-hidden">
+              <div className="w-20 h-20 rounded-full p-1 border border-primary flex items-center justify-center bg-emerald-50/50 shadow-inner overflow-hidden">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center text-primary font-bold text-xl">
                   {formData.fullName
                     ? formData.fullName

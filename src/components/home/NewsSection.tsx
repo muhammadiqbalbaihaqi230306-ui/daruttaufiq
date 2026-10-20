@@ -18,50 +18,62 @@ export default async function NewsSection() {
 
   const baseDummyPosts = [
     {
-      id: "dummy-1",
-      slug: "juara-1-yonkomlekad",
-      title: "Peserta Didik SDIT Arkan Cendekia Raih Juara 1 pada YONKOMLEKAD Archery Championship 2026",
-      thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.10.jpeg",
-      publishedAt: new Date("2026-07-28"),
-      excerpt: "Bekasi, 28 Juli 2026 — Prestasi membanggakan kembali diraih oleh peserta didik SDIT Arkan Cendekia...",
-      category: "Prestasi",
+      id: "dummy-5",
+      slug: "semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq",
+      title: "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre",
+      thumbnail: "/images/berita6.jpg",
+      publishedAt: new Date("2026-10-22T08:00:00.000Z"),
+      excerpt: "Memperingati Hari Santri Nasional, santri dan dewan asatidz Pondok Pesantren Darut Taufiq bergabung bersama ribuan santri se-Jakarta Utara mengikuti Apel Akbar khidmat di pelataran Jakarta Islamic Centre.",
+      category: "Kegiatan",
     },
     {
-      id: "dummy-2",
-      slug: "26-medali-msc",
-      title: "26 Medali Berhasil Diraih SDIT Arkan Cendekia di Mentari Science Competition (MSC) 2026",
-      thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.11-2.jpeg",
-      publishedAt: new Date("2026-07-21"),
-      excerpt: "Bekasi, 21 Juli 2026 — Prestasi membanggakan kembali ditorehkan oleh peserta didik SDIT Arkan...",
-      category: "Prestasi",
-    },
-    {
-      id: "dummy-3",
-      slug: "training-guru",
-      title: "Yayasan Pendidikan Arkan Cendekia Selenggarakan Professional Development Training 2026 untuk Tingkatkan Kompetensi Guru",
-      thumbnail: "/images/WhatsApp-Image-2022-05-30-at-16.22.13.jpeg",
-      publishedAt: new Date("2026-07-14"),
-      excerpt: "Bekasi, 13 Juli 2026 — Yayasan Pendidikan Arkan Cendekia kembali menunjukkan komitmennya dalam...",
+      id: "dummy-6",
+      slug: "latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq",
+      title: "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak",
+      thumbnail: "/images/berita5.jpg",
+      publishedAt: new Date("2026-10-20T08:00:00.000Z"),
+      excerpt: "Membina kebugaran fisik sekaligus menanamkan adab, kemandirian, dan sportivitas Islami, para santri Pondok Pesantren Darut Taufiq antusias mengikuti latihan rutin bela diri Pencak Silat.",
       category: "Kegiatan",
     },
     {
       id: "dummy-4",
-      slug: "artikel-pentingnya-pendidikan",
-      title: "Pentingnya Pendidikan Karakter di Era Digital",
-      thumbnail: "/images/placeholder-news.jpg",
-      publishedAt: new Date("2026-07-10"),
-      excerpt: "Pendidikan karakter menjadi fondasi yang sangat krusial bagi generasi muda di tengah pesatnya perkembangan teknologi dan informasi.",
-      category: "Artikel",
+      slug: "keseruan-kegiatan-renang-santri-darut-taufiq",
+      title: "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah",
+      thumbnail: "/images/berita4.jpeg",
+      publishedAt: new Date("2026-07-18T08:30:00.000Z"),
+      excerpt: "Dalam rangka menjaga kebugaran jasmani sekaligus mengamalkan anjuran Rasulullah SAW, santri Pondok Pesantren Darut Taufiq antusias mengikuti agenda renang ceria bersama.",
+      category: "Kegiatan",
+    },
+    {
+      id: "dummy-1",
+      slug: "keseruan-mpls-dan-senam-pagi-santri-baru",
+      title: "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru",
+      thumbnail: "/images/berita3.jpg",
+      publishedAt: new Date("2026-07-15T08:15:00.000Z"),
+      excerpt: "Penuh semangat dan keceriaan, para santri baru Pondok Pesantren Darut Taufiq mengikuti kegiatan senam pagi bersama dan outbound edukatif dalam rangka Masa Pengenalan Lingkungan Sekolah (MPLS).",
+      category: "Kegiatan",
+    },
+    {
+      id: "dummy-2",
+      slug: "upacara-pembukaan-tahun-ajaran-baru-dan-peresmian-fasilitas",
+      title: "Upacara Pembukaan Tahun Ajaran Baru 2026/2027 dan Peresmian Fasilitas Belajar Darut Taufiq",
+      thumbnail: "/images/berita2.jpg",
+      publishedAt: new Date("2026-07-13T08:01:00.000Z"),
+      excerpt: "Pondok Pesantren Darut Taufiq mengawali Tahun Ajaran 2026/2027 dengan menggelar upacara bendera khidmat yang dirangkai dengan simbolis pemotongan pita peresmian sarana ruang belajar baru.",
+      category: "Kegiatan",
+    },
+    {
+      id: "dummy-3",
+      slug: "pertemuan-wali-santri-dan-apresiasi-prestasi-siswa",
+      title: "Pertemuan Wali Santri dan Penyerahan Apresiasi Prestasi Siswa Pondok Pesantren Darut Taufiq",
+      thumbnail: "/images/berita1.jpg",
+      publishedAt: new Date("2026-06-26T10:44:00.000Z"),
+      excerpt: "Mempererat sinergi antara sekolah dan orang tua, Pondok Pesantren Darut Taufiq mengadakan agenda temu silaturahmi wali santri sekaligus penyerahan kado apresiasi bagi santri berprestasi.",
+      category: "Prestasi",
     },
   ];
 
-  const allDummyPosts = Array.from({ length: 10 }).map((_, i) => ({
-    ...baseDummyPosts[i % baseDummyPosts.length],
-    id: `dummy-${i + 1}`,
-    title: `${baseDummyPosts[i % baseDummyPosts.length].title} ${i > 3 ? `(Bagian ${i + 1})` : ""}`,
-  }));
-
-  const posts = dbPosts.length > 0 ? dbPosts : allDummyPosts as any;
+  const posts = dbPosts.length > 0 ? dbPosts : baseDummyPosts as any;
 
   return (
     <section className="py-16 lg:py-24 bg-[#FCFAF5]">
