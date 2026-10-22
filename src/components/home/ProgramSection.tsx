@@ -72,7 +72,7 @@ export default function ProgramSection() {
                 {programs.map((program, index) => (
                   <div
                     key={index}
-                    className="group p-5 md:p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 cursor-pointer backdrop-blur-xl shadow-lg"
+                    className="p-5 md:p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-lg"
                   >
                     <h4 className="text-base md:text-lg font-bold text-white mb-1.5">
                       {program.title}

@@ -138,10 +138,10 @@ export default function PPDBPage() {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/images%20halaman%20pp/IMG_20260921_074120.jpg')" }}
+          style={{ backgroundImage: "url('/images/Gemini_Generated_Image_fn9tt2fn9tt2fn9t.jpeg')" }}
         />
         {/* Overlay agar teks terbaca */}
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/40 to-transparent" />
 
         {/* Content */}
         <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh] -translate-y-[5px]">
@@ -168,7 +168,6 @@ export default function PPDBPage() {
           {/* Section: Status Gelombang */}
           <div>
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Jadwal & Kuota</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
                 Gelombang Pendaftaran Santri Baru
               </h2>
@@ -247,10 +246,9 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Pilihan Jenjang Pendidikan */}
-          <div className="pt-16 lg:pt-20 border-t border-gray-100">
+          <div className="pt-16 lg:pt-20">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
               <div>
-                <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Jenjang Pendidikan</span>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
                   Pilihan Unit Sekolah & Pesantren
                 </h2>
@@ -326,7 +324,7 @@ export default function PPDBPage() {
       </section>
 
       {/* Section: Alur Pendaftaran (Full-Width White Background with Subtle Web-Themed Line Art) */}
-      <section id="alur" className="w-full bg-white pt-20 lg:pt-28 pb-0 relative overflow-hidden border-t border-gray-100">
+      <section id="alur" className="w-full bg-white pt-20 lg:pt-28 pb-0 relative overflow-hidden">
         {/* Background Decorative Lines & Geometric Wave Art (Subtle Web Colors) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
           {/* Subtle geometric line grid accent in primary teal */}
@@ -365,9 +363,6 @@ export default function PPDBPage() {
         <div className="w-full max-w-[1406px] mx-auto px-6 lg:px-12 xl:px-16 relative z-10">
           {/* Header: Tag Pill & Title */}
           <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-18">
-            <span className="inline-block bg-[#EAF5F0] text-primary font-semibold text-xs px-4 py-1 rounded-full uppercase tracking-wider mb-3">
-              Timeline
-            </span>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
               Alur & Tahapan Pendaftaran Santri
             </h2>
@@ -464,9 +459,6 @@ export default function PPDBPage() {
               <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
-
-          {/* Garis Abu-abu Panjang di Bawah Tombol Hijau */}
-          <div className="mt-12 lg:mt-16 border-t border-gray-200" />
         </div>
       </section>
 
@@ -477,7 +469,6 @@ export default function PPDBPage() {
           {/* Section: Syarat & Dokumen Pendaftaran */}
           <div>
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Persyaratan</span>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
                 Berkas & Dokumen Persyaratan
               </h2>
@@ -530,7 +521,7 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Biaya Pendidikan & Link */}
-          <div className="pt-16 lg:pt-20 border-t border-gray-100">
+          <div className="pt-16 lg:pt-20">
             <div className="bg-gradient-to-r from-secondary via-[#144741] to-secondary text-white rounded-3xl p-8 lg:p-10 xl:p-12 shadow-xl border border-white/10 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8">
               {/* Left Side: 3D Element + Text */}
               <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-8 text-center sm:text-left max-w-3xl">
@@ -550,9 +541,6 @@ export default function PPDBPage() {
 
                 {/* Text Content */}
                 <div className="space-y-2">
-                  <span className="text-primary-light font-bold text-xs uppercase tracking-wider block">
-                    Transparan & Terjangkau
-                  </span>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
                     Rincian Biaya Pendidikan
                   </h2>
@@ -584,10 +572,9 @@ export default function PPDBPage() {
           </div>
 
           {/* Section: Sekretariat & Layanan Bantuan PPDB */}
-          <div className="pt-16 lg:pt-20 border-t border-gray-100">
+          <div className="pt-16 lg:pt-20">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
-                <span className="text-primary font-bold text-xs uppercase tracking-wider block mb-2">Layanan Konsultasi</span>
                 <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-4">
                   Butuh Bantuan Pendaftaran?
                 </h2>
@@ -597,7 +584,7 @@ export default function PPDBPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0 text-base">
+                    <div className="text-primary text-xl shrink-0 mt-0.5">
                       <FaClock />
                     </div>
                     <div>
@@ -607,7 +594,7 @@ export default function PPDBPage() {
                   </div>
 
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 text-base">
+                    <div className="text-emerald-600 text-xl shrink-0 mt-0.5">
                       <FaWhatsapp />
                     </div>
                     <div>
@@ -617,7 +604,7 @@ export default function PPDBPage() {
                   </div>
 
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0 text-base">
+                    <div className="text-primary text-xl shrink-0 mt-0.5">
                       <FaPhoneAlt />
                     </div>
                     <div>
@@ -637,7 +624,7 @@ export default function PPDBPage() {
                   </Link>
                   <Link
                     href="/faq"
-                    className="border border-gray-200 hover:border-primary text-secondary hover:text-primary text-sm font-semibold px-6 py-3 rounded-xl transition-all"
+                    className="border border-primary text-primary hover:bg-primary hover:text-white text-sm font-semibold px-6 py-3 rounded-xl transition-all"
                   >
                     Tanya Jawab (FAQ)
                   </Link>

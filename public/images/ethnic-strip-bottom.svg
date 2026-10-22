@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="13" viewBox="0 0 64 13">
+  <!-- Base strip: warna tema sekunder deep teal (#09403E) -->
+  <rect width="64" height="13" fill="#09403E" />
+  
+  <!-- Chevrons: aksen emas pesantren (#fbbf24) -->
+  <path
+    d="M3.5 1.5 L8.5 6.5 L3.5 11.5 M7.5 1.5 L12.5 6.5 L7.5 11.5"
+    fill="none"
+    stroke="#fbbf24"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  
+  <!-- Diamond: warna tema primary teal (#159893) & emas -->
+  <polygon points="16,6.5 21.5,1.5 27,6.5 21.5,11.5" fill="#159893" stroke="#fbbf24" stroke-width="0.9" />
+  <polygon points="18.5,6.5 21.5,3.5 24.5,6.5 21.5,9.5" fill="#fbbf24" />
+  <circle cx="21.5" cy="6.5" r="1.1" fill="#ffffff" />
+  
+  <!-- X Stitch Motif: aksen mint / light teal (#5eead4) -->
+  <path d="M31.5 2 L40.5 11 M31.5 11 L40.5 2" stroke="#5eead4" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="36" cy="6.5" r="1" fill="#fbbf24" />
+  
+  <!-- Divider dots -->
+  <circle cx="45" cy="2.5" r="0.9" fill="#e2a856" />
+  <circle cx="45" cy="6.5" r="1.2" fill="#ffffff" />
+  <circle cx="45" cy="10.5" r="0.9" fill="#e2a856" />
+  
+  <!-- Inverted Chevrons: aksen amber emas (#f59e0b) -->
+  <path
+    d="M60.5 1.5 L55.5 6.5 L60.5 11.5 M56.5 1.5 L51.5 6.5 L56.5 11.5"
+    fill="none"
+    stroke="#f59e0b"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

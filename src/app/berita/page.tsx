@@ -169,10 +169,10 @@ export default async function BeritaPage({
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/berita2.jpg')" }}
+          style={{ backgroundImage: "url('/images/Gemini_Generated_Image_fn9tt2fn9tt2fn9t.jpeg')" }}
         />
         {/* Overlay agar teks terbaca */}
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-secondary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/85 via-secondary/40 to-transparent" />
 
         {/* Content */}
         <div className="relative z-20 h-full pt-[20vh] md:pt-[25vh] lg:pt-[28vh] -translate-y-[5px]">
@@ -376,10 +376,10 @@ export default async function BeritaPage({
                         key={cat}
                         href={cat === 'Semua' ? '/berita' : `?category=${cat.toLowerCase()}`}
                         scroll={false}
-                        className={`px-5 py-2 text-sm font-bold rounded-md transition-colors ${
+                        className={`px-5 py-2 text-sm font-bold rounded-md border transition-all duration-200 ${
                           isActive 
-                            ? 'bg-primary text-white' 
-                            : 'bg-[#EAF6ED] text-primary hover:bg-[#D5EEDB]'
+                            ? 'bg-primary-dark text-white border-primary-dark shadow-sm' 
+                            : 'bg-transparent text-primary border-primary hover:bg-primary-dark hover:text-white hover:border-primary-dark'
                         }`}
                       >
                         {cat}
@@ -427,7 +427,7 @@ export default async function BeritaPage({
                     ))}
                   </div>
                 ) : (
-                  <div className="text-center py-12 text-text-muted bg-gray-50 rounded-2xl border border-gray-100">
+                  <div className="text-center py-12 text-text-muted">
                     Belum ada berita dalam kategori ini.
                   </div>
                 )}

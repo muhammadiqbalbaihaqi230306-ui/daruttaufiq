@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="100%" preserveAspectRatio="none">
+  <defs>
+    <pattern id="ethnic-motif" width="13" height="64" patternUnits="userSpaceOnUse">
+      <!-- Background: secondary deep teal from web theme -->
+      <rect width="13" height="64" fill="#09403E" />
+      
+      <!-- Top chevrons: gold -->
+      <path d="M1.5 3.5 L6.5 8.5 L11.5 3.5 M1.5 7.5 L6.5 12.5 L11.5 7.5" fill="none" stroke="#fbbf24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Diamond with inner core: primary teal and gold -->
+      <polygon points="6.5,16 11.5,21.5 6.5,27 1.5,21.5" fill="#159893" stroke="#fbbf24" stroke-width="0.9"/>
+      <polygon points="6.5,18.5 9.5,21.5 6.5,24.5 3.5,21.5" fill="#fbbf24"/>
+      <circle cx="6.5" cy="21.5" r="1.1" fill="#ffffff"/>
+      
+      <!-- X stitch motif: light cyan / mint -->
+      <path d="M2 31.5 L11 40.5 M11 31.5 L2 40.5" stroke="#5eead4" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="6.5" cy="36" r="1" fill="#fbbf24"/>
+      
+      <!-- Center dots band -->
+      <circle cx="2.5" cy="44.5" r="0.9" fill="#e2a856"/>
+      <circle cx="6.5" cy="44.5" r="1.2" fill="#ffffff"/>
+      <circle cx="10.5" cy="44.5" r="0.9" fill="#e2a856"/>
+      
+      <!-- Inverted chevrons: amber gold -->
+      <path d="M1.5 60.5 L6.5 55.5 L11.5 60.5 M1.5 56.5 L6.5 51.5 L11.5 56.5" fill="none" stroke="#f59e0b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+  </defs>
+  <rect width="13" height="100%" fill="url(#ethnic-motif)" />
+</svg>

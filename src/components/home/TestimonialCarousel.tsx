@@ -9,6 +9,15 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { FaStar, FaUserCircle, FiChevronLeft, FiChevronRight } from "@/components/ui/FlaticonIcons";
 
+function EthnicBottomStrip() {
+  return (
+    <div
+      className="absolute left-0 right-0 bottom-0 h-[11px] sm:h-[13px] z-10 pointer-events-none select-none bg-repeat-x bg-bottom"
+      style={{ backgroundImage: "url('/images/ethnic-strip-bottom.svg')", backgroundSize: "auto 100%" }}
+    />
+  );
+}
+
 export default function TestimonialCarousel({
   testimonials,
 }: {
@@ -51,7 +60,7 @@ export default function TestimonialCarousel({
       >
         {displayTestimonials.map((testi, index) => (
           <SwiperSlide key={`${testi.id}-${index}`} className="h-auto">
-            <div className="bg-white p-8 lg:p-10 rounded-xl shadow-[0_10px_40px_rgb(0,0,0,0.06)] flex flex-col h-full transition-all duration-500 testi-card mb-12 mt-4 mx-4">
+            <div className="relative overflow-hidden bg-white p-8 lg:p-10 pb-10 lg:pb-12 rounded-xl shadow-[0_10px_40px_rgb(0,0,0,0.06)] flex flex-col h-full transition-all duration-500 testi-card mb-12 mt-4 mx-4">
               {/* Rating */}
               <div className="flex text-[#FFC107] mb-6 gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -88,9 +97,12 @@ export default function TestimonialCarousel({
               </div>
 
               {/* Comment */}
-              <div className="text-text-muted leading-relaxed text-justify">
+              <div className="text-text-muted leading-relaxed text-justify mb-2">
                 {testi.comment}
               </div>
+
+              {/* Ethnic Bottom Decorative Strip */}
+              <EthnicBottomStrip />
             </div>
           </SwiperSlide>
         ))}

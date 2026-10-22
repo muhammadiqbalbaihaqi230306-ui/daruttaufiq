@@ -31,14 +31,16 @@ export default function CategoryFilter({ currentCategory }: { currentCategory?: 
                 e.preventDefault();
                 router.push(tab.href, { scroll: false });
               }}
-              className={`relative px-6 py-2 text-sm font-medium transition-colors whitespace-nowrap shrink-0 rounded-[6px] ${
-                isActive ? "text-white" : "text-text-muted hover:text-primary hover:bg-gray-200/50"
+              className={`relative px-6 py-2 text-sm font-bold border rounded-[6px] transition-all duration-200 whitespace-nowrap shrink-0 ${
+                isActive 
+                  ? "text-white bg-primary-dark border-primary-dark shadow-sm" 
+                  : "bg-transparent text-primary border-primary hover:bg-primary-dark hover:text-white hover:border-primary-dark"
               }`}
             >
               {isActive && (
                 <motion.div
                   layoutId="active-berita-tab"
-                  className="absolute inset-0 bg-primary rounded-[6px] shadow-sm"
+                  className="absolute inset-0 bg-primary-dark border border-primary-dark rounded-[6px] shadow-sm -z-0"
                   transition={{ type: "spring", stiffness: 400, damping: 35 }}
                 />
               )}

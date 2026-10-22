@@ -64,6 +64,7 @@ export const FaUser = createIcon("fi-rr-user", "FaUser");
 export const FaUserCheck = createIcon("fi-rr-user-check", "FaUserCheck");
 export const FaUserCircle = createIcon("fi-rr-circle-user", "FaUserCircle");
 export const FaUserTie = createIcon("fi-rr-tie", "FaUserTie");
+export const FaChalkboardTeacher = createIcon("fi-rr-chalkboard-user", "FaChalkboardTeacher");
 export const FaBuildingUser = createIcon("fi-rr-users-alt", "FaBuildingUser");
 export const FaShieldAlt = createIcon("fi-rr-shield-check", "FaShieldAlt");
 export const FaSchool = createIcon("fi-rr-school", "FaSchool");
