@@ -1,0 +1,224 @@
+- generic [active] [ref=e1]:
+  - text:       
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=e6]
+        - generic [ref=e7]:
+          - generic [ref=e8]: DARUT TAUFIQ
+          - generic [ref=e9]: PONDOK PESANTREN
+      - text:     
+      - generic [ref=e10]:
+        - button "Toggle Search" [ref=e11]:
+          - generic [ref=e12]: 
+        - button "Toggle Menu" [ref=e13]:
+          - generic [ref=e14]: 
+    - generic:
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - link "Beranda":
+                - /url: /
+          - generic:
+            - generic:
+              - link "Profil":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Akademik":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Unit":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Berita":
+                - /url: /berita
+          - generic:
+            - generic:
+              - link "Kontak":
+                - /url: /kontak
+          - generic:
+            - generic:
+              - link "PPDB":
+                - /url: /ppdb
+  - main [ref=e15]:
+    - main [ref=e16]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - link "Home" [ref=e24] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e25]: 
+          - link "Berita" [ref=e26] [cursor=pointer]:
+            - /url: /berita
+        - 'heading "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [level=1] [ref=e27]'
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: 
+            - time [ref=e31]: Diterbitkan pada 22/10/2026
+          - generic [ref=e32]:
+            - generic [ref=e33]: Kegiatan
+            - generic [ref=e34]: Berita Sorotan
+            - generic [ref=e35]: Acara
+      - generic [ref=e36]:
+        - article [ref=e38]:
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e45]:
+                - generic [ref=e46]: Redaksi & Humas Darut Taufiq
+                - generic [ref=e48]:
+                  - generic [ref=e49]: Tim Dokumentasi & Publikasi
+                  - generic [ref=e50]: •
+                  - generic [ref=e51]:
+                    - generic [ref=e52]: 
+                    - text: 2 menit baca
+            - generic [ref=e53]:
+              - link "" [ref=e54] [cursor=pointer]:
+                - /url: https://api.whatsapp.com/send?text=Semarak%20Hari%20Santri%20Nasional%3A%20Santri%20Pondok%20Pesantren%20Darut%20Taufiq%20Ikuti%20Apel%20Akbar%20di%20Jakarta%20Islamic%20Centre%0A%0ABaca%20selengkapnya%20di%3A%20
+              - link "" [ref=e56] [cursor=pointer]:
+                - /url: https://www.facebook.com/sharer/sharer.php?u=
+              - link "" [ref=e58] [cursor=pointer]:
+                - /url: https://twitter.com/intent/tweet?text=Semarak%20Hari%20Santri%20Nasional%3A%20Santri%20Pondok%20Pesantren%20Darut%20Taufiq%20Ikuti%20Apel%20Akbar%20di%20Jakarta%20Islamic%20Centre&url=
+              - button " Salin Link" [ref=e60]:
+                - generic [ref=e61]: 
+                - generic [ref=e62]: Salin Link
+              - button "" [ref=e63]
+          - generic [ref=e65]:
+            - paragraph [ref=e66]:
+              - strong [ref=e67]: Jakarta Utara, 22 Oktober 2026
+              - text: — Peringatan Hari Santri Nasional (HSN) tahun ini berlangsung dengan penuh khidmat dan gegap gempita. Ratusan santri dan dewan asatidz Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq bergabung bersama ribuan santri dari berbagai pondok pesantren se-Jakarta Utara untuk mengikuti agenda Apel Akbar Peringatan Hari Santri Nasional yang dipusatkan di pelataran Jakarta Islamic Centre (JIC), Koja.
+            - paragraph [ref=e68]: Dengan mengenakan pakaian serba putih, peci hitam, dan balutan sarung khas santri Nusantara, para santri Darut Taufiq tampak antusias dan berbaris rapi di bawah naungan menara megah Jakarta Islamic Centre. Berbagai spanduk ucapan selamat dan panji kebanggaan pesantren turut dikibarkan sebagai simbol soliditas dan kecintaan santri terhadap tanah air.
+            - paragraph [ref=e69]: Peringatan Hari Santri Nasional mengenang peristiwa bersejarah Resolusi Jihad 22 Oktober 1945 yang dicetuskan oleh para ulama untuk mempertahankan kedaulatan bangsa. Dalam amanat apel akbar, ditekankan pentingnya peran santri masa kini untuk terus meneladani semangat patriotisme, menjaga marwah keislaman yang rahmatan lil 'alamin, serta aktif memberikan kontribusi nyata bagi kemajuan bangsa melalui ilmu pengetahuan dan teknologi.
+            - paragraph [ref=e70]: Keikutsertaan para santri Pondok Pesantren Darut Taufiq dalam apel akbar ini diharapkan semakin memupuk jiwa nasionalisme, kemandirian, dan ukhuwah islamiyah dalam sanubari setiap santri.
+          - generic [ref=e71]:
+            - generic [ref=e74]:
+              - img "Slide 1" [ref=e76]
+              - img "Slide 2" [ref=e78]
+              - img "Slide 3" [ref=e80]
+              - img "Slide 4" [ref=e82]
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - button [ref=e85]
+                - button [ref=e86]
+                - button [ref=e87]
+                - button [ref=e88]
+              - generic [ref=e89]:
+                - button "" [disabled] [ref=e90]
+                - button "" [ref=e92]
+        - paragraph [ref=e97]: "Terakhir diubah: 20/10/2026 - 05:58 WIB"
+  - contentinfo [ref=e98]:
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - img "Pondok Modern" [ref=e103]
+          - generic [ref=e104]:
+            - generic [ref=e105]: DARUT TAUFIQ
+            - generic [ref=e106]: PONDOK PESANTREN
+        - list [ref=e107]:
+          - listitem [ref=e108]:
+            - link " +6282228880972" [ref=e109] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=e110]: 
+              - generic [ref=e111]: "+6282228880972"
+          - listitem [ref=e112]:
+            - link " info@daruttaufiq.com" [ref=e113] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=e114]: 
+              - generic [ref=e115]: info@daruttaufiq.com
+          - listitem [ref=e116]:
+            - link " (021) 82631191" [ref=e117] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=e118]: 
+              - generic [ref=e119]: (021) 82631191
+          - listitem [ref=e120]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=e121] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=e122]: 
+              - generic [ref=e123]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=e124]:
+        - heading "Profil" [level=4] [ref=e125]
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - link "Sejarah Sekolah" [ref=e128] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=e129]:
+            - link "Manajemen" [ref=e130] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=e131]:
+            - link "Staff & Pengajar" [ref=e132] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=e133]:
+            - link "Nilai & Budaya" [ref=e134] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=e135]:
+        - heading "Informasi" [level=4] [ref=e136]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - link "Pendaftaran PPDB" [ref=e139] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=e140]:
+            - link "Program Unggulan" [ref=e141] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=e142]:
+            - link "Sarana & Fasilitas" [ref=e143] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=e144]:
+            - link "Biaya Pendidikan" [ref=e145] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=e146]:
+            - link "Frequently Asked Questions" [ref=e147] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e148]:
+        - heading "Instagram" [level=4] [ref=e149]
+        - generic [ref=e150]:
+          - link "Instagram post " [ref=e151] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e152]
+            - generic [ref=e153]: 
+          - link "Instagram post " [ref=e155] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e156]
+            - generic [ref=e157]: 
+          - link "Instagram post " [ref=e159] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e160]
+            - generic [ref=e161]: 
+          - link "Instagram post " [ref=e163] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e164]
+            - generic [ref=e165]: 
+          - link "Instagram post " [ref=e167] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e168]
+            - generic [ref=e169]: 
+          - link "Instagram post " [ref=e171] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e172]
+            - generic [ref=e173]: 
+    - generic [ref=e177]:
+      - paragraph [ref=e178]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=e179]:
+        - link "Instagram" [ref=e180] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e181]: 
+        - link "TikTok" [ref=e182] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e183]: 
+        - link "YouTube" [ref=e184] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e185]: 
+        - link "Facebook" [ref=e186] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e187]: 
+  - button "Open WhatsApp Chat" [ref=e189]:
+    - generic [ref=e190]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=e196] [cursor=pointer]

@@ -1,0 +1,467 @@
+- generic [active] [ref=f2e1]:
+  - text:       
+  - banner [ref=f2e2]:
+    - generic [ref=f2e4]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f2e5] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f2e6]
+        - generic [ref=f2e7]:
+          - generic [ref=f2e8]: DARUT TAUFIQ
+          - generic [ref=f2e9]: PONDOK PESANTREN
+      - text:     
+      - generic [ref=f2e10]:
+        - button "Toggle Search" [ref=f2e11]:
+          - generic [ref=f2e12]: 
+        - button "Toggle Menu" [ref=f2e13]:
+          - generic [ref=f2e14]: 
+    - generic:
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - link "Beranda":
+                - /url: /
+          - generic:
+            - generic:
+              - link "Profil":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Akademik":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Unit":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Berita":
+                - /url: /berita
+          - generic:
+            - generic:
+              - link "Kontak":
+                - /url: /kontak
+          - generic:
+            - generic:
+              - link "PPDB":
+                - /url: /ppdb
+  - main [ref=f2e15]:
+    - main [ref=f2e16]:
+      - generic [ref=f2e22]:
+        - generic [ref=f2e23]:
+          - link "Home" [ref=f2e24] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f2e25]: 
+          - generic [ref=f2e26]: PPDB
+        - heading "Pendaftaran Santri (PPDB)" [level=1] [ref=f2e27]
+        - paragraph [ref=f2e28]: Wujudkan generasi Qurani berakhlak mulia dan berprestasi global bersama Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq.
+      - generic [ref=f2e30]:
+        - generic [ref=f2e31]:
+          - generic [ref=f2e32]:
+            - heading "Gelombang Pendaftaran Santri Baru" [level=2] [ref=f2e33]
+            - paragraph [ref=f2e34]: Pendaftaran dapat ditutup lebih awal jika kuota kelas telah terpenuhi. Daftarkan putra-putri Anda segera!
+          - generic [ref=f2e35]:
+            - generic [ref=f2e36]:
+              - generic [ref=f2e37]:
+                - generic [ref=f2e38]:
+                  - heading "Gelombang 1 (Early Bird)" [level=3] [ref=f2e39]
+                  - generic [ref=f2e40]: Recommended
+                - generic [ref=f2e41]:
+                  - generic [ref=f2e42]:
+                    - generic [ref=f2e43]: Normal
+                    - generic [ref=f2e44]: Diskon 20%
+                  - paragraph [ref=f2e45]: Potongan Uang Gedung • Periode Okt - Des 2026
+                - generic [ref=f2e46]:
+                  - generic [ref=f2e47]: +
+                  - generic [ref=f2e48]: Kuota Terbatas (30 Santri/Kelas)
+                - link "Daftar Gelombang Ini" [ref=f2e50] [cursor=pointer]:
+                  - /url: /ppdb/daftar?gelombang=1
+                - list [ref=f2e51]:
+                  - listitem [ref=f2e52]:
+                    - generic [ref=f2e55]: Potongan 20% Uang Gedung / Pangkal
+                  - listitem [ref=f2e56]:
+                    - generic [ref=f2e59]: Prioritas pemilihan kamar asrama santri
+                  - listitem [ref=f2e60]:
+                    - generic [ref=f2e63]: Akses Jalur Beasiswa Tahfidz & Prestasi
+                  - listitem [ref=f2e64]:
+                    - generic [ref=f2e67]: Biaya formulir & administrasi awal
+                  - listitem [ref=f2e68]:
+                    - generic [ref=f2e71]: Gratis tes pemetaan tahfidz & minat bakat
+                  - listitem [ref=f2e72]:
+                    - generic [ref=f2e75]: Paket seragam & perlengkapan santri
+              - generic [ref=f2e76]: "*Promo berlaku selama kuota Gelombang 1 tersedia"
+            - generic [ref=f2e77]:
+              - generic [ref=f2e78]:
+                - generic [ref=f2e79]:
+                  - heading "Gelombang 2 (Reguler)" [level=3] [ref=f2e80]
+                  - generic [ref=f2e81]: Segera Dibuka
+                - generic [ref=f2e82]:
+                  - generic [ref=f2e83]:
+                    - generic [ref=f2e84]: Normal
+                    - generic [ref=f2e85]: Diskon 10%
+                  - paragraph [ref=f2e86]: Potongan Uang Gedung • Periode Jan - Mar 2027
+                - generic [ref=f2e87]:
+                  - generic [ref=f2e88]: +
+                  - generic [ref=f2e89]: Sisa Kuota Gelombang 1
+                - button "Segera Dibuka" [disabled] [ref=f2e91]
+                - list [ref=f2e92]:
+                  - listitem [ref=f2e93]:
+                    - generic [ref=f2e96]: Potongan 10% Uang Gedung / Pangkal
+                  - listitem [ref=f2e97]:
+                    - generic [ref=f2e100]: Pemilihan kamar sesuai sisa kuota
+                  - listitem [ref=f2e101]:
+                    - generic [ref=f2e104]: Tes seleksi akademik & pemetaan Al-Qur'an
+                  - listitem [ref=f2e105]:
+                    - generic [ref=f2e108]: Wawancara calon santri & wali
+                  - listitem [ref=f2e109]:
+                    - generic [ref=f2e112]: Sisa kuota kelas dari Gelombang 1
+                  - listitem [ref=f2e113]:
+                    - generic [ref=f2e114]: +
+                    - generic [ref=f2e115]: Semua fasilitas standar santri baru
+              - generic [ref=f2e116]: "*Dibuka resmi setelah Gelombang 1 selesai"
+            - generic [ref=f2e117]:
+              - generic [ref=f2e118]:
+                - generic [ref=f2e119]:
+                  - heading "Gelombang 3 (Terakhir)" [level=3] [ref=f2e120]
+                  - generic [ref=f2e121]: Akan Datang
+                - generic [ref=f2e122]:
+                  - generic [ref=f2e123]: Biaya Normal
+                  - paragraph [ref=f2e125]: Tarif Standar • Periode Apr - Mei 2027
+                - generic [ref=f2e126]:
+                  - generic [ref=f2e127]: +
+                  - generic [ref=f2e128]: Sisa Kuota Terakhir
+                - button "Akan Datang" [disabled] [ref=f2e130]
+                - list [ref=f2e131]:
+                  - listitem [ref=f2e132]:
+                    - generic [ref=f2e135]: Biaya pendidikan & pendaftaran normal
+                  - listitem [ref=f2e136]:
+                    - generic [ref=f2e139]: Penempatan kamar berdasarkan sisa kursi
+                  - listitem [ref=f2e140]:
+                    - generic [ref=f2e143]: Tes pemetaan Al-Qur'an & wawancara
+                  - listitem [ref=f2e144]:
+                    - generic [ref=f2e147]: Verifikasi berkas administrasi
+                  - listitem [ref=f2e148]:
+                    - generic [ref=f2e151]: Ditutup sewaktu-waktu bila kuota penuh
+                  - listitem [ref=f2e152]:
+                    - generic [ref=f2e153]: +
+                    - generic [ref=f2e154]: Semua fasilitas standar santri baru
+              - generic [ref=f2e155]: "*Pendaftaran otomatis ditutup jika kuota terpenuhi"
+        - generic [ref=f2e156]:
+          - generic [ref=f2e157]:
+            - generic [ref=f2e158]:
+              - heading "Pilihan Unit Sekolah & Pesantren" [level=2] [ref=f2e159]
+              - paragraph [ref=f2e160]: Tersedia jenjang pendidikan Sekolah Dasar (SDIT) dan Menengah Pertama (SMPIT & Pesantren) dengan kurikulum terpadu.
+            - link "Lihat Semua Program Unggulan " [ref=f2e161] [cursor=pointer]:
+              - /url: /program
+              - text: Lihat Semua Program Unggulan
+              - generic [ref=f2e162]: 
+          - generic [ref=f2e163]:
+            - generic [ref=f2e164]:
+              - generic [ref=f2e165]:
+                - generic [ref=f2e166]:
+                  - generic [ref=f2e167]: Fullday School
+                  - img "SDIT Darut Taufiq" [ref=f2e169]
+                - heading "SDIT Darut Taufiq" [level=3] [ref=f2e170]
+                - paragraph [ref=f2e171]: Sekolah Dasar Islam Terpadu (Kelas 1 - 6)
+                - heading "Program Unggulan:" [level=4] [ref=f2e172]
+                - list [ref=f2e173]:
+                  - listitem [ref=f2e174]:
+                    - generic [ref=f2e175]: 
+                    - generic [ref=f2e176]: Target Tahfidz 3-5 Juz
+                  - listitem [ref=f2e177]:
+                    - generic [ref=f2e178]: 
+                    - generic [ref=f2e179]: Kurikulum Terpadu & Cambridge
+                  - listitem [ref=f2e180]:
+                    - generic [ref=f2e181]: 
+                    - generic [ref=f2e182]: Dasar Coding & Robotika
+                  - listitem [ref=f2e183]:
+                    - generic [ref=f2e184]: 
+                    - generic [ref=f2e185]: Kelas Terpisah Putra/Putri
+              - generic [ref=f2e186]:
+                - link "Profil Lengkap Unit " [ref=f2e187] [cursor=pointer]:
+                  - /url: /sdit
+                  - text: Profil Lengkap Unit
+                  - generic [ref=f2e188]: 
+                - link "Daftar " [ref=f2e189] [cursor=pointer]:
+                  - /url: /ppdb/daftar
+                  - text: Daftar
+                  - generic [ref=f2e190]: 
+            - generic [ref=f2e191]:
+              - generic [ref=f2e192]:
+                - generic [ref=f2e193]:
+                  - generic [ref=f2e194]: Boarding & Fullday
+                  - img "SMPIT & Pesantren" [ref=f2e196]
+                - heading "SMPIT & Pesantren" [level=3] [ref=f2e197]
+                - paragraph [ref=f2e198]: Sekolah Menengah Pertama (Kelas 7 - 9)
+                - heading "Program Unggulan:" [level=4] [ref=f2e199]
+                - list [ref=f2e200]:
+                  - listitem [ref=f2e201]:
+                    - generic [ref=f2e202]: 
+                    - generic [ref=f2e203]: Target Tahfidz 10-30 Juz
+                  - listitem [ref=f2e204]:
+                    - generic [ref=f2e205]: 
+                    - generic [ref=f2e206]: Bahasa Arab & Inggris Aktif
+                  - listitem [ref=f2e207]:
+                    - generic [ref=f2e208]: 
+                    - generic [ref=f2e209]: Asrama Putra & Putri Mandiri
+                  - listitem [ref=f2e210]:
+                    - generic [ref=f2e211]: 
+                    - generic [ref=f2e212]: Kajian Kitab & Kurikulum Nasional
+              - generic [ref=f2e213]:
+                - link "Profil Lengkap Unit " [ref=f2e214] [cursor=pointer]:
+                  - /url: /smpit
+                  - text: Profil Lengkap Unit
+                  - generic [ref=f2e215]: 
+                - link "Daftar " [ref=f2e216] [cursor=pointer]:
+                  - /url: /ppdb/daftar
+                  - text: Daftar
+                  - generic [ref=f2e217]: 
+      - generic [ref=f2e219]:
+        - generic [ref=f2e220]:
+          - heading "Alur & Tahapan Pendaftaran Santri" [level=2] [ref=f2e221]
+          - paragraph [ref=f2e222]: Ikuti 6 langkah terstruktur berikut dari pengisian formulir hingga resmi bergabung menjadi santri baru Darut Taufiq.
+        - generic [ref=f2e224]:
+          - generic [ref=f2e228]:
+            - generic [ref=f2e229]: Langkah 01
+            - heading "Pendaftaran Online" [level=3] [ref=f2e230]
+            - paragraph [ref=f2e231]: Akses website resmi PPDB di ppdb.arkia.id, buat akun baru, dan isi formulir biodata calon santri secara lengkap.
+          - generic [ref=f2e234]:
+            - generic [ref=f2e235]: Langkah 02
+            - heading "Biaya Formulir" [level=3] [ref=f2e236]
+            - paragraph [ref=f2e237]: Lakukan pembayaran biaya formulir dan administrasi pendaftaran melalui transfer bank virtual account resmi.
+          - generic [ref=f2e240]:
+            - generic [ref=f2e241]: Langkah 03
+            - heading "Unggah Dokumen" [level=3] [ref=f2e242]
+            - paragraph [ref=f2e243]: Upload berkas persyaratan seperti Kartu Keluarga, Akta Kelahiran, Pas Foto, dan surat keterangan sehat.
+          - generic [ref=f2e246]:
+            - generic [ref=f2e247]: Langkah 04
+            - heading "Tes Seleksi & Wawancara" [level=3] [ref=f2e248]
+            - paragraph [ref=f2e249]: Mengikuti tes pemetaan tahsin/tahfidz Al-Qur'an, tes akademik dasar, serta wawancara komitmen santri dan wali.
+          - generic [ref=f2e252]:
+            - generic [ref=f2e253]: Langkah 05
+            - heading "Pengumuman Hasil" [level=3] [ref=f2e254]
+            - paragraph [ref=f2e255]: Hasil kelulusan diumumkan melalui portal akun PPDB masing-masing dan pesan konfirmasi WhatsApp resmi.
+          - generic [ref=f2e258]:
+            - generic [ref=f2e259]: Langkah 06
+            - heading "Daftar Ulang & Orientasi" [level=3] [ref=f2e260]
+            - paragraph [ref=f2e261]: Penyelesaian administrasi daftar ulang, seragam, dan persiapan masuk pesantren (Khutbatul Arsy).
+        - link "Mulai Pendaftaran Online Sekarang " [ref=f2e263] [cursor=pointer]:
+          - /url: /ppdb/daftar
+          - text: Mulai Pendaftaran Online Sekarang
+          - generic [ref=f2e264]: 
+      - generic [ref=f2e266]:
+        - generic [ref=f2e267]:
+          - generic [ref=f2e268]:
+            - heading "Berkas & Dokumen Persyaratan" [level=2] [ref=f2e269]
+            - paragraph [ref=f2e270]: Persiapkan dokumen-dokumen berikut untuk diunggah pada saat pengisian formulir online atau diserahkan saat verifikasi berkas.
+          - generic [ref=f2e271]:
+            - generic [ref=f2e272]:
+              - heading "Identitas Diri & Formulir" [level=3] [ref=f2e273]
+              - list [ref=f2e274]:
+                - listitem [ref=f2e275]:
+                  - generic [ref=f2e276]: 
+                  - generic [ref=f2e277]: Mengisi formulir pendaftaran Lengkap
+                - listitem [ref=f2e278]:
+                  - generic [ref=f2e279]: 
+                  - generic [ref=f2e280]: Foto diri dengan ukuran 3×4, 4 lembar
+                - listitem [ref=f2e281]:
+                  - generic [ref=f2e282]: 
+                  - generic [ref=f2e283]: Foto copy KTP wali santri ( 2 lembar)
+                - listitem [ref=f2e284]:
+                  - generic [ref=f2e285]: 
+                  - generic [ref=f2e286]: Foto copy Akte Kelahiran ( 2 lembar)
+            - generic [ref=f2e287]:
+              - heading "Dokumen Akademik" [level=3] [ref=f2e288]
+              - list [ref=f2e289]:
+                - listitem [ref=f2e290]:
+                  - generic [ref=f2e291]: 
+                  - generic [ref=f2e292]: Foto copy ijazah terleglisir ( 2 lembar)
+                - listitem [ref=f2e293]:
+                  - generic [ref=f2e294]: 
+                  - generic [ref=f2e295]: Foto copy SKL ( 2 lembar)
+                - listitem [ref=f2e296]:
+                  - generic [ref=f2e297]: 
+                  - generic [ref=f2e298]: Surat pindah sekolah dan daftar nilai/Raport siswa (bagi siswa pindahan)
+            - generic [ref=f2e299]:
+              - heading "Bantuan & Berkas Tambahan" [level=3] [ref=f2e300]
+              - list [ref=f2e301]:
+                - listitem [ref=f2e302]:
+                  - generic [ref=f2e303]: 
+                  - generic [ref=f2e304]: Foto copy kartu Indonesia pintar (KJP) (2 lembar jika sudah memiliki)
+                - listitem [ref=f2e305]:
+                  - generic [ref=f2e306]: 
+                  - generic [ref=f2e307]: Surat keterangan sehat dari dokter/Puskesmas
+                - listitem [ref=f2e308]:
+                  - generic [ref=f2e309]: 
+                  - generic [ref=f2e310]: Surat komitmen dan tata tertib pesantren
+          - generic [ref=f2e311]:
+            - generic [ref=f2e312]:
+              - generic [ref=f2e313]: 
+              - generic [ref=f2e315]:
+                - heading "Jalur Beasiswa Prestasi & Tahfidz" [level=4] [ref=f2e316]
+                - paragraph [ref=f2e317]: Bagi calon santri yang memiliki hafalan minimal 3 Juz atau juara olimpiade/kejuaraan tingkat kota/provinsi, tersedia beasiswa khusus uang pangkal.
+            - link "Konsultasi Beasiswa" [ref=f2e318] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972?text=Halo%20Admin,%20saya%20ingin%20tanya%20mengenai%20Jalur%20Beasiswa%20PPDB%20Darut%20Taufiq
+        - generic [ref=f2e320]:
+          - generic [ref=f2e321]:
+            - img "Rincian Biaya Pendidikan" [ref=f2e324]
+            - generic [ref=f2e325]:
+              - heading "Rincian Biaya Pendidikan" [level=2] [ref=f2e326]
+              - paragraph [ref=f2e327]: Informasi detail mengenai biaya formulir pendaftaran, uang gedung, seragam, buku, serta SPP bulanan dapat Anda lihat pada laman rincian biaya resmi kami.
+          - generic [ref=f2e328]:
+            - link " Lihat Rincian Biaya" [ref=f2e329] [cursor=pointer]:
+              - /url: /biaya
+              - generic [ref=f2e330]: 
+              - text: Lihat Rincian Biaya
+            - link "Daftar Online " [ref=f2e331] [cursor=pointer]:
+              - /url: /ppdb/daftar
+              - text: Daftar Online
+              - generic [ref=f2e332]: 
+        - generic [ref=f2e334]:
+          - generic [ref=f2e335]:
+            - heading "Butuh Bantuan Pendaftaran?" [level=2] [ref=f2e336]
+            - paragraph [ref=f2e337]: Tim Panitia PPDB Pondok Pesantren Darut Taufiq siap melayani dan mendampingi orang tua/wali santri dalam proses pendaftaran online maupun konsultasi langsung di sekretariat.
+            - generic [ref=f2e338]:
+              - generic [ref=f2e339]:
+                - generic [ref=f2e340]: 
+                - generic [ref=f2e342]:
+                  - heading "Jam Operasional Sekretariat" [level=4] [ref=f2e343]
+                  - paragraph [ref=f2e344]: "Senin - Sabtu: 08.00 - 16.00 WIB | Ahad: 09.00 - 14.00 WIB"
+              - generic [ref=f2e345]:
+                - generic [ref=f2e346]: 
+                - generic [ref=f2e348]:
+                  - heading "WhatsApp Admin PPDB" [level=4] [ref=f2e349]
+                  - paragraph [ref=f2e350]: +62 822-2888-0972 (Respon cepat jam kerja)
+              - generic [ref=f2e351]:
+                - generic [ref=f2e352]: 
+                - generic [ref=f2e354]:
+                  - heading "Telepon Kantor" [level=4] [ref=f2e355]
+                  - paragraph [ref=f2e356]: (021) 82631191
+            - generic [ref=f2e357]:
+              - link " Chat Panitia Sekarang" [ref=f2e358] [cursor=pointer]:
+                - /url: https://wa.me/6282228880972?text=Assalamu%27alaikum%20Panitia%20PPDB%20Darut%20Taufiq
+                - generic [ref=f2e359]: 
+                - text: Chat Panitia Sekarang
+              - link "Tanya Jawab (FAQ)" [ref=f2e360] [cursor=pointer]:
+                - /url: /faq
+          - generic [ref=f2e361]:
+            - generic [ref=f2e362]:
+              - heading "Sekretariat Pendaftaran Langsung" [level=3] [ref=f2e363]
+              - paragraph [ref=f2e364]: Ayah/Bunda juga dapat datang langsung ke kampus Darut Taufiq untuk berkonsultasi, melihat lingkungan asrama, dan dibantu langsung oleh tim kami dalam pengisian formulir.
+              - generic [ref=f2e365]:
+                - paragraph [ref=f2e366]: Pondok Pesantren Darut Taufiq
+                - paragraph [ref=f2e367]: Jl. Kb. Baru Metros No. 59, Semper Barat, Cilincing
+                - paragraph [ref=f2e368]: Jakarta Utara, DKI Jakarta 14130
+            - iframe [ref=f2e370]
+  - contentinfo [ref=f2e371]:
+    - generic [ref=f2e373]:
+      - generic [ref=f2e374]:
+        - generic [ref=f2e375]:
+          - img "Pondok Modern" [ref=f2e376]
+          - generic [ref=f2e377]:
+            - generic [ref=f2e378]: DARUT TAUFIQ
+            - generic [ref=f2e379]: PONDOK PESANTREN
+        - list [ref=f2e380]:
+          - listitem [ref=f2e381]:
+            - link " +6282228880972" [ref=f2e382] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=f2e383]: 
+              - generic [ref=f2e384]: "+6282228880972"
+          - listitem [ref=f2e385]:
+            - link " info@daruttaufiq.com" [ref=f2e386] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=f2e387]: 
+              - generic [ref=f2e388]: info@daruttaufiq.com
+          - listitem [ref=f2e389]:
+            - link " (021) 82631191" [ref=f2e390] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=f2e391]: 
+              - generic [ref=f2e392]: (021) 82631191
+          - listitem [ref=f2e393]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f2e394] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=f2e395]: 
+              - generic [ref=f2e396]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=f2e397]:
+        - heading "Profil" [level=4] [ref=f2e398]
+        - list [ref=f2e399]:
+          - listitem [ref=f2e400]:
+            - link "Sejarah Sekolah" [ref=f2e401] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f2e402]:
+            - link "Manajemen" [ref=f2e403] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f2e404]:
+            - link "Staff & Pengajar" [ref=f2e405] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f2e406]:
+            - link "Nilai & Budaya" [ref=f2e407] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f2e408]:
+        - heading "Informasi" [level=4] [ref=f2e409]
+        - list [ref=f2e410]:
+          - listitem [ref=f2e411]:
+            - link "Pendaftaran PPDB" [ref=f2e412] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f2e413]:
+            - link "Program Unggulan" [ref=f2e414] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f2e415]:
+            - link "Sarana & Fasilitas" [ref=f2e416] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f2e417]:
+            - link "Biaya Pendidikan" [ref=f2e418] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f2e419]:
+            - link "Frequently Asked Questions" [ref=f2e420] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f2e421]:
+        - heading "Instagram" [level=4] [ref=f2e422]
+        - generic [ref=f2e423]:
+          - link "Instagram post " [ref=f2e424] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e425]
+            - generic [ref=f2e426]: 
+          - link "Instagram post " [ref=f2e428] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e429]
+            - generic [ref=f2e430]: 
+          - link "Instagram post " [ref=f2e432] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e433]
+            - generic [ref=f2e434]: 
+          - link "Instagram post " [ref=f2e436] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e437]
+            - generic [ref=f2e438]: 
+          - link "Instagram post " [ref=f2e440] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e441]
+            - generic [ref=f2e442]: 
+          - link "Instagram post " [ref=f2e444] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e445]
+            - generic [ref=f2e446]: 
+    - generic [ref=f2e450]:
+      - paragraph [ref=f2e451]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f2e452]:
+        - link "Instagram" [ref=f2e453] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f2e454]: 
+        - link "TikTok" [ref=f2e455] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f2e456]: 
+        - link "YouTube" [ref=f2e457] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f2e458]: 
+        - link "Facebook" [ref=f2e459] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f2e460]: 
+  - button "Open WhatsApp Chat" [ref=f2e462]:
+    - generic [ref=f2e463]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=f2e469] [cursor=pointer]

@@ -39,6 +39,15 @@ const programs = [
   }
 ];
 
+function EthnicBottomStrip() {
+  return (
+    <div
+      className="absolute left-0 right-0 bottom-0 h-[11px] sm:h-[13px] z-10 pointer-events-none select-none bg-repeat-x bg-bottom"
+      style={{ backgroundImage: "url('/images/ethnic-strip-bottom.svg')", backgroundSize: "auto 100%" }}
+    />
+  );
+}
+
 export default function ProgramPage() {
   return (
     <main className="min-h-screen bg-white">
@@ -89,7 +98,7 @@ export default function ProgramPage() {
             {programs.map((program, idx) => (
               <div 
                 key={idx} 
-                className="group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-black/10 transition-all duration-300"
+                className="group relative flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm border border-gray-100"
               >
                 {/* Image Section */}
                 <div className="relative w-full h-48 sm:h-56 overflow-hidden">
@@ -103,23 +112,17 @@ export default function ProgramPage() {
                 </div>
 
                 {/* Text Content */}
-                <div className="p-6 lg:p-8 flex-1 flex flex-col">
-                  <h3 className="text-xl lg:text-2xl font-bold text-secondary mb-4 group-hover:text-primary transition-colors duration-300">
+                <div className="p-6 lg:p-8 pb-8 lg:pb-10 flex-1 flex flex-col">
+                  <h3 className="text-xl lg:text-2xl font-bold text-secondary mb-3">
                     {program.title}
                   </h3>
-                  <p className="text-text-muted leading-relaxed text-sm lg:text-[15px] mb-6 flex-1">
+                  <p className="text-text-muted leading-relaxed text-sm lg:text-[15px] flex-1">
                     {program.description}
                   </p>
-                  
-                  <div className="mt-auto pt-4 border-t border-gray-200">
-                    <span className="inline-flex items-center text-primary font-medium text-sm hover:text-secondary transition-colors duration-300 cursor-pointer">
-                      Pelajari Lebih Lanjut
-                      <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </span>
-                  </div>
                 </div>
+
+                {/* Pita Motif Sisi Bawah (Sama seperti Card Review) */}
+                <EthnicBottomStrip />
               </div>
             ))}
           </div>

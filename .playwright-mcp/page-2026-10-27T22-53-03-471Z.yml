@@ -1,0 +1,90 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e3]:
+    - list [ref=f4e4]:
+      - listitem [ref=f4e5]:
+        - link " +6282228880972" [ref=f4e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=f4e7]: 
+          - generic [ref=f4e8]: "+6282228880972"
+      - listitem [ref=f4e9]:
+        - link " info@daruttaufiq.com" [ref=f4e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=f4e11]: 
+          - generic [ref=f4e12]: info@daruttaufiq.com
+      - listitem [ref=f4e13]:
+        - generic [ref=f4e14]: 
+        - generic [ref=f4e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f4e16]:
+      - listitem [ref=f4e17]:
+        - link "Instagram" [ref=f4e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f4e19]: 
+      - listitem [ref=f4e20]:
+        - link "TikTok" [ref=f4e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f4e22]: 
+      - listitem [ref=f4e23]:
+        - link "YouTube" [ref=f4e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f4e25]: 
+      - listitem [ref=f4e26]:
+        - link "Facebook" [ref=f4e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f4e28]: 
+  - text:          
+  - main [ref=f4e29]:
+    - main [ref=f4e30]:
+      - generic [ref=f4e36]:
+        - generic [ref=f4e37]:
+          - link "Home" [ref=f4e38] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f4e39]: 
+          - link "Berita" [ref=f4e40] [cursor=pointer]:
+            - /url: /berita
+        - 'heading "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [level=1] [ref=f4e41]'
+        - generic [ref=f4e42]:
+          - generic [ref=f4e43]:
+            - generic [ref=f4e44]: 
+            - time [ref=f4e45]: Diterbitkan pada 22/10/2026
+          - generic [ref=f4e46]:
+            - generic [ref=f4e47]: Kegiatan
+            - generic [ref=f4e48]: Berita Sorotan
+            - generic [ref=f4e49]: Acara
+      - generic [ref=f4e50]:
+        - article [ref=f4e52]:
+          - generic [ref=f4e54]:
+            - generic [ref=f4e55]:
+              - generic [ref=f4e56]: Redaksi & Humas Darut Taufiq
+              - generic [ref=f4e57]:
+                - generic [ref=f4e58]: Tim Dokumentasi & Publikasi
+                - generic [ref=f4e59]: •
+                - generic [ref=f4e60]:
+                  - generic [ref=f4e61]: 
+                  - text: 2 menit baca
+            - text:     
+          - generic [ref=f4e62]:
+            - paragraph [ref=f4e63]:
+              - strong [ref=f4e64]: Jakarta Utara, 22 Oktober 2026
+              - text: — Peringatan Hari Santri Nasional (HSN) tahun ini berlangsung dengan penuh khidmat dan gegap gempita. Ratusan santri dan dewan asatidz Pondok Pesantren & Sekolah Islam Terpadu Darut Taufiq bergabung bersama ribuan santri dari berbagai pondok pesantren se-Jakarta Utara untuk mengikuti agenda Apel Akbar Peringatan Hari Santri Nasional yang dipusatkan di pelataran Jakarta Islamic Centre (JIC), Koja.
+            - paragraph [ref=f4e65]: Dengan mengenakan pakaian serba putih, peci hitam, dan balutan sarung khas santri Nusantara, para santri Darut Taufiq tampak antusias dan berbaris rapi di bawah naungan menara megah Jakarta Islamic Centre. Berbagai spanduk ucapan selamat dan panji kebanggaan pesantren turut dikibarkan sebagai simbol soliditas dan kecintaan santri terhadap tanah air.
+            - paragraph [ref=f4e66]: Peringatan Hari Santri Nasional mengenang peristiwa bersejarah Resolusi Jihad 22 Oktober 1945 yang dicetuskan oleh para ulama untuk mempertahankan kedaulatan bangsa. Dalam amanat apel akbar, ditekankan pentingnya peran santri masa kini untuk terus meneladani semangat patriotisme, menjaga marwah keislaman yang rahmatan lil 'alamin, serta aktif memberikan kontribusi nyata bagi kemajuan bangsa melalui ilmu pengetahuan dan teknologi.
+            - paragraph [ref=f4e67]: Keikutsertaan para santri Pondok Pesantren Darut Taufiq dalam apel akbar ini diharapkan semakin memupuk jiwa nasionalisme, kemandirian, dan ukhuwah islamiyah dalam sanubari setiap santri.
+          - generic [ref=f4e68]:
+            - generic [ref=f4e71]:
+              - img "Slide 1" [ref=f4e73]
+              - img "Slide 2" [ref=f4e75]
+              - img "Slide 3" [ref=f4e77]
+              - img "Slide 4" [ref=f4e79]
+            - generic [ref=f4e80]:
+              - generic [ref=f4e81]:
+                - button [ref=f4e82]
+                - button [ref=f4e83]
+                - button [ref=f4e84]
+                - button [ref=f4e85]
+              - generic [ref=f4e86]:
+                - button "" [disabled] [ref=f4e87]
+                - button "" [ref=f4e89]
+        - paragraph [ref=f4e94]:
+          - generic [ref=f4e95]: "Terakhir diubah:"
+          - generic [ref=f4e96]: 20/10/2026 - 05:58 WIB
+  - text:                

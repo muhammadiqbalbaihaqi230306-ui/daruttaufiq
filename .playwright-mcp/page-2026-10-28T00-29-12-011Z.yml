@@ -1,0 +1,460 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - list [ref=f2e4]:
+      - listitem [ref=f2e5]:
+        - link " +6282228880972" [ref=f2e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=f2e7]: 
+          - generic [ref=f2e8]: "+6282228880972"
+      - listitem [ref=f2e9]:
+        - link " info@daruttaufiq.com" [ref=f2e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=f2e11]: 
+          - generic [ref=f2e12]: info@daruttaufiq.com
+      - listitem [ref=f2e13]:
+        - generic [ref=f2e14]: 
+        - generic [ref=f2e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=f2e16]:
+      - listitem [ref=f2e17]:
+        - link "Instagram" [ref=f2e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f2e19]: 
+      - listitem [ref=f2e20]:
+        - link "TikTok" [ref=f2e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f2e22]: 
+      - listitem [ref=f2e23]:
+        - link "YouTube" [ref=f2e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f2e25]: 
+      - listitem [ref=f2e26]:
+        - link "Facebook" [ref=f2e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f2e28]: 
+  - banner [ref=f2e29]:
+    - generic [ref=f2e31]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=f2e32] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=f2e33]
+        - generic [ref=f2e34]:
+          - generic [ref=f2e35]: DARUT TAUFIQ
+          - generic [ref=f2e36]: PONDOK PESANTREN
+      - navigation [ref=f2e37]:
+        - link "Beranda" [ref=f2e39] [cursor=pointer]:
+          - /url: /
+        - link "Profil " [ref=f2e41] [cursor=pointer]:
+          - /url: "#"
+          - text: Profil
+          - generic [ref=f2e42]: 
+        - link "Akademik " [ref=f2e44] [cursor=pointer]:
+          - /url: "#"
+          - text: Akademik
+          - generic [ref=f2e45]: 
+        - link "Unit " [ref=f2e47] [cursor=pointer]:
+          - /url: "#"
+          - text: Unit
+          - generic [ref=f2e48]: 
+        - link "Berita" [ref=f2e50] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=f2e52] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=f2e54] [cursor=pointer]:
+          - /url: /ppdb
+        - generic [ref=f2e55]:
+          - generic:
+            - generic: 
+            - textbox "Cari di Darut Taufiq..."
+          - button "Toggle Search" [ref=f2e56]:
+            - generic [ref=f2e57]: 
+      - text:  
+    - text:   
+  - main [ref=f2e58]:
+    - generic [ref=f2e59]:
+      - generic [ref=f2e60]:
+        - img "Sekolah Islam Favorit & Terbaik di Kota Bekasi" [ref=f2e61]
+        - generic [ref=f2e65]:
+          - heading "Sekolah Islam Favorit & Terbaik di Kota Bekasi" [level=1] [ref=f2e66]
+          - paragraph [ref=f2e67]: Bergabunglah dengan Pondok Pesantren Darut Taufiq dan jadilah bagian dari komunitas pembelajar yang berakhlak mulia, cerdas secara akademik, dan unggul dalam agama.
+          - link "Daftar Sekarang" [ref=f2e69] [cursor=pointer]:
+            - /url: https://ppdb.arkia.id
+      - generic [ref=f2e70]:
+        - img "Membentuk Generasi Qurani yang Berprestasi" [ref=f2e71]
+        - generic [ref=f2e75]:
+          - heading "Membentuk Generasi Qurani yang Berprestasi" [level=1] [ref=f2e76]
+          - paragraph [ref=f2e77]: Kami mendidik putra-putri Anda dengan kurikulum terpadu yang menyeimbangkan ilmu pengetahuan umum dan pemahaman agama yang mendalam untuk masa depan gemilang.
+          - link "Lihat Program" [ref=f2e79] [cursor=pointer]:
+            - /url: "#program"
+      - generic [ref=f2e80]:
+        - img "PPDB Tahun Ajaran 2027-2028 Telah Dibuka!" [ref=f2e81]
+        - generic [ref=f2e85]:
+          - heading "PPDB Tahun Ajaran 2027-2028 Telah Dibuka!" [level=1] [ref=f2e86]
+          - paragraph [ref=f2e87]: Segera daftarkan putra-putri Anda dan jadilah bagian dari keluarga besar Pondok Pesantren Darut Taufiq. Mari bersama-sama menciptakan generasi masa depan yang cemerlang!
+          - link "Info Selengkapnya" [ref=f2e89] [cursor=pointer]:
+            - /url: https://ppdb.arkia.id
+      - generic [ref=f2e90]:
+        - button "Go to slide 1" [ref=f2e91]
+        - button "Go to slide 2" [ref=f2e92]
+        - button "Go to slide 3" [ref=f2e93]
+    - generic [ref=f2e96]:
+      - heading "Mengapa Memilih Darut Taufiq?" [level=2] [ref=f2e99]
+      - generic [ref=f2e101]:
+        - generic [ref=f2e102]:
+          - img "Pendidikan Karakter (ADMK)" [ref=f2e104]
+          - heading "Pendidikan Karakter (ADMK)" [level=3] [ref=f2e105]
+          - paragraph [ref=f2e106]: Membentuk generasi berprestasi sekaligus berakhlak mulia melalui Akhlaqul Karimah, Disiplin, Mandiri, dan Kreatif.
+        - generic [ref=f2e107]:
+          - img "Kurikulum Bilingual Terpadu" [ref=f2e109]
+          - heading "Kurikulum Bilingual Terpadu" [level=3] [ref=f2e110]
+          - paragraph [ref=f2e111]: Memadukan pendidikan nasional, wawasan global, dengan pemahaman nilai agama Islam yang mendalam.
+        - generic [ref=f2e112]:
+          - img "Lingkungan Kondusif" [ref=f2e114]
+          - heading "Lingkungan Kondusif" [level=3] [ref=f2e115]
+          - paragraph [ref=f2e116]: Sistem kelas terpisah putra dan putri untuk menciptakan suasana belajar yang fokus, aman, dan sesuai syariat.
+    - generic [ref=f2e120]:
+      - generic [ref=f2e121]:
+        - generic [ref=f2e122]: Program Utama
+        - heading "Program Unggulan Favorit" [level=2] [ref=f2e123]
+        - paragraph [ref=f2e124]: Menghadirkan kurikulum komprehensif yang dirancang untuk membangun kecerdasan intelektual, spiritual, dan keterampilan praktis santri dalam menghadapi tantangan masa depan.
+      - generic [ref=f2e125]:
+        - generic [ref=f2e126]:
+          - heading "Pilihan Program Kami" [level=3] [ref=f2e127]
+          - generic [ref=f2e128]:
+            - heading "Tahfidz Al-Qur'an" [level=4] [ref=f2e129]
+            - paragraph [ref=f2e130]: Bimbingan hafalan Al-Qur'an intensif mutqin, tahsin bersanad, dan muraja'ah berkala bersama asatidz penghafal Al-Qur'an.
+          - generic [ref=f2e131]:
+            - heading "Bahasa Jepang" [level=4] [ref=f2e132]
+            - paragraph [ref=f2e133]: Mengenal bahasa dan budaya Jepang melalui pembelajaran huruf dasar Hiragana, Katakana, dan percakapan praktis sehari-hari (Kaiwa).
+          - generic [ref=f2e134]:
+            - heading "Bahasa Arab" [level=4] [ref=f2e135]
+            - paragraph [ref=f2e136]: Pembiasaan percakapan harian (muhadatsah) dan penguasaan tata bahasa Arab intensif sebagai bahasa Al-Qur'an dan ilmu.
+        - generic [ref=f2e137]:
+          - generic [ref=f2e140]:
+            - img "Program Unggulan 1" [ref=f2e141]
+            - img "Program Unggulan 2" [ref=f2e142]
+            - img "Program Unggulan 3" [ref=f2e143]
+            - img "Program Unggulan 4" [ref=f2e144]
+          - generic [ref=f2e145]:
+            - img "Thumbnail 2" [ref=f2e147] [cursor=pointer]
+            - img "Thumbnail 3" [ref=f2e149] [cursor=pointer]
+            - img "Thumbnail 4" [ref=f2e151] [cursor=pointer]
+      - generic [ref=f2e152]:
+        - generic [ref=f2e153]:
+          - generic [ref=f2e154]:
+            - heading "Fasilitas Modern" [level=4] [ref=f2e155]
+            - paragraph [ref=f2e156]: Ruang belajar nyaman, asrama bersih, dan pendukung lengkap untuk pembelajaran.
+          - generic [ref=f2e157]:
+            - heading "Tenaga Pengajar" [level=4] [ref=f2e158]
+            - paragraph [ref=f2e159]: Dibimbing asatidz berkompeten lulusan universitas terkemuka dalam dan luar negeri.
+          - generic [ref=f2e160]:
+            - heading "Lingkungan Islami" [level=4] [ref=f2e161]
+            - paragraph [ref=f2e162]: Menumbuhkan karakter akhlakul karimah melalui lingkungan yang kondusif.
+        - link "Lebih Banyak " [ref=f2e164] [cursor=pointer]:
+          - /url: /program
+          - text: Lebih Banyak
+          - generic [ref=f2e165]: 
+    - generic [ref=f2e167]:
+      - generic [ref=f2e168]:
+        - generic [ref=f2e169]:
+          - heading "Berita & Informasi Sekolah" [level=2] [ref=f2e170]
+          - paragraph [ref=f2e171]: Dapatkan informasi terbaru seputar kegiatan dan prestasi santri Pondok Pesantren Darut Taufiq
+        - link "Show All " [ref=f2e172] [cursor=pointer]:
+          - /url: /berita
+          - text: Show All
+          - generic [ref=f2e173]: 
+      - generic [ref=f2e175]:
+        - generic [ref=f2e177]:
+          - 'img "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [ref=f2e180]'
+          - generic [ref=f2e181]:
+            - link [ref=f2e182] [cursor=pointer]:
+              - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+              - 'heading "Semarak Hari Santri Nasional: Santri Pondok Pesantren Darut Taufiq Ikuti Apel Akbar di Jakarta Islamic Centre" [level=3] [ref=f2e183]'
+            - generic [ref=f2e184]:
+              - generic [ref=f2e185]:
+                - generic [ref=f2e186]: Featured news
+                - generic [ref=f2e187]: Kegiatan
+              - link "" [ref=f2e188] [cursor=pointer]:
+                - /url: /berita/semarak-hari-santri-nasional-pondok-pesantren-darut-taufiq
+        - generic [ref=f2e190]:
+          - generic [ref=f2e192]:
+            - generic [ref=f2e193]:
+              - 'img "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [ref=f2e195]'
+              - generic [ref=f2e196]:
+                - link [ref=f2e197] [cursor=pointer]:
+                  - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+                  - 'heading "Latihan Seni Bela Diri Pencak Silat Santri Darut Taufiq: Membentuk Karakter Tangguh, Disiplin, dan Berakhlak" [level=3] [ref=f2e198]'
+                - generic [ref=f2e199]:
+                  - generic [ref=f2e200]:
+                    - generic [ref=f2e201]: Featured news
+                    - generic [ref=f2e202]: Kegiatan
+                  - link "" [ref=f2e203] [cursor=pointer]:
+                    - /url: /berita/latihan-seni-bela-diri-pencak-silat-santri-darut-taufiq
+            - generic [ref=f2e205]:
+              - 'img "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [ref=f2e207]'
+              - generic [ref=f2e208]:
+                - link [ref=f2e209] [cursor=pointer]:
+                  - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+                  - 'heading "Keseruan Kegiatan Renang Santri Darut Taufiq: Melatih Kebugaran dan Menghidupkan Olahraga Sunnah" [level=3] [ref=f2e210]'
+                - generic [ref=f2e211]:
+                  - generic [ref=f2e212]:
+                    - generic [ref=f2e213]: Featured news
+                    - generic [ref=f2e214]: Kegiatan
+                  - link "" [ref=f2e215] [cursor=pointer]:
+                    - /url: /berita/keseruan-kegiatan-renang-santri-darut-taufiq
+            - generic [ref=f2e217]:
+              - img "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [ref=f2e219]
+              - generic [ref=f2e220]:
+                - link [ref=f2e221] [cursor=pointer]:
+                  - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+                  - heading "Keseruan Masa Pengenalan Lingkungan Sekolah (MPLS) dan Senam Pagi Bersama Santri Baru" [level=3] [ref=f2e222]
+                - generic [ref=f2e223]:
+                  - generic [ref=f2e224]:
+                    - generic [ref=f2e225]: Featured news
+                    - generic [ref=f2e226]: Kegiatan
+                  - link "" [ref=f2e227] [cursor=pointer]:
+                    - /url: /berita/keseruan-mpls-dan-senam-pagi-santri-baru
+          - generic [ref=f2e229]:
+            - generic [ref=f2e230]:
+              - generic [ref=f2e231] [cursor=pointer]
+              - generic [ref=f2e232] [cursor=pointer]
+            - generic [ref=f2e233]:
+              - button "" [disabled] [ref=f2e234]
+              - button "" [ref=f2e236]
+    - generic [ref=f2e242]:
+      - paragraph [ref=f2e243]: Tertarik Sekolah di Pondok Pesantren Darut Taufiq?
+      - heading "Penerimaan Siswa Baru Tahun Ajaran 2027-2028 Telah Dibuka!" [level=2] [ref=f2e244]
+      - link "DAFTAR SEKARANG" [ref=f2e246] [cursor=pointer]:
+        - /url: https://ppdb.arkia.id
+    - generic [ref=f2e248]:
+      - generic [ref=f2e249]:
+        - paragraph [ref=f2e250]: Review Google
+        - heading "Apa Kata Mereka ?" [level=2] [ref=f2e251]
+      - generic [ref=f2e253]:
+        - button "" [ref=f2e254]
+        - button "" [ref=f2e256]
+        - generic [ref=f2e259]:
+          - generic [ref=f2e261]:
+            - generic [ref=f2e262]:
+              - generic [ref=f2e263]: 
+              - generic [ref=f2e264]: 
+              - generic [ref=f2e265]: 
+              - generic [ref=f2e266]: 
+              - generic [ref=f2e267]: 
+            - generic [ref=f2e268]:
+              - generic [ref=f2e269]: 
+              - generic [ref=f2e271]:
+                - heading "Akhmad Bisri" [level=4] [ref=f2e272]
+                - paragraph [ref=f2e273]: Local Guide
+            - generic [ref=f2e274]: Bersih.. Rapi.. Nyaman buat sekolah.. Insya Allah berkah barokah ilmu dan para gurunya. Masjidnya bersih, rapi..nyaman buat sholat Sekolah TK, SD, dan SMP Islam Terpadu yg berada di Bekasi. Lengkap dan mantapp
+          - generic [ref=f2e276]:
+            - generic [ref=f2e277]:
+              - generic [ref=f2e278]: 
+              - generic [ref=f2e279]: 
+              - generic [ref=f2e280]: 
+              - generic [ref=f2e281]: 
+              - generic [ref=f2e282]: 
+            - generic [ref=f2e283]:
+              - generic [ref=f2e284]: 
+              - generic [ref=f2e286]:
+                - heading "Tarmizi Fahmi" [level=4] [ref=f2e287]
+                - paragraph [ref=f2e288]: Local Guide
+            - generic [ref=f2e289]: Ya, sekolah Islami yg seperti ini yang harus di dukung oleh Umat Islam,sesuai dgn cita cita pemiliknya, dari pada di sekolahkan anak anak ke sekolah Non Muslim yg rawan pendangkalan akidah,pelayanan petugas cukup ramah dan dan cukup bersahabat. 👍👍👍
+          - generic [ref=f2e291]:
+            - generic [ref=f2e292]:
+              - generic [ref=f2e293]: 
+              - generic [ref=f2e294]: 
+              - generic [ref=f2e295]: 
+              - generic [ref=f2e296]: 
+              - generic [ref=f2e297]: 
+            - generic [ref=f2e298]:
+              - generic [ref=f2e299]: 
+              - generic [ref=f2e301]:
+                - heading "Rahma Ummuaiza&sarah" [level=4] [ref=f2e302]
+                - paragraph [ref=f2e303]: Local Guide
+            - generic [ref=f2e304]: Salaf school mashaa Allah alhamdulillah...banyak ngadain acara sekolah yg memberi byk kesempatan untuk siswanya brani tampil...sekolah sangat mendukung siswanya utk mengasah skill nya...recommended...my son is in here !
+          - generic [ref=f2e306]:
+            - generic [ref=f2e307]:
+              - generic [ref=f2e308]: 
+              - generic [ref=f2e309]: 
+              - generic [ref=f2e310]: 
+              - generic [ref=f2e311]: 
+              - generic [ref=f2e312]: 
+            - generic [ref=f2e313]:
+              - generic [ref=f2e314]: 
+              - generic [ref=f2e316]:
+                - heading "Akhmad Bisri" [level=4] [ref=f2e317]
+                - paragraph [ref=f2e318]: Local Guide
+            - generic [ref=f2e319]: Bersih.. Rapi.. Nyaman buat sekolah.. Insya Allah berkah barokah ilmu dan para gurunya. Masjidnya bersih, rapi..nyaman buat sholat Sekolah TK, SD, dan SMP Islam Terpadu yg berada di Bekasi. Lengkap dan mantapp
+          - generic [ref=f2e321]:
+            - generic [ref=f2e322]:
+              - generic [ref=f2e323]: 
+              - generic [ref=f2e324]: 
+              - generic [ref=f2e325]: 
+              - generic [ref=f2e326]: 
+              - generic [ref=f2e327]: 
+            - generic [ref=f2e328]:
+              - generic [ref=f2e329]: 
+              - generic [ref=f2e331]:
+                - heading "Tarmizi Fahmi" [level=4] [ref=f2e332]
+                - paragraph [ref=f2e333]: Local Guide
+            - generic [ref=f2e334]: Ya, sekolah Islami yg seperti ini yang harus di dukung oleh Umat Islam,sesuai dgn cita cita pemiliknya, dari pada di sekolahkan anak anak ke sekolah Non Muslim yg rawan pendangkalan akidah,pelayanan petugas cukup ramah dan dan cukup bersahabat. 👍👍👍
+          - generic [ref=f2e336]:
+            - generic [ref=f2e337]:
+              - generic [ref=f2e338]: 
+              - generic [ref=f2e339]: 
+              - generic [ref=f2e340]: 
+              - generic [ref=f2e341]: 
+              - generic [ref=f2e342]: 
+            - generic [ref=f2e343]:
+              - generic [ref=f2e344]: 
+              - generic [ref=f2e346]:
+                - heading "Rahma Ummuaiza&sarah" [level=4] [ref=f2e347]
+                - paragraph [ref=f2e348]: Local Guide
+            - generic [ref=f2e349]: Salaf school mashaa Allah alhamdulillah...banyak ngadain acara sekolah yg memberi byk kesempatan untuk siswanya brani tampil...sekolah sangat mendukung siswanya utk mengasah skill nya...recommended...my son is in here !
+          - generic [ref=f2e351]:
+            - generic [ref=f2e352]:
+              - generic [ref=f2e353]: 
+              - generic [ref=f2e354]: 
+              - generic [ref=f2e355]: 
+              - generic [ref=f2e356]: 
+              - generic [ref=f2e357]: 
+            - generic [ref=f2e358]:
+              - generic [ref=f2e359]: 
+              - generic [ref=f2e361]:
+                - heading "Akhmad Bisri" [level=4] [ref=f2e362]
+                - paragraph [ref=f2e363]: Local Guide
+            - generic [ref=f2e364]: Bersih.. Rapi.. Nyaman buat sekolah.. Insya Allah berkah barokah ilmu dan para gurunya. Masjidnya bersih, rapi..nyaman buat sholat Sekolah TK, SD, dan SMP Islam Terpadu yg berada di Bekasi. Lengkap dan mantapp
+          - generic [ref=f2e366]:
+            - generic [ref=f2e367]:
+              - generic [ref=f2e368]: 
+              - generic [ref=f2e369]: 
+              - generic [ref=f2e370]: 
+              - generic [ref=f2e371]: 
+              - generic [ref=f2e372]: 
+            - generic [ref=f2e373]:
+              - generic [ref=f2e374]: 
+              - generic [ref=f2e376]:
+                - heading "Tarmizi Fahmi" [level=4] [ref=f2e377]
+                - paragraph [ref=f2e378]: Local Guide
+            - generic [ref=f2e379]: Ya, sekolah Islami yg seperti ini yang harus di dukung oleh Umat Islam,sesuai dgn cita cita pemiliknya, dari pada di sekolahkan anak anak ke sekolah Non Muslim yg rawan pendangkalan akidah,pelayanan petugas cukup ramah dan dan cukup bersahabat. 👍👍👍
+          - generic [ref=f2e381]:
+            - generic [ref=f2e382]:
+              - generic [ref=f2e383]: 
+              - generic [ref=f2e384]: 
+              - generic [ref=f2e385]: 
+              - generic [ref=f2e386]: 
+              - generic [ref=f2e387]: 
+            - generic [ref=f2e388]:
+              - generic [ref=f2e389]: 
+              - generic [ref=f2e391]:
+                - heading "Rahma Ummuaiza&sarah" [level=4] [ref=f2e392]
+                - paragraph [ref=f2e393]: Local Guide
+            - generic [ref=f2e394]: Salaf school mashaa Allah alhamdulillah...banyak ngadain acara sekolah yg memberi byk kesempatan untuk siswanya brani tampil...sekolah sangat mendukung siswanya utk mengasah skill nya...recommended...my son is in here !
+  - contentinfo [ref=f2e395]:
+    - generic [ref=f2e397]:
+      - generic [ref=f2e398]:
+        - generic [ref=f2e399]:
+          - img "Pondok Modern" [ref=f2e400]
+          - generic [ref=f2e401]:
+            - generic [ref=f2e402]: DARUT TAUFIQ
+            - generic [ref=f2e403]: PONDOK PESANTREN
+        - list [ref=f2e404]:
+          - listitem [ref=f2e405]:
+            - link " +6282228880972" [ref=f2e406] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=f2e407]: 
+              - generic [ref=f2e408]: "+6282228880972"
+          - listitem [ref=f2e409]:
+            - link " info@daruttaufiq.com" [ref=f2e410] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=f2e411]: 
+              - generic [ref=f2e412]: info@daruttaufiq.com
+          - listitem [ref=f2e413]:
+            - link " (021) 82631191" [ref=f2e414] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=f2e415]: 
+              - generic [ref=f2e416]: (021) 82631191
+          - listitem [ref=f2e417]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=f2e418] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=f2e419]: 
+              - generic [ref=f2e420]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=f2e421]:
+        - heading "Profil" [level=4] [ref=f2e422]
+        - list [ref=f2e423]:
+          - listitem [ref=f2e424]:
+            - link "Sejarah Sekolah" [ref=f2e425] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=f2e426]:
+            - link "Manajemen" [ref=f2e427] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=f2e428]:
+            - link "Staff & Pengajar" [ref=f2e429] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=f2e430]:
+            - link "Nilai & Budaya" [ref=f2e431] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=f2e432]:
+        - heading "Informasi" [level=4] [ref=f2e433]
+        - list [ref=f2e434]:
+          - listitem [ref=f2e435]:
+            - link "Pendaftaran PPDB" [ref=f2e436] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=f2e437]:
+            - link "Program Unggulan" [ref=f2e438] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=f2e439]:
+            - link "Sarana & Fasilitas" [ref=f2e440] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=f2e441]:
+            - link "Biaya Pendidikan" [ref=f2e442] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=f2e443]:
+            - link "Frequently Asked Questions" [ref=f2e444] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=f2e445]:
+        - heading "Instagram" [level=4] [ref=f2e446]
+        - generic [ref=f2e447]:
+          - link "Instagram post " [ref=f2e448] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e449]
+            - generic [ref=f2e450]: 
+          - link "Instagram post " [ref=f2e452] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e453]
+            - generic [ref=f2e454]: 
+          - link "Instagram post " [ref=f2e456] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e457]
+            - generic [ref=f2e458]: 
+          - link "Instagram post " [ref=f2e460] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e461]
+            - generic [ref=f2e462]: 
+          - link "Instagram post " [ref=f2e464] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e465]
+            - generic [ref=f2e466]: 
+          - link "Instagram post " [ref=f2e468] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=f2e469]
+            - generic [ref=f2e470]: 
+    - generic [ref=f2e474]:
+      - paragraph [ref=f2e475]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=f2e476]:
+        - link "Instagram" [ref=f2e477] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=f2e478]: 
+        - link "TikTok" [ref=f2e479] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=f2e480]: 
+        - link "YouTube" [ref=f2e481] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=f2e482]: 
+        - link "Facebook" [ref=f2e483] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=f2e484]: 
+  - button "Open WhatsApp Chat" [ref=f2e486]:
+    - generic [ref=f2e487]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=f2e493] [cursor=pointer]

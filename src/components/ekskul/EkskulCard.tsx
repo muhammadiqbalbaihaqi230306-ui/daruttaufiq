@@ -6,23 +6,20 @@ export interface EkskulItem {
   image: string;
 }
 
-function EthnicStrip() {
+function EthnicBottomStrip() {
   return (
     <div
-      className="absolute left-0 top-0 bottom-0 w-[11px] sm:w-[13px] z-10 pointer-events-none select-none bg-repeat-y bg-left"
-      style={{ backgroundImage: "url('/images/ethnic-strip.svg')", backgroundSize: "100% auto" }}
+      className="absolute left-0 right-0 bottom-0 h-[11px] sm:h-[13px] z-10 pointer-events-none select-none bg-repeat-x bg-bottom"
+      style={{ backgroundImage: "url('/images/ethnic-strip-bottom.svg')", backgroundSize: "auto 100%" }}
     />
   );
 }
 
 export default function EkskulCard({ eskul }: { eskul: EkskulItem }) {
   return (
-    <div className="relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
-      {/* Pita Motif Sisi Kiri (Versi Indonesia LTR) */}
-      <EthnicStrip />
-
-      {/* Gambar Foto Dokumentasi: Langsung menempel di atas, kiri (sampai pita motif), dan kanan */}
-      <div className="relative w-full h-52 sm:h-56 bg-gray-100 flex-shrink-0">
+    <div className="relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-md transition-shadow">
+      {/* Gambar Foto Dokumentasi */}
+      <div className="relative w-full h-52 sm:h-56 bg-gray-100 shrink-0">
         <Image
           src={eskul.image}
           alt={eskul.title}
@@ -32,7 +29,7 @@ export default function EkskulCard({ eskul }: { eskul: EkskulItem }) {
       </div>
 
       {/* Konten Teks Card */}
-      <div className="pl-7 sm:pl-8 pr-6 pt-5 pb-6 flex-1 flex flex-col text-left">
+      <div className="px-6 pt-5 pb-8 sm:pb-9 flex-1 flex flex-col text-left">
         {/* Judul */}
         <h3 className="text-xl sm:text-2xl font-bold text-secondary leading-snug mb-2.5">
           {eskul.title}
@@ -43,6 +40,9 @@ export default function EkskulCard({ eskul }: { eskul: EkskulItem }) {
           {eskul.description}
         </p>
       </div>
+
+      {/* Pita Motif Sisi Bawah (Sama seperti Card Review) */}
+      <EthnicBottomStrip />
     </div>
   );
 }

@@ -1,0 +1,232 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link " +6282228880972" [ref=e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=e7]: 
+          - generic [ref=e8]: "+6282228880972"
+      - listitem [ref=e9]:
+        - link " info@daruttaufiq.com" [ref=e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=e11]: 
+          - generic [ref=e12]: info@daruttaufiq.com
+      - listitem [ref=e13]:
+        - generic [ref=e14]: 
+        - generic [ref=e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=e16]:
+      - listitem [ref=e17]:
+        - link "Instagram" [ref=e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e19]: 
+      - listitem [ref=e20]:
+        - link "TikTok" [ref=e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e22]: 
+      - listitem [ref=e23]:
+        - link "YouTube" [ref=e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e25]: 
+      - listitem [ref=e26]:
+        - link "Facebook" [ref=e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e28]: 
+  - banner [ref=e29]:
+    - generic [ref=e31]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=e32] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: DARUT TAUFIQ
+          - generic [ref=e36]: PONDOK PESANTREN
+      - navigation [ref=e37]:
+        - link "Beranda" [ref=e39] [cursor=pointer]:
+          - /url: /
+        - link "Profil " [ref=e41] [cursor=pointer]:
+          - /url: "#"
+          - text: Profil
+          - generic [ref=e42]: 
+        - link "Akademik " [ref=e44] [cursor=pointer]:
+          - /url: "#"
+          - text: Akademik
+          - generic [ref=e45]: 
+        - link "Unit " [ref=e47] [cursor=pointer]:
+          - /url: "#"
+          - text: Unit
+          - generic [ref=e48]: 
+        - link "Berita" [ref=e50] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=e52] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=e54] [cursor=pointer]:
+          - /url: /ppdb
+        - generic [ref=e55]:
+          - generic:
+            - generic: 
+            - textbox "Cari di Darut Taufiq..."
+          - button "Toggle Search" [ref=e56]:
+            - generic [ref=e57]: 
+      - text:  
+    - text:   
+  - main [ref=e58]:
+    - main [ref=e59]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "Home" [ref=e67] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e68]: 
+          - generic [ref=e69]: Akademik
+          - generic [ref=e70]: 
+          - generic [ref=e71]: FAQ
+        - heading "Our Management" [level=1] [ref=e72]
+        - paragraph [ref=e73]: Mengenal sosok penuh dedikasi di balik pengelolaan Pondok Pesantren Darut Taufiq yang berkomitmen penuh dalam membangun institusi pendidikan Islam terpadu berkualitas.
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - heading "Pusat Informasi" [level=2] [ref=e78]
+          - paragraph [ref=e79]: Punya pertanyaan lain? Jangan ragu untuk menghubungi kami melalui halaman Kontak atau WhatsApp admin PPDB.
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - button "Bagaimana cara mendaftar menjadi santri baru? " [ref=e82]:
+              - generic [ref=e83]: Bagaimana cara mendaftar menjadi santri baru?
+              - generic [ref=e84]: 
+            - generic [ref=e86]: Pendaftaran dapat dilakukan secara online melalui website PPDB kami di ppdb.arkia.id atau datang langsung ke sekretariat pendaftaran di Pondok Pesantren Darut Taufiq. Pastikan untuk menyiapkan berkas dokumen seperti pas foto, fotokopi KK, Akte Kelahiran, dan rapor terakhir.
+          - generic [ref=e89]:
+            - button "Kapan jadwal pendaftaran santri baru dibuka? " [ref=e90]:
+              - generic [ref=e91]: Kapan jadwal pendaftaran santri baru dibuka?
+              - generic [ref=e92]: 
+            - generic: Pendaftaran santri baru Gelombang 1 biasanya dibuka mulai bulan Oktober hingga Desember, dan Gelombang 2 mulai bulan Januari hingga Maret (jika kuota masih tersedia). Informasi lengkap selalu kami perbarui di website dan sosial media resmi kami.
+          - generic [ref=e95]:
+            - button "Apakah santri diperbolehkan membawa HP atau Laptop? " [ref=e96]:
+              - generic [ref=e97]: Apakah santri diperbolehkan membawa HP atau Laptop?
+              - generic [ref=e98]: 
+            - generic: Santri tidak diperkenankan membawa HP (Handphone) selama berada di lingkungan pondok pesantren untuk menjaga fokus belajar. Laptop hanya diperbolehkan bagi santri yang membutuhkan untuk keperluan praktikum atau ekstrakurikuler tertentu dengan izin dan pengawasan ketat dari ustadz pembimbing.
+          - generic [ref=e101]:
+            - button "Apa saja bahasa yang digunakan sehari-hari? " [ref=e102]:
+              - generic [ref=e103]: Apa saja bahasa yang digunakan sehari-hari?
+              - generic [ref=e104]: 
+            - generic: Pondok Pesantren Darut Taufiq menerapkan sistem bilingual. Bahasa resmi yang digunakan sehari-hari adalah Bahasa Arab dan Bahasa Inggris. Santri baru akan diberikan masa penyesuaian (language training) selama beberapa bulan pertama.
+          - generic [ref=e107]:
+            - button "Bagaimana aturan penjengukan santri oleh orang tua? " [ref=e108]:
+              - generic [ref=e109]: Bagaimana aturan penjengukan santri oleh orang tua?
+              - generic [ref=e110]: 
+            - generic: Orang tua atau wali dapat menjenguk santri pada hari Ahad minggu ke-2 dan ke-4 setiap bulannya, mulai pukul 08.00 hingga 16.00 WIB. Penjengukan di luar jadwal tersebut harus dengan izin khusus dari pengurus kesantrian.
+          - generic [ref=e113]:
+            - button "Apakah tersedia program beasiswa pendidikan? " [ref=e114]:
+              - generic [ref=e115]: Apakah tersedia program beasiswa pendidikan?
+              - generic [ref=e116]: 
+            - generic: Ya, kami menyediakan beasiswa prestasi bagi santri yang memiliki hafalan Al-Qur'an minimal 5 juz, beasiswa akademik, serta beasiswa keringanan biaya bagi santri yatim dan dhuafa yang lulus seleksi administrasi.
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - heading "Masih ada pertanyaan?" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Tim PPDB kami siap membantu menjawab pertanyaan Anda dengan senang hati.
+          - link "Hubungi Admin PPDB" [ref=e123] [cursor=pointer]:
+            - /url: https://wa.me/6282228880972
+  - contentinfo [ref=e124]:
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - img "Pondok Modern" [ref=e129]
+          - generic [ref=e130]:
+            - generic [ref=e131]: DARUT TAUFIQ
+            - generic [ref=e132]: PONDOK PESANTREN
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - link " +6282228880972" [ref=e135] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=e136]: 
+              - generic [ref=e137]: "+6282228880972"
+          - listitem [ref=e138]:
+            - link " info@daruttaufiq.com" [ref=e139] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=e140]: 
+              - generic [ref=e141]: info@daruttaufiq.com
+          - listitem [ref=e142]:
+            - link " (021) 82631191" [ref=e143] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=e144]: 
+              - generic [ref=e145]: (021) 82631191
+          - listitem [ref=e146]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=e147] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=e148]: 
+              - generic [ref=e149]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=e150]:
+        - heading "Profil" [level=4] [ref=e151]
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "Sejarah Sekolah" [ref=e154] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=e155]:
+            - link "Manajemen" [ref=e156] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=e157]:
+            - link "Staff & Pengajar" [ref=e158] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=e159]:
+            - link "Nilai & Budaya" [ref=e160] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=e161]:
+        - heading "Informasi" [level=4] [ref=e162]
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - link "Pendaftaran PPDB" [ref=e165] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=e166]:
+            - link "Program Unggulan" [ref=e167] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=e168]:
+            - link "Sarana & Fasilitas" [ref=e169] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=e170]:
+            - link "Biaya Pendidikan" [ref=e171] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=e172]:
+            - link "Frequently Asked Questions" [ref=e173] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e174]:
+        - heading "Instagram" [level=4] [ref=e175]
+        - generic [ref=e176]:
+          - link "Instagram post " [ref=e177] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e178]
+            - generic [ref=e179]: 
+          - link "Instagram post " [ref=e181] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e182]
+            - generic [ref=e183]: 
+          - link "Instagram post " [ref=e185] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e186]
+            - generic [ref=e187]: 
+          - link "Instagram post " [ref=e189] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e190]
+            - generic [ref=e191]: 
+          - link "Instagram post " [ref=e193] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e194]
+            - generic [ref=e195]: 
+          - link "Instagram post " [ref=e197] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e198]
+            - generic [ref=e199]: 
+    - generic [ref=e203]:
+      - paragraph [ref=e204]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=e205]:
+        - link "Instagram" [ref=e206] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e207]: 
+        - link "TikTok" [ref=e208] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e209]: 
+        - link "YouTube" [ref=e210] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e211]: 
+        - link "Facebook" [ref=e212] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e213]: 
+  - button "Open WhatsApp Chat" [ref=e215]:
+    - generic [ref=e216]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=e222] [cursor=pointer]

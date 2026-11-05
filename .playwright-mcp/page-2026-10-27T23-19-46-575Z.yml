@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link " +6282228880972" [ref=e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=e7]: 
+          - generic [ref=e8]: "+6282228880972"
+      - listitem [ref=e9]:
+        - link " info@daruttaufiq.com" [ref=e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=e11]: 
+          - generic [ref=e12]: info@daruttaufiq.com
+      - listitem [ref=e13]:
+        - generic [ref=e14]: 
+        - generic [ref=e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=e16]:
+      - listitem [ref=e17]:
+        - link "Instagram" [ref=e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e19]: 
+      - listitem [ref=e20]:
+        - link "TikTok" [ref=e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e22]: 
+      - listitem [ref=e23]:
+        - link "YouTube" [ref=e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e25]: 
+      - listitem [ref=e26]:
+        - link "Facebook" [ref=e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e28]: 
+  - banner [ref=e29]:
+    - generic [ref=e31]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=e32] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: DARUT TAUFIQ
+          - generic [ref=e36]: PONDOK PESANTREN
+      - navigation [ref=e37]:
+        - link "Beranda" [ref=e39] [cursor=pointer]:
+          - /url: /
+        - link "Profil " [ref=e41] [cursor=pointer]:
+          - /url: "#"
+          - text: Profil
+          - generic [ref=e42]: 
+        - link "Akademik " [ref=e44] [cursor=pointer]:
+          - /url: "#"
+          - text: Akademik
+          - generic [ref=e45]: 
+        - link "Unit " [ref=e47] [cursor=pointer]:
+          - /url: "#"
+          - text: Unit
+          - generic [ref=e48]: 
+        - link "Berita" [ref=e50] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=e52] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=e54] [cursor=pointer]:
+          - /url: /ppdb
+        - generic [ref=e55]:
+          - generic:
+            - generic: 
+            - textbox "Cari di Darut Taufiq..."
+          - button "Toggle Search" [ref=e56]:
+            - generic [ref=e57]: 
+      - text:  
+    - text:   
+  - main [ref=e58]:
+    - main [ref=e59]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "Home" [ref=e67] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e68]: 
+          - generic [ref=e69]: Akademik
+          - generic [ref=e70]: 
+          - generic [ref=e71]: Ekskul
+        - heading "Ekstrakurikuler" [level=1] [ref=e72]
+        - paragraph [ref=e73]: Mewadahi minat, bakat, kebugaran fisik, dan karakter kepemimpinan santri melalui beragam kegiatan ekstrakurikuler yang aktif, positif, dan menyenangkan.
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - heading "Pilihan Ekstrakurikuler" [level=2] [ref=e78]
+          - paragraph [ref=e79]: Berbagai kegiatan tambahan yang diselenggarakan untuk menggali dan mengembangkan potensi kreatif, olahraga, dan keterampilan leadership para santri.
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - img "Bahasa Jepang" [ref=e83]
+            - generic [ref=e84]:
+              - heading "Bahasa Jepang" [level=3] [ref=e85]
+              - paragraph [ref=e86]: Mengenal bahasa dan budaya Jepang melalui pembelajaran huruf Hiragana, Katakana, percakapan praktis (Kaiwa), dan pemahaman etika kedisiplinan.
+          - generic [ref=e87]:
+            - img "Berenang" [ref=e89]
+            - generic [ref=e90]:
+              - heading "Berenang" [level=3] [ref=e91]
+              - paragraph [ref=e92]: Olahraga sunnah yang melatih kebugaran jasmani, kekuatan stamina, ketahanan pernapasan, dan kelenturan tubuh di bawah bimbingan pelatih profesional.
+          - generic [ref=e93]:
+            - img "Bulu Tangkis" [ref=e95]
+            - generic [ref=e96]:
+              - heading "Bulu Tangkis" [level=3] [ref=e97]
+              - paragraph [ref=e98]: Melatih kelincahan, refleks cepat, koordinasi motorik, serta sportivitas santri melalui olahraga bulu tangkis yang seru dan dinamis.
+          - generic [ref=e99]:
+            - img "Pencak Silat" [ref=e101]
+            - generic [ref=e102]:
+              - heading "Pencak Silat" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Seni bela diri warisan luhur nusantara untuk membentuk ketangguhan fisik, pengendalian diri, adab akhlakul karimah, dan pertahanan diri santri.
+          - generic [ref=e105]:
+            - img "Futsal" [ref=e107]
+            - generic [ref=e108]:
+              - heading "Futsal" [level=3] [ref=e109]
+              - paragraph [ref=e110]: Wadah menyalurkan hobi sepak bola santri, mengasah kelincahan dribbling, ketepatan tendangan, strategi taktik, dan kekompakan kerjasama tim.
+          - generic [ref=e111]:
+            - img "Basket" [ref=e113]
+            - generic [ref=e114]:
+              - heading "Basket" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Mengembangkan ketangkasan gerak, postur fisik yang tegap, strategi kerjasama tim, serta pengambilan keputusan yang cepat dan tepat di lapangan.
+  - contentinfo [ref=e117]:
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - img "Pondok Modern" [ref=e122]
+          - generic [ref=e123]:
+            - generic [ref=e124]: DARUT TAUFIQ
+            - generic [ref=e125]: PONDOK PESANTREN
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - link " +6282228880972" [ref=e128] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=e129]: 
+              - generic [ref=e130]: "+6282228880972"
+          - listitem [ref=e131]:
+            - link " info@daruttaufiq.com" [ref=e132] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=e133]: 
+              - generic [ref=e134]: info@daruttaufiq.com
+          - listitem [ref=e135]:
+            - link " (021) 82631191" [ref=e136] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=e137]: 
+              - generic [ref=e138]: (021) 82631191
+          - listitem [ref=e139]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=e140] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=e141]: 
+              - generic [ref=e142]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=e143]:
+        - heading "Profil" [level=4] [ref=e144]
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - link "Sejarah Sekolah" [ref=e147] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=e148]:
+            - link "Manajemen" [ref=e149] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=e150]:
+            - link "Staff & Pengajar" [ref=e151] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=e152]:
+            - link "Nilai & Budaya" [ref=e153] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=e154]:
+        - heading "Informasi" [level=4] [ref=e155]
+        - list [ref=e156]:
+          - listitem [ref=e157]:
+            - link "Pendaftaran PPDB" [ref=e158] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=e159]:
+            - link "Program Unggulan" [ref=e160] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=e161]:
+            - link "Sarana & Fasilitas" [ref=e162] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=e163]:
+            - link "Biaya Pendidikan" [ref=e164] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=e165]:
+            - link "Frequently Asked Questions" [ref=e166] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e167]:
+        - heading "Instagram" [level=4] [ref=e168]
+        - generic [ref=e169]:
+          - link "Instagram post " [ref=e170] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e171]
+            - generic [ref=e172]: 
+          - link "Instagram post " [ref=e174] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e175]
+            - generic [ref=e176]: 
+          - link "Instagram post " [ref=e178] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e179]
+            - generic [ref=e180]: 
+          - link "Instagram post " [ref=e182] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e183]
+            - generic [ref=e184]: 
+          - link "Instagram post " [ref=e186] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e187]
+            - generic [ref=e188]: 
+          - link "Instagram post " [ref=e190] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e191]
+            - generic [ref=e192]: 
+    - generic [ref=e196]:
+      - paragraph [ref=e197]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=e198]:
+        - link "Instagram" [ref=e199] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e200]: 
+        - link "TikTok" [ref=e201] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e202]: 
+        - link "YouTube" [ref=e203] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e204]: 
+        - link "Facebook" [ref=e205] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e206]: 
+  - button "Open WhatsApp Chat" [ref=e208]:
+    - generic [ref=e209]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=e215] [cursor=pointer]

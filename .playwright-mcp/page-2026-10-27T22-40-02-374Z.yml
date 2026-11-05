@@ -1,0 +1,230 @@
+- generic [active] [ref=e1]:
+  - text:       
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=e6]
+        - generic [ref=e7]:
+          - generic [ref=e8]: DARUT TAUFIQ
+          - generic [ref=e9]: PONDOK PESANTREN
+      - text:     
+      - generic [ref=e10]:
+        - button "Toggle Search" [ref=e11]:
+          - generic [ref=e12]: 
+        - button "Toggle Menu" [ref=e13]:
+          - generic [ref=e14]: 
+    - generic:
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - link "Beranda":
+                - /url: /
+          - generic:
+            - generic:
+              - link "Profil":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Akademik":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Unit":
+                - /url: "#"
+              - button ""
+          - generic:
+            - generic:
+              - link "Berita":
+                - /url: /berita
+          - generic:
+            - generic:
+              - link "Kontak":
+                - /url: /kontak
+          - generic:
+            - generic:
+              - link "PPDB":
+                - /url: /ppdb
+  - main [ref=e15]:
+    - main [ref=e16]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - link "Home" [ref=e24] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e25]: 
+          - generic [ref=e26]: Kontak
+        - heading "Hubungi Kami" [level=1] [ref=e27]
+        - paragraph [ref=e28]: Kami siap membantu menjawab pertanyaan Anda seputar program pendidikan, pendaftaran, maupun informasi lainnya tentang Pondok Pesantren Darut Taufiq.
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - 'link " Telepon : (021) 82631191" [ref=e33] [cursor=pointer]':
+            - /url: tel:02182631191
+            - generic [ref=e34]: 
+            - generic [ref=e36]:
+              - text: "Telepon :"
+              - generic [ref=e37]: (021) 82631191
+          - 'link " WhatsApp : +62 822 2888 0972" [ref=e38] [cursor=pointer]':
+            - /url: https://wa.me/6282228880972
+            - generic [ref=e39]: 
+            - generic [ref=e41]:
+              - text: "WhatsApp :"
+              - generic [ref=e42]: +62 822 2888 0972
+          - 'link " Email : info@daruttaufiq.com" [ref=e43] [cursor=pointer]':
+            - /url: mailto:info@daruttaufiq.com
+            - generic [ref=e44]: 
+            - generic [ref=e46]:
+              - text: "Email :"
+              - generic [ref=e47]: info@daruttaufiq.com
+          - generic [ref=e48]:
+            - generic [ref=e49]: 
+            - generic [ref=e51]:
+              - text: "Jam Operasional :"
+              - generic [ref=e52]: Senin - Sabtu 08:00 - 15:00 WIB
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - heading "Kirim Pesan" [level=2] [ref=e56]
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - text: Nama Lengkap
+                  - textbox "Nama Lengkap" [ref=e60]:
+                    - /placeholder: John Doe
+                - generic [ref=e61]:
+                  - text: Alamat Email
+                  - textbox "Alamat Email" [ref=e62]:
+                    - /placeholder: john@example.com
+              - generic [ref=e63]:
+                - text: Subjek
+                - textbox "Subjek" [ref=e64]:
+                  - /placeholder: Informasi Pendaftaran
+              - generic [ref=e65]:
+                - text: Pesan
+                - textbox "Pesan" [ref=e66]:
+                  - /placeholder: Tulis pesan Anda...
+              - button "Kirim Pesan" [ref=e67]
+          - generic [ref=e68]:
+            - iframe [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: 
+              - generic [ref=e74]:
+                - heading "Alamat Lengkap" [level=3] [ref=e75]
+                - paragraph [ref=e76]: Jl. Kb. Baru Metros No. 59, Semper Barat, CilincingJakarta Utara, DKI Jakarta 14130
+  - contentinfo [ref=e77]:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - img "Pondok Modern" [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]: DARUT TAUFIQ
+            - generic [ref=e85]: PONDOK PESANTREN
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - link " +6282228880972" [ref=e88] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=e89]: 
+              - generic [ref=e90]: "+6282228880972"
+          - listitem [ref=e91]:
+            - link " info@daruttaufiq.com" [ref=e92] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=e93]: 
+              - generic [ref=e94]: info@daruttaufiq.com
+          - listitem [ref=e95]:
+            - link " (021) 82631191" [ref=e96] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=e97]: 
+              - generic [ref=e98]: (021) 82631191
+          - listitem [ref=e99]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=e100] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=e101]: 
+              - generic [ref=e102]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=e103]:
+        - heading "Profil" [level=4] [ref=e104]
+        - list [ref=e105]:
+          - listitem [ref=e106]:
+            - link "Sejarah Sekolah" [ref=e107] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=e108]:
+            - link "Manajemen" [ref=e109] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=e110]:
+            - link "Staff & Pengajar" [ref=e111] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=e112]:
+            - link "Nilai & Budaya" [ref=e113] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=e114]:
+        - heading "Informasi" [level=4] [ref=e115]
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - link "Pendaftaran PPDB" [ref=e118] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=e119]:
+            - link "Program Unggulan" [ref=e120] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=e121]:
+            - link "Sarana & Fasilitas" [ref=e122] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=e123]:
+            - link "Biaya Pendidikan" [ref=e124] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=e125]:
+            - link "Frequently Asked Questions" [ref=e126] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e127]:
+        - heading "Instagram" [level=4] [ref=e128]
+        - generic [ref=e129]:
+          - link "Instagram post " [ref=e130] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e131]
+            - generic [ref=e132]: 
+          - link "Instagram post " [ref=e134] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e135]
+            - generic [ref=e136]: 
+          - link "Instagram post " [ref=e138] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e139]
+            - generic [ref=e140]: 
+          - link "Instagram post " [ref=e142] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e143]
+            - generic [ref=e144]: 
+          - link "Instagram post " [ref=e146] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e147]
+            - generic [ref=e148]: 
+          - link "Instagram post " [ref=e150] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e151]
+            - generic [ref=e152]: 
+    - generic [ref=e156]:
+      - paragraph [ref=e157]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=e158]:
+        - link "Instagram" [ref=e159] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e160]: 
+        - link "TikTok" [ref=e161] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e162]: 
+        - link "YouTube" [ref=e163] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e164]: 
+        - link "Facebook" [ref=e165] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e166]: 
+  - button "Open WhatsApp Chat" [ref=e168]:
+    - generic [ref=e169]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]:
+    - generic [ref=e178]:
+      - text: Compiling
+      - generic [ref=e179]:
+        - generic [ref=e180]: .
+        - generic [ref=e181]: .
+        - generic [ref=e182]: .
+  - alert [ref=e183]

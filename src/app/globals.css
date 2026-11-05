@@ -86,3 +86,35 @@
 .swiper-pagination-bullet-active {
   background: var(--color-primary) !important;
 }
+
+/* Print Optimization */
+@media print {
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Sembunyikan elemen navigasi & tombol mengambang saat cetak PDF */
+  header,
+  nav,
+  footer,
+  .print\:hidden,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #1a202c !important;
+  }
+
+  img,
+  article,
+  figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+

@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
   );
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-5 right-5 z-50 print:hidden">
       {/* Chat Bubble */}
       {isOpen && (
         <div className="mb-4 w-80 bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in-up">

@@ -190,7 +190,7 @@ export default function KontakPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+              <div className="flex items-start gap-4 px-2 py-1">
                 <div className="text-primary text-2xl shrink-0 mt-0.5">
                   <FaMapMarkerAlt />
                 </div>

@@ -13,28 +13,70 @@ const gelombang = [
     nama: "Gelombang 1 (Early Bird)",
     periode: "Oktober - Desember 2026",
     status: "Dibuka",
+    badge: "Recommended",
     isActive: true,
-    promo: "Potongan Uang Gedung 20%",
-    kuota: "Kuota Terbatas (30 Santri/Kelas)",
+    strikethrough: "Normal",
+    diskon: "Diskon 20%",
+    subtext: "Potongan Uang Gedung • Periode Okt - Des 2026",
+    kuotaPill: "Kuota Terbatas (30 Santri/Kelas)",
     keterangan: "Pendaftaran gelombang utama dengan fasilitas prioritas pemilihan kamar & beasiswa prestasi.",
+    buttonText: "Daftar Gelombang Ini",
+    buttonHref: "/ppdb/daftar?gelombang=1",
+    features: [
+      "Potongan 20% Uang Gedung / Pangkal",
+      "Prioritas pemilihan kamar asrama santri",
+      "Akses Jalur Beasiswa Tahfidz & Prestasi",
+      "Biaya formulir & administrasi awal",
+      "Gratis tes pemetaan tahfidz & minat bakat",
+      "Paket seragam & perlengkapan santri",
+    ],
+    footnote: "*Promo berlaku selama kuota Gelombang 1 tersedia",
   },
   {
     nama: "Gelombang 2 (Reguler)",
     periode: "Januari - Maret 2027",
     status: "Segera Dibuka",
+    badge: "Segera Dibuka",
     isActive: false,
-    promo: "Potongan Uang Gedung 10%",
-    kuota: "Sisa Kuota Gelombang 1",
+    strikethrough: "Normal",
+    diskon: "Diskon 10%",
+    subtext: "Potongan Uang Gedung • Periode Jan - Mar 2027",
+    kuotaPill: "Sisa Kuota Gelombang 1",
     keterangan: "Pendaftaran gelombang reguler sesuai sisa kuota yang tersedia.",
+    buttonText: "Segera Dibuka",
+    buttonHref: "#",
+    features: [
+      "Potongan 10% Uang Gedung / Pangkal",
+      "Pemilihan kamar sesuai sisa kuota",
+      "Tes seleksi akademik & pemetaan Al-Qur'an",
+      "Wawancara calon santri & wali",
+      "Sisa kuota kelas dari Gelombang 1",
+      "+ Semua fasilitas standar santri baru",
+    ],
+    footnote: "*Dibuka resmi setelah Gelombang 1 selesai",
   },
   {
     nama: "Gelombang 3 (Terakhir)",
     periode: "April - Mei 2027",
     status: "Akan Datang",
+    badge: "Akan Datang",
     isActive: false,
-    promo: "Biaya Normal",
-    kuota: "Sisa Kuota Terakhir",
+    strikethrough: "",
+    diskon: "Biaya Normal",
+    subtext: "Tarif Standar • Periode Apr - Mei 2027",
+    kuotaPill: "Sisa Kuota Terakhir",
     keterangan: "Pendaftaran ditutup sewaktu-waktu apabila kuota seluruh kelas telah terpenuhi.",
+    buttonText: "Akan Datang",
+    buttonHref: "#",
+    features: [
+      "Biaya pendidikan & pendaftaran normal",
+      "Penempatan kamar berdasarkan sisa kursi",
+      "Tes pemetaan Al-Qur'an & wawancara",
+      "Verifikasi berkas administrasi",
+      "Ditutup sewaktu-waktu bila kuota penuh",
+      "+ Semua fasilitas standar santri baru",
+    ],
+    footnote: "*Pendaftaran otomatis ditutup jika kuota terpenuhi",
   },
 ];
 
@@ -117,7 +159,6 @@ const unitPilihan = [
     jenjang: "Sekolah Dasar Islam Terpadu (Kelas 1 - 6)",
     fokus: ["Target Tahfidz 3-5 Juz", "Kurikulum Terpadu & Cambridge", "Dasar Coding & Robotika", "Kelas Terpisah Putra/Putri"],
     href: "/sdit",
-    tag: "Fullday School",
     logo: "/images/sdit.png",
   },
   {
@@ -125,7 +166,6 @@ const unitPilihan = [
     jenjang: "Sekolah Menengah Pertama (Kelas 7 - 9)",
     fokus: ["Target Tahfidz 10-30 Juz", "Bahasa Arab & Inggris Aktif", "Asrama Putra & Putri Mandiri", "Kajian Kitab & Kurikulum Nasional"],
     href: "/smpit",
-    tag: "Boarding & Fullday",
     logo: "/images/smpit.png",
   },
 ];
@@ -165,9 +205,9 @@ export default function PPDBPage() {
       <section className="relative z-30 -mt-16 sm:-mt-20 lg:-mt-24 px-[13px] sm:px-[21px] lg:px-[29px]">
         <div className="w-full max-w-[1406px] mx-auto bg-white rounded-t-2xl sm:rounded-t-3xl lg:rounded-t-[2.5rem] pt-10 sm:pt-12 lg:pt-16 px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
 
-          {/* Section: Status Gelombang */}
+          {/* Section: Status Gelombang (Modern SaaS Pricing Card Style) */}
           <div>
-            <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-secondary">
                 Gelombang Pendaftaran Santri Baru
               </h2>
@@ -176,70 +216,119 @@ export default function PPDBPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
               {gelombang.map((item, idx) => (
                 <div
                   key={idx}
-                  className={`rounded-2xl p-6 lg:p-8 flex flex-col justify-between border transition-all relative ${
+                  className={`rounded-3xl p-6 lg:p-7 flex flex-col justify-between transition-all duration-200 relative bg-white h-full ${
                     item.isActive
-                      ? "border-primary bg-primary/5 shadow-xl scale-[1.02]"
-                      : "border-gray-100 bg-white shadow-sm hover:border-gray-200"
+                      ? "border-2 border-primary shadow-lg ring-1 ring-primary/20"
+                      : "border border-gray-200 hover:border-gray-300 shadow-sm hover:shadow-md"
                   }`}
                 >
-                  {item.isActive && (
-                    <span className="absolute -top-3.5 right-6 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wider">
-                      Sedang Aktif
-                    </span>
+                  <div className="flex-1 flex flex-col">
+                    {/* Header Row: Title & Badge */}
+                    <div className="flex items-center justify-between gap-2 mb-4 h-8">
+                      <h3 className="text-base sm:text-lg font-bold text-secondary tracking-tight">
+                        {item.nama}
+                      </h3>
+                      {item.isActive ? (
+                        <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 shrink-0">
+                          {item.badge}
+                        </span>
+                      ) : (
+                        <span className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-gray-100 text-gray-500 shrink-0">
+                          {item.badge}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Pricing / Promo Block */}
+                    <div className="mb-4">
+                      <div className="h-10 flex items-baseline gap-2">
+                        {item.strikethrough && (
+                          <span className="text-gray-400 line-through text-lg sm:text-xl font-medium">
+                            {item.strikethrough}
+                          </span>
+                        )}
+                        <span className="text-3xl sm:text-4xl font-extrabold text-secondary tracking-tight">
+                          {item.diskon}
+                        </span>
+                      </div>
+                      <p className="text-xs text-text-muted mt-1 leading-relaxed h-5 flex items-center">
+                        {item.subtext}
+                      </p>
+                    </div>
+
+                    {/* Key Highlight Pill with Circle Plus Icon */}
+                    <div className="h-7 flex items-center gap-2.5 text-xs sm:text-[13px] font-bold text-secondary mb-5">
+                      <div className="w-4 h-4 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 text-[10px] font-bold">
+                        +
+                      </div>
+                      <span className="truncate">{item.kuotaPill}</span>
+                    </div>
+
+                    {/* Action Button */}
+                    <div className="mb-6">
+                      {item.isActive ? (
+                        <Link
+                          href={item.buttonHref}
+                          className="w-full h-11 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl transition-all shadow-sm hover:shadow-md text-sm flex items-center justify-center"
+                        >
+                          {item.buttonText}
+                        </Link>
+                      ) : (
+                        <button
+                          disabled
+                          className={`w-full h-11 font-semibold rounded-xl text-sm flex items-center justify-center cursor-not-allowed ${
+                            item.status === "Segera Dibuka"
+                              ? "bg-secondary text-white opacity-85"
+                              : "bg-gray-100 text-gray-400"
+                          }`}
+                        >
+                          {item.buttonText}
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Feature Checklist */}
+                    <ul className="space-y-3 text-xs sm:text-[13px] text-gray-700 font-normal border-t border-gray-100 pt-6">
+                      {item.features.map((feat, fIdx) => {
+                        const isPlus = feat.startsWith("+");
+                        return (
+                          <li key={fIdx} className="flex items-center gap-2.5 min-h-[22px]">
+                            {isPlus ? (
+                              <span className="text-gray-400 font-bold shrink-0 text-xs">+</span>
+                            ) : (
+                              <svg
+                                className="w-3.5 h-3.5 text-secondary shrink-0"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2.5}
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M5 13l4 4L19 7"
+                                />
+                              </svg>
+                            )}
+                            <span className={isPlus ? "text-gray-500 font-medium" : "text-gray-700"}>
+                              {isPlus ? feat.replace(/^\+\s*/, "") : feat}
+                            </span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+
+                  {/* Footnote Note at Card Bottom */}
+                  {item.footnote && (
+                    <div className="mt-auto pt-6 text-[11px] text-gray-400 italic">
+                      {item.footnote}
+                    </div>
                   )}
-
-                  <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className={`text-xs font-bold px-3 py-1 rounded-full ${
-                        item.isActive ? "bg-primary text-white" : "bg-gray-100 text-gray-600"
-                      }`}>
-                        {item.status}
-                      </span>
-                      <span className="text-xs text-text-muted flex items-center gap-1 font-medium">
-                        <FaCalendarAlt className="text-primary" /> {item.periode}
-                      </span>
-                    </div>
-
-                    <h3 className="text-lg lg:text-xl font-bold text-secondary mb-2">
-                      {item.nama}
-                    </h3>
-                    <p className="text-xs text-text-muted leading-relaxed mb-4">
-                      {item.keterangan}
-                    </p>
-
-                    <div className="space-y-2 py-3 border-t border-b border-gray-100 text-xs">
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-500">Keuntungan:</span>
-                        <span className="font-bold text-emerald-600">{item.promo}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-500">Kapasitas:</span>
-                        <span className="font-semibold text-secondary">{item.kuota}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    {item.isActive ? (
-                      <Link
-                        href={`/ppdb/daftar?gelombang=${idx + 1}`}
-                        className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 rounded-xl transition-all shadow-md text-center block text-sm"
-                      >
-                        Daftar Gelombang Ini
-                      </Link>
-                    ) : (
-                      <button
-                        disabled
-                        className="w-full bg-gray-100 text-gray-400 font-medium py-3 rounded-xl text-center block text-sm cursor-not-allowed"
-                      >
-                        {item.status}
-                      </button>
-                    )}
-                  </div>
                 </div>
               ))}
             </div>
@@ -272,21 +361,19 @@ export default function PPDBPage() {
                   className="rounded-2xl border border-gray-100 hover:border-primary/40 bg-surface/50 hover:bg-white p-7 transition-all shadow-sm hover:shadow-xl flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/10 text-primary">
-                        {unit.tag}
-                      </span>
+                    <div className="flex items-start justify-between gap-4 mb-5">
+                      <div>
+                        <h3 className="text-xl font-bold text-secondary mb-1">
+                          {unit.nama}
+                        </h3>
+                        <p className="text-xs text-text-muted">
+                          {unit.jenjang}
+                        </p>
+                      </div>
                       <div className="w-10 h-10 relative bg-white rounded-xl p-1 shadow-sm border border-gray-100 flex items-center justify-center shrink-0">
                         <Image src={unit.logo} alt={unit.nama} fill className="object-contain p-1" />
                       </div>
                     </div>
-
-                    <h3 className="text-xl font-bold text-secondary mb-1">
-                      {unit.nama}
-                    </h3>
-                    <p className="text-xs text-text-muted mb-5">
-                      {unit.jenjang}
-                    </p>
 
                     <h4 className="text-xs font-semibold text-secondary uppercase tracking-wider mb-3">
                       Program Unggulan:
@@ -324,7 +411,7 @@ export default function PPDBPage() {
       </section>
 
       {/* Section: Alur Pendaftaran (Full-Width White Background with Subtle Web-Themed Line Art) */}
-      <section id="alur" className="w-full bg-white pt-20 lg:pt-28 pb-0 relative overflow-hidden">
+      <section id="alur" className="w-full bg-white pt-20 lg:pt-28 pb-16 lg:pb-24 relative overflow-hidden">
         {/* Background Decorative Lines & Geometric Wave Art (Subtle Web Colors) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
           {/* Subtle geometric line grid accent in primary teal */}
@@ -463,7 +550,7 @@ export default function PPDBPage() {
       </section>
 
       {/* Konten Utama (Bagian 2: Persyaratan, Biaya, Konsultasi) */}
-      <section className="w-full bg-white pt-12 lg:pt-16 pb-16 lg:pb-24">
+      <section className="w-full bg-white pt-16 lg:pt-20 pb-16 lg:pb-24">
         <div className="w-full max-w-[1406px] mx-auto px-6 lg:px-12 xl:px-16 space-y-16 lg:space-y-20">
 
           {/* Section: Syarat & Dokumen Pendaftaran */}
@@ -498,14 +585,14 @@ export default function PPDBPage() {
               ))}
             </div>
 
-            <div className="mt-10 bg-amber-50 border border-amber-200 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center shrink-0">
+            <div className="mt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 px-1">
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm">
                   <FaAward className="text-lg" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-amber-900 text-sm">Jalur Beasiswa Prestasi & Tahfidz</h4>
-                  <p className="text-xs text-amber-800">
+                  <h4 className="font-bold text-secondary text-sm md:text-[15px]">Jalur Beasiswa Prestasi & Tahfidz</h4>
+                  <p className="text-xs text-text-muted mt-0.5">
                     Bagi calon santri yang memiliki hafalan minimal 3 Juz atau juara olimpiade/kejuaraan tingkat kota/provinsi, tersedia beasiswa khusus uang pangkal.
                   </p>
                 </div>
@@ -513,7 +600,7 @@ export default function PPDBPage() {
               <Link
                 href="https://wa.me/6282228880972?text=Halo%20Admin,%20saya%20ingin%20tanya%20mengenai%20Jalur%20Beasiswa%20PPDB%20Darut%20Taufiq"
                 target="_blank"
-                className="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap self-start md:self-auto"
+                className="bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition-all shadow-sm hover:shadow-md whitespace-nowrap self-start md:self-auto"
               >
                 Konsultasi Beasiswa
               </Link>

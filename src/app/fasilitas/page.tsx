@@ -129,7 +129,7 @@ export default function FasilitasPage() {
             {facilities.map((facility, idx) => (
               <div 
                 key={idx} 
-                className="group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-black/10 transition-all duration-300"
+                className="group flex flex-col bg-surface rounded-2xl overflow-hidden shadow-sm border border-gray-100"
               >
                 {/* Image Section */}
                 <div className="relative w-full h-56 overflow-hidden bg-gray-200">

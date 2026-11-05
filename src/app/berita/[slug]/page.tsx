@@ -5,6 +5,7 @@ import { FaCalendarAlt, FaPrint, FaTwitter, FaFacebook } from "@/components/ui/F
 import { prisma } from "@/lib/prisma";
 import ImageSlider from "@/components/ImageSlider";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import ArticleActionBar from "@/components/berita/ArticleActionBar";
 
 export async function generateMetadata({
   params,
@@ -200,49 +201,23 @@ export default async function BeritaDetailPage({
       </section>
 
       {/* Konten Artikel Overlap */}
-      <section className="relative z-30 -mt-16 bg-white rounded-t-[2.5rem] lg:rounded-t-[4rem] pt-8 overflow-hidden">
-        <div className="max-w-[1406px] mx-auto px-6 lg:px-12">
+      <section className="relative z-30 -mt-16 sm:-mt-20 lg:-mt-24 px-[13px] sm:px-[21px] lg:px-[29px]">
+        <div className="w-full max-w-[1406px] mx-auto bg-white rounded-t-2xl sm:rounded-t-3xl lg:rounded-t-[2.5rem] pt-10 sm:pt-12 lg:pt-16 px-6 lg:px-12 xl:px-16 pb-0">
           
           {/* Main Content Area */}
           <article className="w-full max-w-[750px] mx-auto overflow-hidden">
-
-          {/* Featured Image 1 */}
-          <div className="mb-8 w-full max-w-[750px] mx-auto flex flex-col items-center">
-            <div 
-              className="w-full h-[30px] opacity-[0.2] mb-6" 
-              style={{ 
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L25 15L15 25L5 15ZM0 0h10L0 10ZM30 0H20L30 10ZM0 30h10L0 20ZM30 30H20L30 20Z' fill='%231A202C'/%3E%3C/svg%3E")`,
-                backgroundRepeat: 'repeat-x',
-                backgroundPosition: 'center',
-                backgroundSize: '30px 30px'
-              }} 
-            />
             
-            <div className="relative w-full aspect-[16/9] overflow-hidden bg-gray-50 border border-gray-100">
-              <Image 
-                src={post.thumbnail || "/images/placeholder-news.jpg"}
-                alt={post.title}
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div 
-              className="w-full h-[30px] opacity-[0.2] mt-6" 
-              style={{ 
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 5L25 15L15 25L5 15ZM0 0h10L0 10ZM30 0H20L30 10ZM0 30h10L0 20ZM30 30H20L30 20Z' fill='%231A202C'/%3E%3C/svg%3E")`,
-                backgroundRepeat: 'repeat-x',
-                backgroundPosition: 'center',
-                backgroundSize: '30px 30px'
-              }} 
+            {/* Action & Utility Bar (Penulis, Estimasi Waktu Baca, Tombol Share, & Cetak) */}
+            <ArticleActionBar
+              title={post.title}
+              content={post.content}
             />
-          </div>
-          
-          {/* Article Content */}
-          <div 
-            className="prose prose-lg max-w-none text-[#4A5568] prose-headings:text-[#1A202C] prose-p:leading-[2.2] prose-p:text-[17px] prose-a:text-primary text-justify font-normal mb-8"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
+
+            {/* Article Content */}
+            <div 
+              className="prose prose-lg max-w-none text-[#4A5568] prose-headings:text-[#1A202C] prose-p:leading-[2.2] prose-p:text-[17px] prose-a:text-primary text-justify font-normal mb-8"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
 
           {/* Featured Image 2 (Gallery) */}
           <ImageSlider 
@@ -256,18 +231,21 @@ export default async function BeritaDetailPage({
           </article>
         </div>
 
-        {/* Last Updated Footer (Full Width Border) */}
-        <div className="w-full mt-8 border-t border-gray-200">
-          <div className="max-w-[1406px] mx-auto px-6 lg:px-12 py-6 flex justify-end">
-            <p className="text-[13px] text-gray-500 font-medium flex items-center gap-2">
-              Terakhir diubah: {new Intl.DateTimeFormat("id-ID", {
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-              }).format(post.updatedAt || post.publishedAt || new Date()).replace(/\//g, '/')} - {new Intl.DateTimeFormat("id-ID", {
-                hour: "2-digit",
-                minute: "2-digit",
-              }).format(post.updatedAt || post.publishedAt || new Date()).replace('.', ':')} WIB
+        {/* Last Updated Footer (Slim & Compact) */}
+        <div className="w-full mt-6 border-t border-gray-100">
+          <div className="max-w-[1406px] mx-auto px-6 lg:px-12 py-2.5 flex justify-end">
+            <p className="text-xs text-gray-400 font-medium flex items-center gap-1.5">
+              <span>Terakhir diubah:</span>
+              <span className="text-gray-500">
+                {new Intl.DateTimeFormat("id-ID", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                }).format(post.updatedAt || post.publishedAt || new Date()).replace(/\//g, '/')} - {new Intl.DateTimeFormat("id-ID", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                }).format(post.updatedAt || post.publishedAt || new Date()).replace('.', ':')} WIB
+              </span>
             </p>
           </div>
         </div>

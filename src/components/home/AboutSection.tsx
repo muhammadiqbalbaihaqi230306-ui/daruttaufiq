@@ -29,9 +29,6 @@ export default function AboutSection() {
           {/* Left Content */}
           <div className="w-full lg:w-1/3 flex flex-col justify-center lg:sticky lg:top-32" data-aos="fade-right">
             <div className="mb-8">
-              <span className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-                Keunggulan
-              </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-secondary leading-[1.2]">
                 Mengapa Memilih Darut Taufiq?
               </h2>

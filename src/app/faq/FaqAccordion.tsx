@@ -16,21 +16,18 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="border border-gray-200 bg-white rounded-2xl overflow-hidden shadow-2xs divide-y divide-gray-200">
       {faqs.map((faq, index) => (
-        <div 
-          key={index} 
-          className={`border rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === index ? 'border-primary bg-primary/5 shadow-md' : 'border-gray-200 bg-white hover:border-primary/50'}`}
-        >
+        <div key={index} className="transition-colors">
           <button
             onClick={() => toggleFaq(index)}
-            className="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none"
+            className="w-full text-left px-6 lg:px-8 py-5 flex items-center justify-between focus:outline-none"
           >
-            <span className={`font-semibold text-lg pr-4 ${openIndex === index ? 'text-primary' : 'text-secondary'}`}>
+            <span className="font-semibold text-lg pr-4 text-secondary">
               {faq.question}
             </span>
-            <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 flex-shrink-0 ${openIndex === index ? 'bg-primary text-white rotate-180' : 'bg-gray-100 text-gray-500'}`}>
-              <FaChevronDown className="text-sm" />
+            <div className={`flex items-center justify-center transition-transform duration-300 shrink-0 text-gray-400 ${openIndex === index ? 'rotate-180' : ''}`}>
+              <FaChevronDown className="text-base" />
             </div>
           </button>
           
@@ -40,7 +37,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
             }`}
           >
             <div className="overflow-hidden">
-              <div className="px-6 pb-6 pt-0 text-text-muted leading-relaxed">
+              <div className="px-6 lg:px-8 pb-6 pt-0 text-text-muted leading-relaxed">
                 {faq.answer}
               </div>
             </div>

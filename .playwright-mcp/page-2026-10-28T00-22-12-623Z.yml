@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link " +6282228880972" [ref=e6] [cursor=pointer]:
+          - /url: https://wa.me/6282228880972
+          - generic [ref=e7]: 
+          - generic [ref=e8]: "+6282228880972"
+      - listitem [ref=e9]:
+        - link " info@daruttaufiq.com" [ref=e10] [cursor=pointer]:
+          - /url: mailto:info@daruttaufiq.com
+          - generic [ref=e11]: 
+          - generic [ref=e12]: info@daruttaufiq.com
+      - listitem [ref=e13]:
+        - generic [ref=e14]: 
+        - generic [ref=e15]: "Senin - Jumat : 07:30 - 16:00 WIB"
+    - list [ref=e16]:
+      - listitem [ref=e17]:
+        - link "Instagram" [ref=e18] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e19]: 
+      - listitem [ref=e20]:
+        - link "TikTok" [ref=e21] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e22]: 
+      - listitem [ref=e23]:
+        - link "YouTube" [ref=e24] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e25]: 
+      - listitem [ref=e26]:
+        - link "Facebook" [ref=e27] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e28]: 
+  - banner [ref=e29]:
+    - generic [ref=e31]:
+      - link "Pondok Modern DARUT TAUFIQ PONDOK PESANTREN" [ref=e32] [cursor=pointer]:
+        - /url: /
+        - img "Pondok Modern" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: DARUT TAUFIQ
+          - generic [ref=e36]: PONDOK PESANTREN
+      - navigation [ref=e37]:
+        - link "Beranda" [ref=e39] [cursor=pointer]:
+          - /url: /
+        - link "Profil " [ref=e41] [cursor=pointer]:
+          - /url: "#"
+          - text: Profil
+          - generic [ref=e42]: 
+        - link "Akademik " [ref=e44] [cursor=pointer]:
+          - /url: "#"
+          - text: Akademik
+          - generic [ref=e45]: 
+        - link "Unit " [ref=e47] [cursor=pointer]:
+          - /url: "#"
+          - text: Unit
+          - generic [ref=e48]: 
+        - link "Berita" [ref=e50] [cursor=pointer]:
+          - /url: /berita
+        - link "Kontak" [ref=e52] [cursor=pointer]:
+          - /url: /kontak
+        - link "PPDB" [ref=e54] [cursor=pointer]:
+          - /url: /ppdb
+        - generic [ref=e55]:
+          - generic:
+            - generic: 
+            - textbox "Cari di Darut Taufiq..."
+          - button "Toggle Search" [ref=e56]:
+            - generic [ref=e57]: 
+      - text:  
+    - text:   
+  - main [ref=e58]:
+    - main [ref=e59]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - link "Home" [ref=e67] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e68]: 
+          - generic [ref=e69]: Akademik
+          - generic [ref=e70]: 
+          - generic [ref=e71]: Program
+        - heading "Program Unggulan" [level=1] [ref=e72]
+        - paragraph [ref=e73]: Menghadirkan program pendidikan unggulan yang mengintegrasikan nilai-nilai keislaman, tahfidz Al-Qur'an, tradisi kitab kuning, kecakapan bahasa internasional, dan literasi teknologi modern.
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - heading "Daftar Program Unggulan" [level=2] [ref=e78]
+          - paragraph [ref=e79]: Kami merancang kurikulum unggulan untuk melahirkan santri yang mutafaqqih fiddin, berwawasan global, fasih berbahasa internasional, dan terampil menguasai ilmu teknologi.
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - img "Kelas Tahfidz Al-Qur'an" [ref=e83]
+            - generic [ref=e85]:
+              - heading "Kelas Tahfidz Al-Qur'an" [level=3] [ref=e86]
+              - paragraph [ref=e87]: Program hafalan Al-Qur'an intensif dengan metode mutqin, didampingi asatidz dan musyrif/musyrifah berpengalaman dengan fokus pada tahsin, tajwid, dan muraja'ah berkala.
+          - generic [ref=e88]:
+            - img "Baca Kitab Kuning" [ref=e90]
+            - generic [ref=e92]:
+              - heading "Baca Kitab Kuning" [level=3] [ref=e93]
+              - paragraph [ref=e94]: Pembelajaran dan pengkajian kitab kuning / turats Islam klasik mencakup ilmu nahwu, sharaf, fiqih, aqidah, dan akhlak untuk menanamkan pemahaman agama yang mendalam dan bersanad.
+          - generic [ref=e95]:
+            - img "Bahasa Arab" [ref=e97]
+            - generic [ref=e99]:
+              - heading "Bahasa Arab" [level=3] [ref=e100]
+              - paragraph [ref=e101]: Pembiasaan percakapan (muhadatsah) dan penguasaan tata bahasa Arab intensif sebagai bahasa ilmu dan Al-Qur'an dalam komunikasi keseharian santri di lingkungan pesantren.
+          - generic [ref=e102]:
+            - img "Bahasa Inggris" [ref=e104]
+            - generic [ref=e106]:
+              - heading "Bahasa Inggris" [level=3] [ref=e107]
+              - paragraph [ref=e108]: Pengembangan keterampilan aktif berbahasa Inggris santri melalui program English Area, conversation practice, grammar, dan vocabulary untuk memperluas wawasan global.
+          - generic [ref=e109]:
+            - img "Pidato 3 Bahasa" [ref=e111]
+            - generic [ref=e113]:
+              - heading "Pidato 3 Bahasa" [level=3] [ref=e114]
+              - paragraph [ref=e115]: Pelatihan public speaking dan muhadhoroh rutin dalam 3 bahasa (Arab, Inggris, dan Indonesia) untuk mengasah kepercayaan diri, retorika, vokal, dan jiwa kepemimpinan santri.
+          - generic [ref=e116]:
+            - img "Ilmu Teknologi" [ref=e118]
+            - generic [ref=e120]:
+              - heading "Ilmu Teknologi" [level=3] [ref=e121]
+              - paragraph [ref=e122]: Membekali santri dengan literasi digital, pengoperasian komputer, dasar pemrograman (coding), dan teknologi informasi terapan agar santri adaptif terhadap kemajuan zaman.
+  - contentinfo [ref=e123]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - img "Pondok Modern" [ref=e128]
+          - generic [ref=e129]:
+            - generic [ref=e130]: DARUT TAUFIQ
+            - generic [ref=e131]: PONDOK PESANTREN
+        - list [ref=e132]:
+          - listitem [ref=e133]:
+            - link " +6282228880972" [ref=e134] [cursor=pointer]:
+              - /url: https://wa.me/6282228880972
+              - generic [ref=e135]: 
+              - generic [ref=e136]: "+6282228880972"
+          - listitem [ref=e137]:
+            - link " info@daruttaufiq.com" [ref=e138] [cursor=pointer]:
+              - /url: mailto:info@daruttaufiq.com
+              - generic [ref=e139]: 
+              - generic [ref=e140]: info@daruttaufiq.com
+          - listitem [ref=e141]:
+            - link " (021) 82631191" [ref=e142] [cursor=pointer]:
+              - /url: tel:02182631191
+              - generic [ref=e143]: 
+              - generic [ref=e144]: (021) 82631191
+          - listitem [ref=e145]:
+            - link " Jl. Kb. Baru Metros No. 59, Jakarta Utara" [ref=e146] [cursor=pointer]:
+              - /url: https://share.google/O4ajlS2i96WMgnz6X
+              - generic [ref=e147]: 
+              - generic [ref=e148]: Jl. Kb. Baru Metros No. 59, Jakarta Utara
+      - generic [ref=e149]:
+        - heading "Profil" [level=4] [ref=e150]
+        - list [ref=e151]:
+          - listitem [ref=e152]:
+            - link "Sejarah Sekolah" [ref=e153] [cursor=pointer]:
+              - /url: /sejarah
+          - listitem [ref=e154]:
+            - link "Manajemen" [ref=e155] [cursor=pointer]:
+              - /url: /manajemen
+          - listitem [ref=e156]:
+            - link "Staff & Pengajar" [ref=e157] [cursor=pointer]:
+              - /url: /pengajar
+          - listitem [ref=e158]:
+            - link "Nilai & Budaya" [ref=e159] [cursor=pointer]:
+              - /url: /values
+      - generic [ref=e160]:
+        - heading "Informasi" [level=4] [ref=e161]
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - link "Pendaftaran PPDB" [ref=e164] [cursor=pointer]:
+              - /url: /ppdb
+          - listitem [ref=e165]:
+            - link "Program Unggulan" [ref=e166] [cursor=pointer]:
+              - /url: /program
+          - listitem [ref=e167]:
+            - link "Sarana & Fasilitas" [ref=e168] [cursor=pointer]:
+              - /url: /fasilitas
+          - listitem [ref=e169]:
+            - link "Biaya Pendidikan" [ref=e170] [cursor=pointer]:
+              - /url: /biaya
+          - listitem [ref=e171]:
+            - link "Frequently Asked Questions" [ref=e172] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e173]:
+        - heading "Instagram" [level=4] [ref=e174]
+        - generic [ref=e175]:
+          - link "Instagram post " [ref=e176] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DaCvH6BPiYn/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e177]
+            - generic [ref=e178]: 
+          - link "Instagram post " [ref=e180] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/DTjYkVzkqA6/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e181]
+            - generic [ref=e182]: 
+          - link "Instagram post " [ref=e184] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdV50xjvrqJ/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e185]
+            - generic [ref=e186]: 
+          - link "Instagram post " [ref=e188] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdQLx_UBp13/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e189]
+            - generic [ref=e190]: 
+          - link "Instagram post " [ref=e192] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DdD2uzQgVva/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e193]
+            - generic [ref=e194]: 
+          - link "Instagram post " [ref=e196] [cursor=pointer]:
+            - /url: https://www.instagram.com/reel/DcyY9fITXwD/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==
+            - img "Instagram post" [ref=e197]
+            - generic [ref=e198]: 
+    - generic [ref=e202]:
+      - paragraph [ref=e203]: © 2026 Pondok Pesantren Darut Taufiq
+      - generic [ref=e204]:
+        - link "Instagram" [ref=e205] [cursor=pointer]:
+          - /url: https://www.instagram.com/ponpesdaruttaufiq?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==
+          - generic [ref=e206]: 
+        - link "TikTok" [ref=e207] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@ponpes.darut.taufiq?_r=1&_t=ZS-99xQlp7LLpn
+          - generic [ref=e208]: 
+        - link "YouTube" [ref=e209] [cursor=pointer]:
+          - /url: https://www.youtube.com/@daruttaufiqtv
+          - generic [ref=e210]: 
+        - link "Facebook" [ref=e211] [cursor=pointer]:
+          - /url: https://www.facebook.com/share/1CAZB2ZE1M/
+          - generic [ref=e212]: 
+  - button "Open WhatsApp Chat" [ref=e214]:
+    - generic [ref=e215]: 
+  - button "Back to Top":
+    - generic: 
+  - button "Open Next.js Dev Tools" [ref=e221] [cursor=pointer]

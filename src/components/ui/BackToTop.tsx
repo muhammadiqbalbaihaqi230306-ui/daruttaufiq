@@ -21,7 +21,7 @@ export default function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-24 right-5 z-40 w-11 h-11 bg-accent rounded flex items-center justify-center text-white shadow-lg hover:bg-primary transition-all duration-300 ${
+      className={`fixed bottom-24 right-5 z-40 w-11 h-11 bg-accent rounded flex items-center justify-center text-white shadow-lg hover:bg-primary transition-all duration-300 print:hidden ${
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-4 pointer-events-none"

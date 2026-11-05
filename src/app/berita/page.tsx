@@ -201,79 +201,66 @@ export default async function BeritaPage({
           {/* JIKA DALAM MODE PENCARIAN (q aktif) */}
           {isSearchMode ? (
             <div>
-              {/* Header Banner Pencarian */}
-              <div className="mb-10 p-6 sm:p-8 rounded-2xl bg-surface border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div>
-                  <span className="text-xs uppercase tracking-wider text-text-muted font-bold block mb-1">
-                    Hasil Penelusuran Website
-                  </span>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-secondary">
-                    Kata Kunci: <span className="text-primary font-black">"{qTrim}"</span>
-                  </h2>
-                  <p className="text-xs sm:text-sm text-text-muted mt-1.5">
-                    {totalResults > 0
-                      ? `Ditemukan ${totalResults} hasil (${matchedPages.length} halaman/menu, ${posts.length} berita)`
-                      : "Tidak ada hasil yang sesuai"}
-                  </p>
-                </div>
-                <Link
-                  href="/berita"
-                  className="px-4 py-2 text-xs font-semibold rounded-xl bg-white text-secondary border border-gray-200 hover:bg-gray-50 transition-colors shrink-0 shadow-sm"
-                >
-                  Reset Pencarian
-                </Link>
-              </div>
-
-              {/* JIKA HASIL KOSONG (TIDAK DITEMUKAN) */}
               {totalResults === 0 ? (
-                <div className="py-16 px-6 text-center max-w-2xl mx-auto my-4 animate-fade-in">
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-3xl bg-primary/10 text-primary flex items-center justify-center text-3xl sm:text-4xl mb-6 shadow-sm border border-primary/20">
-                    <FaSearch />
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-secondary mb-3">
-                    Pencarian Tidak Ditemukan
-                  </h3>
-                  <p className="text-sm sm:text-base text-text-muted leading-relaxed mb-8 max-w-lg mx-auto">
-                    Maaf, kami tidak menemukan informasi, halaman, atau berita yang cocok dengan kata kunci <span className="font-bold text-secondary">"{qTrim}"</span>.
-                  </p>
-
-                  {/* Tips Pencarian */}
-                  <div className="bg-surface rounded-2xl p-6 text-left border border-gray-100 mb-8 max-w-lg mx-auto shadow-sm">
-                    <p className="text-xs font-bold text-secondary mb-2.5 flex items-center gap-1.5">
-                      💡 Saran Pencarian:
-                    </p>
-                    <ul className="text-xs text-text-muted space-y-2 list-disc list-inside leading-relaxed">
-                      <li>Pastikan ejaan kata kunci yang Anda masukkan sudah benar.</li>
-                      <li>Gunakan kata yang lebih umum (misal: <em>PPDB, Biaya, SDIT, SMPIT, Fasilitas, Kontak</em>).</li>
-                      <li>Atau jelajahi menu halaman utama melalui tombol di bawah.</li>
-                    </ul>
-                  </div>
-
-                  {/* Tombol Tindakan */}
-                  <div className="flex flex-wrap items-center justify-center gap-3">
+                /* TAMPILAN NO RESULT FOUND SEPERTI SCREENSHOT */
+                <div className="pt-2 pb-16 sm:pb-20">
+                  {/* Filter Top Right: All Results */}
+                  <div className="flex justify-end mb-8 sm:mb-12">
                     <Link
                       href="/berita"
-                      className="px-5 py-3 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs sm:text-sm font-bold transition-all shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2.5 px-4 py-2 border border-gray-200 rounded-xl text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors shadow-sm"
                     >
-                      Lihat Semua Berita
+                      <span>All Results</span>
+                      <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      </svg>
                     </Link>
-                    <Link
-                      href="/"
-                      className="px-5 py-3 rounded-xl bg-white hover:bg-gray-50 text-secondary border border-gray-200 text-xs sm:text-sm font-semibold transition-colors"
-                    >
-                      Kembali ke Beranda
-                    </Link>
-                    <Link
-                      href="https://wa.me/6282228880972?text=Halo%20Admin%2C%20saya%20ingin%20bertanya%20informasi%20tentang%20Pondok%20Pesantren%20Darut%20Taufiq"
-                      target="_blank"
-                      className="px-5 py-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs sm:text-sm font-semibold transition-colors flex items-center gap-1.5"
-                    >
-                      <FaWhatsapp /> Tanya via WhatsApp
-                    </Link>
+                  </div>
+
+                  {/* Centered No Result Found Content */}
+                  <div className="py-6 sm:py-10 px-4 text-center max-w-xl mx-auto flex flex-col items-center">
+                    <div className="relative w-52 sm:w-64 h-60 sm:h-72 mb-6 sm:mb-8">
+                      <Image
+                        src="/images/no-result-found.png"
+                        alt="No Result Found"
+                        fill
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
+                      No Result Found
+                    </h2>
+                    <p className="text-sm sm:text-base text-gray-500 max-w-md mx-auto leading-relaxed">
+                      Try updating your search or filters for something else
+                    </p>
                   </div>
                 </div>
               ) : (
-                <div className="space-y-12">
+                /* JIKA ADA HASIL */
+                <>
+                  {/* Header Banner Pencarian */}
+                  <div className="mb-10 p-6 sm:p-8 rounded-2xl bg-surface border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                      <span className="text-xs uppercase tracking-wider text-text-muted font-bold block mb-1">
+                        Hasil Penelusuran Website
+                      </span>
+                      <h2 className="text-2xl sm:text-3xl font-bold text-secondary">
+                        Kata Kunci: <span className="text-primary font-black">"{qTrim}"</span>
+                      </h2>
+                      <p className="text-xs sm:text-sm text-text-muted mt-1.5">
+                        Ditemukan {totalResults} hasil ({matchedPages.length} halaman/menu, {posts.length} berita)
+                      </p>
+                    </div>
+                    <Link
+                      href="/berita"
+                      className="px-4 py-2 text-xs font-semibold rounded-xl bg-white text-secondary border border-gray-200 hover:bg-gray-50 transition-colors shrink-0 shadow-sm"
+                    >
+                      Reset Pencarian
+                    </Link>
+                  </div>
+
+                  <div className="space-y-12">
                   {/* Bagian 1: Halaman & Menu Terkait */}
                   {matchedPages.length > 0 && (
                     <div>
@@ -353,6 +340,7 @@ export default async function BeritaPage({
                     </div>
                   )}
                 </div>
+                </>
               )}
             </div>
           ) : (
